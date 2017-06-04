@@ -2,13 +2,14 @@
 
 King James Version Audio Bible and Text Download Spider
 
+
 #### How to use
 
     # download this project with git clone
     git clone https://github.com/gxela/AudioBible
     cd AudioBible/
     
-    # install dependencies
+    # install scrapy
     pip install -r requirements.txt
     
     cd kjv/
@@ -19,11 +20,15 @@ King James Version Audio Bible and Text Download Spider
 
 #### For developers: How to create a spider with Python Scrapy that will download KJV Bible audio book mp3 and text
 
-    # install python libraries with pip
+    # create a VirtualEnv
+    virtualenv Python2
+    
+    # activate the virtualenv
+    . Python2/bin/activate
+    
+    # install scraping engine
     pip install scrapy
-    pip install scrapylib
-    pip install dateutils
-  
+    
     # create a scrapy project and generate the spider, then paste the files included with this gist into the project
     scrapy startproject kjv audiobible
     cd audiobible

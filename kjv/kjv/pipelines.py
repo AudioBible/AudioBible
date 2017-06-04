@@ -11,7 +11,6 @@ import urllib2
 from urlparse import urlparse
 from scrapy import signals
 from scrapy.exporters import BaseItemExporter, JsonLinesItemExporter
-from dateutil.parser import parse  # pip install dateutils
 from .settings import DATA_STORE, URLS_FILE
 
 
@@ -56,25 +55,35 @@ class KjvPipeline(FileExporter):
                 os.makedirs('%s/%s/' % (DATA_STORE, book_name))
 
             filename = '%s/%s/%s.txt' % (DATA_STORE, book_name, item['book'].replace(' ', '_').lower())
-            chapter_file = open(filename, 'w')
-            self.files[spider] = chapter_file
-            self.exporter = FileExporter(chapter_file)
-            self.exporter.start_exporting()
-            self.exporter.export_item("\n".join(item['text']))
-            self.exporter.finish_exporting()
-            chapter_file = self.files.pop(spider)
-            chapter_file.close()
+            if not os.path.exists(filename):
+                chapter_file = open(filename, 'w')
+                self.files[spider] = chapter_file
+                self.exporter = FileExporter(chapter_file)
+                self.exporter.start_exporting()
+                self.exporter.export_item("\n".join(item['text']))
+                self.exporter.finish_exporting()
+                chapter_file = self.files.pop(spider)
+                chapter_file.close()
         if item and \
                 'name' in item.keys() and \
                 'urls' in item.keys():
-            bible_file = open(URLS_FILE, 'a+')
-            self.files[spider] = bible_file
-            self.exporter = JsonLinesItemExporter(bible_file)
-            self.exporter.start_exporting()
-            self.exporter.export_item(item)
-            self.exporter.finish_exporting()
-            chapter_file = self.files.pop(spider)
-            chapter_file.close()
+            found_in_bible_file = False
+            if os.path.exists(URLS_FILE):
+                with open(URLS_FILE, 'rw') as bible:
+                    for books in bible:
+                        if item['name'] in books:
+                            found_in_bible_file = True
+
+                            break
+            if not found_in_bible_file:
+                bible_file = open(URLS_FILE, 'a+')
+                self.files[spider] = bible_file
+                self.exporter = JsonLinesItemExporter(bible_file)
+                self.exporter.start_exporting()
+                self.exporter.export_item(item)
+                self.exporter.finish_exporting()
+                chapter_file = self.files.pop(spider)
+                chapter_file.close()
         return item
 
 

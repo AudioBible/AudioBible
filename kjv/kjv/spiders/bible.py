@@ -3,7 +3,8 @@ import scrapy
 import os
 import json
 from ..items import get_item_and_loader
-from ..settings import DATA_STORE, URLS_FILE
+from ..settings import URLS_FILE
+
 
 class BibleSpider(scrapy.Spider):
     name = "bible"

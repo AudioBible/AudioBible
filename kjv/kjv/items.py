@@ -9,8 +9,6 @@ from scrapy import Spider
 from scrapy.item import Field, Item, DictItem
 from scrapy.loader import ItemLoader
 
-from scrapylib.constraints import RequiredFields
-
 
 class InvalidItemLoaderName(ValueError):
     pass
