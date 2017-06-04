@@ -1,6 +1,6 @@
 # AudioBible
 
-All the text and audio is included with this repo
+King James Version Audio Bible and Text Download Spider
 
 #### How to use
 
