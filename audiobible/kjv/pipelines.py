@@ -11,11 +11,6 @@ import urllib2
 from urlparse import urlparse
 from scrapy import signals
 from scrapy.exporters import BaseItemExporter, JsonLinesItemExporter
-from .settings import DATA_STORE, URLS_FILE
-
-
-if not os.path.isdir('%s/' % DATA_STORE):
-    os.makedirs('%s/' % DATA_STORE)
 
 
 class FileExporter(BaseItemExporter):
@@ -25,6 +20,10 @@ class FileExporter(BaseItemExporter):
 
     def export_item(self, data):
         self.file.write(data)
+
+
+def get_book_name(item):
+    return "_".join(item['book'].split(' ')[:-1])
 
 
 class KjvPipeline(FileExporter):
@@ -45,16 +44,16 @@ class KjvPipeline(FileExporter):
         pass
 
     def process_item(self, item, spider):
+        DATA_STORE = spider.settings.get('DATA_STORE')
         if item and \
                 'book' in item.keys() and \
                 'text' in item.keys() and \
                 'url' in item.keys():
-            _book = item['book'].split(' ')
-            book_name = " ".join(_book[:-1])
-            if not os.path.isdir('%s/%s/' % (DATA_STORE, book_name)):
-                os.makedirs('%s/%s/' % (DATA_STORE, book_name))
+            book_name = get_book_name(item)
+            if not os.path.isdir(os.path.join(DATA_STORE, book_name)):
+                os.makedirs(os.path.join(DATA_STORE, book_name))
 
-            filename = '%s/%s/%s.txt' % (DATA_STORE, book_name, item['book'].replace(' ', '_').lower())
+            filename = '%s.txt' % os.path.join(DATA_STORE, book_name, item['book'].replace(' ', '_'))
             if not os.path.exists(filename):
                 chapter_file = open(filename, 'w')
                 self.files[spider] = chapter_file
@@ -68,15 +67,20 @@ class KjvPipeline(FileExporter):
                 'name' in item.keys() and \
                 'urls' in item.keys():
             found_in_bible_file = False
-            if os.path.exists(URLS_FILE):
-                with open(URLS_FILE, 'rw') as bible:
+            CONTENT_FILE = os.path.join(DATA_STORE, spider.settings.get('CONTENT_FILE'))
+            if os.path.exists(CONTENT_FILE):
+                with open(CONTENT_FILE, 'r') as bible:
                     for books in bible:
                         if item['name'] in books:
                             found_in_bible_file = True
 
                             break
+            else:
+                if not os.path.isdir('%s' % DATA_STORE):
+                    os.makedirs('%s' % DATA_STORE)
+
             if not found_in_bible_file:
-                bible_file = open(URLS_FILE, 'a+')
+                bible_file = open(CONTENT_FILE, 'a+')
                 self.files[spider] = bible_file
                 self.exporter = JsonLinesItemExporter(bible_file)
                 self.exporter.start_exporting()
@@ -105,17 +109,17 @@ class Mp3Pipeline(FileExporter):
         pass
 
     def process_item(self, item, spider):
+        DATA_STORE = spider.settings.get('DATA_STORE')
         if item and \
                 'book' in item.keys() and \
                 'mp3' in item.keys() and \
                 'url' in item.keys():
-            _book = item['book'].split(' ')
-            book_name = " ".join(_book[:-1])
+            book_name = get_book_name(item)
             filename = urlparse(item['mp3']).path.split('/')[-1]
-            if not os.path.isdir('%s/%s/' % (DATA_STORE, book_name)):
-                os.makedirs('%s/%s/' % (DATA_STORE, book_name))
+            if not os.path.isdir(os.path.join(DATA_STORE, book_name)):
+                os.makedirs(os.path.join(DATA_STORE, book_name))
 
-            download_path = '%s/%s/%s' % (DATA_STORE, book_name, filename)
+            download_path = os.path.join(DATA_STORE, book_name, filename)
 
             if not os.path.exists(download_path):
                 req = urllib2.Request(item['mp3'])

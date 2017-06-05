@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'kjv.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'kjv (+http://www.yourdomain.com)'
+USER_AGENT = 'AudioBible-KJV (+http://www.audiobible.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -90,5 +90,5 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-DATA_STORE = 'bible/'
-URLS_FILE = '%surls.json' % DATA_STORE
+DATA_STORE = 'KJV'
+CONTENT_FILE = 'content.json'

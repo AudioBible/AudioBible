@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from scrapy.crawler import Crawler
 import os
 import json
 from ..items import get_item_and_loader
-from ..settings import URLS_FILE
+
+from scrapy.utils.project import get_project_settings as Settings
+settings = Settings()
 
 
 class BibleSpider(scrapy.Spider):
@@ -11,12 +14,11 @@ class BibleSpider(scrapy.Spider):
     allowed_domains = ["www.audiobible.com"]
     start_urls = []
 
-    def __init__(self, urls_file=URLS_FILE):
-        if urls_file and os.path.exists(urls_file):
-            with open(urls_file) as f:
+    def __init__(self, data_store=settings.get('DATA_STORE'), content_file=settings.get('CONTENT_FILE')):
+        if os.path.exists(os.path.join(data_store, content_file)):
+            with open(os.path.join(data_store, content_file)) as f:
                 for line in f.readlines():
                     data = json.loads(line)
-                    print data
                     if data['urls']:
                         for url in data['urls']:
                             self.start_urls.append(url)
