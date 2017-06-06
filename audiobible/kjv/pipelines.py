@@ -26,6 +26,19 @@ def get_book_name(item):
     return "_".join(item['book'].split(' ')[:-1])
 
 
+def get_filename(item, ext):
+    mp3 = urlparse(item['mp3'].replace('.mp3', '')).path.split('/')[-1].split('_')
+    num = '%02d' % int(mp3[0])
+    name = mp3[1].upper()
+    chapter = '%s' % int(mp3[2])
+    return "_".join([name, '%s.%s' % (chapter, ext)]).replace('-', '_')
+
+
+def ensure_dir(path):
+    if not os.path.isdir(path):
+        os.makedirs(path)
+
+
 class KjvPipeline(FileExporter):
     def __init__(self):
         self.files = {}
@@ -48,12 +61,13 @@ class KjvPipeline(FileExporter):
         if item and \
                 'book' in item.keys() and \
                 'text' in item.keys() and \
+                'mp3' in item.keys() and \
                 'url' in item.keys():
             book_name = get_book_name(item)
-            if not os.path.isdir(os.path.join(DATA_STORE, book_name)):
-                os.makedirs(os.path.join(DATA_STORE, book_name))
 
-            filename = '%s.txt' % os.path.join(DATA_STORE, book_name, item['book'].replace(' ', '_'))
+            ensure_dir(os.path.join(DATA_STORE, book_name))
+
+            filename = os.path.join(DATA_STORE, book_name, get_filename(item, 'txt'))
             if not os.path.exists(filename):
                 chapter_file = open(filename, 'w')
                 self.files[spider] = chapter_file
@@ -76,8 +90,7 @@ class KjvPipeline(FileExporter):
 
                             break
             else:
-                if not os.path.isdir('%s' % DATA_STORE):
-                    os.makedirs('%s' % DATA_STORE)
+                ensure_dir('%s' % DATA_STORE)
 
             if not found_in_bible_file:
                 bible_file = open(CONTENT_FILE, 'a+')
@@ -115,11 +128,10 @@ class Mp3Pipeline(FileExporter):
                 'mp3' in item.keys() and \
                 'url' in item.keys():
             book_name = get_book_name(item)
-            filename = urlparse(item['mp3']).path.split('/')[-1]
-            if not os.path.isdir(os.path.join(DATA_STORE, book_name)):
-                os.makedirs(os.path.join(DATA_STORE, book_name))
 
-            download_path = os.path.join(DATA_STORE, book_name, filename)
+            ensure_dir(os.path.join(DATA_STORE, book_name))
+
+            download_path = os.path.join(DATA_STORE, book_name, get_filename(item, 'mp3'))
 
             if not os.path.exists(download_path):
                 req = urllib2.Request(item['mp3'])

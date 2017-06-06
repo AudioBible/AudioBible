@@ -10,11 +10,13 @@ from kjv import settings
 
 parser = argparse.ArgumentParser(
     prog='audiobible' or sys.argv[0],
+    usage='%(prog)s operation [BOOK] [CHAPTER]',
     description='%(prog)s - King James Version Audio Bible')
 
 name = settings.BOT_NAME
 data_path = os.path.join(os.path.expanduser('~'), settings.DATA_STORE)
 content_path = os.path.join(data_path, settings.CONTENT_FILE)
+
 
 class DownloadBible(object):
     @staticmethod
@@ -38,9 +40,20 @@ class DownloadBible(object):
 
 
 class AudioBible(object):
-    def __init__(self, operation, book=None, chapter=None):
-        self.book = book
-        self.chapter = chapter
+    def __init__(self, operation):
+        try:
+            self.book = operation[1]
+        except IndexError:
+            self.book = 'GENESIS'
+        try:
+            chapter = operation[2]
+            try:
+                self.chapter = int(chapter)
+            except ValueError:
+                self.chapter = 1
+        except IndexError:
+            self.chapter = 1
+        operation = operation[0] if operation[0] in ['init', 'load', 'hear', 'read', 'list', 'quote', 'help'] else 'help'
         getattr(self, operation, self.help)()
 
     def init(self):
@@ -60,18 +73,43 @@ class AudioBible(object):
         elif os.name == 'posix':
             subprocess.call(('xdg-open', filepath))
 
+    def _get_book(self):
+        return self.book.upper()
+
+    def _get_chapter(self):
+        return self.chapter
+
+    def get_filename(self, ext):
+        book = self._get_book()
+        chapter = self._get_chapter()
+        return os.path.join(data_path, book, '%s_%d.%s' % (book, chapter, ext))
+
     def hear(self):
-        print 'playing audio', self.book, self.chapter
-        # self._open('')
+        audio = self.get_filename('mp3')
+        print 'opening KJV Bible audio', self.book, self.chapter
+        if os.path.exists(audio):
+            self._open(audio)
+        else:
+            print 'Unable to find audio file', audio
 
     def read(self):
-        print 'opening bible text', self.book, self.chapter
-        # self._open('')
+        text = self.get_filename('txt')
+        print 'opening KJV Bible text', self.book, self.chapter
+        if os.path.exists(text):
+            self._open(text)
+        else:
+            print 'Unable to find text file', text
 
     def list(self):
         table_of_contents = {
-            'old': [],
-            'new': []
+            'old': {
+                'names': [],
+                'count': []
+            },
+            'new': {
+                'names': [],
+                'count': []
+            }
         }
         is_old_testament = True
         if os.path.exists(content_path):
@@ -80,14 +118,21 @@ class AudioBible(object):
                     book = json.loads(line)
                     if book['name'].upper() in 'MATTHEW' or not is_old_testament:
                         is_old_testament = False
-                        table_of_contents['new'].append(book['name'])
+                        table_of_contents['new']['names'].append(book['name'])
+                        table_of_contents['new']['count'].append('%d' % book['chapters_count'])
                     else:
-                        table_of_contents['old'].append(book['name'])
+                        table_of_contents['old']['names'].append(book['name'])
+                        table_of_contents['old']['count'].append('%d' % book['chapters_count'])
 
-        print '{:<30}{:<30}'.format('Old Testament', 'New Testament')
-        print '{:<30}{:<30}'.format('=============', '=============')
-        for a, b in zip(table_of_contents['old'], table_of_contents['new']):
-            print '{:<30}{:<30}'.format(a, b)
+        print '{:<30}{:<30}{:<30}{:<30}'.format('Old Testament', '###', 'New Testament', '##')
+        print '{:<30}{:<30}{:<30}{:<30}'.format('=============', '===', '=============', '==')
+        for a, b, c, d in zip(
+                table_of_contents['old']['names'],
+                table_of_contents['old']['count'],
+                table_of_contents['new']['names'],
+                table_of_contents['new']['count']
+        ):
+            print '{:<30}{:<30}{:<30}{:<30}'.format(a, b, c, d)
 
     def quote(self, head=None, tail=None):
         print 'MK 4:23 If any man have ears to hear, let him hear.'
@@ -97,20 +142,15 @@ class AudioBible(object):
 
 
 def parse_args():
-    parser.add_argument('operation', choices=['init', 'load', 'hear', 'read', 'list', 'quote', 'help'])
-    parser.add_argument("-b", "--book",  type=str, help="Book to hear, read or quote", default='Mark')
-    parser.add_argument("-c", "--chapter", type=str, help="Chapter to hear, read or quote", default="1")
-
+    parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, list, quote, help")  # choices=['init', 'load', 'hear', 'read', 'list', 'quote', 'help']
     return parser.parse_args()
 
 
 def main(*args, **kwargs):
     def use_params(
         operation=None,
-        book=None,
-        chapter=None,
     ):
-        return AudioBible(operation=operation, book=book, chapter=chapter)
+        return AudioBible(operation=operation)
 
     # argparse arguments
     if len(args) > 0 \
@@ -119,21 +159,17 @@ def main(*args, **kwargs):
 
         return use_params(
             operation=args.operation,
-            book=args.book,
-            chapter=args.chapter
         )
     # dict arguments
     if isinstance(kwargs, dict):
         return use_params(
             operation=kwargs.get('operation'),
-            book=kwargs.get('book'),
-            chapter=kwargs.get('chapter')
         )
 
 
 def use_parse_args():
     args = parse_args()
-    return main(args)
+    main(args)
 
 
 def use_keyword_args(**kwargs):

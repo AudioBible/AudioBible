@@ -60,7 +60,7 @@ class BibleSpider(scrapy.Spider):
                 l = loader(response=response)
                 itm = item()
                 book = "".join(l.get_xpath('//h1/text()'))
-                itm['book'] = book
+                itm['book'] = book.upper()
                 itm['text'] = l.get_xpath('//div[contains(@class, "PageContent")]//strong/text()')
                 mp3 = "".join(l.get_xpath('//object/@data')).split('niftyplayer.swf?file=')[1].replace('&as=1', '')
                 itm['mp3'] = mp3
