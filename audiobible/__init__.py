@@ -13,6 +13,12 @@ parser = argparse.ArgumentParser(
     usage='%(prog)s operation [BOOK] [CHAPTER]',
     description='%(prog)s - King James Version Audio Bible')
 
+parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, list, quote, help")
+
+if len(sys.argv) == 1:
+    parser.print_help()
+    sys.exit(1)
+
 name = settings.BOT_NAME
 data_path = os.path.join(os.path.expanduser('~'), settings.DATA_STORE)
 content_path = os.path.join(data_path, settings.CONTENT_FILE)
@@ -142,7 +148,6 @@ class AudioBible(object):
 
 
 def parse_args():
-    parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, list, quote, help")  # choices=['init', 'load', 'hear', 'read', 'list', 'quote', 'help']
     return parser.parse_args()
 
 
