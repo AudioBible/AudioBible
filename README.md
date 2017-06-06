@@ -7,7 +7,7 @@ King James Version Audio Bible
 #### How to use
 
     # install with pip
-    pip install scrapy audiobible
+    pip install audiobible
     
     audiobible init
     audiobible load
