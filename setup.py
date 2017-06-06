@@ -6,6 +6,8 @@ setup(
     version="0.0.1",
     description="KJV Audio Bible",
     license="MIT",
+    maintainer="Alex Goretoy",
+    maintainer_email="alex@goretoy.com",
     url="https://github.com/gxela/AudioBible",
 
     packages=find_packages(),
