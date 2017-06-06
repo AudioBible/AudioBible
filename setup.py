@@ -6,7 +6,6 @@ setup(
     version="0.0.1",
     description="KJV Audio Bible",
     license="MIT",
-    author="God Almighty Himself",
     url="https://github.com/gxela/AudioBible",
 
     packages=find_packages(),
