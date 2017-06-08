@@ -1,8 +1,10 @@
 #! /usr/bin/env python2
 
+import re
 import os
 import sys
 import json
+import glob
 import argparse
 from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
@@ -13,7 +15,7 @@ parser = argparse.ArgumentParser(
     usage='%(prog)s operation [BOOK] [CHAPTER]',
     description='%(prog)s - King James Version Audio Bible')
 
-parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, list, quote, help")
+parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, list, quote, help")
 
 if len(sys.argv) == 1:
     parser.print_help()
@@ -47,20 +49,23 @@ class DownloadBible(object):
 
 class AudioBible(object):
     def __init__(self, operation):
-        try:
-            self.book = operation[1]
-        except IndexError:
-            self.book = 'GENESIS'
-        try:
-            chapter = operation[2]
+        function = operation[0] if operation[0] in ['init', 'load', 'hear', 'read', 'list', 'find', 'quote', 'help'] else 'help'
+        if function in ['hear', 'read']:
             try:
-                self.chapter = int(chapter)
-            except ValueError:
+                self.book = operation[1]
+            except IndexError:
+                self.book = 'GENESIS'
+            try:
+                chapter = operation[2]
+                try:
+                    self.chapter = int(chapter)
+                except ValueError:
+                    self.chapter = 1
+            except IndexError:
                 self.chapter = 1
-        except IndexError:
-            self.chapter = 1
-        operation = operation[0] if operation[0] in ['init', 'load', 'hear', 'read', 'list', 'quote', 'help'] else 'help'
-        getattr(self, operation, self.help)()
+        else:
+            self.query = " ".join(operation[1:]).strip(" ")
+        getattr(self, function, self.help)()
 
     def init(self):
         print 'downloading content from audiobible.com'
@@ -105,6 +110,16 @@ class AudioBible(object):
             self._open(text)
         else:
             print 'Unable to find text file', text
+
+    def find(self):
+        for dirname, dirnames, filenames in os.walk(data_path):
+            for filename in filenames:
+                if '.txt' in filename:
+                    file = os.path.join(dirname, filename)
+                    for line in open(file).readlines():
+                        match = re.search(self.query, line, re.IGNORECASE)
+                        if match:
+                            print match.string
 
     def list(self):
         table_of_contents = {
