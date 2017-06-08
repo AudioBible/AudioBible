@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-python setup.py register -r pypi && python setup.py sdist upload -r pypi
+rm -Rf AudioBible.egg-info && rm -rf dist;
+python setup.py register -r pypi && python setup.py sdist upload -r pypi;
