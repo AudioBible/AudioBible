@@ -11,6 +11,7 @@ King James Version Audio Bible
 ## How to use
 
     pip install audiobible                      # install AudioBible with python pip
+    pip install --upgrade audiobible            # update AudioBible to the latest version
     
     audiobible init                             # download data about all books and chapters in the KJV
     audiobible load                             # download all books' and chapters' text and audio mp3 files
