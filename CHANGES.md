@@ -31,3 +31,8 @@
 =====
 
 - Fixed list functionality to show all the books from old testament
+
+0.0.7
+=====
+
+- Fixed spider/crawler

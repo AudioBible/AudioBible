@@ -30,7 +30,10 @@ def get_filename(item, ext):
     mp3 = urlparse(item['mp3'].replace('.mp3', '')).path.split('/')[-1].split('_')
     num = '%02d' % int(mp3[0])
     name = mp3[1].upper()
-    chapter = '%s' % int(mp3[2])
+    try:
+        chapter = '%s' % int(mp3[2])
+    except IndexError:
+        chapter = 1
     return "_".join([name, '%s.%s' % (chapter, ext)]).replace('-', '_')
 
 
