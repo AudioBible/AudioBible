@@ -4,7 +4,6 @@ import re
 import os
 import sys
 import json
-import glob
 import argparse
 from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
@@ -16,21 +15,43 @@ parser = argparse.ArgumentParser(
     description='%(prog)s - King James Version Audio Bible')
 
 parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, list, quote, help")
+parser.add_argument("-b", "--book",  type=str, help="Book to hear, read, find or quote", default=None)
+parser.add_argument("-c", "--chapter", type=str, help="Chapter to hear, read, find or quote", default=None)
+parser.add_argument("-C", "--context",  type=int, help="Print num lines of leading and trailing context surrounding each match.", default=None)
+parser.add_argument("-B", "--before-context", type=int, help="Print num lines of trailing context before each match.", default=None)
+parser.add_argument("-A", "--after-context",  type=int, help="Print num lines of trailing context after each match.", default=None)
 
 if len(sys.argv) == 1:
     parser.print_help()
     sys.exit(1)
 
-name = settings.BOT_NAME
+bot_name = settings.BOT_NAME
 data_path = os.path.join(os.path.expanduser('~'), settings.DATA_STORE)
 content_path = os.path.join(data_path, settings.CONTENT_FILE)
+DEFAULT_BOOK = 'GENESIS'
+DEFAULT_CHAPTER = 1
+
+
+class NumberOutOfRangeError(ValueError):
+    def __init__(self, *args, **kwargs):
+        super(NumberOutOfRangeError, self).__init__(*args, **kwargs)
+
+
+class BookNotFoundError(ValueError):
+    def __init__(self, *args, **kwargs):
+        super(BookNotFoundError, self).__init__(*args, **kwargs)
+
+
+class ChapterNotFoundError(ValueError):
+    def __init__(self, *args, **kwargs):
+        super(ChapterNotFoundError, self).__init__(*args, **kwargs)
 
 
 class DownloadBible(object):
     @staticmethod
     def process():
         process = CrawlerProcess({
-            'BOT_NAME': name,
+            'BOT_NAME': bot_name,
             'SPIDER_MODULES': settings.SPIDER_MODULES,
             'NEWSPIDER_MODULE': settings.NEWSPIDER_MODULE,
             'USER_AGENT': settings.USER_AGENT,
@@ -48,24 +69,77 @@ class DownloadBible(object):
 
 
 class AudioBible(object):
-    def __init__(self, operation):
-        function = operation[0] if operation[0] in ['init', 'load', 'hear', 'read', 'list', 'find', 'quote', 'help'] else 'help'
-        if function in ['hear', 'read']:
-            try:
-                self.book = operation[1]
-            except IndexError:
-                self.book = 'GENESIS'
-            try:
-                chapter = operation[2]
-                try:
-                    self.chapter = int(chapter)
-                except ValueError:
-                    self.chapter = 1
-            except IndexError:
-                self.chapter = 1
-        else:
+    books = []
+    book = None
+    chapter = None
+    context = None
+    before_context = None
+    after_context = None
+    result = None
+    query = ''
+
+    def __init__(self, operation, book, chapter, context, before_context, after_context):
+        function = operation[0] if operation and operation[0] in [
+            'init', 'load', 'hear', 'read', 'list', 'find', 'quote', 'help'
+        ] else 'help'
+
+        if function in ['hear', 'read', 'list', 'find', 'quote']:
+            self._load_books()
+
+        if function not in ['init', 'load', 'list', 'help']:
+            self._set(operation, book, chapter)
+
+        if function == 'find':
             self.query = " ".join(operation[1:]).strip(" ")
-        getattr(self, function, self.help)()
+            self.result = self.find(context, before_context, after_context)
+        else:
+            self.result = getattr(self, function, self.help)()
+
+    def _set(self, operation, book, chapter):
+        if operation[0] not in ['find']:
+            try:
+                self.book = self._valid('book', operation[1])
+            except (IndexError, BookNotFoundError):
+                self._valid_book(operation, book)
+
+            try:
+                self.chapter = self._valid('chapter', operation[2])
+            except (IndexError, ValueError, TypeError, ChapterNotFoundError):
+                self._valid_chapter(operation, chapter)
+        else:
+            if book:
+                self._valid_book(operation, book)
+            if chapter:
+                self._valid_chapter(operation, chapter)
+
+    def _valid_book(self, operation, value):
+        try:
+            self.book = self._valid('book', value)
+        except BookNotFoundError as e:
+            try:
+                the_book = value if value else operation[1]
+                sys.exit('%s: %s' % (e.message, the_book))
+            except IndexError:
+                self.book = DEFAULT_BOOK
+
+    def _valid_chapter(self, operation, chapter):
+        try:
+            if len(operation) < 3:
+                try:
+                    self.chapter = self._valid('chapter', chapter)
+                except (ValueError, TypeError, ChapterNotFoundError) as e:
+                    the_chapter = chapter if chapter else operation[2]
+                    print 'Book:', self.get_book()
+                    sys.exit('%s: %s' % (e.message, the_chapter))
+            else:
+                try:
+                    raise ChapterNotFoundError('Chapter Not Found')
+                except ChapterNotFoundError as e:
+                    the_chapter = chapter if chapter else operation[2]
+                    print 'Book:', self.get_book()
+                    sys.exit('%s: %s' % (e.message, the_chapter))
+        except IndexError:
+            self.chapter = DEFAULT_CHAPTER
 
     def init(self):
         print 'downloading content from audiobible.com'
@@ -84,20 +158,21 @@ class AudioBible(object):
         elif os.name == 'posix':
             subprocess.call(('xdg-open', filepath))
 
-    def _get_book(self):
-        return self.book.upper()
+    def get_book(self):
+        if self.book:
+            return self.book.upper().replace(' ', '_')
 
-    def _get_chapter(self):
+    def get_chapter(self):
         return self.chapter
 
     def get_filename(self, ext):
-        book = self._get_book()
-        chapter = self._get_chapter()
-        return os.path.join(data_path, book, '%s_%d.%s' % (book, chapter, ext))
+        book = self.get_book()
+        chapter = self.get_chapter()
+        return os.path.join(data_path, book, '%s_%s.%s' % (book, chapter, ext))
 
     def hear(self):
         audio = self.get_filename('mp3')
-        print 'opening KJV Bible audio', self.book, self.chapter
+        print 'opening KJV Bible audio', self.get_book(), self.get_chapter()
         if os.path.exists(audio):
             self._open(audio)
         else:
@@ -105,21 +180,102 @@ class AudioBible(object):
 
     def read(self):
         text = self.get_filename('txt')
-        print 'opening KJV Bible text', self.book, self.chapter
+        print 'opening KJV Bible text', self.get_book(), self.get_chapter()
         if os.path.exists(text):
             self._open(text)
         else:
             print 'Unable to find text file', text
 
-    def find(self):
-        for dirname, dirnames, filenames in os.walk(data_path):
-            for filename in filenames:
-                if '.txt' in filename:
-                    file = os.path.join(dirname, filename)
-                    for line in open(file).readlines():
-                        match = re.search(self.query, line, re.IGNORECASE)
-                        if match:
-                            print match.string
+    def _files(self, path):
+        result = []
+        files = []
+        for book in self.books:
+            book_path = os.path.join(data_path, book['name'])
+            if path in book_path and os.path.isdir(book_path):
+                for dirname, dirnames, filenames in os.walk(book_path):
+                    numbers = [int(filter(str.isdigit, str(f))) for f in filenames if '.txt' in f]
+                    numbers.sort()
+                    if numbers:
+                        digit = int(filter(str.isdigit, str(filenames[0].replace('.mp3', '.txt'))))
+                        for num in numbers:
+                            filename = filenames[0].replace('.mp3', '.txt').replace(str(digit), str(num))
+                            result.append(os.path.join(dirname, filename))
+        return result
+
+    def find(self, context, before, after):
+        the_path = data_path
+        if self.get_book():
+            the_path = os.path.join(the_path, self.get_book())
+        if self.get_chapter() is not None:
+            the_path = self.get_filename('txt')
+
+        output = []
+
+        def _handle(matched, lines, line):
+            if matched:
+                if before:
+                    for num in range(int(before), 0, -1):
+                        verse = lines[line - num]
+                        if verse not in output:
+                            output.append(verse)
+
+                verse = matched.string
+                if verse not in output:
+                    output.append(verse)
+                if after:
+                    for num in range(1, int(after) + 1):
+                        verse = lines[line + num]
+                        if verse not in output:
+                            output.append(verse)
+
+        if context is not None:
+            if before is None:
+                before = context
+            if after is None:
+                after = context
+
+        if os.path.isdir(the_path):
+            for filename in self._files(the_path):
+                lines = []
+                for l in open(filename).readlines():
+                    lines.append(l)
+
+                for line in range(len(lines)):
+                    match = re.search(self.query, lines[line], re.IGNORECASE)
+                    _handle(match, lines, line)
+        else:
+            lines = []
+            for l in open(the_path).readlines():
+                lines.append(l)
+
+            for line in range(len(lines)):
+                match = re.search(self.query, lines[line], re.IGNORECASE)
+                _handle(match, lines, line)
+
+        return "\r\n".join(output)
+
+    def _load_books(self):
+        if os.path.exists(content_path):
+            with open(content_path, 'r') as lines:
+                for line in lines:
+                    self.books.append(json.loads(line))
+        return self.books
+
+    def _valid(self, name, value):
+        if name is 'book':
+            if str(value).upper().replace(' ', '_') in [b['name'].upper().replace(' ', '_') for b in self.books]:
+                return str(value).upper().replace(' ', '_')
+            else:
+                raise BookNotFoundError('Book Not Found')
+        if name is 'chapter':
+            try:
+                if int(value) in [range(1, b['chapters_count'] + 1)
+                             for b in self.books if b['name'].upper().replace(' ', '_') == self.get_book()][0]:
+                    return value
+                else:
+                    raise ChapterNotFoundError('Chapter Not Found')
+            except (IndexError, TypeError, ValueError) as e:
+                raise ChapterNotFoundError('Chapter Not Found')
 
     def list(self):
         table_of_contents = {
@@ -133,33 +289,39 @@ class AudioBible(object):
             }
         }
         is_old_testament = True
-        if os.path.exists(content_path):
-            with open(content_path, 'r') as lines:
-                for line in lines:
-                    book = json.loads(line)
-                    if book['name'].upper() in 'MATTHEW' or not is_old_testament:
-                        is_old_testament = False
-                        table_of_contents['new']['names'].append(book['name'])
-                        table_of_contents['new']['count'].append('%d' % book['chapters_count'])
-                    else:
-                        table_of_contents['old']['names'].append(book['name'])
-                        table_of_contents['old']['count'].append('%d' % book['chapters_count'])
+        output = ''
+        for book in self.books:
+            if book['name'].upper() in 'MATTHEW' or not is_old_testament:
+                is_old_testament = False
+                table_of_contents['new']['names'].append(book['name'].replace(' ', '_'))
+                table_of_contents['new']['count'].append('%d' % book['chapters_count'])
+            else:
+                table_of_contents['old']['names'].append(book['name'].replace(' ', '_'))
+                table_of_contents['old']['count'].append('%d' % book['chapters_count'])
 
-        print '{:<30}{:<30}{:<30}{:<30}'.format('Old Testament', '###', 'New Testament', '##')
-        print '{:<30}{:<30}{:<30}{:<30}'.format('=============', '===', '=============', '==')
         for a, b, c, d in zip(
                 table_of_contents['old']['names'],
                 table_of_contents['old']['count'],
                 table_of_contents['new']['names'],
                 table_of_contents['new']['count']
         ):
-            print '{:<30}{:<30}{:<30}{:<30}'.format(a, b, c, d)
+            output += '{:<30}|   {:<6}| {:<30}|   {:<4}\r\n'.format(a, b, c, d)
+
+        output = '%s\r\n%s' % ('{:<30}|{:<7}|{:<30}|{:<4}'.format(
+            '------------------------------', '---------', '-------------------------------', '--------'), output)
+        output = '%s\r\n%s' % (
+            '{:<30}|   {:<6}| {:<30}|   {:<4}'.format('Old Testament', '###', 'New Testament', '##'), output)
+
+        return output
 
     def quote(self, head=None, tail=None):
-        print 'MK 4:23 If any man have ears to hear, let him hear.'
+        return 'MK 4:23 If any man have ears to hear, let him hear.'
 
     def help(self):
         parser.print_help()
+
+    def output(self):
+        return self.result
 
 
 def parse_args():
@@ -169,8 +331,20 @@ def parse_args():
 def main(*args, **kwargs):
     def use_params(
         operation=None,
+        book=None,
+        chapter=None,
+        context=None,
+        before_context=None,
+        after_context=None
     ):
-        return AudioBible(operation=operation)
+        return AudioBible(
+            operation=operation,
+            book=book,
+            chapter=chapter,
+            context=context,
+            before_context=before_context,
+            after_context=after_context
+        ).output()
 
     # argparse arguments
     if len(args) > 0 \
@@ -179,22 +353,35 @@ def main(*args, **kwargs):
 
         return use_params(
             operation=args.operation,
+            book=args.book,
+            chapter=args.chapter,
+            context=args.context,
+            before_context=args.before_context,
+            after_context=args.after_context
         )
     # dict arguments
     if isinstance(kwargs, dict):
         return use_params(
             operation=kwargs.get('operation'),
+            book=kwargs.get('book'),
+            chapter=kwargs.get('chapter'),
+            context=kwargs.get('context'),
+            before_context=kwargs.get('before_context'),
+            after_context=kwargs.get('after_context')
         )
 
 
 def use_parse_args():
     args = parse_args()
-    main(args)
+    return main(args)
 
 
+# for usage from code
 def use_keyword_args(**kwargs):
     return main(**kwargs)
 
 
 if __name__ == '__main__':
-    use_parse_args()
+    result = use_parse_args()
+    if result:
+        print result

@@ -19,3 +19,10 @@
 =====
 
 - Nothing changed just trying to please pypi with a version bump
+
+0.0.5
+=====
+
+- Updated README
+- Added params for book, chapter(-b, -c)
+- Updated find operation functionality
