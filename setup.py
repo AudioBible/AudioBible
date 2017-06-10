@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="AudioBible",
-    version="0.0.7",
+    version="0.0.8",
     description="KJV Audio Bible",
     long_description="King James Version Audio Bible - download, listen, read and find verses using search",
     license="MIT",

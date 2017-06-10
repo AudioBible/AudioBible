@@ -188,7 +188,6 @@ class AudioBible(object):
 
     def _files(self, path):
         result = []
-        files = []
         for book in self.books:
             book_path = os.path.join(data_path, book['name'].replace(' ', '_'))
             if path in book_path and os.path.isdir(book_path):
@@ -211,8 +210,6 @@ class AudioBible(object):
 
         output = []
 
-        print self.get_book()
-
         def _handle(matched, lines, line):
             if matched:
                 if before:
@@ -224,6 +221,7 @@ class AudioBible(object):
                 verse = matched.string
                 if verse not in output:
                     output.append(verse)
+
                 if after:
                     for num in range(1, int(after) + 1):
                         verse = lines[line + num]
@@ -237,7 +235,6 @@ class AudioBible(object):
                 after = context
 
         if os.path.isdir(the_path):
-            print the_path
             for filename in self._files(the_path):
                 lines = []
                 for l in open(filename).readlines():
@@ -255,7 +252,7 @@ class AudioBible(object):
                 match = re.search(self.query, lines[line], re.IGNORECASE)
                 _handle(match, lines, line)
 
-        return "\r\n".join(output)
+        return str("\r\n".join([o for o in output if o])).strip()
 
     def _load_books(self):
         if os.path.exists(content_path):

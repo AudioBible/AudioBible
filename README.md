@@ -10,32 +10,34 @@ King James Version Audio Bible
 
 ## How to use
 
-    pip install audiobible                      # install AudioBible with python pip
-    pip install --upgrade audiobible            # update AudioBible to the latest version
+    pip install audiobible                                      # install AudioBible with python pip
+    pip install --upgrade audiobible                            # update AudioBible to the latest version
     
-    audiobible init                             # download data about all books and chapters in the KJV
-    audiobible load                             # download all books' and chapters' text and audio mp3 files
+    audiobible init                                             # download data about all books and chapters in the KJV
+    audiobible load                                             # download all books' and chapters' text and audio mp3 files
 
-    audiobible list                             # to list all books and the number of chapters each book has
+    audiobible list                                             # to list all books and the number of chapters each book has
 
-    audiobible hear                             # to hear the book of "Genesis" chapter 1
-    audiobible hear mark                        # to hear the book of "Mark" chapter 1
-    audiobible hear -b mark                     # to hear the book of "Mark" chapter 1
-    audiobible hear mark 4                      # to hear the book of "Mark" chapter 4
-    audiobible hear -b mark -c 4                # to hear the book of "Mark" chapter 4
-    audiobible hear 1_john 3                    # to hear the book of "1 John" chapter 3
-    audiobible hear -b 1_john -c 3              # to hear the book of "1 John" chapter 3
+    audiobible hear                                             # to hear the book of "Genesis" chapter 1
+    audiobible hear mark                                        # to hear the book of "Mark" chapter 1
+    audiobible hear -b mark                                     # to hear the book of "Mark" chapter 1
+    audiobible hear mark 4                                      # to hear the book of "Mark" chapter 4
+    audiobible hear -b mark -c 4                                # to hear the book of "Mark" chapter 4
+    audiobible hear 1_john 3                                    # to hear the book of "1 John" chapter 3
+    audiobible hear -b 1_john -c 3                              # to hear the book of "1 John" chapter 3
     
-    audiobible read mark 4                      # to read Mark 4, (use params like with hear operation)
+    audiobible read mark 4                                      # to read Mark 4, (use params like with hear operation)
     
-    audiobible find                             # to output the whole bible
-    audiobible find -b john                     
-    audiobible find water of life               # to find water of life, say words to search for as params
-    audiobible find water                       # to find water, say the word to search the whole bible
-    audiobible find 'circle of the earth'       # to find circle of the earth, say the words to search of as a string
-    audiobible find circle                      # or find the same results with just looking for circle
+    audiobible find                                             # to output the whole Bible
+    audiobible find -b 2_john                                   # to output the whole book of "2 John"
+    audiobible find -b james -c 5                               # to output chapter 5 for the book of "James"
+    audiobible find water of life                               # to find water of life, say words to search for as params
+    audiobible find water                                       # to find water, say the word to search the whole bible
+    audiobible find 'circle of the earth'                       # to find circle of the earth, say the words to search of as a string
+    audiobible find circle                                      # or find the same results with just looking for circle
     
-    audiobible find jesus -b luke -c 3 -C 2     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context (use `-A` or `-B` to show before or after context only)
+    audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
+    audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
     
 
 # KJV Bible - List of Books and Chapters Count

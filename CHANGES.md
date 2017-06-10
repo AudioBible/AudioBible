@@ -36,3 +36,9 @@
 =====
 
 - Fixed spider/crawler
+
+0.0.8
+=====
+
+- Update README
+- Clean up output
