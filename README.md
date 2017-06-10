@@ -27,6 +27,7 @@ King James Version Audio Bible
     
     audiobible read mark 4                      # to read Mark 4, (use params like with hear operation)
     
+    audiobible find                             # to output the whole bible, a whole book or a whole chapter
     audiobible find water of life               # to find water of life, say words to search for as params
     audiobible find water                       # to find water, say the word to search the whole bible
     audiobible find 'circle of the earth'       # to find circle of the earth, say the words to search of as a string
