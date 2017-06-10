@@ -190,7 +190,7 @@ class AudioBible(object):
         result = []
         files = []
         for book in self.books:
-            book_path = os.path.join(data_path, book['name'])
+            book_path = os.path.join(data_path, book['name'].replace(' ', '_'))
             if path in book_path and os.path.isdir(book_path):
                 for dirname, dirnames, filenames in os.walk(book_path):
                     numbers = [int(filter(str.isdigit, str(f))) for f in filenames if '.txt' in f]
@@ -210,6 +210,8 @@ class AudioBible(object):
             the_path = self.get_filename('txt')
 
         output = []
+
+        print self.get_book()
 
         def _handle(matched, lines, line):
             if matched:
@@ -235,6 +237,7 @@ class AudioBible(object):
                 after = context
 
         if os.path.isdir(the_path):
+            print the_path
             for filename in self._files(the_path):
                 lines = []
                 for l in open(filename).readlines():
@@ -289,6 +292,8 @@ class AudioBible(object):
             }
         }
         is_old_testament = True
+        old = []
+        new = []
         output = ''
         for book in self.books:
             if book['name'].upper() in 'MATTHEW' or not is_old_testament:
@@ -299,15 +304,24 @@ class AudioBible(object):
                 table_of_contents['old']['names'].append(book['name'].replace(' ', '_'))
                 table_of_contents['old']['count'].append('%d' % book['chapters_count'])
 
-        for a, b, c, d in zip(
+        for a, z in zip(
                 table_of_contents['old']['names'],
                 table_of_contents['old']['count'],
-                table_of_contents['new']['names'],
-                table_of_contents['new']['count']
         ):
-            output += '{:<30}|   {:<6}| {:<30}|   {:<4}\r\n'.format(a, b, c, d)
+            old.append((a, z))
 
-        output = '%s\r\n%s' % ('{:<30}|{:<7}|{:<30}|{:<4}'.format(
+        for a, z in zip(
+                table_of_contents['new']['names'],
+                table_of_contents['new']['count'],
+        ):
+            new.append((a, z))
+
+        for i in range(len(old)):
+            try:
+                output += '{:<30}|   {:<6}| {:<30}|   {:<4}\r\n'.format(old[i][0], old[i][1], new[i][0], new[i][1])
+            except IndexError:
+                output += '{:<30}|   {:<6}|\r\n'.format(old[i][0], old[i][1])
+        output = '%s\r\n%s' % ('{:<30}|{:<7}|{:<30}|{:<4}\r\n'.format(
             '------------------------------', '---------', '-------------------------------', '--------'), output)
         output = '%s\r\n%s' % (
             '{:<30}|   {:<6}| {:<30}|   {:<4}'.format('Old Testament', '###', 'New Testament', '##'), output)

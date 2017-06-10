@@ -27,7 +27,8 @@ King James Version Audio Bible
     
     audiobible read mark 4                      # to read Mark 4, (use params like with hear operation)
     
-    audiobible find                             # to output the whole bible, a whole book or a whole chapter
+    audiobible find                             # to output the whole bible
+    audiobible find -b john                     
     audiobible find water of life               # to find water of life, say words to search for as params
     audiobible find water                       # to find water, say the word to search the whole bible
     audiobible find 'circle of the earth'       # to find circle of the earth, say the words to search of as a string
@@ -42,6 +43,7 @@ King James Version Audio Bible
 
     Old Testament                 |   ###   | New Testament                 |   ##
     ------------------------------|---------|-------------------------------|--------
+    
     GENESIS                       |   50    | MATTHEW                       |   28
     EXODUS                        |   40    | MARK                          |   16
     LEVITICUS                     |   27    | LUKE                          |   24
@@ -69,5 +71,17 @@ King James Version Audio Bible
     LAMENTATIONS                  |   5     | 3_JOHN                        |   1
     EZEKIEL                       |   48    | JUDE                          |   1
     DANIEL                        |   12    | REVELATION                    |   22
+    HOSEA                         |   14    |
+    JOEL                          |   3     |
+    AMOS                          |   9     |
+    OBADIAH                       |   1     |
+    JONAH                         |   4     |
+    MICAH                         |   7     |
+    NAHUM                         |   3     |
+    HABAKKUK                      |   3     |
+    ZEPHANIAH                     |   3     |
+    HAGGAI                        |   2     |
+    ZECHARIAH                     |   14    |
+    MALACHI                       |   4     |
  
  

@@ -26,3 +26,8 @@
 - Updated README
 - Added params for book, chapter(-b, -c)
 - Updated find operation functionality
+
+0.0.6
+=====
+
+- Fixed list functionality to show all the books from old testament
