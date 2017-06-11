@@ -59,3 +59,8 @@
 
 - Added version operation to help and updated the README
 - IT IS DONE
+
+0.0.12
+======
+
+- Extended help

@@ -11,9 +11,50 @@ from kjv import settings
 
 from .__version__ import __version__
 
+
+def extended_help():
+    return """
+
+pip install --upgrade audiobible                            # update AudioBible to the latest version
+
+audiobible -h | --help                                      # show help
+audiobible help                                             # show help
+
+audiobible version                                          # show version number and exit
+
+audiobible init                                             # download data about all books and chapters in the KJV
+audiobible load                                             # download all books' and chapters' text and audio mp3 files
+
+audiobible list                                             # to list all books and the number of chapters each book has
+
+audiobible hear                                             # to hear the book of "Genesis" chapter 1
+audiobible hear mark                                        # to hear the book of "Mark" chapter 1
+audiobible hear -b mark                                     # to hear the book of "Mark" chapter 1
+audiobible hear mark 4                                      # to hear the book of "Mark" chapter 4
+audiobible hear -b mark -c 4                                # to hear the book of "Mark" chapter 4
+audiobible hear 1_john 3                                    # to hear the book of "1 John" chapter 3
+audiobible hear -b 1_john -c 3                              # to hear the book of "1 John" chapter 3
+
+audiobible read mark 4                                      # to read Mark 4, (use params like with hear operation)
+
+audiobible find                                             # to output the whole Bible
+audiobible find -b 2_john                                   # to output the whole book of "2 John"
+audiobible find -b james -c 5                               # to output chapter 5 for the book of "James"
+audiobible find water of life                               # to find water of life, say words to search for as params
+audiobible find water                                       # to find water, say the word to search the whole bible
+audiobible find 'it is done'                                # to find it is done, say the words to search as a string
+audiobible find circle of the earth                         # to find circle of the earth
+
+audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
+audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
+
+
+"""
+
 parser = argparse.ArgumentParser(
     prog='audiobible' or sys.argv[0],
-    description='%(prog)s - King James Version Audio Bible')
+    usage=extended_help() + """audiobible [-h] [-b BOOK] [-c CHAPTER] [-C CONTEXT] [-B BEFORE_CONTEXT] [-A AFTER_CONTEXT] operation [words ...]""",
+    description='%(prog)s '+__version__+' - King James Version Audio Bible')
 
 parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, list, quote, version, help")
 parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
@@ -334,40 +375,6 @@ class AudioBible(object):
         return 'MK 4:23 If any man have ears to hear, let him hear.'
 
     def help(self):
-        print """AudioBible %s
-==========
-
-    pip install --upgrade audiobible                            # update AudioBible to the latest version
-
-    audiobible version                                          # show version number and exit
-    audiobible init                                             # download data about all books and chapters in the KJV
-    audiobible load                                             # download all books' and chapters' text and audio mp3 files
-
-    audiobible list                                             # to list all books and the number of chapters each book has
-
-    audiobible hear                                             # to hear the book of "Genesis" chapter 1
-    audiobible hear mark                                        # to hear the book of "Mark" chapter 1
-    audiobible hear -b mark                                     # to hear the book of "Mark" chapter 1
-    audiobible hear mark 4                                      # to hear the book of "Mark" chapter 4
-    audiobible hear -b mark -c 4                                # to hear the book of "Mark" chapter 4
-    audiobible hear 1_john 3                                    # to hear the book of "1 John" chapter 3
-    audiobible hear -b 1_john -c 3                              # to hear the book of "1 John" chapter 3
-
-    audiobible read mark 4                                      # to read Mark 4, (use params like with hear operation)
-
-    audiobible find                                             # to output the whole Bible
-    audiobible find -b 2_john                                   # to output the whole book of "2 John"
-    audiobible find -b james -c 5                               # to output chapter 5 for the book of "James"
-    audiobible find water of life                               # to find water of life, say words to search for as params
-    audiobible find water                                       # to find water, say the word to search the whole bible
-    audiobible find 'it is done'                                # to find it is done, say the words to search as a string
-    audiobible find circle of the earth                         # to find circle of the earth
-
-    audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
-    audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
-
-==========
-        """ % __version__
         parser.print_help()
 
     def output(self):
