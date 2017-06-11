@@ -13,15 +13,14 @@ __version__ = open(os.path.join(os.path.split(os.path.realpath(__file__))[0], 'V
 
 parser = argparse.ArgumentParser(
     prog='audiobible' or sys.argv[0],
-    usage='%(prog)s operation [BOOK] [CHAPTER]',
     description='%(prog)s - King James Version Audio Bible')
 
 parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, list, quote, help")
-parser.add_argument("-b", "--book",  type=str, help="Book to hear, read, find or quote", default=None)
-parser.add_argument("-c", "--chapter", type=str, help="Chapter to hear, read, find or quote", default=None)
-parser.add_argument("-C", "--context",  type=int, help="Print num lines of leading and trailing context surrounding each match.", default=None)
-parser.add_argument("-B", "--before-context", type=int, help="Print num lines of trailing context before each match.", default=None)
-parser.add_argument("-A", "--after-context",  type=int, help="Print num lines of trailing context after each match.", default=None)
+parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
+parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
+parser.add_argument("-C", "--context", type=int, help="print num lines of leading and trailing context surrounding each match.", default=None)
+parser.add_argument("-B", "--before-context", type=int, help="print num lines of trailing context before each match.", default=None)
+parser.add_argument("-A", "--after-context", type=int, help="print num lines of trailing context after each match.", default=None)
 
 if len(sys.argv) == 1:
     parser.print_help()

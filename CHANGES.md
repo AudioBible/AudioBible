@@ -42,3 +42,9 @@
 
 - Update README
 - Clean up output
+
+0.0.9
+=====
+
+- Update README
+- Added VERSION and version operation to show version 
