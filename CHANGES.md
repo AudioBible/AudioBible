@@ -64,3 +64,8 @@
 ======
 
 - Extended help
+
+0.0.13
+======
+
+- Made operation to be acceptable as single letter f r h

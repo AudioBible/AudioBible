@@ -9,7 +9,7 @@ from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-from .__version__ import __version__
+__version__ = '0.0.13'
 
 
 def extended_help():
@@ -125,9 +125,22 @@ class AudioBible(object):
             'init', 'load', 'hear', 'read', 'list', 'find', 'quote', 'version', 'help'
         ] else 'help'
 
-        if function == 'version':
+        if 'v' in function:
             print __version__
             sys.exit(0)
+
+        if 'h' in function:
+            function = 'hear'
+        if 'r' in function:
+            function = 'read'
+        if 'l' in function:
+            function = 'list'
+        if 'f' in function:
+            function = 'find'
+        if 'q' in function:
+            function = 'quote'
+        if 'h' in function:
+            function = 'help'
 
         if function in ['hear', 'read', 'list', 'find', 'quote']:
             self._load_books()
@@ -135,7 +148,7 @@ class AudioBible(object):
         if function not in ['init', 'load', 'list', 'help']:
             self._set(operation, book, chapter)
 
-        if function == 'find':
+        if 'f' in function:
             self.query = " ".join(operation[1:]).strip(" ")
             self.result = self.find(context, before_context, after_context)
         else:
