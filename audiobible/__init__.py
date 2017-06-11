@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser(
     prog='audiobible' or sys.argv[0],
     description='%(prog)s - King James Version Audio Bible')
 
-parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, list, quote, help")
+parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, list, quote, version, help")
 parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
 parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
 parser.add_argument("-C", "--context", type=int, help="print num lines of leading and trailing context surrounding each match.", default=None)
@@ -337,6 +337,9 @@ class AudioBible(object):
         print """AudioBible %s
 ==========
 
+    pip install --upgrade audiobible                            # update AudioBible to the latest version
+
+    audiobible version                                          # show version number and exit
     audiobible init                                             # download data about all books and chapters in the KJV
     audiobible load                                             # download all books' and chapters' text and audio mp3 files
 
@@ -357,8 +360,8 @@ class AudioBible(object):
     audiobible find -b james -c 5                               # to output chapter 5 for the book of "James"
     audiobible find water of life                               # to find water of life, say words to search for as params
     audiobible find water                                       # to find water, say the word to search the whole bible
-    audiobible find 'circle of the earth'                       # to find circle of the earth, say the words to search of as a string
-    audiobible find circle                                      # or find the same results with just looking for circle
+    audiobible find 'it is done'                                # to find it is done, say the words to search as a string
+    audiobible find circle of the earth                         # to find circle of the earth
 
     audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
     audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context

@@ -48,3 +48,14 @@
 
 - Update README
 - Added VERSION and version operation to show version 
+
+0.0.10
+======
+
+- Fixed version operation
+
+0.0.11
+======
+
+- Added version operation to help and updated the README
+- IT IS DONE
