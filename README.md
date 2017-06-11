@@ -216,3 +216,5 @@ o   o   o o---oOO   O-o      |   | O--o      | \ | O-o  |   |
 ## WARNING! DEMONIC SIGILS OF SUMMONING! FOR EDUCATIONAL PURPOSES!
 
 ![Demons](demons.png)
+
+## OPEN YOUR MIND! BREAK FREE FROM THE LIES AND SATANIC PROGRAMMING!
