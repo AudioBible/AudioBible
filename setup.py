@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
+import os
 from setuptools import setup, find_packages
 
 setup(
     name="AudioBible",
-    version="0.0.8",
+    version=open(os.path.join('audiobible', 'VERSION')).read().strip(),
     description="KJV Audio Bible",
     long_description="King James Version Audio Bible - download, listen, read and find verses using search",
     license="MIT",
