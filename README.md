@@ -128,6 +128,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![Flat Earth; Exposing the Jesuit Agenda! 4](Flat-Earth-Exposing-the-Jesuit-Agenda-4.png)
 
+# PRAISE GOD FOR THE FLAT EARTH TRUTH! JESUS LIVES!
+
 ![Gleasons-New-Standard-Map](Gleasons-New-Standard-Map.jpg)
 
 o       o   O  o  o o--o     o   o o--o      o   o o--o  o-o  
@@ -138,3 +140,5 @@ o   o   o o---oOO   O-o      |   | O--o      | \ | O-o  |   |
 
 
 # BE KIND TO EACH OTHER
+
+![56f6b029eb00d9b24cc7470fd0a68468](56f6b029eb00d9b24cc7470fd0a68468.jpg)
