@@ -123,10 +123,10 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - [THE BEST Flat Earth VIDEO | 1000% Proof The Earth Is Flat | Lets See You Debunk This!!!!](https://www.youtube.com/watch?v=p7lDq4dOlIk)
 
 
-    o       o   O  o  o o--o     o   o o--o      o   o o--o  o-o  
-    |       |  / \ | /  |        |   | |   |     |\  | |    o   o 
-    o   o   o o---oOO   O-o      |   | O--o      | \ | O-o  |   | 
-     \ / \ /  |   || \  |        |   | |         |  \| |    o   o 
-      o   o   o   oo  o o--o      o-o  o         o   o o--o  o-o  
-                                                                  
+o       o   O  o  o o--o     o   o o--o      o   o o--o  o-o  
+|       |  / \ | /  |        |   | |   |     |\  | |    o   o 
+o   o   o o---oOO   O-o      |   | O--o      | \ | O-o  |   | 
+ \ / \ /  |   || \  |        |   | |         |  \| |    o   o 
+  o   o   o   oo  o o--o      o-o  o         o   o o--o  o-o  
+                                                              
                                                                   
