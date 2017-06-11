@@ -9,9 +9,20 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - [Russian Audio Bible Download for MP3 or iPod devices](http://www.audiobible.com/download-russian-audio-bible-mp3-and-ipod/)
 - [Mandarin Chinese Audio Bible Download for MP3, iPhone or iPod](http://www.audiobible.com/mandarin-chinese-audio-bible-download-mp3-ipod-devices/)
 
+## Install On Mac
+
+    brew install python libxml2                                 # install dependencies
+    pip install scrapy audiobible                               # install AudioBible with python pip
+
+
+## Install On Ubuntu Linux
+
+    sudo apt-get install python-pip libxml2 python-lxml         # install dependencies
+    sudo pip install scrapy audiobible                          # install AudioBible with python pip
+
+
 ## How to use
 
-    pip install audiobible                                      # install AudioBible with python pip
     pip install --upgrade audiobible                            # update AudioBible to the latest version
     
     audiobible -h | --help                                      # show help
