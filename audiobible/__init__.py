@@ -9,7 +9,7 @@ from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = open(os.path.join(os.path.split(os.path.realpath(__file__))[0], 'VERSION')).read().strip()
+from .__version__ import __version__
 
 parser = argparse.ArgumentParser(
     prog='audiobible' or sys.argv[0],

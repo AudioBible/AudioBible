@@ -2,9 +2,11 @@
 import os
 from setuptools import setup, find_packages
 
+from audiobible import __version__
+
 setup(
     name="AudioBible",
-    version=open(os.path.join('audiobible', 'VERSION')).read().strip(),
+    version=__version__,
     description="KJV Audio Bible",
     long_description="King James Version Audio Bible - download, listen, read and find verses using search",
     license="MIT",
