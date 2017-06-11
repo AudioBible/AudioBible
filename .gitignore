@@ -2,3 +2,6 @@ Python2/
 *.pyc
 *.txt
 *.mp3
+.idea/
+AudioBible.egg-info/
+dist/
