@@ -10,7 +10,9 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - [Russian Audio Bible Download for MP3 or iPod devices](http://www.audiobible.com/download-russian-audio-bible-mp3-and-ipod/)
 - [Mandarin Chinese Audio Bible Download for MP3, iPhone or iPod](http://www.audiobible.com/mandarin-chinese-audio-bible-download-mp3-ipod-devices/)
 
-# I pray God helps you to see, hear, read and understand and most importantly do something about it! God Bless You!
+# I pray God helps you to see, hear, read and understand and most importantly do something about it!
+
+# God bless you on your journey!
 
 ## Install On Mac
 
@@ -160,7 +162,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - [Demonic Sigils and Eyes in the Skies](https://www.youtube.com/watch?v=N-kdx5IhIoc)
 - [TELEVISION Will Kill you. PATENT to PROVE it..](https://www.youtube.com/watch?v=15GtRc7ViBk)
 - [You Won't Believe What They Admitted on the News in 1971...](https://www.youtube.com/watch?v=yfaAtdTgBGk)
-
+- [](https://www.youtube.com/watch?v=fznpRaM1wIg)
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
 
