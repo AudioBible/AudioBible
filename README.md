@@ -138,6 +138,7 @@ o   o   o o---oOO   O-o      |   | O--o      | \ | O-o  |   |
  \ / \ /  |   || \  |        |   | |         |  \| |    o   o 
   o   o   o   oo  o o--o      o-o  o         o   o o--o  o-o  
 
+![flat-earth-model](flat-earth-model.gif)
 
 # BE KIND TO EACH OTHER
 
