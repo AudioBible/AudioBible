@@ -105,6 +105,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
     ZECHARIAH                     |   14    |
     MALACHI                       |   4     |
 
+# THERE IS NO GRAVITY! WAKE UP NEO!
+
 ![ImpulsiveNeo](ImpulsiveNeo.jpg)
 
 # THE EARTH IS FLAT! [RESEARCH IT ON YOUTUBE](https://www.youtube.com/results?search_query=flat+earth&page=&utm_source=opensearch)!
@@ -128,5 +130,3 @@ o       o   O  o  o o--o     o   o o--o      o   o o--o  o-o
 o   o   o o---oOO   O-o      |   | O--o      | \ | O-o  |   | 
  \ / \ /  |   || \  |        |   | |         |  \| |    o   o 
   o   o   o   oo  o o--o      o-o  o         o   o o--o  o-o  
-                                                              
-                                                                  
