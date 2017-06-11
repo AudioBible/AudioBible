@@ -115,6 +115,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 # THE EARTH IS FLAT! [RESEARCH IT ON YOUTUBE](https://www.youtube.com/results?search_query=flat+earth&page=&utm_source=opensearch)!
 
+# THIS IS POSITIVE INFO! IT'S A MATTER OF PERSPECTIVE!
+
 
 - [Under The Dome - Full Documentary](https://www.youtube.com/watch?v=fk4YqPtvJao)
 - [A History Of Flat Earth - Eric Dubay](https://www.youtube.com/watch?v=pGl8I3l-5ac)
