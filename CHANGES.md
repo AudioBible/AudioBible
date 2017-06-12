@@ -84,3 +84,12 @@
 ======
 
 - Print filename on read and hear
+
+0.0.17
+======
+
+- Removed single letter operations
+- Added show operation
+- Added praise operation
+- Added update operation
+- Removed default book of GENESIS, must pass book param now when a book is required, a list will be shown if one is

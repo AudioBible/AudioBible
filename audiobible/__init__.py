@@ -9,7 +9,7 @@ from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.0.16'
+__version__ = '0.0.17'
 
 
 def extended_help():
@@ -25,19 +25,25 @@ https://github.com/AudioBible/AudioBible                    https://github.com/A
 
 pip install --upgrade audiobible                            # update AudioBible to the latest version
 
+audiobible update                                           # update AudioBible using pip command internally
+
 audiobible -h | --help                                      # show help
 audiobible help                                             # show help
 
 audiobible version                                          # show version number and exit
 
 audiobible init                                             # download data about all books and chapters in the KJV
+
 audiobible load                                             # download all books' and chapters' text and audio mp3 files
 
 audiobible list                                             # to list all books and the number of chapters each book has
 
+audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
+
 audiobible path daniel                                      # show the path on the hard drive to the book of "Daniel"
 
-audiobible hear                                             # to hear the book of "Genesis" chapter 1
+audiobible quote                                            # to output a quote
+
 audiobible hear mark                                        # to hear the book of "Mark" chapter 1
 audiobible hear -b mark                                     # to hear the book of "Mark" chapter 1
 audiobible hear mark 4                                      # to hear the book of "Mark" chapter 4
@@ -46,6 +52,8 @@ audiobible hear 1_john 3                                    # to hear the book o
 audiobible hear -b 1_john -c 3                              # to hear the book of "1 John" chapter 3
 
 audiobible read mark 4                                      # to read Mark 4, (use params like with hear operation)
+
+audiobible show mark 4                                      # to show the book of "Mark" chapter 4 text in the terminal
 
 audiobible find                                             # to output the whole Bible
 audiobible find -b 2_john                                   # to output the whole book of "2 John"
@@ -73,7 +81,7 @@ parser = argparse.ArgumentParser(
     usage=extended_help() + """audiobible [-h] [-b BOOK] [-c CHAPTER] [-C CONTEXT] [-B BEFORE_CONTEXT] [-A AFTER_CONTEXT] operation [words ...]""",
     description='%(prog)s '+__version__+' - King James Version Audio Bible')
 
-parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, list, quote, path, version, help")
+parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, show, list, quote, praise, path, version, help, update")
 parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
 parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
 parser.add_argument("-C", "--context", type=int, help="print num lines of leading and trailing context surrounding each match.", default=None)
@@ -87,7 +95,7 @@ if len(sys.argv) == 1:
 bot_name = settings.BOT_NAME
 data_path = os.path.join(os.path.expanduser('~'), settings.DATA_STORE)
 content_path = os.path.join(data_path, settings.CONTENT_FILE)
-DEFAULT_BOOK = 'GENESIS'
+DEFAULT_BOOK = None
 DEFAULT_CHAPTER = 1
 
 
@@ -139,39 +147,32 @@ class AudioBible(object):
 
     def __init__(self, operation, book, chapter, context, before_context, after_context):
         function = operation[0] if operation and operation[0].lower() in [
-            'init', 'i', 'load', 'hear', 'h', 'read', 'r', 'list', 'l', 'find', 'f', 'quote', 'q', 'path', 'p', 'version', 'v', 'help'
+            'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote',
+            'path', 'praise', 'version', 'help', 'update', 'upgrade',
         ] else 'help'
 
         if 'v' in function:
             print __version__
             sys.exit(0)
 
-        if 'f' in function:
-            function = 'find'
-        elif 'q' in function:
-            function = 'quote'
-        elif 'r' in function:
-            function = 'read'
-        elif 'p' in function and function != 'help':
-            function = 'path'
-        elif 'h' in function and function != 'help':
-            function = 'hear'
-        elif 'l' in function and function != 'help' and function != 'load':
-            function = 'list'
-        elif 'i' in function and function != 'list':
-            function = 'init'
+        if 'update' in function:
+            self.update()
+            sys.exit(0)
 
-        if function in ['hear', 'read', 'list', 'find', 'quote', 'path']:
+        proceed = True
+        if function not in ['init', 'load', 'list', 'help', 'praise']:
             self._load_books()
-
-        if function not in ['init', 'load', 'list', 'help']:
             self._set(operation, book, chapter)
+            if not self.book:
+                self.result = self.list()
+                proceed = False
 
-        if 'find' in function:
-            self.query = " ".join(operation[1:]).strip(" ")
-            self.result = self.find(context, before_context, after_context)
-        else:
-            self.result = getattr(self, function, self.help)()
+        if proceed:
+            if 'find' in function:
+                self.query = " ".join(operation[1:]).strip(" ")
+                self.result = self.find(context, before_context, after_context)
+            else:
+                self.result = getattr(self, function, self.help)()
 
     def _set(self, operation, book, chapter):
         if operation[0] not in ['find']:
@@ -248,24 +249,36 @@ class AudioBible(object):
         chapter = self.get_chapter()
         return os.path.join(data_path, book, '%s_%s.%s' % (book, chapter, ext))
 
+    def praise(self):
+        self._open("https://www.youtube.com/watch?v=Cc0QVWzCv9k&list=RDCc0QVWzCv9k")
+
+    def update(self):
+        import subprocess
+        subprocess.call(('pip', 'install', '--upgrade', 'audiobible'))
+
     def path(self):
         return os.path.join(data_path, self.get_book())
 
     def hear(self):
         audio = self.get_filename('mp3')
-        print 'opening KJV Bible audio', self.get_book(), self.get_chapter()
         if os.path.exists(audio):
-            print audio
+            print 'opening mp3', audio
             self._open(audio)
         else:
             print 'Unable to find audio file', audio
 
     def read(self):
         text = self.get_filename('txt')
-        print 'opening KJV Bible text', self.get_book(), self.get_chapter()
         if os.path.exists(text):
-            print text
+            print 'opening txt', text
             self._open(text)
+        else:
+            print 'Unable to find text file', text
+
+    def show(self):
+        text = self.get_filename('txt')
+        if os.path.exists(text):
+            return open(text).read().strip()
         else:
             print 'Unable to find text file', text
 
