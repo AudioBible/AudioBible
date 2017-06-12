@@ -210,6 +210,11 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 70: [INDIA IMPLEMENTING THE BEAST SYSTEM. CAN'T BUY OR SELL UNLESS YOU TAKE A 12 DIGIT NUMBER](https://www.youtube.com/watch?v=ppEDMsnMfJw)
 - 71: [HITLER: Negroes are The True Jews](https://www.youtube.com/watch?v=NE-X985_prM)
 - 72: [Blacks are in fact the true jews of the bible](https://www.youtube.com/watch?v=FaqCyBlwCxQ&list=PLA3OCbJL135SGuahCKhuQ20eKMiSdXm2t)
+- 73: [THE TRUTH ON THE REAL HEBREW ISRAELITES IS OUT AND THE NATIONS ARE TERRIFIED !!!!!!](https://www.youtube.com/watch?v=mP2ivfkfHVM)
+- 74: [Video 10- Testimonies of Edomites/Gentiles Telling Blacks They Are the True Hebrew Israelites](https://www.youtube.com/watch?v=qhjajMbTX1Y)
+- 75: [Pt 1 Even the Syrian Refugees Know the Real Hebrew Israelites are Black](https://www.youtube.com/watch?v=YWjd36NOGBg)
+- 76: [The Real Hebrews](https://www.youtube.com/watch?v=WvqvteApUGQ)
+- 77: [The Real Hebrews 2](https://www.youtube.com/watch?v=IgGXD5nqWXQ&spfreload=1)
 
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
