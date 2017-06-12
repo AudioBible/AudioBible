@@ -254,9 +254,15 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![american-genocide](american-genocide.png)
 
+![last-indian-massacre](last-indian-massacre.png)
+
+![red-indians-wiped-out-and-re-educated](red-indians-wiped-out-and-re-educated.png)
+
 ![usa-mexican-repatriation-act1](usa-mexican-repatriation-act1.png)
 
 ![usa-mexican-repatriation-act2](usa-mexican-repatriation-act2.png)
+
+
 
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
