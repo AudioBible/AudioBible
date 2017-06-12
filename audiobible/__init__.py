@@ -9,11 +9,19 @@ from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.0.13'
+__version__ = '0.0.14'
 
 
 def extended_help():
     return """
+                    _ _       ____  _ _     _
+     /\            | (_)     |  _ \(_) |   | |
+    /  \  _   _  __| |_  ___ | |_) |_| |__ | | ___
+   / /\ \| | | |/ _` | |/ _ \|  _ <| | '_ \| |/ _ \\
+  / ____ \ |_| | (_| | | (_) | |_) | | |_) | |  __/
+ /_/    \_\__,_|\__,_|_|\___/|____/|_|_.__/|_|\___|
+
+https://github.com/AudioBible/AudioBible                    https://github.com/AudioBible/KJV
 
 pip install --upgrade audiobible                            # update AudioBible to the latest version
 
@@ -48,6 +56,13 @@ audiobible find circle of the earth                         # to find circle of 
 audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
 audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
 
+# THE EARTH IS FLAT! [RESEARCH IT ON YOUTUBE](https://www.youtube.com/results?search_query=flat+earth&page=&utm_source=opensearch)!
+
+# THIS IS POSITIVE INFO! IT'S A MATTER OF PERSPECTIVE!
+
+# THE WAR ON TERROR IS A WAR ON YOU!
+
+## God is so kind that it is impossible to imagine His unbounded kindness
 
 """
 
@@ -122,25 +137,25 @@ class AudioBible(object):
 
     def __init__(self, operation, book, chapter, context, before_context, after_context):
         function = operation[0] if operation and operation[0].lower() in [
-            'init', 'load', 'hear', 'read', 'list', 'find', 'quote', 'version', 'help'
+            'init', 'i', 'load', 'hear', 'h', 'read', 'r', 'list', 'l', 'find', 'f', 'quote', 'q', 'version', 'v', 'help'
         ] else 'help'
 
         if 'v' in function:
             print __version__
             sys.exit(0)
 
-        if 'h' in function:
-            function = 'hear'
-        if 'r' in function:
-            function = 'read'
-        if 'l' in function:
-            function = 'list'
         if 'f' in function:
             function = 'find'
-        if 'q' in function:
+        elif 'q' in function:
             function = 'quote'
-        if 'h' in function:
-            function = 'help'
+        elif 'r' in function:
+            function = 'read'
+        elif 'h' in function and function != 'help':
+            function = 'hear'
+        elif 'l' in function and function != 'help' and function != 'load':
+            function = 'list'
+        elif 'i' in function and function != 'list':
+            function = 'init'
 
         if function in ['hear', 'read', 'list', 'find', 'quote']:
             self._load_books()
@@ -148,7 +163,7 @@ class AudioBible(object):
         if function not in ['init', 'load', 'list', 'help']:
             self._set(operation, book, chapter)
 
-        if 'f' in function:
+        if 'find' in function:
             self.query = " ".join(operation[1:]).strip(" ")
             self.result = self.find(context, before_context, after_context)
         else:

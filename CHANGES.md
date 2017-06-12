@@ -69,3 +69,8 @@
 ======
 
 - Made operation to be acceptable as single letter f r h
+
+0.0.14
+======
+
+- Fix the feature added in 0.0.13, duh I'm not perfect, Jesus is though!
