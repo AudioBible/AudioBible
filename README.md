@@ -252,6 +252,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![germany2](germany2.png)
 
+![american-genocide](american-genocide.png)
+
 ![usa-mexican-repatriation-act1](usa-mexican-repatriation-act1.png)
 
 ![usa-mexican-repatriation-act2](usa-mexican-repatriation-act2.png)
