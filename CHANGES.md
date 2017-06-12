@@ -79,3 +79,8 @@
 ======
 
 - Added path operation to result with a path the the book
+
+0.0.16
+======
+
+- Print filename on read and hear

@@ -9,7 +9,7 @@ from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.0.15'
+__version__ = '0.0.16'
 
 
 def extended_help():
@@ -255,6 +255,7 @@ class AudioBible(object):
         audio = self.get_filename('mp3')
         print 'opening KJV Bible audio', self.get_book(), self.get_chapter()
         if os.path.exists(audio):
+            print audio
             self._open(audio)
         else:
             print 'Unable to find audio file', audio
@@ -263,6 +264,7 @@ class AudioBible(object):
         text = self.get_filename('txt')
         print 'opening KJV Bible text', self.get_book(), self.get_chapter()
         if os.path.exists(text):
+            print text
             self._open(text)
         else:
             print 'Unable to find text file', text
