@@ -264,6 +264,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![jesse-owens-story](jesse-owens-story.png)
 
+![german-troops](german-troops.png)
+
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
 ## WARNING! DEMONIC SIGILS OF SUMMONING! FOR EDUCATIONAL PURPOSES!
