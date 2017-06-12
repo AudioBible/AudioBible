@@ -215,6 +215,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 75: [Pt 1 Even the Syrian Refugees Know the Real Hebrew Israelites are Black](https://www.youtube.com/watch?v=YWjd36NOGBg)
 - 76: [The Real Hebrews](https://www.youtube.com/watch?v=WvqvteApUGQ)
 - 77: [The Real Hebrews 2](https://www.youtube.com/watch?v=IgGXD5nqWXQ&spfreload=1)
+- 78: [Adolf Hitler The greatest story Never told Full 6 hours Documentary](https://www.youtube.com/watch?v=7XExjrZxTdk)
 
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
