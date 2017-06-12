@@ -244,11 +244,17 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ## OPEN YOUR MIND! BREAK FREE FROM THE LIES AND SATANIC PROGRAMMING!
 
+# HISTORY REPEATS ITSELF
+
 ![jews-declare-war-on-germany](jews-declare-war-on-germany.png)
 
 ![germany1](germany1.png)
 
 ![germany2](germany2.png)
+
+![usa-mexican-repatriation-act1](usa-mexican-repatriation-act1.png)
+
+![usa-mexican-repatriation-act2](usa-mexican-repatriation-act2.png)
 
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
