@@ -9,17 +9,11 @@ from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.0.17'
+__version__ = '0.0.18'
 
 
 def extended_help():
     return """
-                    _ _       ____  _ _     _
-     /\            | (_)     |  _ \(_) |   | |
-    /  \  _   _  __| |_  ___ | |_) |_| |__ | | ___
-   / /\ \| | | |/ _` | |/ _ \|  _ <| | '_ \| |/ _ \\
-  / ____ \ |_| | (_| | | (_) | |_) | | |_) | |  __/
- /_/    \_\__,_|\__,_|_|\___/|____/|_|_.__/|_|\___|
 
 https://github.com/AudioBible/AudioBible                    https://github.com/AudioBible/KJV
 

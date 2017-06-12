@@ -93,3 +93,8 @@
 - Added praise operation
 - Added update operation
 - Removed default book of GENESIS, must pass book param now when a book is required, a list will be shown if one is
+
+0.0.18
+======
+
+- Removed ASCII header
