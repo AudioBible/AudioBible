@@ -208,6 +208,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 68: [Aaliyah, Lefteye,Biggie,Eazy E,Whitney Houston, Amy Winehouse Are All N Hell](https://www.youtube.com/watch?v=wwUffrMRDqE)
 - 69: [CELEBRITIES SEEN IN HELL (TUPAC, ROBIN WILLIAMS, ELVIS, HEATH LEDGER, AND MORE)](https://www.youtube.com/watch?v=_gNw4SGGwDU)
 - 70: [INDIA IMPLEMENTING THE BEAST SYSTEM. CAN'T BUY OR SELL UNLESS YOU TAKE A 12 DIGIT NUMBER](https://www.youtube.com/watch?v=ppEDMsnMfJw)
+- 71: [HITLER: Negroes are The True Jews](https://www.youtube.com/watch?v=NE-X985_prM)
+- 72: [Blacks are in fact the true jews of the bible](https://www.youtube.com/watch?v=FaqCyBlwCxQ&list=PLA3OCbJL135SGuahCKhuQ20eKMiSdXm2t)
 
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
