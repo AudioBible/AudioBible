@@ -74,3 +74,8 @@
 ======
 
 - Fix the feature added in 0.0.13, duh I'm not perfect, Jesus is though!
+
+0.0.15
+======
+
+- Added path operation to result with a path the the book

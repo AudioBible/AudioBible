@@ -9,7 +9,7 @@ from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.0.14'
+__version__ = '0.0.15'
 
 
 def extended_help():
@@ -34,6 +34,8 @@ audiobible init                                             # download data abou
 audiobible load                                             # download all books' and chapters' text and audio mp3 files
 
 audiobible list                                             # to list all books and the number of chapters each book has
+
+audiobible path daniel                                      # show the path on the hard drive to the book of "Daniel"
 
 audiobible hear                                             # to hear the book of "Genesis" chapter 1
 audiobible hear mark                                        # to hear the book of "Mark" chapter 1
@@ -71,7 +73,7 @@ parser = argparse.ArgumentParser(
     usage=extended_help() + """audiobible [-h] [-b BOOK] [-c CHAPTER] [-C CONTEXT] [-B BEFORE_CONTEXT] [-A AFTER_CONTEXT] operation [words ...]""",
     description='%(prog)s '+__version__+' - King James Version Audio Bible')
 
-parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, list, quote, version, help")
+parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, list, quote, path, version, help")
 parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
 parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
 parser.add_argument("-C", "--context", type=int, help="print num lines of leading and trailing context surrounding each match.", default=None)
@@ -137,7 +139,7 @@ class AudioBible(object):
 
     def __init__(self, operation, book, chapter, context, before_context, after_context):
         function = operation[0] if operation and operation[0].lower() in [
-            'init', 'i', 'load', 'hear', 'h', 'read', 'r', 'list', 'l', 'find', 'f', 'quote', 'q', 'version', 'v', 'help'
+            'init', 'i', 'load', 'hear', 'h', 'read', 'r', 'list', 'l', 'find', 'f', 'quote', 'q', 'path', 'p', 'version', 'v', 'help'
         ] else 'help'
 
         if 'v' in function:
@@ -150,6 +152,8 @@ class AudioBible(object):
             function = 'quote'
         elif 'r' in function:
             function = 'read'
+        elif 'p' in function and function != 'help':
+            function = 'path'
         elif 'h' in function and function != 'help':
             function = 'hear'
         elif 'l' in function and function != 'help' and function != 'load':
@@ -157,7 +161,7 @@ class AudioBible(object):
         elif 'i' in function and function != 'list':
             function = 'init'
 
-        if function in ['hear', 'read', 'list', 'find', 'quote']:
+        if function in ['hear', 'read', 'list', 'find', 'quote', 'path']:
             self._load_books()
 
         if function not in ['init', 'load', 'list', 'help']:
@@ -243,6 +247,9 @@ class AudioBible(object):
         book = self.get_book()
         chapter = self.get_chapter()
         return os.path.join(data_path, book, '%s_%s.%s' % (book, chapter, ext))
+
+    def path(self):
+        return os.path.join(data_path, self.get_book())
 
     def hear(self):
         audio = self.get_filename('mp3')
