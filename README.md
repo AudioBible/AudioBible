@@ -244,6 +244,12 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ## OPEN YOUR MIND! BREAK FREE FROM THE LIES AND SATANIC PROGRAMMING!
 
+![jews-declare-war-on-germany](jews-declare-war-on-germany.png)
+
+![germany1](germany1.png)
+
+![germany2](germany2.png)
+
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
 ## WARNING! DEMONIC SIGILS OF SUMMONING! FOR EDUCATIONAL PURPOSES!
