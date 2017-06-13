@@ -309,6 +309,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![protocol-of-zion6](protocol-of-zion6.png)
 
+![henry-ford-on-protocols-of-zion](henry-ford-on-protocols-of-zion.png)
+
 ![INRI](INRI.png)
 
 ## HERE IS A FLIER YOU CAN PRINT AND GIVE OUT TO PEOPLE
