@@ -219,6 +219,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 79: [World Defeated The Wrong Enemy](https://www.youtube.com/watch?v=bm34sj65MkA)
 - 80: [Become a Holocaust Denier in 14 Minutes](https://www.youtube.com/watch?v=XEZkvsK7nfo)
 
+
 ## God is so kind that it is impossible to imagine His unbounded kindness
 
 ![flat-earth-isaiah40-22](flat-earth-isaiah40-22.jpg)
@@ -246,6 +247,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 ## OPEN YOUR MIND! BREAK FREE FROM THE LIES AND SATANIC PROGRAMMING!
 
 # HISTORY REPEATS ITSELF
+
+![holocaust-is-a-hoax](holocaust-is-a-hoax.png)
 
 ![hitler-facts](hitler-facts.png)
 
