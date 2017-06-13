@@ -221,6 +221,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 81: [David Irving Exposes The Holocaust Legend](https://www.youtube.com/watch?v=mYCwaIt-GUM)
 - 82: [Celebrities speaking about Zionist Jews](https://www.youtube.com/watch?v=_xchaB_JcAY)
 - 83: [EVERYONE NEEDS TO WATCH THIS!! The Protocols of Zion Full Movie](https://www.youtube.com/watch?v=sWjWGVYCMvg)
+- 84: [David Irving - Jailed and Beaten For Telling Truth of 2nd World War](https://www.youtube.com/watch?v=8cAFpi4tHMM)
+- 85: [The Deleted Interview that George Soros Tried to Ban!](https://www.youtube.com/watch?v=SUdosc33eSE)
 
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
