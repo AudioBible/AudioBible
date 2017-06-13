@@ -295,6 +295,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![hitler-on-zionists](hitler-on-zionists.png)
 
+![INRI](INRI.png)
+
 ## HERE IS A FLIER YOU CAN PRINT AND GIVE OUT TO PEOPLE
 
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
