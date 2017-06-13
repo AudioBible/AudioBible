@@ -266,6 +266,10 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![german-troops](german-troops.png)
 
+![western-powers-are-liars](western-powers-are-liars.png)
+
+![he-didnt-want-war-he-only-wanted-peace](he-didnt-want-war-he-only-wanted-peace.png)
+
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
 ## WARNING! DEMONIC SIGILS OF SUMMONING! FOR EDUCATIONAL PURPOSES!
