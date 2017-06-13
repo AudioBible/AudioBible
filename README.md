@@ -272,6 +272,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![he-didnt-want-war-he-only-wanted-peace](he-didnt-want-war-he-only-wanted-peace.png)
 
+![roosevelt-churchill](roosevelt-churchill.png)
+
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
 ## WARNING! DEMONIC SIGILS OF SUMMONING! FOR EDUCATIONAL PURPOSES!
