@@ -241,6 +241,13 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 101:[CAUGHT!!!- State Trucks Poisoning Neighborhoods](https://www.youtube.com/watch?v=bz0-w6zDIT0)
 - 102:[City spraying more due to surge in mosquitoes](https://www.youtube.com/watch?v=cOuOqZioiHk)
 - 103:[Syria’s Assad BRILLIANTLY Explained How America REALLY Works](https://www.youtube.com/watch?v=zrXvhy8Y57M)
+- 104:[Benghazi Whistleblowers – The story behind the cover-up - CTM #670](https://www.youtube.com/watch?v=_vUJSvynuxw)
+- 105:[March 22, 2017 U.K. Parliament "terrorism" attack is false flag propaganda / hoax](https://www.youtube.com/watch?v=v3tL_wF-COg)
+- 106:[Paris Attack False Flag: Conspiracy Hoax Exposed](https://www.youtube.com/watch?v=OXavIbOQnZw)
+- 107:[HOAX GERMAN FALSE FLAG ATTACK.."Return of the Crisis actor III" Lites film action!](https://www.youtube.com/watch?v=-0AeRIjfO0M)
+- 108:[Berlin Christmas Market Truck Massacre Hoax](https://www.youtube.com/watch?v=A3aoIenOgdM)
+- 109:[Nice France Terror Attack Staged 100% FAKE](https://www.youtube.com/watch?v=SrbNtFfMQ4A)
+- 110:[Steve Hughes on the fake war on terror](https://www.youtube.com/watch?v=hMcS82DpjSU)
 
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
