@@ -240,6 +240,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 100:[False Flag Alien Event - Don't Fall For It When It Happens!](https://www.youtube.com/watch?v=HF2cBYDvVS8)
 - 101:[CAUGHT!!!- State Trucks Poisoning Neighborhoods](https://www.youtube.com/watch?v=bz0-w6zDIT0)
 - 102:[City spraying more due to surge in mosquitoes](https://www.youtube.com/watch?v=cOuOqZioiHk)
+- 103:[Syria’s Assad BRILLIANTLY Explained How America REALLY Works](https://www.youtube.com/watch?v=zrXvhy8Y57M)
 
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
