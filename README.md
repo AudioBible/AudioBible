@@ -224,6 +224,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 84: [David Irving - Jailed and Beaten For Telling Truth of 2nd World War](https://www.youtube.com/watch?v=8cAFpi4tHMM)
 - 85: [The Deleted Interview that George Soros Tried to Ban!](https://www.youtube.com/watch?v=SUdosc33eSE)
 - 86: [The Illustrated Protocols of Zion by David Duke](https://www.youtube.com/watch?v=d-xjLa9xrOo)
+- 87: [Protocols of Zion The Roadway to destroy America (RichieFromBoston)](https://www.youtube.com/watch?v=848o93RAJtA)
 
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
