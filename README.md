@@ -257,11 +257,15 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![56f6b029eb00d9b24cc7470fd0a68468](56f6b029eb00d9b24cc7470fd0a68468.jpg)
 
+# WAKE UP! KNOCK KNOCK WAKE UP!
+
 ![Globe](globe_1.jpg)
 
 # AUDIOBIBLE HEAR PSALMS 71
 
 ## OPEN YOUR MIND! BREAK FREE FROM THE LIES AND SATANIC PROGRAMMING!
+
+[![jwish-parliamnetbannedweb-sizeweb](jwish-parliamnetbannedweb-sizeweb.jpg)](https://www.youtube.com/user/drdduke)
 
 # HISTORY REPEATS ITSELF
 
