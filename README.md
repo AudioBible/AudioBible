@@ -274,6 +274,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![roosevelt-churchill](roosevelt-churchill.png)
 
+![roosevelt-churchill-stalin-war-criminals](roosevelt-churchill-stalin-war-criminals.png)
+
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
 ## WARNING! DEMONIC SIGILS OF SUMMONING! FOR EDUCATIONAL PURPOSES!
