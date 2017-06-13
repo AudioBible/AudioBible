@@ -295,6 +295,10 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![hitler-on-zionists](hitler-on-zionists.png)
 
+![protocol-of-zion1](protocol-of-zion1.png)
+
+![protocol-of-zion2](protocol-of-zion2.png)
+
 ![INRI](INRI.png)
 
 ## HERE IS A FLIER YOU CAN PRINT AND GIVE OUT TO PEOPLE
