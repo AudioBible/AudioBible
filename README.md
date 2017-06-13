@@ -266,6 +266,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![hitler-facts](hitler-facts.png)
 
+# THE WAR ON THE PEOPLE NEVER ENDED
+
 ![jews-declare-war-on-germany](jews-declare-war-on-germany.png)
 
 ![germany1](germany1.png)
