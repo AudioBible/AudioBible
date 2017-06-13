@@ -218,6 +218,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 78: [Adolf Hitler The greatest story Never told Full 6 hours Documentary](https://www.youtube.com/watch?v=7XExjrZxTdk)
 - 79: [World Defeated The Wrong Enemy](https://www.youtube.com/watch?v=bm34sj65MkA)
 - 80: [Become a Holocaust Denier in 14 Minutes](https://www.youtube.com/watch?v=XEZkvsK7nfo)
+- 81: [David Irving Exposes The Holocaust Legend](https://www.youtube.com/watch?v=mYCwaIt-GUM)
 
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
