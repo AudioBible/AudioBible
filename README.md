@@ -239,6 +239,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 99: [False Flag Operations - 9/11, Sandy Hook, Boston Bombing and more - 2016](https://www.youtube.com/watch?v=CQN6wXfQvok)
 - 100:[False Flag Alien Event - Don't Fall For It When It Happens!](https://www.youtube.com/watch?v=HF2cBYDvVS8)
 - 101:[CAUGHT!!!- State Trucks Poisoning Neighborhoods](https://www.youtube.com/watch?v=bz0-w6zDIT0)
+- 102:[City spraying more due to surge in mosquitoes](https://www.youtube.com/watch?v=cOuOqZioiHk)
+
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
 
