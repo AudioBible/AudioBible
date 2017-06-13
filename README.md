@@ -299,6 +299,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![protocol-of-zion2](protocol-of-zion2.png)
 
+![protocol-of-zion3](protocol-of-zion3.png)
+
 ![INRI](INRI.png)
 
 ## HERE IS A FLIER YOU CAN PRINT AND GIVE OUT TO PEOPLE
