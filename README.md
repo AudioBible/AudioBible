@@ -320,6 +320,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![henry-ford-on-protocols-of-zion](henry-ford-on-protocols-of-zion.png)
 
+# THEY ARE THE SAME ONES WHO CRUCIFIED JESUS
+
 ![INRI](INRI.png)
 
 ## HERE IS A FLIER YOU CAN PRINT AND GIVE OUT TO PEOPLE
