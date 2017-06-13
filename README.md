@@ -230,7 +230,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 90: [Ahmadinejad: They're finished, the Zionist regime is finished.](https://www.youtube.com/watch?v=oLkiM4CHAJo)
 - 91: [Israelis Are Not Jews and American Leaders Are Not Christian](https://www.youtube.com/watch?v=PrWguVsEih0)
 - 92: [Ahmadinejad on Jews - Larry King](https://www.youtube.com/watch?v=_vYXcna8Pxw)
-
+- 93: [Charlie Rose - Dr. Mahmoud Ahmadinejad, President of Islamic Republic of Iran | Sept. 20, 2010](https://www.youtube.com/watch?v=Im_bRb8CKDk)
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
 
