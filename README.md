@@ -231,6 +231,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 91: [Israelis Are Not Jews and American Leaders Are Not Christian](https://www.youtube.com/watch?v=PrWguVsEih0)
 - 92: [Ahmadinejad on Jews - Larry King](https://www.youtube.com/watch?v=_vYXcna8Pxw)
 - 93: [Charlie Rose - Dr. Mahmoud Ahmadinejad, President of Islamic Republic of Iran | Sept. 20, 2010](https://www.youtube.com/watch?v=Im_bRb8CKDk)
+- 94: [Mein Kampf - Audio Book](https://www.youtube.com/watch?v=xDOPHZC936c)
+
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
 
