@@ -232,6 +232,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 92: [Ahmadinejad on Jews - Larry King](https://www.youtube.com/watch?v=_vYXcna8Pxw)
 
 
+**Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
+
 ## God is so kind that it is impossible to imagine His unbounded kindness
 
 ![flat-earth-isaiah40-22](flat-earth-isaiah40-22.jpg)
