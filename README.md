@@ -232,6 +232,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 92: [Ahmadinejad on Jews - Larry King](https://www.youtube.com/watch?v=_vYXcna8Pxw)
 - 93: [Charlie Rose - Dr. Mahmoud Ahmadinejad, President of Islamic Republic of Iran | Sept. 20, 2010](https://www.youtube.com/watch?v=Im_bRb8CKDk)
 - 94: [Mein Kampf - Audio Book](https://www.youtube.com/watch?v=xDOPHZC936c)
+- 95: [08/08/2006 President Ahmadinejad Interview](https://www.youtube.com/watch?v=bFCUX5JSA14)
 
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
