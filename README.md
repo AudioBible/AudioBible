@@ -247,8 +247,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 107:[HOAX GERMAN FALSE FLAG ATTACK.."Return of the Crisis actor III" Lites film action!](https://www.youtube.com/watch?v=-0AeRIjfO0M)
 - 108:[Berlin Christmas Market Truck Massacre Hoax](https://www.youtube.com/watch?v=A3aoIenOgdM)
 - 109:[Nice France Terror Attack Staged 100% FAKE](https://www.youtube.com/watch?v=SrbNtFfMQ4A)
-- 110:[Steve Hughes on the fake war on terror](https://www.youtube.com/watch?v=hMcS82DpjSU)
-
+- 110:[7 CONFIRMED False Flag Attacks](https://www.youtube.com/watch?v=Gst2pwtzz1w)
+- 111:[Steve Hughes on war on terror, global warming and X-factor.](https://www.youtube.com/watch?v=Nea-MpVgRL0&list=RDhMcS82DpjSU)
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
 
