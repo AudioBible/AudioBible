@@ -233,6 +233,11 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 93: [Charlie Rose - Dr. Mahmoud Ahmadinejad, President of Islamic Republic of Iran | Sept. 20, 2010](https://www.youtube.com/watch?v=Im_bRb8CKDk)
 - 94: [Mein Kampf - Audio Book](https://www.youtube.com/watch?v=xDOPHZC936c)
 - 95: [08/08/2006 President Ahmadinejad Interview](https://www.youtube.com/watch?v=bFCUX5JSA14)
+- 96: [Assad say’s “Trumps a Puppet” to Indian media مقابلة الرئيس الأسد مع قناة ويون الهندية](https://www.youtube.com/watch?v=SxpvoVGXURM)
+- 97: [Assad smashes journalist with facts in Interview, Oct 6 (مقابلة الرئيس الأسد مع قناة TV2 الدانماركية](https://www.youtube.com/watch?v=7ItP5bLZ8H8)
+- 98: [Manchester Bombing False Flag, Pushing the War on Terror (CorbettReport Mirror)](https://www.youtube.com/watch?v=zObCqOaWjh4)
+- 99: [False Flag Operations - 9/11, Sandy Hook, Boston Bombing and more - 2016](https://www.youtube.com/watch?v=CQN6wXfQvok)
+- 100:[False Flag Alien Event - Don't Fall For It When It Happens!](https://www.youtube.com/watch?v=HF2cBYDvVS8)
 
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
