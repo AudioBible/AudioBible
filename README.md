@@ -246,6 +246,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 # HISTORY REPEATS ITSELF
 
+![hitler-facts](hitler-facts.png)
+
 ![jews-declare-war-on-germany](jews-declare-war-on-germany.png)
 
 ![germany1](germany1.png)
