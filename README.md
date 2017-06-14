@@ -1,16 +1,22 @@
 # AudioBible
 
-### King James Version Audio Bible for Mac, Windows and Unix/Linux
+## King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 # [The Visual Bible - The Gospel Of Matthew](https://www.youtube.com/watch?v=woAhReBytBk) [MOVIE]
+# [The Gospel of Luke](https://www.youtube.com/watch?v=auL-ebjH-xo) [MOVIE]
+# [The Gospel of Luke - Film - Visual Bible in HD Very Rare Version](https://www.youtube.com/watch?v=2PHPLApTt7Y) [MOVIE]
+# [The Acts of the Apostles - Film - High Quality! HD](https://www.youtube.com/watch?v=tRXNp6K5-JI) [MOVIE]
+# [Paul the Apostle Full Movie](https://www.youtube.com/watch?v=t5FhLQhDsk0) [MOVIE]
+# [The Book Of Revelation (Full Movie)](https://www.youtube.com/watch?v=NAb2hdQneBY) [MOVIE]
+# [The Ruth Story](https://www.youtube.com/watch?v=slEmSyJi81g) [MOVIE]
+# [Esther and the King](https://www.youtube.com/watch?v=SQ6qYypfmIo) [MOVIE]
+# [Samson and Delilah - full movie - full movie](https://www.youtube.com/watch?v=a9968bcrywY) [MOVIE]
+# [David and Goliath...Orson Welles as King Saul](https://www.youtube.com/watch?v=GpVf6JII-VM) [MOVIE]
+# [Sodom & Gomorrah FULL VIDEO](https://www.youtube.com/watch?v=WWpknxvxLpk) [MOVIE]
 
-**Note:** Tested and created on a Mac, should work on Windows and Unix/Linux and other OSes.
+**Note:** These are old movies, you can trust these more than the new ones having new actors and brainwashing tactics.
 
-**Note:** This project is not associated with AudioBible.com, please purchase a KJV Bible from [audiobible.com](http://audiobible.com/kjv-audio-bible-king-james/) if you like this.
-
-- [King James Audio Bible Download for MP3 and iPod devices](http://www.audiobible.com/king-james-bible-download-for-mp3-and-ipod/)
-- [Russian Audio Bible Download for MP3 or iPod devices](http://www.audiobible.com/download-russian-audio-bible-mp3-and-ipod/)
-- [Mandarin Chinese Audio Bible Download for MP3, iPhone or iPod](http://www.audiobible.com/mandarin-chinese-audio-bible-download-mp3-ipod-devices/)
+# THE EARTH IS FLAT, IN CASE YOU DIDN'T KNOW THAT NASA LIES!
 
 **ISAIAH 40:22:** It is he that sitteth upon the circle of the earth, and the inhabitants thereof are as grasshoppers; that stretcheth out the heavens as a curtain, and spreadeth them out as a tent to dwell in:
 
@@ -80,6 +86,16 @@
     audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
 
     audiobible quote                                            # usage is same as with find operation
+
+
+**Note:** Tested and created on a Mac, should work on Windows and Unix/Linux and other OSes.
+
+**Note:** This project is not associated with AudioBible.com, please purchase a KJV Bible from [audiobible.com](http://audiobible.com/kjv-audio-bible-king-james/) if you like this.
+
+- [King James Audio Bible Download for MP3 and iPod devices](http://www.audiobible.com/king-james-bible-download-for-mp3-and-ipod/)
+- [Russian Audio Bible Download for MP3 or iPod devices](http://www.audiobible.com/download-russian-audio-bible-mp3-and-ipod/)
+- [Mandarin Chinese Audio Bible Download for MP3, iPhone or iPod](http://www.audiobible.com/mandarin-chinese-audio-bible-download-mp3-ipod-devices/)
+
 
 # KJV Bible - List of Books and Chapters Count
 

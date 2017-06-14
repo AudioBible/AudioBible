@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup, find_packages
 
 from audiobible import __version__
 
@@ -17,7 +14,7 @@ setup(
     maintainer_email="alex@goretoy.com",
     url="https://github.com/gxela/AudioBible",
 
-    packages=['audiobible'],
+    packages=find_packages(),
     install_requires=['scrapy'],
     entry_points={
         'console_scripts': [
