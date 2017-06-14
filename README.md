@@ -22,7 +22,7 @@
 
 ## [Paganism Surviving In Christianity](https://www.forgottenbooks.com/en/readbook/PaganismSurvivinginChristianity_10066362)
 ## [How We Got Our Bible](https://www.forgottenbooks.com/en/readbook/HowWeGotOurBible_10038867)
-## [The Negro In Our History](https://www.forgottenbooks.com/en/readbook/TheNegroinOurHistory_10101622) [Real Jews]
+## [The Negro In Our History](https://www.forgottenbooks.com/en/readbook/TheNegroinOurHistory_10101622) [They are the Real Jews]
 
 # THE EARTH IS FLAT, IN CASE YOU DIDN'T KNOW THAT NASA LIES!
 
