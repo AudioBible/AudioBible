@@ -23,13 +23,15 @@
 ## Install On Mac
 
     brew install python libxml2                                 # install dependencies
-    pip install scrapy audiobible                               # install AudioBible with python pip
+    pip install scrapy
+    pip install audiobible                                      # install AudioBible with python pip
 
 
 ## Install On Ubuntu Linux
 
     sudo apt-get install python-pip libxml2 python-lxml         # install dependencies
-    sudo pip install scrapy audiobible                          # install AudioBible with python pip
+    sudo pip install scrapy
+    sudo pip install audiobible                                 # install AudioBible with python pip
 
 
 ## How to use
