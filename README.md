@@ -288,6 +288,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![Globe](globe_1.jpg)
 
+![zion-pyramid](zion-pyramid.png)
+
 # AUDIOBIBLE HEAR PSALMS 71
 
 ## OPEN YOUR MIND! BREAK FREE FROM THE LIES AND SATANIC PROGRAMMING!
