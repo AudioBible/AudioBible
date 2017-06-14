@@ -263,6 +263,10 @@
 - 121:[IS A 3RD TERM FOR BARACK OBAMA STILL POSSIBLE??? (RIGGED ELECTIONS 2016)](https://www.youtube.com/watch?v=Ol44a2xChqM)
 - 122:[This is why Scalia was Murdered](https://www.youtube.com/watch?v=wyPFbDP8W6I)
 - 123:[SGTreport: The Paris False Flag of "TRUTH" -- Dr. Paul Craig Roberts](https://www.youtube.com/watch?v=6kSugZtgXsc)
+- 124:[Donald Trump - Illuminati Puppet Exposed - Part 1](https://www.youtube.com/watch?v=SL_uAY63IWo)
+- 125:[Donald Trump - Illuminati Puppet Exposed - Part 2](https://www.youtube.com/watch?v=7vRHwTZCt7Q&list=RD7vRHwTZCt7Q#t=29)
+- 126:[Donald Trump - Controlled by the Illuminati? New World Order MUST WATCH](https://www.youtube.com/watch?v=TXpOiB2kdIM)
+
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
 
