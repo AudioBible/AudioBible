@@ -103,3 +103,14 @@
 ======
 
 - Updated README.md
+- Make Python3 ready
+
+0.1.0
+=====
+
+- bumped version number, same thing as 0.0.19
+
+0.1.1
+=====
+
+- Updated CHANGES
