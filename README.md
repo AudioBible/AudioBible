@@ -249,6 +249,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 109:[Nice France Terror Attack Staged 100% FAKE](https://www.youtube.com/watch?v=SrbNtFfMQ4A)
 - 110:[7 CONFIRMED False Flag Attacks](https://www.youtube.com/watch?v=Gst2pwtzz1w)
 - 111:[Steve Hughes on war on terror, global warming and X-factor.](https://www.youtube.com/watch?v=Nea-MpVgRL0&list=RDhMcS82DpjSU)
+- 112:[Jim Jeffries on America's "freedom"](https://www.youtube.com/watch?v=bjeq3NYUw2M)
+
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
 
