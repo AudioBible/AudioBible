@@ -250,7 +250,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 110:[7 CONFIRMED False Flag Attacks](https://www.youtube.com/watch?v=Gst2pwtzz1w)
 - 111:[Steve Hughes on war on terror, global warming and X-factor.](https://www.youtube.com/watch?v=Nea-MpVgRL0&list=RDhMcS82DpjSU)
 - 112:[Jim Jeffries on America's "freedom"](https://www.youtube.com/watch?v=bjeq3NYUw2M)
-- 113:[Jim Jefferies - Good Guy Hitler](https://www.youtube.com/watch?v=1ZOMZQi0EQk)
+- 113:[Donald Trump False Flag Assassination](https://www.youtube.com/watch?v=f9zUeCztKCA)
+
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
 
