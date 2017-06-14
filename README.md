@@ -22,9 +22,9 @@
 
 **Note:** These are old movies, you can trust these more than the new ones having new actors and brainwashing tactics.
 
-### [Paganism Surviving In Christianity](https://www.forgottenbooks.com/en/readbook/PaganismSurvivinginChristianity_10066362)
-### [How We Got Our Bible](https://www.forgottenbooks.com/en/readbook/HowWeGotOurBible_10038867)
-### [The Negro In Our History](https://www.forgottenbooks.com/en/readbook/TheNegroinOurHistory_10101622) [They are the Real Jews]
+### [Paganism Surviving In Christianity](https://www.forgottenbooks.com/en/readbook/PaganismSurvivinginChristianity_10066362) [BOOK]
+### [How We Got Our Bible](https://www.forgottenbooks.com/en/readbook/HowWeGotOurBible_10038867) [BOOK]
+### [The Negro In Our History](https://www.forgottenbooks.com/en/readbook/TheNegroinOurHistory_10101622) [BOOK]
 
 ## THE EARTH IS FLAT, IN CASE YOU DIDN'T KNOW THAT NASA LIES!
 
