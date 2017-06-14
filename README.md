@@ -251,7 +251,16 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 111:[Steve Hughes on war on terror, global warming and X-factor.](https://www.youtube.com/watch?v=Nea-MpVgRL0&list=RDhMcS82DpjSU)
 - 112:[Jim Jeffries on America's "freedom"](https://www.youtube.com/watch?v=bjeq3NYUw2M)
 - 113:[Donald Trump False Flag Assassination](https://www.youtube.com/watch?v=f9zUeCztKCA)
-
+- 114:[The Untold Story of Adolf Hitler - RFG Chosen 1 & Bro. Sanchez](https://www.youtube.com/watch?v=Q7HhLS7584g)
+- 115:[Hillary Clinton & Donald Trump are Cousins EXPOSED!](https://www.youtube.com/watch?v=LuEaf_6P7QY)
+- 116:[Biggest False Flag Operation Since 9 11 Happening Right Now!](https://www.youtube.com/watch?v=r_aozYvb_Rs)
+- 117:[THIS IS HAPPENING RIGHT BEFORE OUR EYES AND NO ONE SEE'S THE BIGGER ](https://www.youtube.com/watch?v=KjkDqzhCq0c)
+- 118:[WHAT DO BANKS, RAILROADS, RETAIL STORES, STANDARD OIL, LUMBER & THE FOOD ](https://www.youtube.com/watch?v=ZI1YUe2oYEQ)
+- 119:[A PICTURE IS WORTH A THOUSAND WORDS!](https://www.youtube.com/watch?v=HFTcjSHzyxM)
+- 120:[Playing the Trump Card: Obama’s 3rd Term and WW3 (Trump's false flag assassination](https://www.youtube.com/watch?v=HuF14oF2D2Q)
+- 121:[IS A 3RD TERM FOR BARACK OBAMA STILL POSSIBLE??? (RIGGED ELECTIONS 2016)](https://www.youtube.com/watch?v=Ol44a2xChqM)
+- 122:[This is why Scalia was Murdered](https://www.youtube.com/watch?v=wyPFbDP8W6I)
+- 123:[SGTreport: The Paris False Flag of "TRUTH" -- Dr. Paul Craig Roberts](https://www.youtube.com/watch?v=6kSugZtgXsc)
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
 
