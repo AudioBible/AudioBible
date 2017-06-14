@@ -1,6 +1,6 @@
 # AudioBible
 
-King James Version Audio Bible for Mac, Windows and Unix/Linux
+### King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 # [The Visual Bible - The Gospel Of Matthew](https://www.youtube.com/watch?v=woAhReBytBk) [MOVIE]
 
@@ -77,6 +77,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
     audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
     audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
 
+    audiobible quote                                            # usage is same as with find operation
 
 # KJV Bible - List of Books and Chapters Count
 
@@ -137,6 +138,7 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ## RETARDS - Round Earth Taught Analed Retention Disorder Syndrome
 
+- 0:  [The Greatest Truth Never Told](https://www.youtube.com/watch?v=ekkXHnSrlwY&list=PLD31E34390C5017E8)
 
 - 1:  [Under The Dome - Full Documentary](https://www.youtube.com/watch?v=fk4YqPtvJao)
 - 2:  [A History Of Flat Earth - Eric Dubay](https://www.youtube.com/watch?v=pGl8I3l-5ac)
@@ -261,7 +263,6 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 - 121:[IS A 3RD TERM FOR BARACK OBAMA STILL POSSIBLE??? (RIGGED ELECTIONS 2016)](https://www.youtube.com/watch?v=Ol44a2xChqM)
 - 122:[This is why Scalia was Murdered](https://www.youtube.com/watch?v=wyPFbDP8W6I)
 - 123:[SGTreport: The Paris False Flag of "TRUTH" -- Dr. Paul Craig Roberts](https://www.youtube.com/watch?v=6kSugZtgXsc)
-- 124:[The Greatest Truth Never Told](https://www.youtube.com/watch?v=ekkXHnSrlwY&list=PLD31E34390C5017E8)
 
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
@@ -363,6 +364,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 # THEY ARE THE SAME ONES WHO CRUCIFIED JESUS
 
 ![INRI](INRI.png)
+
+# AUDIOBIBLE FIND CROWN OF LIFE
 
 ## HERE IS A FLIER YOU CAN PRINT AND GIVE OUT TO PEOPLE
 

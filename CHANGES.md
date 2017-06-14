@@ -114,3 +114,8 @@
 =====
 
 - Updated CHANGES
+
+0.1.2
+=====
+
+- Finish quote functionality to result in random quote with options like with find operation

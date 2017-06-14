@@ -4,12 +4,13 @@ import re
 import os
 import sys
 import json
+import random
 import argparse
 from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 
 def extended_help():
@@ -59,6 +60,9 @@ audiobible find circle of the earth                         # to find circle of 
 
 audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
 audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
+
+audiobible quote                                            # usage is same as with find operation
+
 
 # THE EARTH IS FLAT! [RESEARCH IT ON YOUTUBE](https://www.youtube.com/results?search_query=flat+earth&page=&utm_source=opensearch)!
 
@@ -161,9 +165,9 @@ class AudioBible(object):
                 self.result = self.list()
                 proceed = False
 
-        if 'find' in function:
+        if function in ['find', 'quote']:
             self.query = " ".join(operation[1:]).strip(" ")
-            self.result = self.find(context, before_context, after_context)
+            self.result = getattr(self, function)(context, before_context, after_context)
         else:
             if proceed:
                 self.result = getattr(self, function, self.help)()
@@ -295,32 +299,28 @@ class AudioBible(object):
                             result.append(os.path.join(dirname, filename))
         return result
 
-    def find(self, context, before, after):
+    def get_lines(self, the_path, callback):
+        lines = []
+        if os.path.isdir(the_path):
+            for filename in self._files(the_path):
+
+                if '.txt' in filename:
+                    for l in open(filename).readlines():
+                        lines.append(l)
+        else:
+            for l in open(the_path).readlines():
+                lines.append(l)
+
+        callback(lines)
+
+    def _get_text(self, type, context, before, after):
         the_path = data_path
         if self.get_book():
             the_path = os.path.join(the_path, self.get_book())
-        if self.get_chapter() is not None:
-            the_path = self.get_filename('txt')
+            if self.get_chapter() is not None:
+                the_path = self.get_filename('txt')
 
         output = []
-
-        def _handle(matched, lines, line):
-            if matched:
-                if before:
-                    for num in range(int(before), 0, -1):
-                        verse = lines[line - num]
-                        if verse not in output:
-                            output.append(verse)
-
-                verse = matched.string
-                if verse not in output:
-                    output.append(verse)
-
-                if after:
-                    for num in range(1, int(after) + 1):
-                        verse = lines[line + num]
-                        if verse not in output:
-                            output.append(verse)
 
         if context is not None:
             if before is None:
@@ -328,25 +328,53 @@ class AudioBible(object):
             if after is None:
                 after = context
 
-        if os.path.isdir(the_path):
-            for filename in self._files(the_path):
-                lines = []
-                for l in open(filename).readlines():
-                    lines.append(l)
-
+        if type == 'find':
+            def _process(lines):
                 for line in range(len(lines)):
                     match = re.search(self.query, lines[line], re.IGNORECASE)
-                    _handle(match, lines, line)
-        else:
-            lines = []
-            for l in open(the_path).readlines():
-                lines.append(l)
+                    if match:
+                        if before:
+                            for num in range(int(before), 0, -1):
+                                verse = lines[line - num]
+                                if verse not in output:
+                                    output.append(verse)
 
-            for line in range(len(lines)):
-                match = re.search(self.query, lines[line], re.IGNORECASE)
-                _handle(match, lines, line)
+                        verse = match.string
+                        if verse not in output:
+                            output.append(verse)
+
+                        if after:
+                            for num in range(1, int(after) + 1):
+                                verse = lines[line + num]
+                                if verse not in output:
+                                    output.append(verse)
+
+            self.get_lines(the_path, _process)
+        elif type == 'quote':
+            def _process(lines):
+                idx = random.choice(range(len(lines)))
+                if before:
+                    for num in range(int(before), 0, -1):
+                        verse = lines[idx - num]
+                        if verse not in output:
+                            output.append(verse)
+
+                verse = lines[idx]
+                if verse not in output:
+                    output.append(verse)
+
+                if after:
+                    for num in range(1, int(after) + 1):
+                        verse = lines[idx + num]
+                        if verse not in output:
+                            output.append(verse)
+
+            self.get_lines(the_path, _process)
 
         return str("\r\n".join([o for o in output if o])).strip()
+
+    def find(self, context, before, after):
+        return self._get_text('find', context, before, after)
 
     def _load_books(self):
         if os.path.exists(content_path):
@@ -419,8 +447,8 @@ class AudioBible(object):
 
         return output
 
-    def quote(self, head=None, tail=None):
-        return 'MK 4:23 If any man have ears to hear, let him hear.'
+    def quote(self, context=None, before=None, after=None):
+        return self._get_text('quote', context, before, after)
 
     def help(self):
         parser.print_help()
