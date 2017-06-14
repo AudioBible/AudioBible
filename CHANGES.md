@@ -136,3 +136,8 @@
 =====
 
 - update setup.py to use find_packages instead like it was before
+
+0.1.6
+=====
+
+- do what i was trying to do in 0.1.5, because i fogot to commit the file changes duh
