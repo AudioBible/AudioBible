@@ -22,7 +22,14 @@ setup(
         ],
     },
     classifiers=[
+        "Development Status :: 4 - Beta",
+        "Environment :: Console",
+        "Framework :: Scrapy",
+        "Intended Audience :: Religion",
+        "License :: Public Domain",
+        "Natural Language :: English",
+        "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
+        "Topic :: Religion"
     ]
 )

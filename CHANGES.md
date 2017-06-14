@@ -98,3 +98,8 @@
 ======
 
 - Removed ASCII header
+
+0.0.19
+======
+
+- Updated README.md

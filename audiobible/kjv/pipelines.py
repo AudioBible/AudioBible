@@ -7,10 +7,17 @@
 
 
 import os
-import urllib2
-from urlparse import urlparse
 from scrapy import signals
 from scrapy.exporters import BaseItemExporter, JsonLinesItemExporter
+
+try:
+    from urllib2 import urlopen
+    from urllib2 import Request
+    from urlparse import urlparse
+except:
+    from urllib.request import urlopen
+    from urllib.request import Request
+    from urllib.parse import urlparse
 
 
 class FileExporter(BaseItemExporter):
@@ -139,7 +146,7 @@ class Mp3Pipeline(FileExporter):
             if not os.path.exists(download_path):
                 req = urllib2.Request(item['mp3'])
                 req.add_header('Referer', '%s' % item['url'])
-                r = urllib2.urlopen(req)
+                r = urlopen(req)
 
                 mp3_file = open(download_path, 'wb')
 

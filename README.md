@@ -356,6 +356,8 @@ King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ![henry-ford-on-protocols-of-zion](henry-ford-on-protocols-of-zion.png)
 
+![manufactured-terrorism](manufactured-terrorism.png)
+
 # THEY ARE THE SAME ONES WHO CRUCIFIED JESUS
 
 ![INRI](INRI.png)

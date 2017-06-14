@@ -9,6 +9,20 @@ from scrapy import Spider
 from scrapy.item import Field, Item, DictItem
 from scrapy.loader import ItemLoader
 
+try:
+    unicode = unicode
+except NameError:
+    # 'unicode' is undefined, must be Python 3
+    str = str
+    unicode = str
+    bytes = bytes
+    basestring = (str,bytes)
+else:
+    # 'unicode' exists, must be Python 2
+    str = str
+    unicode = unicode
+    bytes = str
+    basestring = basestring
 
 class InvalidItemLoaderName(ValueError):
     pass
@@ -40,11 +54,11 @@ def get_item_and_loader(class_obj, keys):
     globals()['%sItem' % class_name] = locals()['%sItem' % class_name]
 
     if '%sLoader' % class_name not in locals().keys():
-        exec """
+        exec("""
 class %sLoader(%s):
     default_item_class = %sItem
 
-        """ % (class_name, base_loader_class, class_name)
+        """ % (class_name, base_loader_class, class_name))
         globals()['%sLoader' % class_name] = locals()['%sLoader' % class_name]
 
     #grab the loader and the item that was dynamically created and return it to the spider

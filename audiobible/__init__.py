@@ -9,7 +9,7 @@ from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.0.18'
+__version__ = '0.0.19'
 
 
 def extended_help():
@@ -146,7 +146,7 @@ class AudioBible(object):
         ] else 'help'
 
         if 'v' in function:
-            print __version__
+            print(__version__)
             sys.exit(0)
 
         if 'update' in function:
@@ -154,18 +154,18 @@ class AudioBible(object):
             sys.exit(0)
 
         proceed = True
-        if function not in ['init', 'load', 'list', 'help', 'praise']:
+        if function not in ['init', 'load', 'help', 'praise']:
             self._load_books()
             self._set(operation, book, chapter)
             if not self.book:
                 self.result = self.list()
                 proceed = False
 
-        if proceed:
-            if 'find' in function:
-                self.query = " ".join(operation[1:]).strip(" ")
-                self.result = self.find(context, before_context, after_context)
-            else:
+        if 'find' in function:
+            self.query = " ".join(operation[1:]).strip(" ")
+            self.result = self.find(context, before_context, after_context)
+        else:
+            if proceed:
                 self.result = getattr(self, function, self.help)()
 
     def _set(self, operation, book, chapter):
@@ -202,24 +202,24 @@ class AudioBible(object):
                     self.chapter = self._valid('chapter', chapter)
                 except (ValueError, TypeError, ChapterNotFoundError) as e:
                     the_chapter = chapter if chapter else operation[2]
-                    print 'Book:', self.get_book()
+                    print('Book:', self.get_book())
                     sys.exit('%s: %s' % (e.message, the_chapter))
             else:
                 try:
                     raise ChapterNotFoundError('Chapter Not Found')
                 except ChapterNotFoundError as e:
                     the_chapter = chapter if chapter else operation[2]
-                    print 'Book:', self.get_book()
+                    print('Book:', self.get_book())
                     sys.exit('%s: %s' % (e.message, the_chapter))
         except IndexError:
             self.chapter = DEFAULT_CHAPTER
 
     def init(self):
-        print 'downloading content from audiobible.com'
+        print('downloading content from audiobible.com')
         DownloadBible.process()
 
     def load(self):
-        print 'downloading bible from audiobible.com'
+        print('downloading bible from audiobible.com')
         DownloadBible.process()
 
     def _open(self, filepath):
@@ -256,25 +256,25 @@ class AudioBible(object):
     def hear(self):
         audio = self.get_filename('mp3')
         if os.path.exists(audio):
-            print 'opening mp3', audio
+            print('opening mp3', audio)
             self._open(audio)
         else:
-            print 'Unable to find audio file', audio
+            print('Unable to find audio file', audio)
 
     def read(self):
         text = self.get_filename('txt')
         if os.path.exists(text):
-            print 'opening txt', text
+            print('opening txt', text)
             self._open(text)
         else:
-            print 'Unable to find text file', text
+            print('Unable to find text file', text)
 
     def show(self):
         text = self.get_filename('txt')
         if os.path.exists(text):
             return open(text).read().strip()
         else:
-            print 'Unable to find text file', text
+            print('Unable to find text file', text)
 
     def _files(self, path):
         result = []
@@ -282,10 +282,14 @@ class AudioBible(object):
             book_path = os.path.join(data_path, book['name'].replace(' ', '_'))
             if path in book_path and os.path.isdir(book_path):
                 for dirname, dirnames, filenames in os.walk(book_path):
-                    numbers = [int(filter(str.isdigit, str(f))) for f in filenames if '.txt' in f]
+                    try:
+                        numbers = [int(filter(str.isdigit, str(f))) for f in filenames if '.txt' in f]
+                    except:
+                        numbers = [int("".join(list(filter(str.isdigit, str(f))))) for f in filenames if '.txt' in f]
+
                     numbers.sort()
                     if numbers:
-                        digit = int(filter(str.isdigit, str(filenames[0].replace('.mp3', '.txt'))))
+                        digit = int("".join(list(filter(str.isdigit, str(filenames[0].replace('.mp3', '.txt'))))))
                         for num in numbers:
                             filename = filenames[0].replace('.mp3', '.txt').replace(str(digit), str(num))
                             result.append(os.path.join(dirname, filename))
@@ -485,4 +489,4 @@ def use_keyword_args(**kwargs):
 if __name__ == '__main__':
     result = use_parse_args()
     if result:
-        print result
+        print(result)

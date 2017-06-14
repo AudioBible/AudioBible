@@ -15,7 +15,8 @@ class BibleSpider(scrapy.Spider):
     start_urls = []
 
     def __init__(self, data_store=settings.get('DATA_STORE'), content_file=settings.get('CONTENT_FILE')):
-        if os.path.exists(os.path.join(data_store, content_file)):
+        p = os.path.join(data_store, content_file)
+        if os.path.exists(p) and not os.stat(p).st_size == 0:
             with open(os.path.join(data_store, content_file)) as f:
                 for line in f.readlines():
                     data = json.loads(line)
