@@ -7,10 +7,13 @@ import json
 import random
 import argparse
 from scrapy.crawler import CrawlerProcess
+
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 
 def extended_help():
@@ -91,7 +94,12 @@ if len(sys.argv) == 1:
     sys.exit(1)
 
 bot_name = settings.BOT_NAME
-data_path = os.path.join(os.path.expanduser('~'), settings.DATA_STORE)
+
+base_path = os.environ.get('BOOKS_PATH', None)
+if not base_path:
+    base_path = os.path.expanduser('~')
+
+data_path = os.path.join(os.path.abspath(base_path), settings.DATA_STORE)
 content_path = os.path.join(data_path, settings.CONTENT_FILE)
 DEFAULT_BOOK = None
 DEFAULT_CHAPTER = 1
@@ -144,7 +152,7 @@ class AudioBible(object):
     query = ''
 
     def __init__(self, operation, book, chapter, context, before_context, after_context):
-        function = operation if operation.lower() in [
+        function = operation[0] if operation[0].lower() in [
             'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote',
             'path', 'praise', 'version', 'help', 'update', 'upgrade',
         ] else 'help'

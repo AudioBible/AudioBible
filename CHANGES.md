@@ -126,3 +126,8 @@
 - change praise operation url to a search result for "praise worship hymns" instead of a single video playlist
 - fixed some bugs with quote operation
 - fixed a bug in spider pipelines with urllib2 not being defined, last working is 0.0.18 before i broke it in 0.0.19
+
+0.1.4
+=====
+
+- fixed something i broke in 0.1.3 to do with operation, I'm glad I'm not the one that has to be creator of everything
