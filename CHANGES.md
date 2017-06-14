@@ -131,3 +131,8 @@
 =====
 
 - fixed something i broke in 0.1.3 to do with operation, I'm glad I'm not the one that has to be creator of everything
+
+0.1.5
+=====
+
+- update setup.py to use find_packages instead like it was before
