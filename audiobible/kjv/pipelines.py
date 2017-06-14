@@ -144,7 +144,7 @@ class Mp3Pipeline(FileExporter):
             download_path = os.path.join(DATA_STORE, book_name, get_filename(item, 'mp3'))
 
             if not os.path.exists(download_path):
-                req = urllib2.Request(item['mp3'])
+                req = Request(item['mp3'])
                 req.add_header('Referer', '%s' % item['url'])
                 r = urlopen(req)
 

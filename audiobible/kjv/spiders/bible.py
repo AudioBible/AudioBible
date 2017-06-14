@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from scrapy.crawler import Crawler
 import os
 import json
 from ..items import get_item_and_loader

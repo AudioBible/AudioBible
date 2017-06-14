@@ -10,7 +10,7 @@ from scrapy.crawler import CrawlerProcess
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 
 
 def extended_help():
@@ -144,7 +144,7 @@ class AudioBible(object):
     query = ''
 
     def __init__(self, operation, book, chapter, context, before_context, after_context):
-        function = operation[0] if operation and operation[0].lower() in [
+        function = operation if operation.lower() in [
             'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote',
             'path', 'praise', 'version', 'help', 'update', 'upgrade',
         ] else 'help'
@@ -248,7 +248,7 @@ class AudioBible(object):
         return os.path.join(data_path, book, '%s_%s.%s' % (book, chapter, ext))
 
     def praise(self):
-        self._open("https://www.youtube.com/watch?v=Cc0QVWzCv9k&list=RDCc0QVWzCv9k")
+        self._open("https://www.youtube.com/results?search_query=praise+worship+hymns")
 
     def update(self):
         import subprocess
@@ -303,13 +303,13 @@ class AudioBible(object):
         lines = []
         if os.path.isdir(the_path):
             for filename in self._files(the_path):
-
-                if '.txt' in filename:
+                if '.txt' in filename and os.path.exists(filename):
                     for l in open(filename).readlines():
                         lines.append(l)
         else:
-            for l in open(the_path).readlines():
-                lines.append(l)
+            if '.txt' in the_path and os.path.exists(the_path):
+                for l in open(the_path).readlines():
+                    lines.append(l)
 
         callback(lines)
 

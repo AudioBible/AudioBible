@@ -119,3 +119,10 @@
 =====
 
 - Finish quote functionality to result in random quote with options like with find operation
+
+0.1.3
+=====
+
+- change praise operation url to a search result for "praise worship hymns" instead of a single video playlist
+- fixed some bugs with quote operation
+- fixed a bug in spider pipelines with urllib2 not being defined, last working is 0.0.18 before i broke it in 0.0.19
