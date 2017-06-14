@@ -264,6 +264,7 @@
 - 122:[This is why Scalia was Murdered](https://www.youtube.com/watch?v=wyPFbDP8W6I)
 - 123:[SGTreport: The Paris False Flag of "TRUTH" -- Dr. Paul Craig Roberts](https://www.youtube.com/watch?v=6kSugZtgXsc)
 
+### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
 
