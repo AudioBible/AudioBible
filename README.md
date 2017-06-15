@@ -357,6 +357,7 @@
 - 178: [Khazar : Secret Ruling Empire of The World Exposed : Sheikh Imran Hosein](https://www.youtube.com/watch?v=b6rEts1BuN8)
 - 179: [The Truth - Rothschild & the Khazar History - Documentary](https://www.youtube.com/watch?v=hP4bzXfb6Go)
 - 180: [Hitler's War - What the Historians Neglect to Mention](https://www.youtube.com/watch?v=7mA0kk29DBA)
+- 181: [Israel Banned Documentary](https://www.youtube.com/watch?v=IZZvTZAKgro)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
