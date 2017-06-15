@@ -343,6 +343,11 @@
 - 164: [New Evidence Stuns The Jewish World](https://www.youtube.com/watch?v=r7nEltyhaYM)
 - 165: [Get this! 90% of Proclaimed Jews are not Jews at all (KHAZARS Exposed)](https://www.youtube.com/watch?v=DoCNZWIgP7w)
 - 166: [Rabbi Ralph Messer teaching that the original jews are black](https://www.youtube.com/watch?v=2h5Ylr4EPH4)
+- 167: [the real "jews" are black!! 100% proof that CANNOT be refuted](https://www.youtube.com/watch?v=0iNfs_ReRNc)
+- 168: [Texe Marrs - Khazar DNA & the Great Serpent](https://www.youtube.com/watch?v=drErjw5De0o)
+- 169: [The Outrageous Racist Hypocrisy of Israel and World Zionism!](https://www.youtube.com/watch?v=-TvSiYu8z2M)
+- 170: [THE GREATEST LIE EVER TOLD - History is NOT what you think](https://www.youtube.com/watch?v=43jwrEDxDZQ)
+
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
 
