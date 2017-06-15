@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.1.6'
+__version__ = '0.2.0'
 
 
 def extended_help():
@@ -43,15 +43,18 @@ audiobible path daniel                                      # show the path on t
 audiobible quote                                            # to output a quote
 
 audiobible hear mark                                        # to hear the book of "Mark" chapter 1
+audiobible hear mark all                                    # to hear all chapters from the book of "Mark"
 audiobible hear -b mark                                     # to hear the book of "Mark" chapter 1
 audiobible hear mark 4                                      # to hear the book of "Mark" chapter 4
 audiobible hear -b mark -c 4                                # to hear the book of "Mark" chapter 4
 audiobible hear 1_john 3                                    # to hear the book of "1 John" chapter 3
 audiobible hear -b 1_john -c 3                              # to hear the book of "1 John" chapter 3
+audiobible hear -b mark -c all                              # same as hear mark all, there is a bug i can't fix where it starts to play from the last file,
+                                                            #   just double click on the first one and it will start from the beginning playing the rest
 
 audiobible read mark 4                                      # to read Mark 4, (use params like with hear operation)
 
-audiobible show mark 4                                      # to show the book of "Mark" chapter 4 text in the terminal
+audiobible show mark 4                                      # to show the book of "Mark" chapter 4 text in the terminal, specify params like with hear operation
 
 audiobible find                                             # to output the whole Bible
 audiobible find -b 2_john                                   # to output the whole book of "2 John"
@@ -120,6 +123,11 @@ class ChapterNotFoundError(ValueError):
         super(ChapterNotFoundError, self).__init__(*args, **kwargs)
 
 
+class FileNotFoundError(ValueError):
+    def __init__(self, *args, **kwargs):
+        super(FileNotFoundError, self).__init__(*args, **kwargs)
+
+
 class DownloadBible(object):
     @staticmethod
     def process():
@@ -180,6 +188,13 @@ class AudioBible(object):
             if proceed:
                 self.result = getattr(self, function, self.help)()
 
+    def _load_books(self):
+        if os.path.exists(content_path):
+            with open(content_path, 'r') as lines:
+                for line in lines:
+                    self.books.append(json.loads(line))
+        return self.books
+
     def _set(self, operation, book, chapter):
         if operation[0] not in ['find']:
             try:
@@ -226,13 +241,36 @@ class AudioBible(object):
         except IndexError:
             self.chapter = DEFAULT_CHAPTER
 
+    def _valid(self, name, value):
+        if name is 'book':
+            if str(value).upper().replace(' ', '_') in [b['name'].upper().replace(' ', '_') for b in self.books]:
+                return str(value).upper().replace(' ', '_')
+            else:
+                raise BookNotFoundError('Book Not Found')
+        if name is 'chapter':
+            try:
+                if value != 'all':
+                    if int(value) in [range(1, b['chapters_count'] + 1)
+                                      for b in self.books if b['name'].upper().replace(' ', '_') == self.get_book()][0]:
+                        return value
+                    else:
+                        raise ChapterNotFoundError('Chapter Not Found')
+                else:
+                    val = [range(1, b['chapters_count'] + 1)
+                           for b in self.books if b['name'].upper().replace(' ', '_') == self.get_book()][0]
+                    return val
+            except (IndexError, TypeError, ValueError) as e:
+                raise ChapterNotFoundError('Chapter Not Found')
+
     def init(self):
         print('downloading content from audiobible.com')
         DownloadBible.process()
+        return self
 
     def load(self):
         print('downloading bible from audiobible.com')
         DownloadBible.process()
+        return self
 
     def _open(self, filepath):
         import subprocess, os
@@ -242,6 +280,7 @@ class AudioBible(object):
             os.startfile(filepath)
         elif os.name == 'posix':
             subprocess.call(('xdg-open', filepath))
+        return self
 
     def get_book(self):
         if self.book:
@@ -250,10 +289,16 @@ class AudioBible(object):
     def get_chapter(self):
         return self.chapter
 
-    def get_filename(self, ext):
+    def get_filenames(self, ext):
         book = self.get_book()
         chapter = self.get_chapter()
-        return os.path.join(data_path, book, '%s_%s.%s' % (book, chapter, ext))
+        paths = []
+        if isinstance(chapter, list):
+            for c in chapter:
+                paths.append(os.path.join(data_path, book, '%s_%s.%s' % (book, c, ext)))
+        else:
+            paths.append(os.path.join(data_path, book, '%s_%s.%s' % (book, chapter, ext)))
+        return paths
 
     def praise(self):
         self._open("https://www.youtube.com/results?search_query=praise+worship+hymns")
@@ -261,35 +306,33 @@ class AudioBible(object):
     def update(self):
         import subprocess
         subprocess.call(('pip', 'install', '--upgrade', 'audiobible'))
+        return self
 
     def path(self):
         return os.path.join(data_path, self.get_book())
 
     def hear(self):
-        audio = self.get_filename('mp3')
-        if os.path.exists(audio):
-            print('opening mp3', audio)
-            self._open(audio)
-        else:
-            print('Unable to find audio file', audio)
+        audio = self.get_filenames('mp3')
+        for a in audio:
+            if os.path.exists(a):
+                self._open(a)
 
     def read(self):
-        text = self.get_filename('txt')
-        if os.path.exists(text):
-            print('opening txt', text)
-            self._open(text)
-        else:
-            print('Unable to find text file', text)
+        text = self.get_filenames('txt')
+        for t in text:
+            if os.path.exists(t):
+                self._open(t)
 
     def show(self):
-        text = self.get_filename('txt')
-        if os.path.exists(text):
-            return open(text).read().strip()
-        else:
-            print('Unable to find text file', text)
+        text = self.get_filenames('txt')
+        texts = []
+        for t in text:
+            if os.path.exists(t):
+                texts.append(open(t).read().strip())
+        return "\r\n".join(texts).strip()
 
     def _files(self, path):
-        result = []
+        out = []
         for book in self.books:
             book_path = os.path.join(data_path, book['name'].replace(' ', '_'))
             if path in book_path and os.path.isdir(book_path):
@@ -304,20 +347,28 @@ class AudioBible(object):
                         digit = int("".join(list(filter(str.isdigit, str(filenames[0].replace('.mp3', '.txt'))))))
                         for num in numbers:
                             filename = filenames[0].replace('.mp3', '.txt').replace(str(digit), str(num))
-                            result.append(os.path.join(dirname, filename))
-        return result
+                            out.append(os.path.join(dirname, filename))
+        return out
 
     def get_lines(self, the_path, callback):
         lines = []
-        if os.path.isdir(the_path):
-            for filename in self._files(the_path):
-                if '.txt' in filename and os.path.exists(filename):
-                    for l in open(filename).readlines():
+
+        def _get_lines(path):
+            if os.path.isdir(path):
+                for filename in self._files(path):
+                    if '.txt' in filename and os.path.exists(filename):
+                        for l in open(filename).readlines():
+                            lines.append(l)
+            else:
+                if '.txt' in path and os.path.exists(path):
+                    for l in open(path).readlines():
                         lines.append(l)
+
+        if isinstance(the_path, list):
+            for p in the_path:
+                _get_lines(p)
         else:
-            if '.txt' in the_path and os.path.exists(the_path):
-                for l in open(the_path).readlines():
-                    lines.append(l)
+            _get_lines(the_path)
 
         callback(lines)
 
@@ -326,7 +377,7 @@ class AudioBible(object):
         if self.get_book():
             the_path = os.path.join(the_path, self.get_book())
             if self.get_chapter() is not None:
-                the_path = self.get_filename('txt')
+                the_path = self.get_filenames('txt')
 
         output = []
 
@@ -384,29 +435,6 @@ class AudioBible(object):
     def find(self, context, before, after):
         return self._get_text('find', context, before, after)
 
-    def _load_books(self):
-        if os.path.exists(content_path):
-            with open(content_path, 'r') as lines:
-                for line in lines:
-                    self.books.append(json.loads(line))
-        return self.books
-
-    def _valid(self, name, value):
-        if name is 'book':
-            if str(value).upper().replace(' ', '_') in [b['name'].upper().replace(' ', '_') for b in self.books]:
-                return str(value).upper().replace(' ', '_')
-            else:
-                raise BookNotFoundError('Book Not Found')
-        if name is 'chapter':
-            try:
-                if int(value) in [range(1, b['chapters_count'] + 1)
-                             for b in self.books if b['name'].upper().replace(' ', '_') == self.get_book()][0]:
-                    return value
-                else:
-                    raise ChapterNotFoundError('Chapter Not Found')
-            except (IndexError, TypeError, ValueError) as e:
-                raise ChapterNotFoundError('Chapter Not Found')
-
     def list(self):
         table_of_contents = {
             'old': {
@@ -460,6 +488,7 @@ class AudioBible(object):
 
     def help(self):
         parser.print_help()
+        return self
 
     def output(self):
         return self.result
