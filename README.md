@@ -347,6 +347,8 @@
 - 168: [Texe Marrs - Khazar DNA & the Great Serpent](https://www.youtube.com/watch?v=drErjw5De0o)
 - 169: [The Outrageous Racist Hypocrisy of Israel and World Zionism!](https://www.youtube.com/watch?v=-TvSiYu8z2M)
 - 170: [THE GREATEST LIE EVER TOLD - History is NOT what you think](https://www.youtube.com/watch?v=43jwrEDxDZQ)
+- 171: [Jewish people are not the real descendants of biblical Israel. Jews controlled African Slavery](https://www.youtube.com/watch?v=fsocwUhjL5s)
+- 172: [Who Are the Real Jews?](https://www.youtube.com/watch?v=iLRKilCdwyo)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
