@@ -317,7 +317,16 @@
 - 138: [Amazing Conversation with the Reptilian Hybrid Housewife !!! (MUST WATCH)](https://www.youtube.com/watch?v=7RoLUnN9eWo)
 - 139: [A Brief History of the Saurians/Reptilians Documentary !!! (MUST WATCH)](https://www.youtube.com/watch?v=c_NZoSazYJU)
 - 140: [CIA Agent Says War Is Eugenics & Drug War Is Fake](https://www.youtube.com/watch?v=0LqDjk8vhyc)
-
+- 141: [CIA is the largest drug cartel in the world](https://www.youtube.com/watch?v=MFzGu5bxnOc)
+- 142: [Bill Gates Surprised by Eugenics Question](https://www.youtube.com/watch?v=coHf5UEFUl8)
+- 143: [Donald Trump: Eugenics?](https://www.youtube.com/watch?v=3Yh0jAxOxGE)
+- 144: [How Mainstream Media Fakes The News - Behind The Scenes](https://www.youtube.com/watch?v=yIUU_VIZn6o)
+- 145: [MAAFA 21 THE BLACK HOLOCAUST](https://www.youtube.com/watch?v=UsxwRJZfmMM)
+- 146: [EXTINCTION OF THE WHITE RACE APPROACHING.](https://www.youtube.com/watch?v=KYj675gaVQE)
+- 147: [The Endgame - Full White Genocide Documentary](https://www.youtube.com/watch?v=uMfk5UeGw4E)
+- 148: [Agenda 21 - Replacement Migration - United Nations](https://www.youtube.com/watch?v=9UvURb98aqU)
+- 149: [Dear President Trump: The Truth About the 6,000,000](https://www.youtube.com/watch?v=9I-h8Vz6CX0)
+- 150: [Queen Admits She Is “Not Human” Published On Royal Website - Screen Capture Before Taken Down](https://www.youtube.com/watch?v=0Kkltxlkxl8)
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
 
