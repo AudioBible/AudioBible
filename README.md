@@ -333,6 +333,10 @@
 - 154: [Illuminati, Reptilians & The Manipulation of Reality - David Icke](https://www.youtube.com/watch?v=G2Ta5uAlqgM)
 - 155: [David Icke, Revelations of a Mother Goddess - Full Video](https://www.youtube.com/watch?v=ASJou7DvtQE&list=PL4iMnclOjmBfGgkIraEgBZaN32fX5BYNi)
 - 156: [Rabbi Weiss Rips the Ideology of Zionism, Controlling ZIONIST are REPTILE ILLUMINATI BANKERS](https://www.youtube.com/watch?v=xt6i6drvGTo)
+- 157: [Jews Against Zionism And Rothschilds](https://www.youtube.com/watch?v=awCOSRg-gks)
+- 158: [A Jew speaks truth about Hitler and Nazi Germany - Full Video](https://www.youtube.com/watch?v=jFDvtzwT-TU)
+- 159: [Ahmed Huber : What did the Jews do to Germany in 1930?](https://www.youtube.com/watch?v=co6_y-OBogY)
+- 160: [ORIGIN OF SATANIC ZIONISM. MUST WATCH](https://www.youtube.com/watch?v=Lct-RZ3n4t4)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
