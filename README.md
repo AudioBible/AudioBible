@@ -362,7 +362,20 @@
 - 183: [Hey PewDiePie Watch This The Truth About Nazis / Brown Shirts](https://www.youtube.com/watch?v=tTcMje9Ok7Q)
 - 184: [KANYE WEST MK ULTRA PROGRAMMING ERASED! ILLUMINATI MEMORY LOSS MIND CONTROL BREAKDOWN EXPOSED!](https://www.youtube.com/watch?v=q5r8IwaJwo4)
 - 185: [Jr Smith Has Glitche, Illuminati, Mk Ultra Mind Control Meltdown W/Alter Ego](https://www.youtube.com/watch?v=9yoVauEuCmc)
-
+- 186: [Celebrities Expose Occult Entertainment Industry. MK Ultra & Disney Exposed. ](https://www.youtube.com/watch?v=AAd0BDc8gtw)
+- 187: [The Smithsonian: We Destroyed the Skeletons of Giant Humans...](https://www.youtube.com/watch?v=O5PHM2k0j2E)
+- 188: [Tila Tequila "I'm a Super Soldier" MK Ultra Illuminati Breakdown Continues](https://www.youtube.com/watch?v=LlbDlLLj8Ns)
+- 189: [The Mass Deception Of Turning Things Upside Down Agenda](https://www.youtube.com/watch?v=mh_5ceDAiCU)
+- 190: [Kanye West Rant Decoded (Unedited Version Is BANNED On YouTube)](https://www.youtube.com/watch?v=e6Ii9dUKFVQ)
+- 192: [Johnny Depp's Illuminati MK Ultra Meltdown Continues](https://www.youtube.com/watch?v=BrfV75xQuw8)
+- 193: [24/7 Flat Earth LIVE! 100% Proof NASA Lies & Earth is Not a Globe Research Flat Earth](https://www.youtube.com/watch?v=kcRlxKW07GA)
+- 194: [DICK GREGORY: A $lave CANNOT Know G0D! HUMBLE YO' SELF!!!](https://www.youtube.com/watch?v=59KilX9SNCI)
+- 195: [Watch U.S. Soldiers Expose The Illuminati (Illuminati Exposed) (2017)](https://www.youtube.com/watch?v=a8t4LzGwFp4)
+- 196: [Tim Allen Exposes What's Going on in Hollywood! (2017)](https://www.youtube.com/watch?v=Z-DkF98uBm8)
+- 197: [There is Something Very Strange about This Man! (2017-2018)](https://www.youtube.com/watch?v=39hRGHr0X_k)
+- 198: [How Come Nobody is Talking About This?! (2017-2018 EVENT)](https://www.youtube.com/watch?v=6qKHsA2YH0c)
+- 199: [The World in 2017: Prophecy Has Begun! (SHOCKING EVENTS)](https://www.youtube.com/watch?v=S5y6IgC5msU)
+- 200: [Listen to Trump's eye-opening talk about End Times.. (2017)](https://www.youtube.com/watch?v=v_rpJLqnRv0)
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
 
