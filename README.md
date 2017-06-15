@@ -342,7 +342,7 @@
 - 163: [Fake Jews And The Coming Destruction Of Israel](https://www.youtube.com/watch?v=rgI_cbx35Nc)
 - 164: [New Evidence Stuns The Jewish World](https://www.youtube.com/watch?v=r7nEltyhaYM)
 - 165: [Get this! 90% of Proclaimed Jews are not Jews at all (KHAZARS Exposed)](https://www.youtube.com/watch?v=DoCNZWIgP7w)
-
+- 166: [Rabbi Ralph Messer teaching that the original jews are black](https://www.youtube.com/watch?v=2h5Ylr4EPH4)
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
 
