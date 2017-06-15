@@ -327,11 +327,6 @@
 - 148: [Agenda 21 - Replacement Migration - United Nations](https://www.youtube.com/watch?v=9UvURb98aqU)
 - 149: [Dear President Trump: The Truth About the 6,000,000](https://www.youtube.com/watch?v=9I-h8Vz6CX0)
 - 150: [Queen Admits She Is “Not Human” Published On Royal Website - Screen Capture Before Taken Down](https://www.youtube.com/watch?v=0Kkltxlkxl8)
-- 151: [REPTILIAN MAYOR SADIQ KAHN SHAPESHIFTING!](https://www.youtube.com/watch?v=JMkupAEwY70)
-- 152: [NOT Advertiser Friendly- "Glitches or Reptilians Caught On Tape - Shape Shifter Species"](https://www.youtube.com/watch?v=XTx9LmR2RjU)
-- 153: [The 'Forbidden Fruit 'Was NOT An Apple'](https://www.youtube.com/watch?v=-tSCe2RQPmM)
-- 154: [Illuminati, Reptilians & The Manipulation of Reality - David Icke](https://www.youtube.com/watch?v=G2Ta5uAlqgM)
-- 155: [David Icke, Revelations of a Mother Goddess - Full Video](https://www.youtube.com/watch?v=ASJou7DvtQE&list=PL4iMnclOjmBfGgkIraEgBZaN32fX5BYNi)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
