@@ -337,6 +337,11 @@
 - 158: [A Jew speaks truth about Hitler and Nazi Germany - Full Video](https://www.youtube.com/watch?v=jFDvtzwT-TU)
 - 159: [Ahmed Huber : What did the Jews do to Germany in 1930?](https://www.youtube.com/watch?v=co6_y-OBogY)
 - 160: [ORIGIN OF SATANIC ZIONISM. MUST WATCH](https://www.youtube.com/watch?v=Lct-RZ3n4t4)
+- 161: [New York City: 10,000+ Jews Against Israel (U.S. Media Blackout)](https://www.youtube.com/watch?v=awCOSRg-gks)
+- 162: [Rebel Rabbis: Anti-Zionist Jews Against Israel](https://www.youtube.com/watch?v=FKplabTRuak)
+- 163: [Fake Jews And The Coming Destruction Of Israel](https://www.youtube.com/watch?v=rgI_cbx35Nc)
+- 164: [New Evidence Stuns The Jewish World](https://www.youtube.com/watch?v=r7nEltyhaYM)
+- 165: [Get this! 90% of Proclaimed Jews are not Jews at all (KHAZARS Exposed)](https://www.youtube.com/watch?v=DoCNZWIgP7w)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
