@@ -310,6 +310,13 @@
 - 131: [Melanie Trump Is A Man. Last Days Satanism.](https://www.youtube.com/watch?v=HwqCscLnCW8)
 - 132: [Alex Jones Friend Reveals What Happened To Bill Hicks At A Private Party](https://www.youtube.com/watch?v=_rM2re61BH4)
 - 133: [Alex Jones is a Woman. Bill Hicks 2! Part 1](https://www.youtube.com/watch?v=GqpzxccLW_0)
+- 134: [Ex government agent admits to the Hollow Earth cover up and that Black Americans are targeted](https://www.youtube.com/watch?v=xk75QtxSYwY)
+- 135: [Interview with Reptilian female Lacerta (With Clear Audio and Subtitles)](https://www.youtube.com/watch?v=wjaIq3fuJg8)
+- 136: [Hollow Earth True HISTORY , HITLER & NWO ( GOTTA SEE THIS !!! ) Documentary](https://www.youtube.com/watch?v=NiIWMmRkOok)
+- 137: [Former CIA Agent Makes a Shocking Statement that Will ROCK the Whole World...](https://www.youtube.com/watch?v=yaTGkSoI8Ic)
+- 138: [Amazing Conversation with the Reptilian Hybrid Housewife !!! (MUST WATCH)](https://www.youtube.com/watch?v=7RoLUnN9eWo)
+- 139: [A Brief History of the Saurians/Reptilians Documentary !!! (MUST WATCH)](https://www.youtube.com/watch?v=c_NZoSazYJU)
+- 140: [CIA Agent Says War Is Eugenics & Drug War Is Fake](https://www.youtube.com/watch?v=0LqDjk8vhyc)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
