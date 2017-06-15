@@ -22,7 +22,7 @@
     pip install --upgrade audiobible                            # update AudioBible to the latest version
 
     audiobible update                                           # update AudioBible using pip command internally
-    
+
     audiobible -h | --help                                      # show help
     audiobible help                                             # show help
     
@@ -41,15 +41,18 @@
     audiobible quote                                            # to output a quote
     
     audiobible hear mark                                        # to hear the book of "Mark" chapter 1
+    audiobible hear mark all                                    # to hear all chapters from the book of "Mark"
     audiobible hear -b mark                                     # to hear the book of "Mark" chapter 1
     audiobible hear mark 4                                      # to hear the book of "Mark" chapter 4
     audiobible hear -b mark -c 4                                # to hear the book of "Mark" chapter 4
     audiobible hear 1_john 3                                    # to hear the book of "1 John" chapter 3
     audiobible hear -b 1_john -c 3                              # to hear the book of "1 John" chapter 3
+    audiobible hear -b mark -c all                              # same as hear mark all, there is a bug i can't fix where it starts to play from the last file,
+                                                                #   just double click on the first one and it will start from the beginning playing the rest
     
     audiobible read mark 4                                      # to read Mark 4, (use params like with hear operation)
     
-    audiobible show mark 4                                      # to show the book of "Mark" chapter 4 text in the terminal
+    audiobible show mark 4                                      # to show the book of "Mark" chapter 4 text in the terminal, specify params like with hear operation
     
     audiobible find                                             # to output the whole Bible
     audiobible find -b 2_john                                   # to output the whole book of "2 John"
@@ -61,7 +64,7 @@
     
     audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
     audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
-
+    
     audiobible quote                                            # usage is same as with find operation
 
 

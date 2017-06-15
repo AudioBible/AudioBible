@@ -141,3 +141,8 @@
 =====
 
 - do what i was trying to do in 0.1.5, because i fogot to commit the file changes duh
+
+0.2.0
+=====
+
+- added chapter all, to open all chapter in a book to hear or show  or read the text
