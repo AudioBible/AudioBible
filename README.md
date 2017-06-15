@@ -351,6 +351,12 @@
 - 172: [Who Are the Real Jews?](https://www.youtube.com/watch?v=iLRKilCdwyo)
 - 173: [THE FAKE JEWS OF ISRAEL ARE KHAZARS, NOT THE TRUE BIBLICAL ISRAELITES](https://www.youtube.com/watch?v=QliT5M5sJSU)
 - 174: [Who Are The Real Children Of Israel?](https://www.youtube.com/watch?v=BloNZd3Ib_Q)
+- 175: [David Irving - The Faking of Adolf Hitler for History](https://www.youtube.com/watch?v=bwp7tVZuXKM)
+- 176: [Jews are Not God's Chosen People - The Truth Will Set You Free - Marching To Zion](https://www.youtube.com/watch?v=HCEQ6kAN9DU)
+- 177: [Ernst Zundel - Interviewed by an Israeli journalist (1996) GREAT !!!](https://www.youtube.com/watch?v=A5sbegfCz7o)
+- 178: [Khazar : Secret Ruling Empire of The World Exposed : Sheikh Imran Hosein](https://www.youtube.com/watch?v=b6rEts1BuN8)
+- 179: [The Truth - Rothschild & the Khazar History - Documentary](https://www.youtube.com/watch?v=hP4bzXfb6Go)
+- 180: [Hitler's War - What the Historians Neglect to Mention](https://www.youtube.com/watch?v=7mA0kk29DBA)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
