@@ -349,6 +349,8 @@
 - 170: [THE GREATEST LIE EVER TOLD - History is NOT what you think](https://www.youtube.com/watch?v=43jwrEDxDZQ)
 - 171: [Jewish people are not the real descendants of biblical Israel. Jews controlled African Slavery](https://www.youtube.com/watch?v=fsocwUhjL5s)
 - 172: [Who Are the Real Jews?](https://www.youtube.com/watch?v=iLRKilCdwyo)
+- 173: [THE FAKE JEWS OF ISRAEL ARE KHAZARS, NOT THE TRUE BIBLICAL ISRAELITES](https://www.youtube.com/watch?v=QliT5M5sJSU)
+- 174: [Who Are The Real Children Of Israel?](https://www.youtube.com/watch?v=BloNZd3Ib_Q)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
