@@ -360,6 +360,8 @@
 - 181: [Israel Banned Documentary](https://www.youtube.com/watch?v=IZZvTZAKgro)
 - 182: [Christopher Hitchens on Charlie Rose - On David Irving's controversial biography (May 8, 1996](https://www.youtube.com/watch?v=fdxTsWXZdFc)
 - 183: [Hey PewDiePie Watch This The Truth About Nazis / Brown Shirts](https://www.youtube.com/watch?v=tTcMje9Ok7Q)
+- 184: [KANYE WEST MK ULTRA PROGRAMMING ERASED! ILLUMINATI MEMORY LOSS MIND CONTROL BREAKDOWN EXPOSED!](https://www.youtube.com/watch?v=q5r8IwaJwo4)
+- 185: [Jr Smith Has Glitche, Illuminati, Mk Ultra Mind Control Meltdown W/Alter Ego](https://www.youtube.com/watch?v=9yoVauEuCmc)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
