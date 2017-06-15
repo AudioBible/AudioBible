@@ -359,6 +359,7 @@
 - 180: [Hitler's War - What the Historians Neglect to Mention](https://www.youtube.com/watch?v=7mA0kk29DBA)
 - 181: [Israel Banned Documentary](https://www.youtube.com/watch?v=IZZvTZAKgro)
 - 182: [Christopher Hitchens on Charlie Rose - On David Irving's controversial biography (May 8, 1996](https://www.youtube.com/watch?v=fdxTsWXZdFc)
+- 183: [Hey PewDiePie Watch This The Truth About Nazis / Brown Shirts](https://www.youtube.com/watch?v=tTcMje9Ok7Q)
 
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
