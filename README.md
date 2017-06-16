@@ -415,6 +415,7 @@
 - 209: [Why Did Adolf Hitler Hate Jews?](https://www.youtube.com/watch?v=PtEzozK9_Ww)
 - 210: [THE TIME HAS COME! THE NAKED TRUTH ABOUT JEWS](https://www.youtube.com/watch?v=dTrrHtcdES0)
 - 211: [Leonard Horowitz speaks about 528 HZ Healing Frequency in Vancouver, Washington (2008)](https://www.youtube.com/watch?v=A8SMtbQ7mfk)
+- 212: [IN LIES WE TRUST - The Secret Pharmaceutical Drug Conspiracy](https://www.youtube.com/watch?v=NkHcEGZ8oVs)
 
 
 ## [StopLookThink.com](http://stoplookthink.com)
