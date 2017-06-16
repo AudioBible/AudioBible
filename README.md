@@ -177,6 +177,8 @@
 
 ## RETARDS - Round Earth Taught Analed Retention Disorder Syndrome
 
+## [StopLookThink.com](http://stoplookthink.com)
+
 - 0: [The Greatest Truth Never Told](https://www.youtube.com/watch?v=ekkXHnSrlwY&list=PLD31E34390C5017E8)
 
 - 1: [Admiral Richard E. Byrd - South Pole Video Interview](https://www.youtube.com/watch?v=czW0iRJuH1A)
@@ -386,7 +388,7 @@
 - 206: [Healing Codes for the Biological Apocalypse - Clip 1 of 3](https://www.youtube.com/watch?v=rtZB9zeKDCM&list=PLD6DAFB7B2FE2C9BF)
 
 
-### [StopLookThink.com](http://stoplookthink.com)
+## [StopLookThink.com](http://stoplookthink.com)
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
 
