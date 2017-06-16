@@ -146,3 +146,13 @@
 =====
 
 - added chapter all, to open all chapter in a book to hear or show  or read the text
+
+0.2.1
+=====
+
+- Updated readme
+
+0.3.0
+=====
+
+- Added heal operation which opens a browser to 528Hz tones on youtube

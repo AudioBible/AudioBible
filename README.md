@@ -36,6 +36,8 @@
     
     audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
     
+    audiobible heal                                             # open a browser to a youtube playlist with 528Hz tones
+    
     audiobible path daniel                                      # show the path on the hard drive to the book of "Daniel"
     
     audiobible quote                                            # to output a quote

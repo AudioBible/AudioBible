@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.2.1'
+__version__ = '0.3.0'
 
 
 def extended_help():
@@ -37,6 +37,8 @@ audiobible load                                             # download all books
 audiobible list                                             # to list all books and the number of chapters each book has
 
 audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
+
+audiobible heal                                             # open a browser to a youtube playlist with 528Hz tones
 
 audiobible path daniel                                      # show the path on the hard drive to the book of "Daniel"
 
@@ -162,7 +164,7 @@ class AudioBible(object):
     def __init__(self, operation, book, chapter, context, before_context, after_context):
         function = operation[0] if operation[0].lower() in [
             'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote',
-            'path', 'praise', 'version', 'help', 'update', 'upgrade',
+            'path', 'praise', 'heal', 'version', 'help', 'update', 'upgrade',
         ] else 'help'
 
         if 'v' in function:
@@ -174,7 +176,7 @@ class AudioBible(object):
             sys.exit(0)
 
         proceed = True
-        if function not in ['init', 'load', 'help', 'praise']:
+        if function not in ['init', 'load', 'help', 'praise', 'heal']:
             self._load_books()
             self._set(operation, book, chapter)
             if not self.book:
@@ -302,6 +304,9 @@ class AudioBible(object):
 
     def praise(self):
         self._open("https://www.youtube.com/results?search_query=praise+worship+hymns")
+
+    def heal(self):
+        self._open("https://www.youtube.com/watch?v=hdmvMc7TZn0&list=RDhdmvMc7TZn0#t=46")
 
     def update(self):
         import subprocess
