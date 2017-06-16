@@ -493,7 +493,3 @@
 ## HERE IS A FLIER YOU CAN PRINT AND GIVE OUT TO PEOPLE
 
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
-
-## WARNING! DEMONIC SIGILS OF SUMMONING! FOR EDUCATIONAL PURPOSES!
-
-![Demons](demons.png)
