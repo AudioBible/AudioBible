@@ -68,7 +68,8 @@
     audiobible find water of life                               # to find water of life, say words to search for as params
     audiobible find water                                       # to find water, say the word to search the whole bible
     audiobible find 'it is done'                                # to find it is done, say the words to search as a string
-    audiobible find circle of the earth                         # to find circle of the earth
+    audiobible find circle of the earth -a partial              # to find query using fuzzy partial algorithm, also try: 'ratio', 'set', 'sort'; default is 'regex'
+                                                                # algorithms are only for the find operation
     
     audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
     audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
