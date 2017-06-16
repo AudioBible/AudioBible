@@ -376,6 +376,12 @@
 - 198: [How Come Nobody is Talking About This?! (2017-2018 EVENT)](https://www.youtube.com/watch?v=6qKHsA2YH0c)
 - 199: [The World in 2017: Prophecy Has Begun! (SHOCKING EVENTS)](https://www.youtube.com/watch?v=S5y6IgC5msU)
 - 200: [Listen to Trump's eye-opening talk about End Times.. (2017)](https://www.youtube.com/watch?v=v_rpJLqnRv0)
+- 201: [Increase Human Energy by Nikola Tesla](https://www.youtube.com/watch?v=PUZ73HqugYg)
+- 202: [[ MUST WATCH ] -The lost secrets of Nikola Tesla!](https://www.youtube.com/watch?v=_IWqPV9p0pk)
+- 203: [Tesla 369 Law of Attraction, Energy Frequency Vibration](https://www.youtube.com/watch?v=G1gceUefXBc)
+- 204: [Magnetism & Frequency (Knowledge is literally POWER !!!)](https://www.youtube.com/watch?v=JQ7ekeTPBWk)
+- 205: [The Secrets Of Vibration 528hz) Hidden truths of sound! Law Of Attraction Part 1](https://www.youtube.com/watch?v=cUiSMPHRrhc)
+
 
 ### [StopLookThink.com](http://stoplookthink.com)
 
