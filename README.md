@@ -388,7 +388,8 @@
 - 206: [Healing Codes for the Biological Apocalypse - Clip 1 of 3](https://www.youtube.com/watch?v=rtZB9zeKDCM&list=PLD6DAFB7B2FE2C9BF)
 - 207: [Adolf Hitler vs The Jew World Order](https://www.youtube.com/watch?v=ssCkc8t9sho)
 - 208: [Hitler didn't hate Jews. He hated zionism](https://www.youtube.com/watch?v=bYYTp29xA3o)
-
+- 209: [Why Did Adolf Hitler Hate Jews?](https://www.youtube.com/watch?v=PtEzozK9_Ww)
+- 210: [THE TIME HAS COME! THE NAKED TRUTH ABOUT JEWS](https://www.youtube.com/watch?v=dTrrHtcdES0)
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
