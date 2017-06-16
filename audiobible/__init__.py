@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.3.0'
+__version__ = '0.3.1'
 
 
 def extended_help():

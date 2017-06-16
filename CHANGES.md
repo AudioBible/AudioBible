@@ -156,3 +156,8 @@
 =====
 
 - Added heal operation which opens a browser to 528Hz tones on youtube
+
+0.3.1
+=====
+
+- version bump, same as 0.3.0
