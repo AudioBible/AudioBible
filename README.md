@@ -455,6 +455,8 @@
 
 ## OPEN YOUR MIND! BREAK FREE FROM THE LIES AND SATANIC PROGRAMMING!
 
+![nikola-tesla-energy-frequency-vibration](nikola-tesla-energy-frequency-vibration.png)
+
 [![jwish-parliamnetbannedweb-sizeweb](jwish-parliamnetbannedweb-sizeweb.jpg)](https://www.youtube.com/user/drdduke)
 
 # HISTORY REPEATS ITSELF
