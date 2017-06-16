@@ -134,6 +134,23 @@
     MALACHI                       |   4     |
 
 
+**TODO:** add tones operation to turn books into Solfeggio audio tones.
+
+    as per https://www.youtube.com/watch?v=tB23aQU1nag
+    
+    Using Pythagorean numerology each character of the text of Genesis from the King James Bible was reduced to a number from 1 to 9.
+    This sequence of numbers is used to play the corresponding 9 tones of the extended Sacred Solfeggio:
+    1- 174Hz
+    2- 285Hz
+    3- 396Hz (Ut)
+    4- 417Hz (Re)
+    5- 528Hz (Mi)
+    6- 639Hz (Fa)
+    7- 741Hz (Sol)
+    8- 852Hz (La)
+    9- 963Hz
+
+
 ## I pray God helps you to see, hear, read and understand and most importantly do something right about it! God bless you on your journey! Thank you for reading.
 
 
