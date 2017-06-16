@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.4.0'
+__version__ = '0.4.1'
 
 
 def extended_help():
@@ -314,7 +314,8 @@ class AudioBible(object):
         self._open("https://www.youtube.com/results?search_query=praise+worship+hymns")
 
     def heal(self):
-        self._open("https://www.youtube.com/watch?v=hdmvMc7TZn0&list=RDhdmvMc7TZn0#t=46")
+        # self._open("https://www.youtube.com/watch?v=hdmvMc7TZn0&list=RDhdmvMc7TZn0#t=46")
+        self._open("https://mynoise.net/NoiseMachines/solfeggioTonesGenerator.php")
 
     def update(self):
         import subprocess

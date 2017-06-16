@@ -167,3 +167,8 @@
 
 - added algorithms to be able to fuzzy match search text with levenshtein
 - fix show operation lines output to be separated
+
+0.4.1
+=====
+
+- change url for heal operation to point to a solfeggio tones generator

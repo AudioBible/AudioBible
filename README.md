@@ -142,11 +142,11 @@
     This sequence of numbers is used to play the corresponding 9 tones of the extended Sacred Solfeggio:
     1- 174Hz
     2- 285Hz
-    3- 396Hz (Ut)
-    4- 417Hz (Re)
-    5- 528Hz (Mi)
-    6- 639Hz (Fa)
-    7- 741Hz (Sol)
+    3- 396Hz (Ut)  -
+    4- 417Hz (Re)  -
+    5- 528Hz (Mi)  -
+    6- 639Hz (Fa)  -
+    7- 741Hz (Sol) -
     8- 852Hz (La)
     9- 963Hz
 
