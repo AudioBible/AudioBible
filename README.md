@@ -442,6 +442,8 @@
 
 ![jews-declare-war-on-germany](jews-declare-war-on-germany.png)
 
+![hitler-loved-his-people-unlike-stalin](hitler-loved-his-people-unlike-stalin.png)
+
 ![germany1](germany1.png)
 
 ![germany2](germany2.png)
