@@ -406,6 +406,10 @@
 
 ![SunAnimation](SunAnimation.gif)
 
+![george-orwell1](george-orwell1.png)
+
+![george-orwell2](george-orwell2.png)
+
 # BE KIND TO EACH OTHER
 
 ![56f6b029eb00d9b24cc7470fd0a68468](56f6b029eb00d9b24cc7470fd0a68468.jpg)
