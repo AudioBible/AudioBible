@@ -161,3 +161,9 @@
 =====
 
 - version bump, same as 0.3.0
+
+0.4.0
+=====
+
+- added algorithms to be able to fuzzy match search text with levenshtein
+- fix show operation lines output to be separated

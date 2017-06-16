@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from kjv.spiders.bible import BibleSpider
 from kjv import settings
 
-__version__ = '0.3.1'
+__version__ = '0.4.0'
 
 
 def extended_help():
@@ -64,7 +64,8 @@ audiobible find -b james -c 5                               # to output chapter 
 audiobible find water of life                               # to find water of life, say words to search for as params
 audiobible find water                                       # to find water, say the word to search the whole bible
 audiobible find 'it is done'                                # to find it is done, say the words to search as a string
-audiobible find circle of the earth                         # to find circle of the earth
+audiobible find circle of the earth -a partial              # to find query using fuzzy partial algorithm, also try: 'ratio', 'set', 'sort'; default is 'regex'
+                                                            # algorithms are only for the find operation
 
 audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
 audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
@@ -88,6 +89,7 @@ parser = argparse.ArgumentParser(
     description='%(prog)s '+__version__+' - King James Version Audio Bible')
 
 parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, show, list, quote, praise, path, version, help, update")
+parser.add_argument("-a", "--algorithm", choices=['regex', 'ratio', 'partial', 'sort', 'set'])
 parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
 parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
 parser.add_argument("-C", "--context", type=int, help="print num lines of leading and trailing context surrounding each match.", default=None)
@@ -108,6 +110,7 @@ data_path = os.path.join(os.path.abspath(base_path), settings.DATA_STORE)
 content_path = os.path.join(data_path, settings.CONTENT_FILE)
 DEFAULT_BOOK = None
 DEFAULT_CHAPTER = 1
+DEFAULT_ALGORITHM = 'regex'
 
 
 class NumberOutOfRangeError(ValueError):
@@ -160,8 +163,9 @@ class AudioBible(object):
     after_context = None
     result = None
     query = ''
+    ratio = 'regex'
 
-    def __init__(self, operation, book, chapter, context, before_context, after_context):
+    def __init__(self, operation, algorithm, book, chapter, context, before_context, after_context):
         function = operation[0] if operation[0].lower() in [
             'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote',
             'path', 'praise', 'heal', 'version', 'help', 'update', 'upgrade',
@@ -184,6 +188,10 @@ class AudioBible(object):
                 proceed = False
 
         if function in ['find', 'quote']:
+            if algorithm in ['regex', 'ratio', 'partial', 'sort', 'set']:
+                self.algorithm = algorithm
+            else:
+                self.algorithm = DEFAULT_ALGORITHM
             self.query = " ".join(operation[1:]).strip(" ")
             self.result = getattr(self, function)(context, before_context, after_context)
         else:
@@ -333,7 +341,8 @@ class AudioBible(object):
         texts = []
         for t in text:
             if os.path.exists(t):
-                texts.append(open(t).read().strip())
+                for l in open(t).readlines():
+                    texts.append('%s\r\n' % l.strip())
         return "\r\n".join(texts).strip()
 
     def _files(self, path):
@@ -363,11 +372,11 @@ class AudioBible(object):
                 for filename in self._files(path):
                     if '.txt' in filename and os.path.exists(filename):
                         for l in open(filename).readlines():
-                            lines.append(l)
+                            lines.append('%s\r\n' % l.strip())
             else:
                 if '.txt' in path and os.path.exists(path):
                     for l in open(path).readlines():
-                        lines.append(l)
+                        lines.append('%s\r\n' % l.strip())
 
         if isinstance(the_path, list):
             for p in the_path:
@@ -413,7 +422,32 @@ class AudioBible(object):
                                 if verse not in output:
                                     output.append(verse)
 
-            self.get_lines(the_path, _process)
+            def _fuzz(lines):
+                scorer = fuzz.ratio
+                if self.algorithm == 'partial':
+                    scorer = fuzz.partial_ratio
+                elif self.algorithm == 'sort':
+                    scorer = fuzz.token_sort_ratio
+                elif self.algorithm == 'set':
+                    scorer = fuzz.token_set_ratio
+
+                res = process.extract(self.query, lines, scorer=scorer)
+                for rdx in range(len(res)):
+                    if res[rdx][1] >= 50:
+                        verse = res[rdx][0]
+                        if verse not in output:
+                            output.append(verse)
+
+            try:
+                if self.algorithm != 'regex':
+                    from fuzzywuzzy import process
+                    from fuzzywuzzy import fuzz
+                    self.get_lines(the_path, _fuzz)
+                else:
+                    self.get_lines(the_path, _process)
+            except ImportError:
+                self.get_lines(the_path, _process)
+
         elif type == 'quote':
             def _process(lines):
                 idx = random.choice(range(len(lines)))
@@ -492,8 +526,7 @@ class AudioBible(object):
         return self._get_text('quote', context, before, after)
 
     def help(self):
-        parser.print_help()
-        return self
+        return parser.print_help()
 
     def output(self):
         return self.result
@@ -506,6 +539,7 @@ def parse_args():
 def main(*args, **kwargs):
     def use_params(
         operation=None,
+        algorithm=None,
         book=None,
         chapter=None,
         context=None,
@@ -514,6 +548,7 @@ def main(*args, **kwargs):
     ):
         return AudioBible(
             operation=operation,
+            algorithm=algorithm,
             book=book,
             chapter=chapter,
             context=context,
@@ -528,6 +563,7 @@ def main(*args, **kwargs):
 
         return use_params(
             operation=args.operation,
+            algorithm=args.algorithm,
             book=args.book,
             chapter=args.chapter,
             context=args.context,
@@ -538,6 +574,7 @@ def main(*args, **kwargs):
     if isinstance(kwargs, dict):
         return use_params(
             operation=kwargs.get('operation'),
+            algorithm=kwargs.get('algorithm'),
             book=kwargs.get('book'),
             chapter=kwargs.get('chapter'),
             context=kwargs.get('context'),

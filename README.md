@@ -6,14 +6,20 @@
 # Install On Mac
 
     brew install python libxml2                                 # install dependencies
-    pip install scrapy
+    pip install scrapy                                          # install this to be able to download the Books
+    pip install fuzzywuzzy                                      # install this to have search algorithms                              
+    pip install python-Levenshtein                              # install this to have search algorithms
+    
     pip install audiobible                                      # install AudioBible with python pip
 
 
 # Install On Ubuntu Linux
 
     sudo apt-get install python-pip libxml2 python-lxml         # install dependencies
-    sudo pip install scrapy
+    pip install scrapy                                          # install this to be able to download the Books
+    pip install fuzzywuzzy                                      # install this to have search algorithms                              
+    pip install python-Levenshtein                              # install this to have search algorithms
+    
     sudo pip install audiobible                                 # install AudioBible with python pip
 
 
