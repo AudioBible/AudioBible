@@ -49,8 +49,6 @@
     
     audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
     
-    audiobible sermons                                          # opens the default browser to http://sermonaudio.com
-    
     audiobible path daniel                                      # show the path on the hard drive to the book of "Daniel"
     
     audiobible quote                                            # to output a quote
@@ -82,6 +80,9 @@
     audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
     
     audiobible quote                                            # usage is same as with find operation
+
+    audiobible sermons                                          # opens the default browser to http://sermonaudio.com
+                                                                #  usage is same as with hear operation
 
 
 **Note:** Tested and created on a Mac, should work on Windows and Unix/Linux and other OSes.
