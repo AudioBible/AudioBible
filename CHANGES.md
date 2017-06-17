@@ -179,3 +179,8 @@
 - change print to sys.stdout.write
 - handle keyboard interrupt and system exit exceptions
 - make it so dont have to type the whole book name to select a book
+
+0.4.3
+=====
+
+- fix bug in 2_ki as param should return 2_kings

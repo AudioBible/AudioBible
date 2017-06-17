@@ -14,7 +14,7 @@ try:
     from kjv.spiders.bible import BibleSpider
     from kjv import settings
 
-    __version__ = '0.4.2'
+    __version__ = '0.4.3'
 
 
     def extended_help():
@@ -260,7 +260,7 @@ class AudioBible(object):
             found = None
             for bdx in range(len(self.books)):
                 book = str(value).upper().replace(' ', '_')
-                match = re.search(book, self.books[bdx]['name'], re.IGNORECASE)
+                match = re.search(book, self.books[bdx]['name'].replace(' ', '_'), re.IGNORECASE)
                 if match:
                     found = match.string
                     break
