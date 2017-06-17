@@ -14,7 +14,7 @@ try:
     from kjv.spiders.bible import BibleSpider
     from kjv import settings
 
-    __version__ = '0.5.0'
+    __version__ = '0.5.1'
 
 
     def extended_help():

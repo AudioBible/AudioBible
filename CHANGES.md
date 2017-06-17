@@ -190,3 +190,8 @@
 
 - remove heal operation, its the frequency of saturn/satan, i was deceived into adding that operation, now its gone
 - added sermons operation
+
+0.5.1
+=====
+
+- update readme
