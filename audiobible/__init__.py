@@ -1,23 +1,24 @@
 #! /usr/bin/env python2
 
-import re
-import os
-import sys
-import json
-import random
-import argparse
-from scrapy.crawler import CrawlerProcess
+try:
+    import re
+    import os
+    import sys
+    import json
+    import random
+    import argparse
+    from scrapy.crawler import CrawlerProcess
 
-sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+    sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
-from kjv.spiders.bible import BibleSpider
-from kjv import settings
+    from kjv.spiders.bible import BibleSpider
+    from kjv import settings
 
-__version__ = '0.4.1'
+    __version__ = '0.4.2'
 
 
-def extended_help():
-    return """
+    def extended_help():
+        return """
 
 https://github.com/AudioBible/AudioBible                    https://github.com/AudioBible/KJV
 
@@ -83,34 +84,37 @@ audiobible quote                                            # usage is same as w
 
 """
 
-parser = argparse.ArgumentParser(
-    prog='audiobible' or sys.argv[0],
-    usage=extended_help() + """audiobible [-h] [-b BOOK] [-c CHAPTER] [-C CONTEXT] [-B BEFORE_CONTEXT] [-A AFTER_CONTEXT] operation [words ...]""",
-    description='%(prog)s '+__version__+' - King James Version Audio Bible')
+    parser = argparse.ArgumentParser(
+        prog='audiobible' or sys.argv[0],
+        usage=extended_help() + """audiobible [-h] [-b BOOK] [-c CHAPTER] [-C CONTEXT] [-B BEFORE_CONTEXT] [-A AFTER_CONTEXT] operation [words ...]""",
+        description='%(prog)s '+__version__+' - King James Version Audio Bible')
 
-parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, show, list, quote, praise, path, version, help, update")
-parser.add_argument("-a", "--algorithm", choices=['regex', 'ratio', 'partial', 'sort', 'set'])
-parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
-parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
-parser.add_argument("-C", "--context", type=int, help="print num lines of leading and trailing context surrounding each match.", default=None)
-parser.add_argument("-B", "--before-context", type=int, help="print num lines of trailing context before each match.", default=None)
-parser.add_argument("-A", "--after-context", type=int, help="print num lines of trailing context after each match.", default=None)
+    parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, show, list, quote, praise, path, version, help, update")
+    parser.add_argument("-a", "--algorithm", choices=['regex', 'ratio', 'partial', 'sort', 'set'])
+    parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
+    parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
+    parser.add_argument("-C", "--context", type=int, help="print num lines of leading and trailing context surrounding each match.", default=None)
+    parser.add_argument("-B", "--before-context", type=int, help="print num lines of trailing context before each match.", default=None)
+    parser.add_argument("-A", "--after-context", type=int, help="print num lines of trailing context after each match.", default=None)
 
-if len(sys.argv) == 1:
-    parser.print_help()
-    sys.exit(1)
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(1)
 
-bot_name = settings.BOT_NAME
+    bot_name = settings.BOT_NAME
 
-base_path = os.environ.get('BOOKS_PATH', None)
-if not base_path:
-    base_path = os.path.expanduser('~')
+    base_path = os.environ.get('BOOKS_PATH', None)
+    if not base_path:
+        base_path = os.path.expanduser('~')
 
-data_path = os.path.join(os.path.abspath(base_path), settings.DATA_STORE)
-content_path = os.path.join(data_path, settings.CONTENT_FILE)
-DEFAULT_BOOK = None
-DEFAULT_CHAPTER = 1
-DEFAULT_ALGORITHM = 'regex'
+    data_path = os.path.join(os.path.abspath(base_path), settings.DATA_STORE)
+    content_path = os.path.join(data_path, settings.CONTENT_FILE)
+    DEFAULT_BOOK = None
+    DEFAULT_CHAPTER = 1
+    DEFAULT_ALGORITHM = 'regex'
+
+except (KeyboardInterrupt, SystemExit):
+    sys.exit(0)
 
 
 class NumberOutOfRangeError(ValueError):
@@ -172,7 +176,7 @@ class AudioBible(object):
         ] else 'help'
 
         if 'v' in function:
-            print(__version__)
+            sys.stdout.write(__version__)
             sys.exit(0)
 
         if 'update' in function:
@@ -239,22 +243,30 @@ class AudioBible(object):
                     self.chapter = self._valid('chapter', chapter)
                 except (ValueError, TypeError, ChapterNotFoundError) as e:
                     the_chapter = chapter if chapter else operation[2]
-                    print('Book:', self.get_book())
+                    sys.stdout.write('Book:', self.get_book())
                     sys.exit('%s: %s' % (e.message, the_chapter))
             else:
                 try:
                     raise ChapterNotFoundError('Chapter Not Found')
                 except ChapterNotFoundError as e:
                     the_chapter = chapter if chapter else operation[2]
-                    print('Book:', self.get_book())
+                    sys.stdout.write('Book:', self.get_book())
                     sys.exit('%s: %s' % (e.message, the_chapter))
         except IndexError:
             self.chapter = DEFAULT_CHAPTER
 
     def _valid(self, name, value):
         if name is 'book':
-            if str(value).upper().replace(' ', '_') in [b['name'].upper().replace(' ', '_') for b in self.books]:
-                return str(value).upper().replace(' ', '_')
+            found = None
+            for bdx in range(len(self.books)):
+                book = str(value).upper().replace(' ', '_')
+                match = re.search(book, self.books[bdx]['name'], re.IGNORECASE)
+                if match:
+                    found = match.string
+                    break
+
+            if found:
+                return found
             else:
                 raise BookNotFoundError('Book Not Found')
         if name is 'chapter':
@@ -273,12 +285,12 @@ class AudioBible(object):
                 raise ChapterNotFoundError('Chapter Not Found')
 
     def init(self):
-        print('downloading content from audiobible.com')
+        sys.stdout.write('downloading content from audiobible.com')
         DownloadBible.process()
         return self
 
     def load(self):
-        print('downloading bible from audiobible.com')
+        sys.stdout.write('downloading bible from audiobible.com')
         DownloadBible.process()
         return self
 
@@ -409,9 +421,12 @@ class AudioBible(object):
                     if match:
                         if before:
                             for num in range(int(before), 0, -1):
-                                verse = lines[line - num]
-                                if verse not in output:
-                                    output.append(verse)
+                                try:
+                                    verse = lines[line - num]
+                                    if verse not in output:
+                                        output.append(verse)
+                                except IndexError:
+                                    pass
 
                         verse = match.string
                         if verse not in output:
@@ -419,9 +434,12 @@ class AudioBible(object):
 
                         if after:
                             for num in range(1, int(after) + 1):
-                                verse = lines[line + num]
-                                if verse not in output:
-                                    output.append(verse)
+                                try:
+                                    verse = lines[line + num]
+                                    if verse not in output:
+                                        output.append(verse)
+                                except IndexError:
+                                    pass
 
             def _fuzz(lines):
                 scorer = fuzz.ratio
@@ -547,15 +565,18 @@ def main(*args, **kwargs):
         before_context=None,
         after_context=None
     ):
-        return AudioBible(
-            operation=operation,
-            algorithm=algorithm,
-            book=book,
-            chapter=chapter,
-            context=context,
-            before_context=before_context,
-            after_context=after_context
-        ).output()
+        try:
+            return AudioBible(
+                operation=operation,
+                algorithm=algorithm,
+                book=book,
+                chapter=chapter,
+                context=context,
+                before_context=before_context,
+                after_context=after_context
+            ).output()
+        except (KeyboardInterrupt, SystemExit):
+            sys.exit(0)
 
     # argparse arguments
     if len(args) > 0 \
@@ -597,4 +618,4 @@ def use_keyword_args(**kwargs):
 if __name__ == '__main__':
     result = use_parse_args()
     if result:
-        print(result)
+        sys.stdout.write("%s\r\n" % result.strip())

@@ -172,3 +172,10 @@
 =====
 
 - change url for heal operation to point to a solfeggio tones generator
+
+0.4.2
+=====
+
+- change print to sys.stdout.write
+- handle keyboard interrupt and system exit exceptions
+- make it so dont have to type the whole book name to select a book
