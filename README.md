@@ -5,6 +5,7 @@
 - [Are You Serious? Flat Earth?](https://www.youtube.com/watch?v=VkGm0rcxCBU)
 - [Illumination of the Third Eye - Pastor Charles Lawson](https://www.youtube.com/watch?v=8B-KT94bWHg)
 - [The Fruits Of The Holy Spirit](https://www.youtube.com/watch?v=AFNAriKobp8)
+- [Beware the Emerging Church Movement (Pastor Charles Lawson)](https://www.youtube.com/watch?v=3QJ226sGfNI)
 
 # Install On Mac
 
