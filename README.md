@@ -536,6 +536,8 @@
 
 ![manufactured-terrorism](manufactured-terrorism.png)
 
+![disney-died-jews-instated](disney-died-jews-instated.png)
+
 # THEY ARE THE SAME ONES WHO CRUCIFIED JESUS
 
 ![INRI](INRI.png)
