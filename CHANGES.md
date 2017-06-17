@@ -184,3 +184,9 @@
 =====
 
 - fix bug in 2_ki as param should return 2_kings
+
+0.5.0
+=====
+
+- remove heal operation, its the frequency of saturn/satan, i was deceived into adding that operation, now its gone
+- added sermons operation

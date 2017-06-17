@@ -49,7 +49,7 @@
     
     audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
     
-    audiobible heal                                             # open a browser to a youtube playlist with 528Hz tones
+    audiobible sermons                                          # opens the default browser to http://sermonaudio.com
     
     audiobible path daniel                                      # show the path on the hard drive to the book of "Daniel"
     
@@ -139,23 +139,6 @@
     HAGGAI                        |   2     |
     ZECHARIAH                     |   14    |
     MALACHI                       |   4     |
-
-
-**TODO:** add tones operation to turn books into Solfeggio audio tones.
-
-    as per https://www.youtube.com/watch?v=tB23aQU1nag
-    
-    Using Pythagorean numerology each character of the text of Genesis from the King James Bible was reduced to a number from 1 to 9.
-    This sequence of numbers is used to play the corresponding 9 tones of the extended Sacred Solfeggio:
-    1- 174Hz
-    2- 285Hz
-    3- 396Hz (Ut)  -
-    4- 417Hz (Re)  -
-    5- 528Hz (Mi)  -
-    6- 639Hz (Fa)  -
-    7- 741Hz (Sol) -
-    8- 852Hz (La)
-    9- 963Hz
 
 
 ## I pray God helps you to see, hear, read and understand and most importantly do something right about it! God bless you on your journey! Thank you for reading.
@@ -427,6 +410,8 @@
 - 214: [Joel Osteen Exposed - Reptilian False Prophets](https://www.youtube.com/watch?v=Gba8BtJAOqg)
 - 215: [JOEL OSTEEN DENIES JESUS CHRIST & OPRAH WINFREY EXPOSED! Joel Osteen hoax ](https://www.youtube.com/watch?v=weEWl52wevI)
 - 216: [Beware: The Greatest Deception of All - Billions will be Deceived](https://www.youtube.com/watch?v=8Gsj9Ed8qkU)
+- 217: [528 HZ Healing Frequency Of Satan & Vibes New Age Belief Breakdowns Part 4](https://www.youtube.com/watch?v=1OQ-2faooKw)
+
 
 ## [StopLookThink.com](http://stoplookthink.com)
 

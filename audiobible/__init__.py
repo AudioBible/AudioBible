@@ -14,7 +14,7 @@ try:
     from kjv.spiders.bible import BibleSpider
     from kjv import settings
 
-    __version__ = '0.4.3'
+    __version__ = '0.5.0'
 
 
     def extended_help():
@@ -38,8 +38,6 @@ audiobible load                                             # download all books
 audiobible list                                             # to list all books and the number of chapters each book has
 
 audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
-
-audiobible heal                                             # open a browser to a youtube playlist with 528Hz tones
 
 audiobible path daniel                                      # show the path on the hard drive to the book of "Daniel"
 
@@ -73,6 +71,8 @@ audiobible find circle -A 5 -B 2                            # to show 2 verse be
 
 audiobible quote                                            # usage is same as with find operation
 
+audiobible sermons                                          # opens the default browser to http://sermonaudio.com
+                                                            #  usage is same as with hear operation
 
 # THE EARTH IS FLAT! [RESEARCH IT ON YOUTUBE](https://www.youtube.com/results?search_query=flat+earth&page=&utm_source=opensearch)!
 
@@ -89,7 +89,7 @@ audiobible quote                                            # usage is same as w
         usage=extended_help() + """audiobible [-h] [-b BOOK] [-c CHAPTER] [-C CONTEXT] [-B BEFORE_CONTEXT] [-A AFTER_CONTEXT] operation [words ...]""",
         description='%(prog)s '+__version__+' - King James Version Audio Bible')
 
-    parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, show, list, quote, praise, path, version, help, update")
+    parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, show, list, quote, praise, sermons, path, version, help, update")
     parser.add_argument("-a", "--algorithm", choices=['regex', 'ratio', 'partial', 'sort', 'set'])
     parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
     parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
@@ -172,7 +172,7 @@ class AudioBible(object):
     def __init__(self, operation, algorithm, book, chapter, context, before_context, after_context):
         function = operation[0] if operation[0].lower() in [
             'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote',
-            'path', 'praise', 'heal', 'version', 'help', 'update', 'upgrade',
+            'path', 'praise', 'sermon', 'sermons', 'version', 'help', 'update', 'upgrade',
         ] else 'help'
 
         if 'v' in function:
@@ -184,10 +184,10 @@ class AudioBible(object):
             sys.exit(0)
 
         proceed = True
-        if function not in ['init', 'load', 'help', 'praise', 'heal']:
+        if function not in ['init', 'load', 'help', 'praise']:
             self._load_books()
             self._set(operation, book, chapter)
-            if not self.book:
+            if not self.book and (function != 'sermons' or function != 'sermon'):
                 self.result = self.list()
                 proceed = False
 
@@ -325,9 +325,17 @@ class AudioBible(object):
     def praise(self):
         self._open("https://www.youtube.com/results?search_query=praise+worship+hymns")
 
-    def heal(self):
-        # self._open("https://www.youtube.com/watch?v=hdmvMc7TZn0&list=RDhdmvMc7TZn0#t=46")
-        self._open("https://mynoise.net/NoiseMachines/solfeggioTonesGenerator.php")
+    def sermons(self):
+        if self.get_book():
+            if not isinstance(self.get_chapter(), list):
+                chapter = self.get_chapter()
+            else:
+                chapter = ''
+            self._open(
+                "http://www.sermonaudio.com/search.asp?BibleOnly=true&keyword=%s&chapter=%s" %
+                (self.get_book(), chapter))
+        else:
+            self._open("http://sermonaudio.com")
 
     def update(self):
         import subprocess
