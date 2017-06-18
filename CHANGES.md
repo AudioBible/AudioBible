@@ -200,3 +200,8 @@
 =====
 
 - added speakers and topics and sermons
+
+0.7.1
+=====
+
+- finish list topics

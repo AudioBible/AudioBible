@@ -18,7 +18,7 @@ try:
 
     from kjv import settings
 
-    __version__ = '0.7.0'
+    __version__ = '0.7.1'
 
 
     def extended_help():
@@ -288,7 +288,6 @@ class AudioBible(object):
             # if function not in ['list']:
             self._set(operation, book, chapter, speaker, topic)
             if not self.book and function not in 'sermons':
-                print function
                 self.result = self.list()
                 proceed = False
 
@@ -789,13 +788,30 @@ class AudioBible(object):
                                 re.IGNORECASE
                             )
                             if match:
-                                output += "%s\r\n" % match.string.encode('utf-8')
+                                output += "%s\r\n" % match.string
+                        else:
+                            output += "%s\r\n" % s[1].replace('speaker/', '').replace('_', ' ')
             else:
                 output = 'No speakers found. Please run this command to download them:\r\n'
                 output += 'audiobible init speakers\r\n'
         elif 'topics' in self.scope:
+            found = False
             if len(self.topics['A']) > 0:
-                pass
+                for k in self.topics.keys():
+                    if not found:
+                        for t in self.topics[k]:
+                            if self.topic:
+                                match = re.search(
+                                    self.topic,
+                                    t['name'],
+                                    re.IGNORECASE
+                                )
+                                if match:
+                                    found = True
+                                    output += "%s\r\n" % match.string
+                            else:
+                                found = True
+                                output += "%s\r\n" % t["name"]
             else:
                 output = 'No topics found. Please run this command to download them:\r\n'
                 output += 'audiobible init topics\r\n'
@@ -886,4 +902,4 @@ def use_keyword_args(**kwargs):
 if __name__ == '__main__':
     result = use_parse_args()
     if result:
-        sys.stdout.write("%s\r\n" % str(result).strip())
+        sys.stdout.write("%s\r\n" % str(result.encode('utf-8')).strip())
