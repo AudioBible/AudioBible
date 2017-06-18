@@ -158,3 +158,97 @@ class Mp3Pipeline(FileExporter):
                 chapter_file = self.files.pop(spider)
                 chapter_file.close()
         return item
+
+
+class SpeakerPipeline(FileExporter):
+    def __init__(self):
+        self.files = {}
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        pipeline = cls()
+        crawler.signals.connect(pipeline.spider_opened, signals.spider_opened)
+        crawler.signals.connect(pipeline.spider_closed, signals.spider_closed)
+        return pipeline
+
+    def spider_opened(self, spider):
+        pass
+
+    def spider_closed(self, spider):
+        pass
+
+    def process_item(self, item, spider):
+        DATA_STORE = spider.settings.get('DATA_STORE')
+        if item and \
+                'name' in item.keys() and \
+                'path' in item.keys() and \
+                'letter' in item.keys():
+            found_in_speaker_file = False
+            SPEAKERS_FILE = os.path.join(DATA_STORE, spider.settings.get('SPEAKERS_FILE') % item['letter'])
+            if os.path.exists(SPEAKERS_FILE):
+                with open(SPEAKERS_FILE, 'r') as speakers:
+                    for speaker in speakers:
+                        if item['name'] in speaker:
+                            found_in_speaker_file = True
+
+                            break
+            else:
+                ensure_dir('%s' % DATA_STORE)
+
+            if not found_in_speaker_file:
+                speakers_file = open(SPEAKERS_FILE, 'a+')
+                self.files[spider] = speakers_file
+                self.exporter = JsonLinesItemExporter(speakers_file)
+                self.exporter.start_exporting()
+                self.exporter.export_item(item)
+                self.exporter.finish_exporting()
+                chapter_file = self.files.pop(spider)
+                chapter_file.close()
+        return item
+
+
+class TopicPipeline(FileExporter):
+    def __init__(self):
+        self.files = {}
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        pipeline = cls()
+        crawler.signals.connect(pipeline.spider_opened, signals.spider_opened)
+        crawler.signals.connect(pipeline.spider_closed, signals.spider_closed)
+        return pipeline
+
+    def spider_opened(self, spider):
+        pass
+
+    def spider_closed(self, spider):
+        pass
+
+    def process_item(self, item, spider):
+        DATA_STORE = spider.settings.get('DATA_STORE')
+        if item and \
+                'name' in item.keys() and \
+                'url' in item.keys() and \
+                'letter' in item.keys():
+            found_in_topic_file = False
+            TOPICS_FILE = os.path.join(DATA_STORE, spider.settings.get('TOPICS_FILE') % item['letter'])
+            if os.path.exists(TOPICS_FILE):
+                with open(TOPICS_FILE, 'r') as topics:
+                    for topic in topics:
+                        if item['name'] in topic:
+                            found_in_topic_file = True
+
+                            break
+            else:
+                ensure_dir('%s' % DATA_STORE)
+
+            if not found_in_topic_file:
+                topics_file = open(TOPICS_FILE, 'a+')
+                self.files[spider] = topics_file
+                self.exporter = JsonLinesItemExporter(topics_file)
+                self.exporter.start_exporting()
+                self.exporter.export_item(item)
+                self.exporter.finish_exporting()
+                chapter_file = self.files.pop(spider)
+                chapter_file.close()
+        return item

@@ -23,15 +23,17 @@ class SpeakersSpider(scrapy.Spider):
         if response.status in (200, ):
             item, loader = get_item_and_loader('Speakers', keys=[
                 'name',
-                'path'
+                'path',
+                'letter'
             ])
             l = loader(response=response)
             names = l.get_xpath('//a[contains(@class, "navleftblack2b")][contains(@href, "speaker/")]/text()')
             paths = l.get_xpath('//a[contains(@class, "navleftblack2b")][contains(@href, "speaker/")]/@href')
             for n in range(len(names)):
                 itm = item()
-                itm['name'] = names[n].strip()
-                itm['path'] = paths[n].strip()
+                itm['name'] = u"".join(names[n]).strip()
+                itm['path'] = u"".join(paths[n]).strip()
+                itm['letter'] = u"".join(response.url.split('localsection=')[1].upper())
 
                 li = loader(item=itm)
                 yield li.load_item()

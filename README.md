@@ -37,13 +37,15 @@
     pip install --upgrade audiobible                            # update AudioBible to the latest version
 
     audiobible update                                           # update AudioBible using pip command internally
-
+    
     audiobible -h | --help                                      # show help
     audiobible help                                             # show help
     
     audiobible version                                          # show version number and exit
     
     audiobible init                                             # download data about all books and chapters in the KJV
+    audiobible init speaker                                     # download all the names of speakers from sermonaudio.com
+    audiobible init topics                                      # download all the topics from sermonaudio.com
     
     audiobible load                                             # download all books' and chapters' text and audio mp3 files
     
@@ -82,9 +84,10 @@
     audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
     
     audiobible quote                                            # usage is same as with find operation
-
+    
     audiobible sermons                                          # opens the default browser to http://sermonaudio.com
                                                                 #  usage is same as with hear operation
+    audiobible sermons -b mark -s "Charles Lawson"              # open browser to sermon "Charles Lawson" preaching the book of "Mark"
 
 
 **Note:** Tested and created on a Mac, should work on Windows and Unix/Linux and other OSes.
@@ -437,4 +440,6 @@
 ## God is so kind that it is impossible to imagine His unbounded kindness
 
 ![flat-earth-isaiah40-22](flat-earth-isaiah40-22.jpg)
+
+![the-firmament](the-firmament.jpeg)
 

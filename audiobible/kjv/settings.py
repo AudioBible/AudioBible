@@ -11,12 +11,12 @@
 
 BOT_NAME = 'kjv'
 
-SPIDER_MODULES = ['kjv.spiders']
-NEWSPIDER_MODULE = 'kjv.spiders'
+SPIDER_MODULES = ['kjv.bible', 'kjv.speakers', 'kjv.topics']
+NEWSPIDER_MODULE = 'kjv.bible'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'AudioBible-KJV (+http://www.audiobible.com)'
+USER_AGENT = 'AudioBible-KJV (+https://github.com/AudioBible/AudioBible)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -67,6 +67,8 @@ ROBOTSTXT_OBEY = True
 ITEM_PIPELINES = {
     BOT_NAME + '.pipelines.KjvPipeline': 1,
     BOT_NAME + '.pipelines.Mp3Pipeline': 2,
+    # BOT_NAME + '.pipelines.SpeakerPipeline': 3,
+    # BOT_NAME + '.pipelines.TopicPipeline': 4,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -92,3 +94,5 @@ ITEM_PIPELINES = {
 
 DATA_STORE = 'KJV'
 CONTENT_FILE = 'content.json'
+SPEAKERS_FILE = 'speakers-%s.json'
+TOPICS_FILE = 'topics-%s.json'

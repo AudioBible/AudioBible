@@ -6,15 +6,19 @@ try:
     import sys
     import json
     import random
+    import string
     import argparse
     from scrapy.crawler import CrawlerProcess
 
     sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
-    from kjv.spiders.bible import BibleSpider
+    from kjv.bible.bible import BibleSpider
+    from kjv.speakers.speakers import SpeakersSpider
+    from kjv.topics.topics import TopicsSpider
+
     from kjv import settings
 
-    __version__ = '0.5.1'
+    __version__ = '0.7.0'
 
 
     def extended_help():
@@ -32,6 +36,8 @@ audiobible help                                             # show help
 audiobible version                                          # show version number and exit
 
 audiobible init                                             # download data about all books and chapters in the KJV
+audiobible init speaker                                     # download all the names of speakers from sermonaudio.com
+audiobible init topics                                      # download all the topics from sermonaudio.com
 
 audiobible load                                             # download all books' and chapters' text and audio mp3 files
 
@@ -73,6 +79,7 @@ audiobible quote                                            # usage is same as w
 
 audiobible sermons                                          # opens the default browser to http://sermonaudio.com
                                                             #  usage is same as with hear operation
+audiobible sermons -b mark -s "Charles Lawson"              # open browser to sermon "Charles Lawson" preaching the book of "Mark"
 
 # THE EARTH IS FLAT! [RESEARCH IT ON YOUTUBE](https://www.youtube.com/results?search_query=flat+earth&page=&utm_source=opensearch)!
 
@@ -96,6 +103,8 @@ audiobible sermons                                          # opens the default 
     parser.add_argument("-C", "--context", type=int, help="print num lines of leading and trailing context surrounding each match.", default=None)
     parser.add_argument("-B", "--before-context", type=int, help="print num lines of trailing context before each match.", default=None)
     parser.add_argument("-A", "--after-context", type=int, help="print num lines of trailing context after each match.", default=None)
+    parser.add_argument("-s", "--speaker", type=str, help="speaker to hear a sermon from", default=None)
+    parser.add_argument("-t", "--topic", type=str, help="topic to hear a sermon on", default=None)
 
     if len(sys.argv) == 1:
         parser.print_help()
@@ -109,6 +118,8 @@ audiobible sermons                                          # opens the default 
 
     data_path = os.path.join(os.path.abspath(base_path), settings.DATA_STORE)
     content_path = os.path.join(data_path, settings.CONTENT_FILE)
+    speakers_path = os.path.join(data_path, settings.SPEAKERS_FILE)
+    topics_path = os.path.join(data_path, settings.TOPICS_FILE)
     DEFAULT_BOOK = None
     DEFAULT_CHAPTER = 1
     DEFAULT_ALGORITHM = 'regex'
@@ -132,21 +143,46 @@ class ChapterNotFoundError(ValueError):
         super(ChapterNotFoundError, self).__init__(*args, **kwargs)
 
 
+class SpeakerNotFoundError(ValueError):
+    def __init__(self, *args, **kwargs):
+        super(SpeakerNotFoundError, self).__init__(*args, **kwargs)
+
+
+class TopicNotFoundError(ValueError):
+    def __init__(self, *args, **kwargs):
+        super(TopicNotFoundError, self).__init__(*args, **kwargs)
+
+
 class FileNotFoundError(ValueError):
     def __init__(self, *args, **kwargs):
         super(FileNotFoundError, self).__init__(*args, **kwargs)
 
 
-class DownloadBible(object):
+class PathNotFoundError(ValueError):
+    def __init__(self, *args, **kwargs):
+        super(PathNotFoundError, self).__init__(*args, **kwargs)
+
+
+class DataNotFoundError(ValueError):
+    def __init__(self, *args, **kwargs):
+        super(DataNotFoundError, self).__init__(*args, **kwargs)
+
+
+class Download(object):
     @staticmethod
-    def process():
+    def _bible():
+        pipelines = {
+            bot_name + '.pipelines.KjvPipeline': 1,
+            bot_name + '.pipelines.Mp3Pipeline': 2,
+        }
+        spider_module = 'kjv.bible'
         process = CrawlerProcess({
             'BOT_NAME': bot_name,
             'SPIDER_MODULES': settings.SPIDER_MODULES,
-            'NEWSPIDER_MODULE': settings.NEWSPIDER_MODULE,
+            'NEWSPIDER_MODULE': spider_module,
             'USER_AGENT': settings.USER_AGENT,
             'ROBOTSTXT_OBEY': settings.ROBOTSTXT_OBEY,
-            'ITEM_PIPELINES': settings.ITEM_PIPELINES,
+            'ITEM_PIPELINES': pipelines,
             'DATA_STORE': data_path,
             'CONTENT_FILE': settings.CONTENT_FILE
         })
@@ -154,6 +190,58 @@ class DownloadBible(object):
             crawler_or_spidercls=BibleSpider,
             data_store=process.settings.get('DATA_STORE'),
             content_file=process.settings.get('CONTENT_FILE')
+        )
+        process.start()
+
+    @staticmethod
+    def init():
+        Download._bible()
+
+    @staticmethod
+    def load():
+        if os.path.exists(content_path):
+            Download._bible()
+        else:
+            sys.stdout.write('No books found. Please run this command to download them:\r\naudiobible init\r\n')
+    @staticmethod
+    def speakers():
+        pipelines = {
+            bot_name + '.pipelines.SpeakerPipeline': 1,
+        }
+        spider_module = 'kjv.speakers'
+        process = CrawlerProcess({
+            'BOT_NAME': bot_name,
+            'SPIDER_MODULES': settings.SPIDER_MODULES,
+            'NEWSPIDER_MODULE': spider_module,
+            'USER_AGENT': settings.USER_AGENT,
+            'ROBOTSTXT_OBEY': settings.ROBOTSTXT_OBEY,
+            'ITEM_PIPELINES': pipelines,
+            'DATA_STORE': data_path,
+            'SPEAKERS_FILE': settings.SPEAKERS_FILE
+        })
+        process.crawl(
+            crawler_or_spidercls=SpeakersSpider,
+        )
+        process.start()
+
+    @staticmethod
+    def topics():
+        pipelines = {
+            bot_name + '.pipelines.TopicPipeline': 1,
+        }
+        spider_module = 'kjv.topics'
+        process = CrawlerProcess({
+            'BOT_NAME': bot_name,
+            'SPIDER_MODULES': settings.SPIDER_MODULES,
+            'NEWSPIDER_MODULE': spider_module,
+            'USER_AGENT': settings.USER_AGENT,
+            'ROBOTSTXT_OBEY': settings.ROBOTSTXT_OBEY,
+            'ITEM_PIPELINES': pipelines,
+            'DATA_STORE': data_path,
+            'TOPICS_FILE': settings.TOPICS_FILE
+        })
+        process.crawl(
+            crawler_or_spidercls=TopicsSpider,
         )
         process.start()
 
@@ -168,26 +256,39 @@ class AudioBible(object):
     result = None
     query = ''
     ratio = 'regex'
+    scope = None
+    speaker = None
+    topic = None
+    speakers = {}
+    topics = {}
 
-    def __init__(self, operation, algorithm, book, chapter, context, before_context, after_context):
+    def __init__(self, operation, algorithm, book, chapter, speaker, topic, context, before_context, after_context):
         function = operation[0] if operation[0].lower() in [
             'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote',
             'path', 'praise', 'sermon', 'sermons', 'version', 'help', 'update', 'upgrade',
         ] else 'help'
 
-        if 'v' in function:
-            sys.stdout.write(__version__)
+        if 'version' in function:
+            sys.stdout.write('%s\r\n' % __version__)
             sys.exit(0)
 
         if 'update' in function:
             self.update()
             sys.exit(0)
 
+        if 'init' in function or 'list' in function:
+            self.scope = operation[1] if len(operation) > 1 else None
+
         proceed = True
         if function not in ['init', 'load', 'help', 'praise']:
             self._load_books()
-            self._set(operation, book, chapter)
-            if not self.book and (function != 'sermons' or function != 'sermon'):
+            if function in ['sermons', 'list']:
+                self._load_speakers()
+                self._load_topics()
+            # if function not in ['list']:
+            self._set(operation, book, chapter, speaker, topic)
+            if not self.book and function not in 'sermons':
+                print function
                 self.result = self.list()
                 proceed = False
 
@@ -209,8 +310,35 @@ class AudioBible(object):
                     self.books.append(json.loads(line))
         return self.books
 
-    def _set(self, operation, book, chapter):
-        if operation[0] not in ['find']:
+    def _load_speakers(self):
+        self.speakers = dict(zip(list(string.ascii_uppercase), [
+            [], [], [], [], [], [], [], [], [], [], [], [], [],
+            [], [], [], [], [], [], [], [], [], [], [], [], [],
+        ]))
+        letters = string.ascii_uppercase
+        for l in range(len(letters)):
+            path = speakers_path % letters[l]
+            if os.path.exists(path):
+                with open(path, 'r') as lines:
+                    for line in lines:
+                        data = json.loads(line)
+                        if data['name'][0] == letters[l]:
+                            self.speakers[letters[l]].append([data['name'], data['path']])
+        return self.speakers
+
+    def _load_topics(self):
+        self.topics = dict(zip(list(string.ascii_uppercase), [[]] * len(string.ascii_uppercase)))
+        letters = string.ascii_uppercase
+        for l in range(len(letters)):
+            path = topics_path % letters[l].strip()
+            if os.path.exists(path):
+                with open(path, 'r') as lines:
+                    for line in lines:
+                        self.topics[letters[l]].append(json.loads(line))
+        return self.topics
+
+    def _set(self, operation, book, chapter, speaker, topic):
+        if operation[0] not in ['find', 'sermons', 'list']:
             try:
                 self.book = self._valid('book', operation[1])
             except (IndexError, BookNotFoundError):
@@ -220,11 +348,31 @@ class AudioBible(object):
                 self.chapter = self._valid('chapter', operation[2])
             except (IndexError, ValueError, TypeError, ChapterNotFoundError):
                 self._valid_chapter(operation, chapter)
+        # elif operation[0] in ['list', 'sermon', 'sermons']:
+        #     try:
+        #         self.speaker = self._valid('speaker', operation[2])
+        #     except (IndexError, SpeakerNotFoundError):
+        #         self._valid_speaker(operation, speaker)
+        #
+        #     try:
+        #         self.topic = self._valid('topic', operation[3])
+        #     except (IndexError, SpeakerNotFoundError):
+        #         self._valid_topic(operation, topic)
         else:
             if book:
                 self._valid_book(operation, book)
             if chapter:
                 self._valid_chapter(operation, chapter)
+            if speaker:
+                self.speaker = speaker
+            elif len(operation) > 2:
+                self.speaker = operation[2]
+            if topic:
+                self.topic = topic
+            elif len(operation) > 3:
+                self.topic = operation[3]
+            # if speaker:
+            #     self._valid_speaker(operation, speaker)
 
     def _valid_book(self, operation, value):
         try:
@@ -243,17 +391,44 @@ class AudioBible(object):
                     self.chapter = self._valid('chapter', chapter)
                 except (ValueError, TypeError, ChapterNotFoundError) as e:
                     the_chapter = chapter if chapter else operation[2]
-                    sys.stdout.write('Book:', self.get_book())
+                    sys.stdout.write('Book: %s\r\n' % self.get_book())
                     sys.exit('%s: %s' % (e.message, the_chapter))
             else:
                 try:
                     raise ChapterNotFoundError('Chapter Not Found')
                 except ChapterNotFoundError as e:
                     the_chapter = chapter if chapter else operation[2]
-                    sys.stdout.write('Book:', self.get_book())
+                    sys.stdout.write('Book: %s\r\n' % self.get_book())
                     sys.exit('%s: %s' % (e.message, the_chapter))
         except IndexError:
             self.chapter = DEFAULT_CHAPTER
+
+    # def _valid_speaker(self, operation, speaker):
+    #     found = False
+    #     if speaker:
+    #         initial = speaker[0].upper()
+    #         print 'init:',initial
+    #         for sdx in range(len(self.speakers[initial])):
+    #             match = re.search(speaker, self.speakers[initial][sdx][0], re.IGNORECASE)
+    #             if match:
+    #                 found = match.string
+    #                 break
+    #
+    #         if found:
+    #             return found
+    #         else:
+    #             raise SpeakerNotFoundError('Speaker Not Found')
+    #
+    # def _valid_topic(self, operation, topic):
+    #     found = False
+    #     if topic:
+    #         initial = topic[0]
+    #         for sdx in range(len(self.topics[initial])):
+    #             if topic in self.topics[initial][sdx][0]:
+    #                 found = True
+    #
+    #         if found:
+    #             self.topic = topic
 
     def _valid(self, name, value):
         if name is 'book':
@@ -283,16 +458,43 @@ class AudioBible(object):
                     return val
             except (IndexError, TypeError, ValueError) as e:
                 raise ChapterNotFoundError('Chapter Not Found')
+        # if name is 'speaker':
+        #     found = None
+        #     try:
+        #         initial = value[0].upper()
+        #         if initial in self.speakers.keys():
+        #             for bdx in range(len(self.speakers[initial])):
+        #                 match = re.search(value, self.speakers[initial][bdx][0], re.IGNORECASE)
+        #                 if match:
+        #                     found = match.string
+        #                     break
+        #
+        #             if found:
+        #                 return value
+        #             else:
+        #                 raise SpeakerNotFoundError('Speaker Not Found')
+        #         else:
+        #             raise SpeakerNotFoundError('Speaker Not Found')
+        #     except (IndexError, TypeError, ValueError) as e:
+        #         raise SpeakerNotFoundError('Speaker Not Found')
+        # if name is 'topic':
+        #     try:
+        #         pass
+        #     except (IndexError, TypeError, ValueError) as e:
+        #         raise TopicNotFoundError('Topic Not Found')
 
     def init(self):
-        sys.stdout.write('downloading content from audiobible.com')
-        DownloadBible.process()
-        return self
+        if not self.scope:
+            return Download.init()
+        elif self.scope in 'bible':
+            return Download.load()
+        elif self.scope in 'speakers' or self.scope in 'preachers':
+            return Download.speakers()
+        elif self.scope in 'topics':
+            return Download.topics()
 
     def load(self):
-        sys.stdout.write('downloading bible from audiobible.com')
-        DownloadBible.process()
-        return self
+        return Download.load()
 
     def _open(self, filepath):
         import subprocess, os
@@ -326,14 +528,24 @@ class AudioBible(object):
         self._open("https://www.youtube.com/results?search_query=praise+worship+hymns")
 
     def sermons(self):
+        if self.speaker:
+            speaker = "&subsetCat=speaker&subsetItem=%s" % self.speaker
+        else:
+            speaker = ''
+
         if self.get_book():
             if not isinstance(self.get_chapter(), list):
                 chapter = self.get_chapter()
             else:
                 chapter = ''
             self._open(
-                "http://www.sermonaudio.com/search.asp?BibleOnly=true&keyword=%s&chapter=%s" %
-                (self.get_book(), chapter))
+                "http://www.sermonaudio.com/search.asp?BibleOnly=true&keyword=%s&chapter=%s%s" %
+                (self.get_book(), chapter, speaker))
+        elif self.topic:
+            self._open(
+                "http://www.sermonaudio.com/search.asp?currSection=sermonstopic&keyworddesc=%s&keyword=%s%s" %
+                (self.topic, self.topic, speaker)
+            )
         else:
             self._open("http://sermonaudio.com")
 
@@ -350,12 +562,16 @@ class AudioBible(object):
         for a in audio:
             if os.path.exists(a):
                 self._open(a)
+            else:
+                return 'File Not Found: %s\r\nPlease run this command to download it:\r\naudiobible load\r\n' % a
 
     def read(self):
         text = self.get_filenames('txt')
         for t in text:
             if os.path.exists(t):
                 self._open(t)
+            else:
+                return 'File Not Found: %s\r\nPlease run this command to download it:\r\naudiobible load\r\n' % t
 
     def show(self):
         text = self.get_filenames('txt')
@@ -364,6 +580,8 @@ class AudioBible(object):
             if os.path.exists(t):
                 for l in open(t).readlines():
                     texts.append('%s\r\n' % l.strip())
+            else:
+                return 'File Not Found: %s\r\nPlease run this command to download it:\r\naudiobible load\r\n' % t
         return "\r\n".join(texts).strip()
 
     def _files(self, path):
@@ -389,15 +607,16 @@ class AudioBible(object):
         lines = []
 
         def _get_lines(path):
-            if os.path.isdir(path):
-                for filename in self._files(path):
-                    if '.txt' in filename and os.path.exists(filename):
-                        for l in open(filename).readlines():
+            if os.path.exists(path):
+                if os.path.isdir(path):
+                    for filename in self._files(path):
+                        if '.txt' in filename and os.path.exists(filename):
+                            for l in open(filename).readlines():
+                                lines.append('%s\r\n' % l.strip())
+                else:
+                    if '.txt' in path and os.path.exists(path):
+                        for l in open(path).readlines():
                             lines.append('%s\r\n' % l.strip())
-            else:
-                if '.txt' in path and os.path.exists(path):
-                    for l in open(path).readlines():
-                        lines.append('%s\r\n' % l.strip())
 
         if isinstance(the_path, list):
             for p in the_path:
@@ -408,6 +627,8 @@ class AudioBible(object):
         callback(lines)
 
     def _get_text(self, type, context, before, after):
+        if not self.books:
+            return 'No books found. Please run these commands to download them:\r\naudiobible init\r\naudiobible load\r\n'
         the_path = data_path
         if self.get_book():
             the_path = os.path.join(the_path, self.get_book())
@@ -464,7 +685,6 @@ class AudioBible(object):
                         verse = res[rdx][0]
                         if verse not in output:
                             output.append(verse)
-
             try:
                 if self.algorithm != 'regex':
                     from fuzzywuzzy import process
@@ -477,24 +697,30 @@ class AudioBible(object):
 
         elif type == 'quote':
             def _process(lines):
-                idx = random.choice(range(len(lines)))
-                if before:
-                    for num in range(int(before), 0, -1):
-                        verse = lines[idx - num]
-                        if verse not in output:
-                            output.append(verse)
+                if lines:
+                    idx = random.choice(range(len(lines)))
+                    if before:
+                        for num in range(int(before), 0, -1):
+                            verse = lines[idx - num]
+                            if verse not in output:
+                                output.append(verse)
 
-                verse = lines[idx]
-                if verse not in output:
-                    output.append(verse)
+                    verse = lines[idx]
+                    if verse not in output:
+                        output.append(verse)
 
-                if after:
-                    for num in range(1, int(after) + 1):
-                        verse = lines[idx + num]
-                        if verse not in output:
-                            output.append(verse)
+                    if after:
+                        for num in range(1, int(after) + 1):
+                            verse = lines[idx + num]
+                            if verse not in output:
+                                output.append(verse)
+                else:
+                    raise DataNotFoundError()
 
-            self.get_lines(the_path, _process)
+            try:
+                self.get_lines(the_path, _process)
+            except DataNotFoundError as e:
+                return "No Data Found. Please run these commands to download:\r\naudiobible init\r\naudiobible load\r\n"
 
         return str("\r\n".join([o for o in output if o])).strip()
 
@@ -502,51 +728,77 @@ class AudioBible(object):
         return self._get_text('find', context, before, after)
 
     def list(self):
-        table_of_contents = {
-            'old': {
-                'names': [],
-                'count': []
-            },
-            'new': {
-                'names': [],
-                'count': []
-            }
-        }
-        is_old_testament = True
-        old = []
-        new = []
         output = ''
-        for book in self.books:
-            if book['name'].upper() in 'MATTHEW' or not is_old_testament:
-                is_old_testament = False
-                table_of_contents['new']['names'].append(book['name'].replace(' ', '_'))
-                table_of_contents['new']['count'].append('%d' % book['chapters_count'])
+        if not self.scope or 'books' in self.scope:
+            table_of_contents = {
+                'old': {
+                    'names': [],
+                    'count': []
+                },
+                'new': {
+                    'names': [],
+                    'count': []
+                }
+            }
+            is_old_testament = True
+            old = []
+            new = []
+            if self.books:
+                for book in self.books:
+                    if book['name'].upper() in 'MATTHEW' or not is_old_testament:
+                        is_old_testament = False
+                        table_of_contents['new']['names'].append(book['name'].replace(' ', '_'))
+                        table_of_contents['new']['count'].append('%d' % book['chapters_count'])
+                    else:
+                        table_of_contents['old']['names'].append(book['name'].replace(' ', '_'))
+                        table_of_contents['old']['count'].append('%d' % book['chapters_count'])
+
+                for a, z in zip(
+                        table_of_contents['old']['names'],
+                        table_of_contents['old']['count'],
+                ):
+                    old.append((a, z))
+
+                for a, z in zip(
+                        table_of_contents['new']['names'],
+                        table_of_contents['new']['count'],
+                ):
+                    new.append((a, z))
+
+                for i in range(len(old)):
+                    try:
+                        output += '{:<30}|   {:<6}| {:<30}|   {:<4}\r\n'.format(old[i][0], old[i][1], new[i][0], new[i][1])
+                    except IndexError:
+                        output += '{:<30}|   {:<6}|\r\n'.format(old[i][0], old[i][1])
+                output = '%s\r\n%s' % ('{:<30}|{:<7}|{:<30}|{:<4}\r\n'.format(
+                    '------------------------------', '---------', '-------------------------------', '--------'), output)
+                output = '%s\r\n%s' % (
+                    '{:<30}|   {:<6}| {:<30}|   {:<4}'.format('Old Testament', '###', 'New Testament', '##'), output)
             else:
-                table_of_contents['old']['names'].append(book['name'].replace(' ', '_'))
-                table_of_contents['old']['count'].append('%d' % book['chapters_count'])
-
-        for a, z in zip(
-                table_of_contents['old']['names'],
-                table_of_contents['old']['count'],
-        ):
-            old.append((a, z))
-
-        for a, z in zip(
-                table_of_contents['new']['names'],
-                table_of_contents['new']['count'],
-        ):
-            new.append((a, z))
-
-        for i in range(len(old)):
-            try:
-                output += '{:<30}|   {:<6}| {:<30}|   {:<4}\r\n'.format(old[i][0], old[i][1], new[i][0], new[i][1])
-            except IndexError:
-                output += '{:<30}|   {:<6}|\r\n'.format(old[i][0], old[i][1])
-        output = '%s\r\n%s' % ('{:<30}|{:<7}|{:<30}|{:<4}\r\n'.format(
-            '------------------------------', '---------', '-------------------------------', '--------'), output)
-        output = '%s\r\n%s' % (
-            '{:<30}|   {:<6}| {:<30}|   {:<4}'.format('Old Testament', '###', 'New Testament', '##'), output)
-
+                output = "No books found. Please run this command to download them:\r\n"
+                output += "audiobible init\r\n"
+                # output += "audiobible load\r\n"
+        elif 'speakers' in self.scope:
+            if len(self.speakers['A']) > 0:
+                for k in self.speakers.keys():
+                    for s in self.speakers[k]:
+                        if self.speaker:
+                            match = re.search(
+                                self.speaker,
+                                s[1].replace('speaker/', '').replace('_', ' '),
+                                re.IGNORECASE
+                            )
+                            if match:
+                                output += "%s\r\n" % match.string.encode('utf-8')
+            else:
+                output = 'No speakers found. Please run this command to download them:\r\n'
+                output += 'audiobible init speakers\r\n'
+        elif 'topics' in self.scope:
+            if len(self.topics['A']) > 0:
+                pass
+            else:
+                output = 'No topics found. Please run this command to download them:\r\n'
+                output += 'audiobible init topics\r\n'
         return output
 
     def quote(self, context=None, before=None, after=None):
@@ -569,6 +821,8 @@ def main(*args, **kwargs):
         algorithm=None,
         book=None,
         chapter=None,
+        speaker=None,
+        topic=None,
         context=None,
         before_context=None,
         after_context=None
@@ -579,6 +833,8 @@ def main(*args, **kwargs):
                 algorithm=algorithm,
                 book=book,
                 chapter=chapter,
+                speaker=speaker,
+                topic=topic,
                 context=context,
                 before_context=before_context,
                 after_context=after_context
@@ -596,6 +852,8 @@ def main(*args, **kwargs):
             algorithm=args.algorithm,
             book=args.book,
             chapter=args.chapter,
+            speaker=args.speaker,
+            topic=args.topic,
             context=args.context,
             before_context=args.before_context,
             after_context=args.after_context
@@ -607,6 +865,8 @@ def main(*args, **kwargs):
             algorithm=kwargs.get('algorithm'),
             book=kwargs.get('book'),
             chapter=kwargs.get('chapter'),
+            speaker=kwargs.get('speaker'),
+            topic=kwargs.get('topic'),
             context=kwargs.get('context'),
             before_context=kwargs.get('before_context'),
             after_context=kwargs.get('after_context')
@@ -626,4 +886,4 @@ def use_keyword_args(**kwargs):
 if __name__ == '__main__':
     result = use_parse_args()
     if result:
-        sys.stdout.write("%s\r\n" % result.strip())
+        sys.stdout.write("%s\r\n" % str(result).strip())

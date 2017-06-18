@@ -195,3 +195,8 @@
 =====
 
 - update readme
+
+0.7.0
+=====
+
+- added speakers and topics and sermons
