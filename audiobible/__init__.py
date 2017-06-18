@@ -18,7 +18,7 @@ try:
 
     from kjv import settings
 
-    __version__ = '0.7.1'
+    __version__ = '0.7.2'
 
 
     def extended_help():
@@ -532,18 +532,24 @@ class AudioBible(object):
         else:
             speaker = ''
 
-        if self.get_book():
-            if not isinstance(self.get_chapter(), list):
-                chapter = self.get_chapter()
+        if speaker and not self.topic:
+            if self.get_book():
+                if not isinstance(self.get_chapter(), list):
+                    chapter = self.get_chapter()
+                else:
+                    chapter = ''
+                self._open(
+                    "http://www.sermonaudio.com/search.asp?BibleOnly=true&keyword=%s&chapter=%s%s" %
+                    (self.get_book(), chapter, speaker))
             else:
-                chapter = ''
-            self._open(
-                "http://www.sermonaudio.com/search.asp?BibleOnly=true&keyword=%s&chapter=%s%s" %
-                (self.get_book(), chapter, speaker))
+                self._open(
+                    "http://www.sermonaudio.com/search.asp?speakeronly=true&currsection=sermonsspeaker&keyword=%s" % self.speaker.replace(' ', '_')
+                )
         elif self.topic:
+            topic = self.topic
             self._open(
-                "http://www.sermonaudio.com/search.asp?currSection=sermonstopic&keyworddesc=%s&keyword=%s%s" %
-                (self.topic, self.topic, speaker)
+                "http://www.sermonaudio.com/search.asp?keywordDesc=%s&keyword=%s%s" %
+                (topic, topic, speaker)
             )
         else:
             self._open("http://sermonaudio.com")

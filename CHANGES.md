@@ -205,3 +205,8 @@
 =====
 
 - finish list topics
+
+0.7.2
+=====
+
+- fix sermons operation 
