@@ -105,46 +105,45 @@
 
     Old Testament                 |   ###   | New Testament                 |   ##
     ------------------------------|---------|-------------------------------|--------
-    
-    (GE) GENESIS                  |   50    | MATTHEW                       |   28
-    (EX) EXODUS                   |   40    | (MA) MARK                          |   16
-    (LE) LEVITICUS                |   27    | (LU) LUKE                          |   24
-    (NU) NUMBERS                  |   36    | JOHN                          |   21
-    (DE) DEUTERONOMY              |   34    | ACTS                          |   28
-    (JOS) JOSHUA                  |   24    | ROMANS                        |   16
-    (JUD) JUDGES                  |   21    | 1_CORINTHIANS                 |   16
-    (RU) RUTH                     |   4     | 2_CORINTHIANS                 |   13
-    (1SA) 1_SAMUEL                |   31    | GALATIANS                     |   6
-    (2SA) 2_SAMUEL                |   24    | EPHESIANS                     |   6
-    (1KI) 1_KINGS                 |   22    | PHILIPPIANS                   |   4
-    (2KI) 2_KINGS                 |   25    | COLOSSIANS                    |   4
-    (1CH) 1_CHRONICLES            |   29    | 1_THESSALONIANS               |   5
-    (2CH) 2_CHRONICLES            |   36    | 2_THESSALONIANS               |   3
-    (EZR) EZRA                    |   10    | 1_TIMOTHY                     |   6
-    (NEH) NEHEMIAH                |   13    | 2_TIMOTHY                     |   4
-    (EST) ESTHER                  |   10    | TITUS                         |   3
-    (JOB) JOB                     |   42    | PHILEMON                      |   1
-    (PS) PSALMS                   |   150   | HEBREWS                       |   13
-    (PR) PROVERBS                 |   31    | JAMES                         |   5
-    ECCLESIASTES                  |   12    | 1_PETER                       |   5
-    SONG_OF_SOLOMON               |   8     | 2_PETER                       |   3
-    ISAIAH                        |   66    | 1_JOHN                        |   5
-    JEREMIAH                      |   52    | 2_JOHN                        |   1
-    LAMENTATIONS                  |   5     | 3_JOHN                        |   1
-    EZEKIEL                       |   48    | JUDE                          |   1
-    DANIEL                        |   12    | REVELATION                    |   22
-    HOSEA                         |   14    |
-    JOEL                          |   3     |
-    AMOS                          |   9     |
-    OBADIAH                       |   1     |
-    JONAH                         |   4     |
-    MICAH                         |   7     |
-    NAHUM                         |   3     |
-    HABAKKUK                      |   3     |
-    ZEPHANIAH                     |   3     |
-    HAGGAI                        |   2     |
-    ZECHARIAH                     |   14    |
-    MALACHI                       |   4     |
+    (GE)    GENESIS               |   50    | (MAT)    MATTHEW              |   28
+    (EX)    EXODUS                |   40    | (MAR)    MARK                 |   16
+    (LE)    LEVITICUS             |   27    | (LU)     LUKE                 |   24
+    (NU)    NUMBERS               |   36    | (JOH)    JOHN                 |   21
+    (DE)    DEUTERONOMY           |   34    | (AC)     ACTS                 |   28
+    (JOS)   JOSHUA                |   24    | (RO)     ROMANS               |   16
+    (JUDG)  JUDGES                |   21    | (1_CO)   1_CORINTHIANS        |   16
+    (RU)    RUTH                  |   4     | (2_CO)   2_CORINTHIANS        |   13
+    (1_S)   1_SAMUEL              |   31    | (GA)     GALATIANS            |   6
+    (2_S)   2_SAMUEL              |   24    | (EP)     EPHESIANS            |   6
+    (1_K)   1_KINGS               |   22    | (PHILI)  PHILIPPIANS          |   4
+    (2_K)   2_KINGS               |   25    | (CO)     COLOSSIANS           |   4
+    (1_CH)  1_CHRONICLES          |   29    | (1_TH)   1_THESSALONIANS      |   5
+    (2_CH)  2_CHRONICLES          |   36    | (2_TH)   2_THESSALONIANS      |   3
+    (EZR)   EZRA                  |   10    | (1_TI)   1_TIMOTHY            |   6
+    (NEH)   NEHEMIAH              |   13    | (2_TI)   2_TIMOTHY            |   4
+    (EST)   ESTHER                |   10    | (TI)     TITUS                |   3
+    (JOB)   JOB                   |   42    | (PHILE)  PHILEMON             |   1
+    (PS)    PSALMS                |   150   | (HEB)    HEBREWS              |   13
+    (PR)    PROVERBS              |   31    | (JA)     JAMES                |   5
+    (EC)    ECCLESIASTES          |   12    | (1_P)    1_PETER              |   5
+    (SO)    SONG_OF_SOLOMON       |   8     | (2_P)    2_PETER              |   3
+    (IS)    ISAIAH                |   66    | (1_J)    1_JOHN               |   5
+    (JE)    JEREMIAH              |   52    | (2_J)    2_JOHN               |   1
+    (LA)    LAMENTATIONS          |   5     | (3_J)    3_JOHN               |   1
+    (EZ)    EZEKIEL               |   48    | (JUDE)   JUDE                 |   1
+    (DA)    DANIEL                |   12    | (REV)    REVELATION           |   22
+    (HO)    HOSEA                 |   14    |
+    (JOE)   JOEL                  |   3     |
+    (AM)    AMOS                  |   9     |
+    (OB)    OBADIAH               |   1     |
+    (JON)   JONAH                 |   4     |
+    (MI)    MICAH                 |   7     |
+    (NA)    NAHUM                 |   3     |
+    (HAB)   HABAKKUK              |   3     |
+    (ZEP)   ZEPHANIAH             |   3     |
+    (HAG)   HAGGAI                |   2     |
+    (ZEC)   ZECHARIAH             |   14    |
+    (MAL)   MALACHI               |   4     |
 
 
 ## I pray God helps you to see, hear, read and understand and most importantly do something right about it! God bless you on your journey! Thank you for reading.
