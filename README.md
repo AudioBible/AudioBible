@@ -106,26 +106,26 @@
     Old Testament                 |   ###   | New Testament                 |   ##
     ------------------------------|---------|-------------------------------|--------
     
-    GENESIS                       |   50    | MATTHEW                       |   28
-    EXODUS                        |   40    | MARK                          |   16
-    LEVITICUS                     |   27    | LUKE                          |   24
-    NUMBERS                       |   36    | JOHN                          |   21
-    DEUTERONOMY                   |   34    | ACTS                          |   28
-    JOSHUA                        |   24    | ROMANS                        |   16
-    JUDGES                        |   21    | 1_CORINTHIANS                 |   16
-    RUTH                          |   4     | 2_CORINTHIANS                 |   13
-    1_SAMUEL                      |   31    | GALATIANS                     |   6
-    2_SAMUEL                      |   24    | EPHESIANS                     |   6
-    1_KINGS                       |   22    | PHILIPPIANS                   |   4
-    2_KINGS                       |   25    | COLOSSIANS                    |   4
-    1_CHRONICLES                  |   29    | 1_THESSALONIANS               |   5
-    2_CHRONICLES                  |   36    | 2_THESSALONIANS               |   3
-    EZRA                          |   10    | 1_TIMOTHY                     |   6
-    NEHEMIAH                      |   13    | 2_TIMOTHY                     |   4
-    ESTHER                        |   10    | TITUS                         |   3
-    JOB                           |   42    | PHILEMON                      |   1
-    PSALMS                        |   150   | HEBREWS                       |   13
-    PROVERBS                      |   31    | JAMES                         |   5
+    (GE) GENESIS                  |   50    | MATTHEW                       |   28
+    (EX) EXODUS                   |   40    | (MA) MARK                          |   16
+    (LE) LEVITICUS                |   27    | (LU) LUKE                          |   24
+    (NU) NUMBERS                  |   36    | JOHN                          |   21
+    (DE) DEUTERONOMY              |   34    | ACTS                          |   28
+    (JOS) JOSHUA                  |   24    | ROMANS                        |   16
+    (JUD) JUDGES                  |   21    | 1_CORINTHIANS                 |   16
+    (RU) RUTH                     |   4     | 2_CORINTHIANS                 |   13
+    (1SA) 1_SAMUEL                |   31    | GALATIANS                     |   6
+    (2SA) 2_SAMUEL                |   24    | EPHESIANS                     |   6
+    (1KI) 1_KINGS                 |   22    | PHILIPPIANS                   |   4
+    (2KI) 2_KINGS                 |   25    | COLOSSIANS                    |   4
+    (1CH) 1_CHRONICLES            |   29    | 1_THESSALONIANS               |   5
+    (2CH) 2_CHRONICLES            |   36    | 2_THESSALONIANS               |   3
+    (EZR) EZRA                    |   10    | 1_TIMOTHY                     |   6
+    (NEH) NEHEMIAH                |   13    | 2_TIMOTHY                     |   4
+    (EST) ESTHER                  |   10    | TITUS                         |   3
+    (JOB) JOB                     |   42    | PHILEMON                      |   1
+    (PS) PSALMS                   |   150   | HEBREWS                       |   13
+    (PR) PROVERBS                 |   31    | JAMES                         |   5
     ECCLESIASTES                  |   12    | 1_PETER                       |   5
     SONG_OF_SOLOMON               |   8     | 2_PETER                       |   3
     ISAIAH                        |   66    | 1_JOHN                        |   5
@@ -430,6 +430,7 @@
 - 228: [Recognizing Demonic Activity in your Life](https://www.youtube.com/watch?v=4_ZdKN_MHd0)
 - 229: [I Believe In God, Not Jesus](https://www.youtube.com/watch?v=eJVKFZoy2Lk)
 - 230: [Tattoos and Blood Rituals](https://www.youtube.com/watch?v=5ynavOLejrc)
+- 231: [11 yr Old Went to Heaven and Back, and Tells What He Saw!](https://www.youtube.com/watch?v=QdUGoFTfP7w)
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
@@ -443,3 +444,4 @@
 
 ![the-firmament](the-firmament.jpeg)
 
+![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
