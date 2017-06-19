@@ -433,6 +433,18 @@
 - 231: [11 yr Old Went to Heaven and Back, and Tells What He Saw!](https://www.youtube.com/watch?v=QdUGoFTfP7w)
 - 232: [Pictures of Hell! Artist draws vision of Hell](https://www.youtube.com/watch?v=3zh4egM4_7w)
 - 233: [23hrs dead She saw Famous People in Hell](https://www.youtube.com/watch?v=jKG9cS32FzA)
+- 234: [Girl Goes To Hell And Lives paints pictures of hell, hell pictures, Korean Girl paints hell is real](https://www.youtube.com/watch?v=ci9KI4rSXw4)
+- 235: [Hell pictures_ A Trip To Hell (Full version) / 지옥그림_지옥을 견학하다 (Full version)](https://www.youtube.com/watch?v=dWXkBBIaiVc)
+- 236: [Heaven pictures_A Trip to Heaven(Full version) / 천국그림 _천국을 견학하다(Full version)](https://www.youtube.com/watch?v=cxOSrnvAngE)
+- 237: [Visions Of The Rapture, Heaven, Hell, And The Great Tribulation A Real Encounter With Jesus Christ](https://www.youtube.com/watch?v=gW2k6M-5NwE)
+- 238: [STUNNING DISCOVERY!!! 4000 Year Old Artifact IDENTIFIES ALLAH as LUCIFER, the BEAST! ASTOUNDING!!!](https://www.youtube.com/watch?v=F9vbw3sIu2w)
+- 239: [A Case for Believing Obama is a Clone of Akhenaten](https://www.youtube.com/watch?v=63cqS3R_jck)
+- 240: [Barack Obama, Secret Service Codename Renegade, Is A Clone Of The Akhenaten Pharaoh!](https://www.youtube.com/watch?v=_Apwfhm9eWs)
+- 241: [% OBAMA !!! * has a cloned image that speaks ! obama is not obama * IM SERIOUS !](https://www.youtube.com/watch?v=A-lSNH3cSS0)
+- 242: [Hillary Is a Clone That Is Breaking Down by Jairo Parra](https://www.youtube.com/watch?v=gUbHFmpVFdw)
+- 243: [SHOCKING! Obama Hints He Is Clone of Pharaoh Akhenaten 666 (WATCH THIS UNDENIABLE PROOF!)](https://www.youtube.com/watch?v=56hGgHdSWhE)
+- 244: [They lied big time !!! Phone towers are basically EMP weapons at will.](https://www.youtube.com/watch?v=gjh4ojVPXuU)
+- 245: [The Truth Behind Obama's Head Scar Conspiracy FINALLY EXPOSED!](https://www.youtube.com/watch?v=oy0VvIUi27A)
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
