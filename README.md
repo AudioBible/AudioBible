@@ -445,6 +445,7 @@
 - 243: [SHOCKING! Obama Hints He Is Clone of Pharaoh Akhenaten 666 (WATCH THIS UNDENIABLE PROOF!)](https://www.youtube.com/watch?v=56hGgHdSWhE)
 - 244: [They lied big time !!! Phone towers are basically EMP weapons at will.](https://www.youtube.com/watch?v=gjh4ojVPXuU)
 - 245: [The Truth Behind Obama's Head Scar Conspiracy FINALLY EXPOSED!](https://www.youtube.com/watch?v=oy0VvIUi27A)
+- 246: [Ex Satan Worshipper John Ramirez Testimony](https://www.youtube.com/watch?v=I11L71PD3Lw)
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
