@@ -198,6 +198,8 @@
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
+## [YouTube search FLAT EARTH LIVE odd reality](https://www.youtube.com/results?search_query=flat+earth+live+odd+reality)
+
 - 0: [The Greatest Truth Never Told](https://www.youtube.com/watch?v=ekkXHnSrlwY&list=PLD31E34390C5017E8)
 
 - 1: [Admiral Richard E. Byrd - South Pole Video Interview](https://www.youtube.com/watch?v=czW0iRJuH1A)
