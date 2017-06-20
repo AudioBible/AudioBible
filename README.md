@@ -447,6 +447,9 @@
 - 244: [They lied big time !!! Phone towers are basically EMP weapons at will.](https://www.youtube.com/watch?v=gjh4ojVPXuU)
 - 245: [The Truth Behind Obama's Head Scar Conspiracy FINALLY EXPOSED!](https://www.youtube.com/watch?v=oy0VvIUi27A)
 - 246: [Ex Satan Worshipper John Ramirez Testimony](https://www.youtube.com/watch?v=I11L71PD3Lw)
+- 247: [Divided States of Zombieland | Are You a Zombie?](https://www.youtube.com/watch?v=_urOCJ78Sg4)
+- 248: [Trump Programming | Destroy America from the Inside](https://www.youtube.com/watch?v=4lt001r7xxs)
+- 249: [A Stranger's Guide to Flat Earth | 21 Questions ▶️️ Research Flat Earth](https://www.youtube.com/watch?v=k0xClWgidZU&list=PLm6Vq0bTTCDj8fuDVfqcytiuxbVj_Lyq4)
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
