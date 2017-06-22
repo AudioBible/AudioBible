@@ -463,6 +463,12 @@
 - 252: [Satan's Global Lie - The Truth of God's Enclosed Flat Earth](https://www.youtube.com/watch?v=CGZcBdarJ8E)
 - 253: [What if Satan, Flat Earth, and Jesus are NOT what you think](https://www.youtube.com/watch?v=uXos3efIVFA)
 - 254: [Bigger than Flat Earth. Must Watch! Marijuana is the Christ.](https://www.youtube.com/watch?v=0lNv5-kBBi8)
+- 255: [Reptilians & the Saturn/Moon Matrix simplified. Seriously!](https://www.youtube.com/watch?v=sU6vasGQL8I)
+- 256: [It Won't End Peacefully 😧](https://www.youtube.com/watch?v=MlYheQTmfwA)
+- 257: [Flat Earth is REAL 🌎](https://www.youtube.com/watch?v=wMfUKDGMVpM)
+- 258: [THEY LOOK LIKE PEOPLE!](https://www.youtube.com/watch?v=8QJdC4L0URQ)
+- 259: [Why Do We See So Much Of THIS In Hollywood Movies Lately? (2017)](https://www.youtube.com/watch?v=dyRep1ZPl3w)
+- 260: [THEY ARE TEACHING US TO EAT EACH OTHER (2017)](https://www.youtube.com/watch?v=az84I1VUg-o)
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
