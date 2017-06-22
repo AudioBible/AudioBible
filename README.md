@@ -457,6 +457,7 @@
 - 247: [Divided States of Zombieland | Are You a Zombie?](https://www.youtube.com/watch?v=_urOCJ78Sg4)
 - 248: [Trump Programming | Destroy America from the Inside](https://www.youtube.com/watch?v=4lt001r7xxs)
 - 249: [A Stranger's Guide to Flat Earth | 21 Questions ▶️️ Research Flat Earth](https://www.youtube.com/watch?v=k0xClWgidZU&list=PLm6Vq0bTTCDj8fuDVfqcytiuxbVj_Lyq4)
+- 250: [ODD Reality talks Flat Earth on AMTV ✅](https://www.youtube.com/watch?v=v5nsewcK42s)
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
