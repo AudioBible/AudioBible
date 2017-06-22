@@ -460,6 +460,7 @@
 - 250: [ODD Reality talks Flat Earth on AMTV ✅](https://www.youtube.com/watch?v=v5nsewcK42s)
 - 251: [Hiding the Truth of God Creating This Enclosed Flat Earth](https://www.youtube.com/watch?v=mYuVI-GoucI)
 - 252: [Satan's Global Lie - The Truth of God's Enclosed Flat Earth](https://www.youtube.com/watch?v=CGZcBdarJ8E)
+- 253: [What if Satan, Flat Earth, and Jesus are NOT what you think](https://www.youtube.com/watch?v=uXos3efIVFA)
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
