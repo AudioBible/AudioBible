@@ -584,3 +584,5 @@
 # [Is Santa Claus even real, or is he the devil](http://www.av1611.org/othpubls/santa.html)?
 
 ![atheism](atheism.png)
+
+![closed-minded-open-minded](closed-minded-open-minded.png)
