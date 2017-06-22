@@ -42,6 +42,10 @@ audiobible init topics                                      # download all the t
 audiobible load                                             # download all books' and chapters' text and audio mp3 files
 
 audiobible list                                             # to list all books and the number of chapters each book has
+audiobible list speakers                                    # to list all speakers found on sermonaudio.com
+audiobible list speakers this                               # to list all speakers which have this in there name
+audiobible list topics                                      # to list all topics found on sermonaudio.com
+audiobible list topics
 
 audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
 
@@ -199,10 +203,8 @@ class Download(object):
 
     @staticmethod
     def load():
-        if os.path.exists(content_path):
-            Download._bible()
-        else:
-            sys.stdout.write('No books found. Please run this command to download them:\r\naudiobible init\r\n')
+        Download._bible()
+
     @staticmethod
     def speakers():
         pipelines = {

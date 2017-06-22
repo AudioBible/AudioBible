@@ -14,16 +14,17 @@ class BibleSpider(scrapy.Spider):
     start_urls = []
 
     def __init__(self, data_store=settings.get('DATA_STORE'), content_file=settings.get('CONTENT_FILE')):
-        p = os.path.join(data_store, content_file)
-        if os.path.exists(p) and not os.stat(p).st_size == 0:
-            with open(os.path.join(data_store, content_file)) as f:
-                for line in f.readlines():
-                    data = json.loads(line)
-                    if data['urls']:
-                        for url in data['urls']:
-                            self.start_urls.append(url)
-        else:
-            self.start_urls.append('http://www.audiobible.com/bible/bible.html')
+        if data_store and content_file:
+            p = os.path.join(data_store, content_file)
+            if os.path.exists(p) and not os.stat(p).st_size == 0:
+                with open(os.path.join(data_store, content_file)) as f:
+                    for line in f.readlines():
+                        data = json.loads(line)
+                        if data['urls']:
+                            for url in data['urls']:
+                                self.start_urls.append(url)
+            else:
+                self.start_urls.append('http://www.audiobible.com/bible/bible.html')
 
     def parse(self, response):
         if response.status in (200, ):
