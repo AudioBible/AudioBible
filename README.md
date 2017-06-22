@@ -178,7 +178,8 @@
 ### [Paganism Surviving In Christianity](https://www.forgottenbooks.com/en/readbook/PaganismSurvivinginChristianity_10066362) [BOOK]
 ### [How We Got Our Bible](https://www.forgottenbooks.com/en/readbook/HowWeGotOurBible_10038867) [BOOK]
 ### [The Negro In Our History](https://www.forgottenbooks.com/en/readbook/TheNegroinOurHistory_10101622) [BOOK]
-### [Kings Dethroned](https://www.forgottenbooks.com/en/books/KingsDethroned_10031911) [BOOK]
+### [Kings Dethroned](https://www.forgottenbooks.com/en/readbook/KingsDethroned_10031911) [BOOK]
+### [The Book of Enoch](https://www.forgottenbooks.com/en/readbook/TheBookofEnoch_10152066) [BOOK]
 
 ## THE EARTH IS FLAT, IN CASE YOU DIDN'T KNOW, NASA LIES!
 
