@@ -18,7 +18,7 @@ try:
 
     from kjv import settings
 
-    __version__ = '0.7.2'
+    __version__ = '0.7.3'
 
 
     def extended_help():
