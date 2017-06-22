@@ -574,3 +574,5 @@
     
     2THESS 3:18 The grace of our Lord Jesus Christ be with you all. Amen.
 
+
+# [Is the North Pole the entrance to Hell](https://www.youtube.com/watch?v=lZlSimsiPUA)? and [Jesus Christ wasn't born on Dec. 25th](https://www.youtube.com/watch?v=nz9fY9K4Npc)?
