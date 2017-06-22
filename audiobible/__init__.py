@@ -45,7 +45,6 @@ audiobible list                                             # to list all books 
 audiobible list speakers                                    # to list all speakers found on sermonaudio.com
 audiobible list speakers this                               # to list all speakers which have this in there name
 audiobible list topics                                      # to list all topics found on sermonaudio.com
-audiobible list topics
 
 audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
 

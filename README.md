@@ -39,7 +39,7 @@
     pip install --upgrade audiobible                            # update AudioBible to the latest version
 
     audiobible update                                           # update AudioBible using pip command internally
-    
+
     audiobible -h | --help                                      # show help
     audiobible help                                             # show help
     
@@ -52,6 +52,9 @@
     audiobible load                                             # download all books' and chapters' text and audio mp3 files
     
     audiobible list                                             # to list all books and the number of chapters each book has
+    audiobible list speakers                                    # to list all speakers found on sermonaudio.com
+    audiobible list speakers this                               # to list all speakers which have this in there name
+    audiobible list topics                                      # to list all topics found on sermonaudio.com
     
     audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
     
