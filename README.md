@@ -459,6 +459,7 @@
 - 249: [A Stranger's Guide to Flat Earth | 21 Questions ▶️️ Research Flat Earth](https://www.youtube.com/watch?v=k0xClWgidZU&list=PLm6Vq0bTTCDj8fuDVfqcytiuxbVj_Lyq4)
 - 250: [ODD Reality talks Flat Earth on AMTV ✅](https://www.youtube.com/watch?v=v5nsewcK42s)
 - 251: [Hiding the Truth of God Creating This Enclosed Flat Earth](https://www.youtube.com/watch?v=mYuVI-GoucI)
+- 252: [Satan's Global Lie - The Truth of God's Enclosed Flat Earth](https://www.youtube.com/watch?v=CGZcBdarJ8E)
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
