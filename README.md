@@ -198,6 +198,8 @@
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
+## What do you know about life anyway?!?! **not an insult**, think about that
+
 ## [YouTube search FLAT EARTH LIVE odd reality](https://www.youtube.com/results?search_query=flat+earth+live+odd+reality)
 
 - 0: [The Greatest Truth Never Told](https://www.youtube.com/watch?v=ekkXHnSrlwY&list=PLD31E34390C5017E8)
