@@ -473,10 +473,35 @@
 
 # audiobible hear 2_th all
 
-# audiobible show 2_th 2
+# audiobible show 2_th all
 
+    2THESS 1:1 Paul, and Silvanus, and Timotheus, unto the church of the Thessalonians in God our Father and the Lord Jesus Christ:
+
+    2THESS 1:2 Grace unto you, and peace, from God our Father and the Lord Jesus Christ.
+    
+    2THESS 1:3 We are bound to thank God always for you, brethren, as it is meet, because that your faith groweth exceedingly, and the charity of every one of you all toward each other aboundeth;
+    
+    2THESS 1:4 So that we ourselves glory in you in the churches of God for your patience and faith in all your persecutions and tribulations that ye endure:
+    
+    2THESS 1:5 Which is a manifest token of the righteous judgment of God, that ye may be counted worthy of the kingdom of God, for which ye also suffer:
+    
+    2THESS 1:6 Seeing it is a righteous thing with God to recompense tribulation to them that trouble you;
+    
+    2THESS 1:7 And to you who are troubled rest with us, when the Lord Jesus shall be revealed from heaven with his mighty angels,
+    
+    2THESS 1:8 In flaming fire taking vengeance on them that know not God, and that obey not the gospel of our Lord Jesus Christ:
+    
+    2THESS 1:9 Who shall be punished with everlasting destruction from the presence of the Lord, and from the glory of his power;
+    
+    2THESS 1:10 When he shall come to be glorified in his saints, and to be admired in all them that believe (because our testimony among you was believed) in that day.
+    
+    2THESS 1:11 Wherefore also we pray always for you, that our God would count you worthy of this calling, and fulfil all the good pleasure of his goodness, and the work of faith with power:
+    
+    2THESS 1:12 That the name of our Lord Jesus Christ may be glorified in you, and ye in him, according to the grace of our God and the Lord Jesus Christ.
+    
+    
     2THESS 2:1 Now we beseech you, brethren, by the coming of our Lord Jesus Christ, and by our gathering together unto him,
-
+    
     2THESS 2:2 That ye be not soon shaken in mind, or be troubled, neither by spirit, nor by word, nor by letter as from us, as that the day of Christ is at hand.
     
     2THESS 2:3 Let no man deceive you by any means: for that day shall not come, except there come a falling away first, and that man of sin be revealed, the son of perdition;
@@ -508,4 +533,41 @@
     2THESS 2:16 Now our Lord Jesus Christ himself, and God, even our Father, which hath loved us, and hath given us everlasting consolation and good hope through grace,
     
     2THESS 2:17 Comfort your hearts, and stablish you in every good word and work.
+    
+    
+    2THESS 3:1 Finally, brethren, pray for us, that the word of the Lord may have free course, and be glorified, even as it is with you:
+    
+    2THESS 3:2 And that we may be delivered from unreasonable and wicked men: for all men have not faith.
+    
+    2THESS 3:3 But the Lord is faithful, who shall stablish you, and keep you from evil.
+    
+    2THESS 3:4 And we have confidence in the Lord touching you, that ye both do and will do the things which we command you.
+    
+    2THESS 3:5 And the Lord direct your hearts into the love of God, and into the patient waiting for Christ.
+    
+    2THESS 3:6 Now we command you, brethren, in the name of our Lord Jesus Christ, that ye withdraw yourselves from every brother that walketh disorderly, and not after the tradition which he received of us.
+    
+    2THESS 3:7 For yourselves know how ye ought to follow us: for we behaved not ourselves disorderly among you;
+    
+    2THESS 3:8 Neither did we eat any man's bread for nought; but wrought with labour and travail night and day, that we might not be chargeable to any of you:
+    
+    2THESS 3:9 Not because we have not power, but to make ourselves an ensample unto you to follow us.
+    
+    2THESS 3:10 For even when we were with you, this we commanded you, that if any would not work, neither should he eat.
+    
+    2THESS 3:11 For we hear that there are some which walk among you disorderly, working not at all, but are busybodies.
+    
+    2THESS 3:12 Now them that are such we command and exhort by our Lord Jesus Christ, that with quietness they work, and eat their own bread.
+    
+    2THESS 3:13 But ye, brethren, be not weary in well doing.
+    
+    2THESS 3:14 And if any man obey not our word by this epistle, note that man, and have no company with him, that he may be ashamed.
+    
+    2THESS 3:15 Yet count him not as an enemy, but admonish him as a brother.
+    
+    2THESS 3:16 Now the Lord of peace himself give you peace always by all means. The Lord be with you all.
+    
+    2THESS 3:17 The salutation of Paul with mine own hand, which is the token in every epistle: so I write.
+    
+    2THESS 3:18 The grace of our Lord Jesus Christ be with you all. Amen.
 
