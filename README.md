@@ -482,6 +482,8 @@
 - 271: [BIZARRE Connection Between Katy Perry & Kanye West Explained (2017)](https://www.youtube.com/watch?v=1O2iX6VFZ0o)
 - 272: [Madonna Is WEIRD & GROSS!! (2017)](https://www.youtube.com/watch?v=JJ74utnQIJ0)
 - 273: [´Astronaut HOAX´ Reveals Truth About UFOs & Fallen Angels! (2017)](https://www.youtube.com/watch?v=nXSq2zkHIr8)
+- 274: [WEIRD! Popular UFO Researcher Killed By ´BLACK GOO´?? (2016)](https://www.youtube.com/watch?v=dBXaLrz_kQY)
+- 275: [Black Goo Files | ODD TV's Complete Database ▶️️](https://www.youtube.com/watch?v=gyqsldTW3SM)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
