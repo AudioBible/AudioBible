@@ -557,6 +557,8 @@
 - [The true purpose of the CHEMTRAIL campaign.](https://www.youtube.com/watch?v=iTVO7C8Ob00)
 - [Live Child Sacrifices On Facebook are The new Norm](https://www.youtube.com/watch?v=kdeFCkeIASw)
 - [AMERICA MUST BE DEMORALIZED](https://www.youtube.com/watch?v=a42zM4YOwDw)
+- [Facebook is Preparing for the Mark of the Beast](https://www.youtube.com/watch?v=DA_PHgIjvK4)
+- [Wake Up!!! - The Mark of the Beast is Here - 2017](https://www.youtube.com/watch?v=IU0rrbfN9sw)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
