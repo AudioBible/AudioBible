@@ -208,7 +208,7 @@
 
 ## [YouTube search FLAT EARTH LIVE odd reality](https://www.youtube.com/results?search_query=flat+earth+live+odd+reality)
 
-**Note:** You may want to rewind and watch the video again, while your mind is processing the information you won't consume all of it at once, so do what you need to make sure you understand the message. Be investigator, architect, scientist, doctor, professor like how God made all of us and intended it to be, we are all equal! We are all special! It wasn't all random! Be smart!
+**Note:** You may want to rewind and watch the video again, while your mind is processing the information you won't consume all of it at once, so do what you need to make sure you understand the message. Be investigator, architect, scientist, doctor, professor like how God made all of us and intended it to be, we are all equal! We are all special! It(Your life) wasn't/isn't all random! Be smart!
 
 - 0: [The Greatest Truth Never Told](https://www.youtube.com/watch?v=ekkXHnSrlwY&list=PLD31E34390C5017E8)
 
