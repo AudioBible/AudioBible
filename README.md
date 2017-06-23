@@ -587,6 +587,7 @@
 - [Why Most Will Never WAKE UP. Dumbed Down.](https://www.youtube.com/watch?v=82oqSJEPLiI)
 - [TRUMP STOPS CHEMTRAILS executive order](https://www.youtube.com/watch?v=P9Sxo1Ml5qU)
 - [The Kinsey Syndrome How and Why Pizza became Pedophilia](https://www.youtube.com/watch?v=3b6YTtNFtIc)
+- [Did Trump Really Stop Funding Chemtrails & Stratospheric Aerosol Injections](https://www.youtube.com/watch?v=x-t10Z66bAY)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
