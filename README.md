@@ -208,7 +208,7 @@
 
 ## [YouTube search FLAT EARTH LIVE odd reality](https://www.youtube.com/results?search_query=flat+earth+live+odd+reality)
 
-**Note:** You may want to rewind and watch the video again, while your mind is processing the information you won't consume all of it at once, so do what you need to make sure you understand the message. Be investigator, architect, scientist, doctor, professor like how God made all of us and intended it to be, we are all equal! This world, creation and your life isn't all random! Be smart!
+**Note:** You may want to rewind and watch the video again, while your mind is processing the information you won't consume all of it at once, so do what you need to make sure you understand the message. Be investigator, architect, scientist, doctor, professor like how God made all of us and intended it to be, we are all equal! This world, creation and your life isn't all random! Be wise!
 
 - 0: [The Greatest Truth Never Told](https://www.youtube.com/watch?v=ekkXHnSrlwY&list=PLD31E34390C5017E8)
 
@@ -535,6 +535,8 @@
 
 [RichieFromBoston FOUND DEAD.](https://www.youtube.com/watch?v=ztTPzCuMs3c)
 [THE MOON IS SELF ILLUMINATED and CANNOT BE LANDED UPON](https://www.youtube.com/watch?v=KpAYAqgNsMs)
+[U.S. Military now openly welcomes Satan into its ranks.](https://www.youtube.com/watch?v=Op0k7rCYjEQ)
+[Demons Are Real: How to Protect Yourself.](https://www.youtube.com/watch?v=3jE05iSvr2k)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
