@@ -534,6 +534,7 @@
 - 321: [Geoengineering viewed from a Plane](https://www.youtube.com/watch?v=pGd_qI0uAOw)
 
 [RichieFromBoston FOUND DEAD.](https://www.youtube.com/watch?v=ztTPzCuMs3c)
+[THE MOON IS SELF ILLUMINATED and CANNOT BE LANDED UPON](https://www.youtube.com/watch?v=KpAYAqgNsMs)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
