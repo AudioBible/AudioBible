@@ -606,4 +606,4 @@
 
 ![closed-minded-open-minded](closed-minded-open-minded.png)
 
-If you work for the Govern(control)-Ment(mind), then you are 100% doing the will of the devil.
+If you work for the Govern(control)-Ment(mind) or a big corporation, then you are 100% doing the will of the devil.
