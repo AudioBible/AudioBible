@@ -662,4 +662,4 @@
 
 ![closed-minded-open-minded](closed-minded-open-minded.png)
 
-If you work for the Govern(control)-Ment(mind) or a corporation, then you are 100% doing the will of the devil. Support your local mom-and-pop shop or small businesses!
+If you work for the Govern(control)-Ment(mind), hospitals, schools or corporations, then you are 100% doing the will of the devil. Support your local mom-and-pop shop or small business or community!
