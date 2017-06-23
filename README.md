@@ -533,12 +533,12 @@
 - 320: [Amazon Buys Whole Foods to MONOPOLIZE Humanity](https://www.youtube.com/watch?v=ibtZzv0xhis)
 - 321: [Geoengineering viewed from a Plane](https://www.youtube.com/watch?v=pGd_qI0uAOw)
 
-[RichieFromBoston FOUND DEAD.](https://www.youtube.com/watch?v=ztTPzCuMs3c)
-[THE MOON IS SELF ILLUMINATED and CANNOT BE LANDED UPON](https://www.youtube.com/watch?v=KpAYAqgNsMs)
-[U.S. Military now openly welcomes Satan into its ranks.](https://www.youtube.com/watch?v=Op0k7rCYjEQ)
-[Demons Are Real: How to Protect Yourself.](https://www.youtube.com/watch?v=3jE05iSvr2k)
-[Man Dies and Asks God What this Lifes For.](https://www.youtube.com/watch?v=f5Lo4AP5-8w)
-[Man Dies Goes To Hell and Speaks to the Devil.](https://www.youtube.com/watch?v=GG2_VpQL65E)
+- [RichieFromBoston FOUND DEAD.](https://www.youtube.com/watch?v=ztTPzCuMs3c)
+- [THE MOON IS SELF ILLUMINATED and CANNOT BE LANDED UPON](https://www.youtube.com/watch?v=KpAYAqgNsMs)
+- [U.S. Military now openly welcomes Satan into its ranks.](https://www.youtube.com/watch?v=Op0k7rCYjEQ)
+- [Demons Are Real: How to Protect Yourself.](https://www.youtube.com/watch?v=3jE05iSvr2k)
+- [Man Dies and Asks God What this Lifes For.](https://www.youtube.com/watch?v=f5Lo4AP5-8w)
+- [Man Dies Goes To Hell and Speaks to the Devil.](https://www.youtube.com/watch?v=GG2_VpQL65E)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
