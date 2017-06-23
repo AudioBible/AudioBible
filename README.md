@@ -541,6 +541,7 @@
 - [Man Dies Goes To Hell and Speaks to the Devil.](https://www.youtube.com/watch?v=GG2_VpQL65E)
 - [Satanism is all around us. And now, they deny Christ.](https://www.youtube.com/watch?v=_eM4YAz27is)
 - [Witches and Warlocks Surround Us,and our Children Stand Up](https://www.youtube.com/watch?v=8TcrdasQcRM)
+- [Illuminati Exposed Neon Demon 2017](https://www.youtube.com/watch?v=GL2CFTMFDoY)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
