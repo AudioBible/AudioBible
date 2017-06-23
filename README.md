@@ -668,3 +668,10 @@
 ![closed-minded-open-minded](closed-minded-open-minded.png)
 
 If you work for the Govern(control)-Ment(mind), hospitals, schools or corporations, then you are 100% doing the will of the devil. We're all caught up in it, one way or another. Support your local mom-and-pop shop or small business or community! Be like Jesus Christ, he set a perfect example of how to live life!
+
+
+# audiobible find choose life -A1
+
+    DEUT 30:19 I call heaven and earth to record this day against you, that I have set before you life and death, blessing and cursing: therefore choose life, that both thou and thy seed may live:
+    
+    DEUT 30:20 That thou mayest love the LORD thy God, and that thou mayest obey his voice, and that thou mayest cleave unto him: for he is thy life, and the length of thy days: that thou mayest dwell in the land which the LORD sware unto thy fathers, to Abraham, to Isaac, and to Jacob, to give them.
