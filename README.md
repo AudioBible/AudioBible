@@ -469,6 +469,17 @@
 - 258: [THEY LOOK LIKE PEOPLE!](https://www.youtube.com/watch?v=8QJdC4L0URQ)
 - 259: [Why Do We See So Much Of THIS In Hollywood Movies Lately? (2017)](https://www.youtube.com/watch?v=dyRep1ZPl3w)
 - 260: [THEY ARE TEACHING US TO EAT EACH OTHER (2017)](https://www.youtube.com/watch?v=az84I1VUg-o)
+- 261: [The ´SECRET GOD´ The World Unwittingly WORSHIPS! (2017)](https://www.youtube.com/watch?v=NirJzmPnaE8)
+- 262: [When Demons, Aliens, & Angels Visit Your Bedroom (2015)](https://www.youtube.com/watch?v=yDKTtbq0rSY)
+- 263: [The Biggest Lie The Devil Ever Told? (2015)](https://www.youtube.com/watch?v=1N77agon2Os)
+- 264: [What They SECRETLY Told Us During SUPER BOWL (2017)](https://www.youtube.com/watch?v=UFblYe-1SoI)
+- 265: [What Is This CREEPY Perfume Commercial REALLY Selling Us?](https://www.youtube.com/watch?v=snL_Wkwp0P0)
+- 266: [How ´Illuminati Programming´ Creates Cold Hearted KILLERS! (2016)](https://www.youtube.com/watch?v=5eXo3ur78eM)
+- 267: [Living In The Age Of ANYTHING GOES! (2016)](https://www.youtube.com/watch?v=VNxCa9TidYo)
+- 268: [And You Will Dream Electronic Antichrist Dreams (2016)](https://www.youtube.com/watch?v=vSh2cqVUv2A)
+- 269: [The REAL ''Secret Agenda'' For America Is A Secret No More (2016)](https://www.youtube.com/watch?v=S9Dm85vLhzo)
+
+**Note:** Not all videos made it to this list, so do your research and watch out for disinformation.
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
