@@ -481,11 +481,11 @@
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation.
 
+**Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search.
+
 ## [StopLookThink.com](http://stoplookthink.com)
 
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
-
-**Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
 
