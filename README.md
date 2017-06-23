@@ -479,6 +479,7 @@
 - 268: [And You Will Dream Electronic Antichrist Dreams (2016)](https://www.youtube.com/watch?v=vSh2cqVUv2A)
 - 269: [The REAL ''Secret Agenda'' For America Is A Secret No More (2016)](https://www.youtube.com/watch?v=S9Dm85vLhzo)
 - 270: [THIS Is What Illuminati Television Programming Looks Like! (2016)](https://www.youtube.com/watch?v=RZtThMaNnbA)
+- 271: [BIZARRE Connection Between Katy Perry & Kanye West Explained (2017)](https://www.youtube.com/watch?v=1O2iX6VFZ0o)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit)!!!
 
