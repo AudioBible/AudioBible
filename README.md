@@ -666,4 +666,4 @@
 
 ![closed-minded-open-minded](closed-minded-open-minded.png)
 
-If you work for the Govern(control)-Ment(mind), hospitals, schools or corporations, then you are 100% doing the will of the devil. We're all caught up in it, one way or another. Support your local mom-and-pop shop or small business or community!
+If you work for the Govern(control)-Ment(mind), hospitals, schools or corporations, then you are 100% doing the will of the devil. We're all caught up in it, one way or another. Support your local mom-and-pop shop or small business or community! Be like Jesus Christ, he set a perfect example of how to live life!
