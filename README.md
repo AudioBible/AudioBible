@@ -543,6 +543,20 @@
 - [Witches and Warlocks Surround Us,and our Children Stand Up](https://www.youtube.com/watch?v=8TcrdasQcRM)
 - [Illuminati Exposed Neon Demon 2017](https://www.youtube.com/watch?v=GL2CFTMFDoY)
 - [Babylon Is Ready To Fall, Rituals surround us.](https://www.youtube.com/watch?v=LOxSgDO_ZWs)
+- [Universal basic Income is Coming faster than you think](https://www.youtube.com/watch?v=8hWxyU3xv8g)
+- [Mark of the beast will be demanded, not forced upon us.](https://www.youtube.com/watch?v=Q1a5zSOWw6k)
+- [Talmud, Baphomet and The Days of Noah](https://www.youtube.com/watch?v=sP2EcsR92EU)
+- [Katy Perry sells her soul, and buys a church instead.](https://www.youtube.com/watch?v=NXyqfJfT97s)
+- [PURELY SATANIC AMERICA](https://www.youtube.com/watch?v=hLo2D15PHNM&list=PLGM8cMxIO1ggKg510POVV5wqAWJ9jL-TN)
+- [Black magik Alter Discovered KNIGHTS TEMPLAR](https://www.youtube.com/watch?v=7heVwpVM5mw)
+- [SHOCKING 2017 CERN TUNNEL OPENING RITUAL DELETED SCENES OPENING THE PORTAL](https://www.youtube.com/watch?v=OIazxDwj-m8)
+- [CERN discovers 5 new STATES](https://www.youtube.com/watch?v=DsjoiuwRLkU)
+- [CNN and FBI RELEASE NEW IMAGES](https://www.youtube.com/watch?v=9c-NuMrIqf4)
+- [Men of Reknown/Mighty men Are returning NEPHILM](https://www.youtube.com/watch?v=PDomPd8Mv-w)
+- [JOHNSON & JOHNSON ARE KILLING YOUR CHILDREN](https://www.youtube.com/watch?v=xp_6VdFe15Q)
+- [The true purpose of the CHEMTRAIL campaign.](https://www.youtube.com/watch?v=iTVO7C8Ob00)
+- [Live Child Sacrifices On Facebook are The new Norm](https://www.youtube.com/watch?v=kdeFCkeIASw)
+- [AMERICA MUST BE DEMORALIZED](https://www.youtube.com/watch?v=a42zM4YOwDw)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
