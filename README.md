@@ -208,6 +208,8 @@
 
 ## [YouTube search FLAT EARTH LIVE odd reality](https://www.youtube.com/results?search_query=flat+earth+live+odd+reality)
 
+**Note:** You may want to rewind and watch the video again, while your mind is processing the information you won't consume all of it at once, so do what you need to make sure you understand the message. Be investigator, architect, scientist, spy, doctor, like how God made all of us and intended it to be, we are all equal! Be smart!
+
 - 0: [The Greatest Truth Never Told](https://www.youtube.com/watch?v=ekkXHnSrlwY&list=PLD31E34390C5017E8)
 
 - 1: [Admiral Richard E. Byrd - South Pole Video Interview](https://www.youtube.com/watch?v=czW0iRJuH1A)
