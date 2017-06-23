@@ -478,8 +478,9 @@
 - 267: [Living In The Age Of ANYTHING GOES! (2016)](https://www.youtube.com/watch?v=VNxCa9TidYo)
 - 268: [And You Will Dream Electronic Antichrist Dreams (2016)](https://www.youtube.com/watch?v=vSh2cqVUv2A)
 - 269: [The REAL ''Secret Agenda'' For America Is A Secret No More (2016)](https://www.youtube.com/watch?v=S9Dm85vLhzo)
+- 270: [THIS Is What Illuminati Television Programming Looks Like! (2016)](https://www.youtube.com/watch?v=RZtThMaNnbA)
 
-**Note:** Not all videos made it to this list, so do your research and watch out for disinformation.
+**Note:** Not all videos made it to this list, so do your research and watch out for disinformation. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in God!!!
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search.
 
@@ -606,4 +607,4 @@
 
 ![closed-minded-open-minded](closed-minded-open-minded.png)
 
-If you work for the Govern(control)-Ment(mind) or a big corporation, then you are 100% doing the will of the devil.
+If you work for the Govern(control)-Ment(mind) or a corporation, then you are 100% doing the will of the devil. Support your local mom-and-pop shop or small businesses!
