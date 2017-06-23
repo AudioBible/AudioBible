@@ -590,6 +590,16 @@
 - [Did Trump Really Stop Funding Chemtrails & Stratospheric Aerosol Injections](https://www.youtube.com/watch?v=x-t10Z66bAY)
 - [Shocking Proof Positive Evidence of Why They're Spraying Chemtrails](https://www.youtube.com/watch?v=8Aa-OaoZyoQ)
 - [Want to know who the Devil is? What the Vatican won't tell you.](https://www.youtube.com/watch?v=huGkD507A-I)
+- [SHOCKING: CIA WHISTLEBLOWER: CHEMTRAILS JFK DEEP STATE FALSEFLAGS AND MORE! DOCUMENTARY!](https://www.youtube.com/watch?v=IXpkrXGouts)
+- [How To Survive Chemtrails - Ken Rohla](https://www.youtube.com/watch?v=f2dc6BnRDqc)
+- [SHOCKING: NASA DEEP STATE PLANS FOR 2025 DEPOPULATION CULLING ACTUAL DOCUMENTS REVEALED](https://www.youtube.com/watch?v=LPon4znZbJU)
+- [Pilots, Doctors and Scientists Tell the Truth About Chemtrails](https://www.youtube.com/watch?v=FeTaejpg18g)
+- [Do the ELITES have an antidote for the Chemtrails?](https://www.youtube.com/watch?v=cPgLeRPXwL8)
+- [Deep State Counter Intelligence: The Company (Part 1)](https://www.youtube.com/watch?v=gfNkjH5ZqNQ)
+- [What Chemtrails Are Doing To Your Brain - Neurosurgeon Dr. Russell Blaylock Reveals Shocking Facts.](https://www.youtube.com/watch?v=X3lW-TGGlk0)
+- [Bridging the Gap: Nibiru, the fake Sun, and Flat Earth](https://www.youtube.com/watch?v=YuvFpCAo1YU)
+- [FLAT EARTH & Two Suns is TRUTH! Is NIBIRU NEAR? & SUNS Circling AROUND the FLAT EARTH PLANE 100%](https://www.youtube.com/watch?v=5LZIjTL_1wo)
+- [The Flat Earth Truth - Nibiru the Truth 2017](https://www.youtube.com/watch?v=yU4AEHk0R0g)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
