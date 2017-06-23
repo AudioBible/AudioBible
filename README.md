@@ -537,6 +537,7 @@
 [THE MOON IS SELF ILLUMINATED and CANNOT BE LANDED UPON](https://www.youtube.com/watch?v=KpAYAqgNsMs)
 [U.S. Military now openly welcomes Satan into its ranks.](https://www.youtube.com/watch?v=Op0k7rCYjEQ)
 [Demons Are Real: How to Protect Yourself.](https://www.youtube.com/watch?v=3jE05iSvr2k)
+[Man Dies and Asks God What this Lifes For.](https://www.youtube.com/watch?v=f5Lo4AP5-8w)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
