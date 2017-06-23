@@ -480,7 +480,7 @@
 - 269: [The REAL ''Secret Agenda'' For America Is A Secret No More (2016)](https://www.youtube.com/watch?v=S9Dm85vLhzo)
 - 270: [THIS Is What Illuminati Television Programming Looks Like! (2016)](https://www.youtube.com/watch?v=RZtThMaNnbA)
 
-**Note:** Not all videos made it to this list, so do your research and watch out for disinformation. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in God!!!
+**Note:** Not all videos made it to this list, so do your research and watch out for disinformation. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in God, Jesus and the Holy Spirit!!!
 
 **Note:** If some of the youtube video links above don't work, search for the video by name in the youtube search.
 
