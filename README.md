@@ -600,6 +600,7 @@
 - [Bridging the Gap: Nibiru, the fake Sun, and Flat Earth](https://www.youtube.com/watch?v=YuvFpCAo1YU)
 - [FLAT EARTH & Two Suns is TRUTH! Is NIBIRU NEAR? & SUNS Circling AROUND the FLAT EARTH PLANE 100%](https://www.youtube.com/watch?v=5LZIjTL_1wo)
 - [The Flat Earth Truth - Nibiru the Truth 2017](https://www.youtube.com/watch?v=yU4AEHk0R0g)
+- [Google Knows The Earth Is Flat - Just Ask Google Yourself!](https://www.youtube.com/watch?v=HbU_HqLBYuQ)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
