@@ -603,6 +603,9 @@
 - [Google Knows The Earth Is Flat - Just Ask Google Yourself!](https://www.youtube.com/watch?v=HbU_HqLBYuQ)
 - [Flat Earth & The Nuclear Hoax Explained](https://www.youtube.com/watch?v=p4xfuYqmmDw)
 - [Everything You Know Is a Lie](https://www.youtube.com/watch?v=y2TT9xE4K6Y)
+- [HILLARY CLINTON - BREAKING THE HARD GLASS CEILING - FLAT EARTH HE EARTH IS FLAT!!](https://www.youtube.com/watch?v=gDb5Fowe_jY)
+- [Hillary Clinton Mocks God's Flat Earth Firmament "Glass Ceiling" During Concession Speech](https://www.youtube.com/watch?v=T9nq4cPLcs0)
+- [Hillary Clinton "Breaking The Glass Ceiling" Mocks The Biblical Flat Earth Firmament Dome](https://www.youtube.com/watch?v=Divfpik3nZU)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
