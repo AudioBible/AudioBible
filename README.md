@@ -620,6 +620,8 @@
 - [The Mark Of The Beast Is NOT A Microchip! (HD)](https://www.youtube.com/watch?v=hgHoVZhTkI4)
 - [Mark of the Beast: What it is & how to avoid it!](https://www.youtube.com/watch?v=FLYZgOaIWW0)
 - [The Final Fraud: Satan Appearing As Yahushua!](https://www.youtube.com/watch?v=YOjXVXN2Zi4)
+- [Antichrist Identified!](https://www.youtube.com/watch?v=WQGw1tKEpEg)
+- [Dead Man Walking: Yahushua Foretells the Final Pope!](https://www.youtube.com/watch?v=H5OMcuu3bDk)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
