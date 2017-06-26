@@ -657,6 +657,10 @@
 
 ![jtot_genesis_cosmology](jtot_genesis_cosmology.jpg)
 
+![NASA_Serpent](NASA_Serpent.jpg)
+
+![HkAHHM3c](HkAHHM3c.png)
+
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
 # LOVE YOU, BREAK FREE
