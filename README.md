@@ -1,6 +1,6 @@
 # AudioBible
 
-### [Space may be the final frontier, but it's made in a hollywood basement](audiobible/space.m4a) [song]
+### [Space may be the final frontier, but it's made in a hollywood basement](audiobible/space.m4a) [download song/remix]
 
 ## King James Version Audio Bible for Mac, Windows and Unix/Linux
 
