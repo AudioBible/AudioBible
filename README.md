@@ -614,6 +614,8 @@
 - [Planes CRASH into "Invisible Shield" of Flat Earth's Dome Firmament in Antarctica | FE PROOF 4 pt2](https://www.youtube.com/watch?v=QtybmBcSfLE)
 - [MAN'S ROCKET HITS DOME (MUST SEE)](https://www.youtube.com/watch?v=jLwnDfhz9EA)
 - [I witnessed the most mysterious thing ever - Plane flying THROUGH the Sun](https://www.youtube.com/watch?v=eN8yhUzqLCA)
+- [FLAT EARTH SECRET HELL FOUND BENEATH ANTARCTICA ICE ! WHAT THEY DISCOVER WILL SHOCK YOU](https://www.youtube.com/watch?v=aCE8pqtymG0)
+
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
