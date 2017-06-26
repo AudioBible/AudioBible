@@ -208,6 +208,10 @@
 
 ## [YouTube search FLAT EARTH LIVE odd reality](https://www.youtube.com/results?search_query=flat+earth+live+odd+reality)
 
+## [Is the North Pole the entrance to Hell](https://www.youtube.com/watch?v=lZlSimsiPUA)? and [Jesus Christ wasn't born on Dec. 25th](https://www.youtube.com/watch?v=nz9fY9K4Npc)?
+
+## [Is Santa Claus even real, or is he the devil](http://www.av1611.org/othpubls/santa.html)?
+
 **Note:** You may want to rewind and watch the video again, while your mind is processing the information you won't consume all of it at once, so do what you need to make sure you understand the message. Be investigator, architect, scientist, doctor, professor like how God made all of us and intended it to be, we are all equal! This world, creation and your life isn't all random! Be wise! Get interested, your life depends on it!
 
 - 0: [The Greatest Truth Never Told](https://www.youtube.com/watch?v=ekkXHnSrlwY&list=PLD31E34390C5017E8)
@@ -766,10 +770,6 @@
     
     2THESS 3:18 The grace of our Lord Jesus Christ be with you all. Amen.
 
-
-# [Is the North Pole the entrance to Hell](https://www.youtube.com/watch?v=lZlSimsiPUA)? and [Jesus Christ wasn't born on Dec. 25th](https://www.youtube.com/watch?v=nz9fY9K4Npc)?
-
-# [Is Santa Claus even real, or is he the devil](http://www.av1611.org/othpubls/santa.html)?
 
 ![atheism](atheism.png)
 
