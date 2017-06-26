@@ -606,6 +606,14 @@
 - [HILLARY CLINTON - BREAKING THE HARD GLASS CEILING - FLAT EARTH HE EARTH IS FLAT!!](https://www.youtube.com/watch?v=gDb5Fowe_jY)
 - [Hillary Clinton Mocks God's Flat Earth Firmament "Glass Ceiling" During Concession Speech](https://www.youtube.com/watch?v=T9nq4cPLcs0)
 - [Hillary Clinton "Breaking The Glass Ceiling" Mocks The Biblical Flat Earth Firmament Dome](https://www.youtube.com/watch?v=Divfpik3nZU)
+- [Flat Earth INVADES Mainstream Media pt2 | Hillary Clinton, Obama, B.O.B. x The View Talk FE](https://www.youtube.com/watch?v=wvKab3iAhrs)
+- [Leonardo DiCaprio Discusses FLAT EARTH With the Pope!! | FE INVADES Mainstream Media pt1](https://www.youtube.com/watch?v=KOHX-Rm-E-k)
+- [NEW Antarctica Travel Ban ENFORCED to Hide Flat Earth's Dome Firmament!! (John Kerry) | FE Proof 5.2](https://www.youtube.com/watch?v=YsnvrCoE2JA)
+- [Man Dies After FINDING The Flat Earth DOME Firmament in Antarctica (NO TRESPASSING) | FE Proof 5 pt3](https://www.youtube.com/watch?v=7HdvX65ksx4)
+- [FLAT EARTH - The Dome Visible in an ANTARTICA Photo? George Rayner circa 1920](https://www.youtube.com/watch?v=SUmhvzlWX6E)
+- [Planes CRASH into "Invisible Shield" of Flat Earth's Dome Firmament in Antarctica | FE PROOF 4 pt2](https://www.youtube.com/watch?v=QtybmBcSfLE)
+- [MAN'S ROCKET HITS DOME (MUST SEE)](https://www.youtube.com/watch?v=jLwnDfhz9EA)
+- [I witnessed the most mysterious thing ever - Plane flying THROUGH the Sun](https://www.youtube.com/watch?v=eN8yhUzqLCA)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
