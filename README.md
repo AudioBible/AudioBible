@@ -627,6 +627,10 @@
 - [The Secret Rapture: Satan's Secret Weapon](https://www.youtube.com/watch?v=WRDO93aPx-w)
 - [Under the Law? Or Under Grace?](https://www.youtube.com/watch?v=Z46-GzdA_9Q)
 - [Seal Of YAH: Promise of Protection!](https://www.youtube.com/watch?v=LE739WWcOeI)
+- [How the f*ck can the Earth be a globe? A globe exists only in your imagination! Zetetic Flat Earth](https://www.youtube.com/watch?v=NGeX9Z51EpU)
+- [FLAT EARTH - FINAL CONFLICT - The Motive behind Globe Earth deception - Zetetic Flat Earth](https://www.youtube.com/watch?v=b8X5er7-TI0)
+- [Flat Earth & the Twin Tower deception ****MUST SEE THIS****](https://www.youtube.com/watch?v=C9nFOZ-lIiE)
+- [THE BIGGEST LIE OF ALL BREAKING MUST SEE AND HEAR](https://www.youtube.com/watch?v=V6l5nc0Ezaw)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
