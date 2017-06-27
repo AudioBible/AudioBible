@@ -790,10 +790,12 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 
 # How to help
 
-1. Print the "youtube search flat earth" flier and give it out to people or put it on their cars in parking lots
+1. Pray and watch the videos
+
+2. Print the "youtube search flat earth" flier and give it out to people or put it on their cars in parking lots
 
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
-2. Leave this comment all over the internet, on youtube, twitter, facebook, etc on all posts and/or videos you can get your hands on, trending, new old, on all content
+3. Leave this comment all over the internet, on youtube, twitter, facebook, etc; on all posts and/or videos you can get your hands on, trending, new, old, on all content. make sure the link can lead people back here to watch the videos and share this with others.
 
 The Earth is Flat! Aliens are fallen angels/demons. Santa Clause is the devil! If we live on a spinning ball, the Centrifugal Force would make all the continents to merge to the center! Globe is a lie from satan indoctrinating false gods into your every day life! Christmas is a pagan holiday, like all other holidays. You are more special than you are led to believe! github.com/AudioBible/AudioBible﻿
