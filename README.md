@@ -792,6 +792,18 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 
 1. Pray and watch the videos
 
+
+    MT 6:9 After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name.
+    
+    MT 6:10 Thy kingdom come, Thy will be done in earth, as it is in heaven.
+    
+    MT 6:11 Give us this day our daily bread.
+    
+    MT 6:12 And forgive us our debts, as we forgive our debtors.
+    
+    MT 6:13 And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen.
+
+
 2. Print the "youtube search flat earth" flier and give it out to people or put it on their cars in parking lots
 
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
