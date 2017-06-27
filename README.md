@@ -640,6 +640,8 @@
 
 ## [StopLookThink.com](http://stoplookthink.com)
 
+## [http://answering-christianity.com/earth_flat.htm](http://answering-christianity.com/earth_flat.htm)
+
 ### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
