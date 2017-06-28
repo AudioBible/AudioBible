@@ -824,7 +824,7 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 
 3. Leave this comment all over the internet, on youtube, twitter, facebook, etc; on all posts and/or videos you can get your hands on, trending, new, old, on all content. make sure the link can lead people back here to watch the videos and share this with others. 
 
-**tip:** you may want to have multiple tabs open and mute the tabs and switch back and forth between the tabs to to more commenting with your time. Copy and paste this comment all over the internets. Formulate the message payload to fit within the message length limits, and translate to you native language, if you like.
+**tip:** you may want to have multiple tabs open and mute the tabs and switch back and forth between the tabs to to more commenting with your time. Copy and paste this comment all over the internets. Formulate the message payload to fit within the message length limits, and translate to your native language or other languages, if you like.
 
 The Earth is Flat! Aliens are fallen angels/demons. Santa Clause is the devil! If we live on a spinning ball, the Centrifugal Force would make all the continents to merge to the center! Globe is a lie from satan indoctrinating false gods into your every day life! Christmas is a pagan holiday, like all other holidays. You are more special than you are led to believe! github.com/AudioBible/AudioBible
 
