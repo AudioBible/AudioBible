@@ -790,7 +790,7 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 
 # How to help
 
-1. Pray and watch the videos
+1. Pray, read, hear and watch the videos
 
 
     MT 6:9 After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name.
