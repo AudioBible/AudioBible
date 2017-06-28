@@ -18,7 +18,7 @@
 
 # Why? Because God can speak through people! 
 
-# It is as it was and will be, in Jesus name
+# It is, as it was and it will be, in Jesus name.
 
 # Install On Mac
 
