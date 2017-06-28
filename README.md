@@ -214,6 +214,8 @@
 
 ## Are you some kinda clown or something? Because that's what they make us all out to be, a bunch of fools!
 
+Our life is same thing as a fetus life in the womb, the womb determines the sex male/female and the person is born, same with life, determines heaven or hell﻿ in the afterlife.
+
 **Note:** You may want to rewind/fast-forward and watch the video again, while your mind is processing the information you won't consume all of it at once, so do what you need to make sure you understand the message. Be investigator, architect, scientist, doctor, professor like how God made all of us and intended it to be, we are all equal! This world, creation and your life isn't all random! Be wise! Get interested, your life depends on it! Teach your children the truth, I beg you!
 
 - 1: [Admiral Richard E. Byrd - South Pole Video Interview](https://www.youtube.com/watch?v=czW0iRJuH1A)
