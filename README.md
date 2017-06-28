@@ -212,7 +212,7 @@
 
 ## [Is Santa Claus even real, or is he the devil](http://www.av1611.org/othpubls/santa.html)?
 
-## Are you some kinda clown or something? Because that's what they make us all out to be, a bunch of clowns!
+## Are you some kinda clown or something? Because that's what they make us all out to be, a bunch of fools!
 
 **Note:** You may want to rewind/fast-forward and watch the video again, while your mind is processing the information you won't consume all of it at once, so do what you need to make sure you understand the message. Be investigator, architect, scientist, doctor, professor like how God made all of us and intended it to be, we are all equal! This world, creation and your life isn't all random! Be wise! Get interested, your life depends on it! Teach your children the truth, I beg you!
 
