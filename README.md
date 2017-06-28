@@ -216,8 +216,6 @@
 
 ## Because that's what they make you out to be, a bunch of fools! WAKE UP!
 
-Our life is like that of a fetus inside the womb, the womb determines the sex male/female, features and the person is born into life, same with life, determines heaven or hell﻿ in the afterlife based not only on how good of a person you are, but if you keep Gods Laws and worship Jesus Christ as your one and only God. Jesus determines if you can go to heaven, if you don't know him now, how will you expect to know him then. Please get to know him! Let the word of God and the Holy Spirit and the videos on AudioBible github project help you along the way!
-
 **Note:** You may want to rewind/fast-forward and watch the video again, while your mind is processing the information you won't consume all of it at once, so do what you need to make sure you understand the message. Be investigator, architect, scientist, doctor, professor like how God made all of us and intended it to be, we are all equal! This world, creation and your life isn't all random! Be wise! Get interested, your life depends on it! Teach your children the truth, I beg you!
 
 - 1: [Admiral Richard E. Byrd - South Pole Video Interview](https://www.youtube.com/watch?v=czW0iRJuH1A)
@@ -819,3 +817,5 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 **tip:** you may want to have multiple tabs open and mute the tabs and switch back and forth between the tabs to to more commenting with your time. Copy and paste this comment all over the internets.
 
 The Earth is Flat! Aliens are fallen angels/demons. Santa Clause is the devil! If we live on a spinning ball, the Centrifugal Force would make all the continents to merge to the center! Globe is a lie from satan indoctrinating false gods into your every day life! Christmas is a pagan holiday, like all other holidays. You are more special than you are led to believe! github.com/AudioBible/AudioBible
+
+Our life is like that of a fetus inside the womb, the womb determines the sex male/female, features and the person is born into life, same with life, determines heaven or hell﻿ in the afterlife based not only on how good of a person you are, but if you keep Gods Laws and worship Jesus Christ as your one and only God. Jesus determines if you can go to heaven, if you don't know him now, how will you expect to know him then. Please get to know him! Let the word of God and the Holy Spirit and the videos on AudioBible github project help you along the way!
