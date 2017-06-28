@@ -16,7 +16,7 @@
 - [What Must I Do To Be Saved? (Pastor Charles Lawson)](https://www.youtube.com/watch?v=EDOeS0fNIJc)
 - [http://pastorcharleslawson.org/](http://pastorcharleslawson.org/)
 
-# Why? Because God can speak through people! It is as it was and will be!
+# Why? Because God can speak through people! It is as it was and will be, in Jesus name
 
 # Install On Mac
 
