@@ -16,6 +16,8 @@
 - [What Must I Do To Be Saved? (Pastor Charles Lawson)](https://www.youtube.com/watch?v=EDOeS0fNIJc)
 - [http://pastorcharleslawson.org/](http://pastorcharleslawson.org/)
 
+# Why? Because God can speak through people! It is as it was!
+
 # Install On Mac
 
     brew install python libxml2                                 # install dependencies
