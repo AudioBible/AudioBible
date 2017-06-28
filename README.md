@@ -220,7 +220,7 @@
 
 ## Are you some kinda clown or something? 
 
-## Because that's what they(working for satan) make you out to be, a fool!
+## Because that's what they(who do the will of the devil) make you out to be, a fool!
 
 ## WAKE UP!
 
