@@ -896,25 +896,26 @@ Our life is like that of a fetus inside the womb, the womb determines the sex ma
 
 4. Development
 
+### download the project using git
 
-    cd ~/Projects
-
-    # download the project using git
     git clone git@github.com:AudioBible/AudioBible.git
     
-    # download from your fork so you can create a pull request if you make changes
+### download from your fork so you can create a pull request if you make changes
+    
     git clone git@github.com:{USERNAME}/AudioBible.git
     
-    # change into the project directory and run the program during development
+### change into the project directory and run the program during development
+    
     cd AudioBible
     audiobible/__init__.py
     
-    #run with books located in ./tests/KJV directory and data located in ./tests
+###run with books located in ./tests/KJV directory and data located in ./tests
+    
     BOOKS_PATH=tests audiobible/__init__.py
     
-    # run tests giving the books data path
+### run tests giving the books data path
     BOOKS_PATH=tests python -m unittest tests
     
-    # do some dev and create a pull request
+### do some dev and create a pull request
 
 Praised be Jesus name! Amen.
