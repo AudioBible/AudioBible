@@ -5,6 +5,7 @@
 - [Flat Earth Anonymous Message for all Citizens of the World](https://www.youtube.com/watch?v=b6czH8EsOP0)
 - [WORDS OF WISDOM FLAT EARTH](https://www.youtube.com/watch?v=IfdCPCsrxS4)
 - [TOP RATED 2017 FLAT EARTH DOCUMENTARY](https://www.youtube.com/watch?v=N2ZHb5WJcys)
+- [SANTA IS THE DEVIL -- THIS WILL SHOCK YOU](https://www.youtube.com/watch?v=rPbB1Er0v5k)
 
 ### [Space may be the final frontier, but it's made in a hollywood basement](audiobible/space.m4a) [download song/remix]
 
