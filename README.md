@@ -4,6 +4,7 @@
 
 - [Flat Earth Anonymous Message for all Citizens of the World](https://www.youtube.com/watch?v=b6czH8EsOP0)
 - [WORDS OF WISDOM FLAT EARTH](https://www.youtube.com/watch?v=IfdCPCsrxS4)
+- [TOP RATED 2017 FLAT EARTH DOCUMENTARY](https://www.youtube.com/watch?v=N2ZHb5WJcys)
 
 ### [Space may be the final frontier, but it's made in a hollywood basement](audiobible/space.m4a) [download song/remix]
 
@@ -831,6 +832,6 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 
 **tip:** you may want to have multiple tabs open and mute the tabs and switch back and forth between the tabs to to more commenting with your time. Copy and paste this comment all over the internets. Formulate the message payload to fit within the message length limits, and translate to your native language or other languages, if you like.
 
-The Earth is Flat! Aliens are fallen angels/demons. Santa Clause is the devil! If we live on a spinning ball, the Centrifugal Force would make all the continents to merge to the center! Globe is a lie from satan indoctrinating false gods into your every day life! Christmas is a pagan holiday, like all other holidays. You are more special than you are led to believe! github.com/AudioBible/AudioBible
+The Earth is Flat! YouTube search Flat Earth! Aliens are fallen angels/demons. Santa Clause is the devil! If we live on a spinning ball, the Centrifugal Force would make all the continents to merge to the center! Globe is a lie from satan indoctrinating false gods into your every day life! Christmas is a pagan holiday, like all other holidays. You are more special than you are led to believe! github.com/AudioBible/AudioBible
 
 Our life is like that of a fetus inside the womb, the womb determines the sex male/female, features and the person is born into life, same with life, determines heaven or hell﻿ in the afterlife based not only on how good of a person you are, but if you keep Gods Law and worship Jesus Christ as your one and only Savior. Jesus determines if you can go to heaven! If you don't know him now, how will you expect to know him then? Please get to know him! Let the word of God and the Holy Spirit and the collection of information on AudioBible github project help you along the way!
