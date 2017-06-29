@@ -2,6 +2,8 @@
 
 ## What I know is that I don't know anything, so I keep looking for the truth/answers and realize how little I actually know, but the more I keep looking for the truth the more I know that I have a chance to be saved!
 
+[Flat Earth Anonymous Message for all Citizens of the World](https://www.youtube.com/watch?v=b6czH8EsOP0)
+
 ### [Space may be the final frontier, but it's made in a hollywood basement](audiobible/space.m4a) [download song/remix]
 
 ## King James Version Audio Bible for Mac, Windows and Unix/Linux
