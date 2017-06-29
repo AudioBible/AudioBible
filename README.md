@@ -907,8 +907,11 @@ Our life is like that of a fetus inside the womb, the womb determines the sex ma
     cd AudioBible
     audiobible/__init__.py
     
-    # run unit tests, with books located in ./tests/KJV directory
+    #run with books located in ./tests/KJV directory and data located in ./tests
     BOOKS_PATH=tests audiobible/__init__.py
+    
+    # run tests giving the books data path
+    BOOKS_PATH=tests python -m unittest tests
     
     # do some dev and create a pull request
 
