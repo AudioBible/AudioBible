@@ -654,6 +654,7 @@
 - [THE BIGGEST LIE OF ALL BREAKING MUST SEE AND HEAR](https://www.youtube.com/watch?v=V6l5nc0Ezaw)
 - [Vision of Hell by a Korean Painting artist (ENGLISH)](https://www.youtube.com/watch?v=aBD9opwFKo4)
 - [7 MINUTES IN HELL!!! MUST WATCH!!!](https://www.youtube.com/watch?v=XR3Qd2iJiVk)
+- [DISNEY IS SATANIC PROPAGANDA !!!](https://www.youtube.com/watch?v=rxXg5JyXq58)
 
 **Note:** Not all videos made it to this list, so do your research and watch out for disinformation. After a while you will be able to tell what is the truth, by the message content. Be smart! Don't trust "Credentials" and don't put faith into humanity, technology or science, only put your faith in the Trinity(God, Jesus and the Holy Spirit) and Prayer!
 
