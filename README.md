@@ -909,7 +909,7 @@ Our life is like that of a fetus inside the womb, the womb determines the sex ma
     cd AudioBible
     audiobible/__init__.py
     
-###run with books located in ./tests/KJV directory and data located in ./tests
+### run with books located in ./tests/KJV directory and data located in ./tests
     
     BOOKS_PATH=tests audiobible/__init__.py
     
