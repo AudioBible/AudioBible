@@ -1,4 +1,4 @@
-# AudioBible - The Earth Is Flat! Holocaust is a HOAX! 911 was an inside job!
+# AudioBible - Earth Is Flat! Holocaust Is HOAX! 911 Inside Job!
 
 ## What I know is that I don't know anything, so I keep looking for the truth/answers and realize how little I actually know, but the more I keep looking for the truth the more I know that I have a chance to be saved!
 
