@@ -868,7 +868,7 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 
 # How to help, join the operation, bombs away!
 
-1. Pray, repent, read, hear, watch the videos and go to church!
+### 1. Pray, repent, read, hear, watch the videos and go to church!
 
 
     MT 6:9 After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name.
@@ -882,11 +882,11 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
     MT 6:13 And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen.
 
 
-2. Print the "youtube search flat earth" flier and give it out to people or put it on their cars in parking lots
+### 2. Print the "youtube search flat earth" flier and give it out to people or put it on their cars in parking lots
 
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
-3. Leave this comment all over the internet, on youtube, twitter, facebook, etc; on all posts and/or videos you can get your hands on, trending, new, old, on all content. make sure the link can lead people back here to watch the videos and share this with others. 
+### 3. Leave this comment all over the internet, on youtube, twitter, facebook, etc; on all posts and/or videos you can get your hands on, trending, new, old, on all content. make sure the link can lead people back here to watch the videos and share this with others. 
 
 **tip:** you may want to have multiple tabs open and mute the tabs and switch back and forth between the tabs to to more commenting with your time. Copy and paste this comment all over the internets. Formulate the message payload to fit within the message length limits, and translate to your native language or other languages, if you like.
 
@@ -894,7 +894,7 @@ The Earth is Flat! YouTube search Flat Earth! Aliens are fallen angels/demons. S
 
 Our life is like that of a fetus inside the womb, the womb determines the sex male/female, features and the person is born into life, same with life, determines heaven or hell﻿ in the afterlife based not only on how good of a person you are, but if you keep Gods Law and worship Jesus Christ as your one and only Savior. Jesus determines if you can go to heaven! If you don't know him now, how will you expect to know him then? Please get to know him! Let the word of God and the Holy Spirit and the collection of information on AudioBible github project help you along the way!
 
-4. Development
+### 4. Development (do some dev and create a pull request)
 
 ### download the project using git
 
@@ -916,6 +916,4 @@ Our life is like that of a fetus inside the womb, the womb determines the sex ma
 ### run tests giving the books data path
     BOOKS_PATH=tests python -m unittest tests
     
-### do some dev and create a pull request
-
-Praised be Jesus name! Amen.
+# Praised be Jesus name! Amen.
