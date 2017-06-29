@@ -8,7 +8,8 @@
 - [TOP RATED 2017 FLAT EARTH DOCUMENTARY](https://www.youtube.com/watch?v=N2ZHb5WJcys) [youtube]
 - [SANTA IS THE DEVIL -- THIS WILL SHOCK YOU](https://www.youtube.com/watch?v=rPbB1Er0v5k) [youtube]
 - [Doctors Oath Watch This Before Your Next Visit](https://www.youtube.com/watch?v=aCkHgqDYdQ4)
-- [The Flat Earth : Free energy forever no wind no solar no gas "power your home get off the grid"](https://www.youtube.com/watch?v=IJDo-SEAkno)
+- [The Flat Earth : Free energy forever no wind no solar no gas "power your home get off the grid"](https://www.youtube.com/watch?v=IJDo-SEAkno) [youtube]
+- [Russianvids Responds To Daniel Tosh - Flat Earth Mocked On Tosh.0](https://www.youtube.com/watch?v=kKMI354O4YQ) [youtube]
 
 ### [Space may be the final frontier, but it's made in a hollywood basement](audiobible/space.m4a) [download song/remix]
 

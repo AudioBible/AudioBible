@@ -46,16 +46,18 @@ class AudioBibleListSpeakersTest(unittest.TestCase):
         letters = string.ascii_uppercase
         for l in range(len(letters)):
             path = speakers_file % letters[l]
-            print path
+            # print path
             if os.path.exists(path):
                 with open(path, 'r') as lines:
                     for line in lines:
                         data = json.loads(line)
-                        print data
+                        # print data
                         if data['name'][0] == letters[l]:
                             self.speakers[letters[l]].append([data['name'], data['path']])
+
     def test_list_speakers(self):
-        print self.speakers
+        # print self.speakers
+        pass
 # class AudioBibleInitTest(unittest.TestCase):
 #     def setUp(self):
 #         subprocess.call(['rm', '-rf', os.path.join(TESTS_ROOT, settings.DATA_STORE)])
