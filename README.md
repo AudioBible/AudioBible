@@ -12,6 +12,7 @@
 - [Russianvids Responds To Daniel Tosh - Flat Earth Mocked On Tosh.0](https://www.youtube.com/watch?v=kKMI354O4YQ) [youtube]
 - [We Never Have and Will Never Go To The Moon. NASA: You Suck! (fix)](https://www.youtube.com/watch?v=Xt0RW6qMbLw) [youtube]
 - [✅ FLAT EARTH & The BIBLE 24/7 ✞ GOD's Truth vs SCIENTISM 🔬 NASA 🚀 | Christians Unite FE LIVE!](https://www.youtube.com/watch?v=ZQ7I4Pzdm4w) [youtube]
+- [The Flat Earth Last Video From Aaron Dover Before they Killed Him](https://www.youtube.com/watch?v=nhoQSee-5h0) [youtube]
 
 ### [Space may be the final frontier, but it's made in a hollywood basement](audiobible/space.m4a) [download song/remix]
 
