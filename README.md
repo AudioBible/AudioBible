@@ -885,6 +885,8 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 
 ### 2. Print the "youtube search flat earth" flier and give it out to people or put it on their cars in parking lots
 
+**Note:** When you see a person, ask them. "Do you watch videos on youtube?", doesn't matter what they say to the question, just say to them "Well if you do a search on youtube for Flaat Earth, you will find some info about how they been lying to us all these years" and give them the flier. If they ask questions, just tell them that you don't want to pull things out of thin air, that you don't have pictures to show them, but if they go to youtube, and do a search for Flat Earth they will see pictures and videos of people talking about it.
+
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
 
 ### 3. Leave this comment all over the internet, on youtube, twitter, facebook, etc; on all posts and/or videos you can get your hands on, trending, new, old, on all content. make sure the link can lead people back here to watch the videos and share this with others. 
