@@ -916,5 +916,13 @@ Our life is like that of a fetus inside the womb, the womb determines the sex ma
     
 ### run tests giving the books data path
     BOOKS_PATH=tests python -m unittest tests
+
+# audiobible find feared the lord spake -A1
     
+    
+    MAL 3:16 Then they that feared the LORD spake often one to another: and the LORD hearkened, and heard it, and a book of remembrance was written before him for them that feared the LORD, and that thought upon his name.
+    
+    MAL 3:17 And they shall be mine, saith the LORD of hosts, in that day when I make up my jewels; and I will spare them, as a man spareth his own son that serveth him.
+
+
 # Praised be Jesus name! Amen.
