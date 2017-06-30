@@ -19,7 +19,7 @@
 
 ## King James Version Audio Bible for Mac, Windows and Unix/Linux
 
-### [http://sermonaudio.com](http://sermonaudio.com) [church online]
+### [http://sermonaudio.com](http://sermonaudio.com) [church online with real pastors]
 
 - [Are You Serious? Flat Earth?](https://www.youtube.com/watch?v=VkGm0rcxCBU)
 - [Illumination of the Third Eye - Pastor Charles Lawson](https://www.youtube.com/watch?v=8B-KT94bWHg)
