@@ -17,6 +17,8 @@
 
 ### [Space may be the final frontier, but it's made in a hollywood basement](audiobible/space.m4a) [download song/remix]
 
+- [K-Rino - The Debate (Lyric Video)](https://www.youtube.com/watch?v=MDT_MKUVgLI) [music on youtube]
+
 ## King James Version Audio Bible for Mac, Windows and Unix/Linux
 
 ### [http://sermonaudio.com](http://sermonaudio.com) [church online with real pastors]
