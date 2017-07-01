@@ -31,7 +31,9 @@
 - [What Must I Do To Be Saved? (Pastor Charles Lawson)](https://www.youtube.com/watch?v=EDOeS0fNIJc)
 - [http://pastorcharleslawson.org/](http://pastorcharleslawson.org/)
 
-# Why? Because God speaks through people! It has a psychological affect on your brain and how you live your life if you think it's Flat or a Globe!
+# Why? Because God speaks through people!
+
+# It has a psychological affect on your brain and how you live your life if you think it's Flat or a Globe!
 
 # It is, as it was and it will be, in Jesus name, forever and ever. Amen.
 
