@@ -39,6 +39,8 @@
 
 # Why? Because God speaks through people!
 
+# [1611 King James Version Bible Online](https://www.kingjamesbibleonline.org/1611-Bible/)
+
 # It has a psychological affect on your brain and how you live your life if you think it's Flat or a Globe!
 
 # It is, as it was and it will be, in Jesus name, forever and ever. Amen.
