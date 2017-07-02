@@ -30,6 +30,7 @@
 - [Beware the Emerging Church Movement (Pastor Charles Lawson)](https://www.youtube.com/watch?v=3QJ226sGfNI)
 - [Great Deception Is Settling In (Pastor Charles Lawson)](https://www.youtube.com/watch?v=WZMf5l9SG9I)
 - [What Must I Do To Be Saved? (Pastor Charles Lawson)](https://www.youtube.com/watch?v=EDOeS0fNIJc)
+- [What To Do When You Mess Up (Pastor Charles Lawson)](https://www.youtube.com/watch?v=7qsV_wKsCtk)
 - [http://pastorcharleslawson.org/](http://pastorcharleslawson.org/)
 
 # Why? Because God speaks through people!
@@ -178,33 +179,35 @@
 ## I pray God helps you to see, hear, read and understand and most importantly do something right about it! God bless you on your journey! Thank you for reading.
 
 
-### [The Visual Bible - The Gospel Of Matthew](https://www.youtube.com/watch?v=woAhReBytBk) [MOVIE]
-### [The Gospel of Luke](https://www.youtube.com/watch?v=auL-ebjH-xo) [MOVIE]
-### [The Gospel of Luke - Film - Visual Bible in HD Very Rare Version](https://www.youtube.com/watch?v=2PHPLApTt7Y) [MOVIE]
-### [The Acts of the Apostles - Film - High Quality! HD](https://www.youtube.com/watch?v=tRXNp6K5-JI) [MOVIE]
-### [Paul the Apostle Full Movie](https://www.youtube.com/watch?v=t5FhLQhDsk0) [MOVIE]
-### [The Book Of Revelation (Full Movie)](https://www.youtube.com/watch?v=NAb2hdQneBY) [MOVIE]
-### [The Ruth Story](https://www.youtube.com/watch?v=slEmSyJi81g) [MOVIE]
-### [Esther and the King](https://www.youtube.com/watch?v=SQ6qYypfmIo) [MOVIE]
-### [Samson and Delilah - full movie - full movie](https://www.youtube.com/watch?v=a9968bcrywY) [MOVIE]
-### [David and Goliath...Orson Welles as King Saul](https://www.youtube.com/watch?v=GpVf6JII-VM) [MOVIE]
-### [Sodom & Gomorrah FULL VIDEO](https://www.youtube.com/watch?v=WWpknxvxLpk) [MOVIE]
-### [The Story of Joseph and His Brethren (1962)](https://www.youtube.com/watch?v=u2dM_kW-SOI) [MOVIE]
-### [Abraham, Sarah, Isaac, Jacob ( Full Movie )](https://www.youtube.com/watch?v=V5WNbtj3gZs) [MOVIE]
-### [The Ten Commandments.Full Movie HD.](https://www.youtube.com/watch?v=4s320VeVUQA) [MOVIE]
-### [Jesus Of Nazareth (Original Bible Movie) 1977](https://www.youtube.com/watch?v=pG6Y88iQhCE) [MOVIE]
-### [Jesus is Coming Full Movie](https://www.youtube.com/watch?v=Gi0eW2BEOXM) [MOVIE]
-### [The Books Of Enoch: COMPLETE EDITION, All 3 Books - Flat Earth](https://www.youtube.com/watch?v=s7TynhdCPI4)
-### [The Book of Enoch - Entire Book, R. H. Charles Version (Synchronized Text)](https://www.youtube.com/watch?v=5wbdjo7xnUg)
+- [The Visual Bible - The Gospel Of Matthew](https://www.youtube.com/watch?v=woAhReBytBk) [MOVIE]
+- [The Gospel of Luke](https://www.youtube.com/watch?v=auL-ebjH-xo) [MOVIE]
+- [The Gospel of Luke - Film - Visual Bible in HD Very Rare Version](https://www.youtube.com/watch?v=2PHPLApTt7Y) [MOVIE]
+- [The Acts of the Apostles - Film - High Quality! HD](https://www.youtube.com/watch?v=tRXNp6K5-JI) [MOVIE]
+- [Paul the Apostle Full Movie](https://www.youtube.com/watch?v=t5FhLQhDsk0) [MOVIE]
+- [The Book Of Revelation (Full Movie)](https://www.youtube.com/watch?v=NAb2hdQneBY) [MOVIE]
+- [The Ruth Story](https://www.youtube.com/watch?v=slEmSyJi81g) [MOVIE]
+- [Esther and the King](https://www.youtube.com/watch?v=SQ6qYypfmIo) [MOVIE]
+- [Samson and Delilah - full movie - full movie](https://www.youtube.com/watch?v=a9968bcrywY) [MOVIE]
+- [David and Goliath...Orson Welles as King Saul](https://www.youtube.com/watch?v=GpVf6JII-VM) [MOVIE]
+- [Sodom & Gomorrah FULL VIDEO](https://www.youtube.com/watch?v=WWpknxvxLpk) [MOVIE]
+- [The Story of Joseph and His Brethren (1962)](https://www.youtube.com/watch?v=u2dM_kW-SOI) [MOVIE]
+- [Abraham, Sarah, Isaac, Jacob ( Full Movie )](https://www.youtube.com/watch?v=V5WNbtj3gZs) [MOVIE]
+- [The Ten Commandments.Full Movie HD.](https://www.youtube.com/watch?v=4s320VeVUQA) [MOVIE]
+- [Jesus Of Nazareth (Original Bible Movie) 1977](https://www.youtube.com/watch?v=pG6Y88iQhCE) [MOVIE]
+- [Jesus is Coming Full Movie](https://www.youtube.com/watch?v=Gi0eW2BEOXM) [MOVIE]
+- [The Books Of Enoch: COMPLETE EDITION, All 3 Books - Flat Earth](https://www.youtube.com/watch?v=s7TynhdCPI4)
+- [The Book of Enoch - Entire Book, R. H. Charles Version (Synchronized Text)](https://www.youtube.com/watch?v=5wbdjo7xnUg)
+- [The Second Book of Enoch (Human Voice, Read-Along Version)](https://www.youtube.com/watch?v=60Bp0qJvvqA)
+
 
 **Note:** These are old movies, you can trust these more than the new ones having new actors and brainwashing tactics.
 
 
-### [Paganism Surviving In Christianity](https://www.forgottenbooks.com/en/readbook/PaganismSurvivinginChristianity_10066362) [BOOK]
-### [How We Got Our Bible](https://www.forgottenbooks.com/en/readbook/HowWeGotOurBible_10038867) [BOOK]
-### [The Negro In Our History](https://www.forgottenbooks.com/en/readbook/TheNegroinOurHistory_10101622) [BOOK]
-### [Kings Dethroned](https://www.forgottenbooks.com/en/readbook/KingsDethroned_10031911) [BOOK]
-### [The Book of Enoch](https://www.forgottenbooks.com/en/readbook/TheBookofEnoch_10152066) [BOOK]
+- [Paganism Surviving In Christianity](https://www.forgottenbooks.com/en/readbook/PaganismSurvivinginChristianity_10066362) [BOOK]
+- [How We Got Our Bible](https://www.forgottenbooks.com/en/readbook/HowWeGotOurBible_10038867) [BOOK]
+- [The Negro In Our History](https://www.forgottenbooks.com/en/readbook/TheNegroinOurHistory_10101622) [BOOK]
+- [Kings Dethroned](https://www.forgottenbooks.com/en/readbook/KingsDethroned_10031911) [BOOK]
+- [The Book of Enoch](https://www.forgottenbooks.com/en/readbook/TheBookofEnoch_10152066) [BOOK]
 
 ## THE EARTH IS FLAT, IN CASE YOU DIDN'T KNOW, NASA LIES!
 
