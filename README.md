@@ -35,6 +35,8 @@
 
 **Note:** Watch more on youtube [The Mind of God (Pastor Charles Lawson)](https://www.youtube.com/watch?v=RoF9iBRyLAI&list=PLHjf9oqszTVaOR3XenoMOBHKY1SrBFYFu) [playlist]
 
+### [Scriptural Truth Free MP3](http://www.scriptural-truth.com/mp3free.html)
+
 # Why? Because God speaks through people!
 
 # It has a psychological affect on your brain and how you live your life if you think it's Flat or a Globe!
