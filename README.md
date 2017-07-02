@@ -33,6 +33,8 @@
 - [What To Do When You Mess Up (Pastor Charles Lawson)](https://www.youtube.com/watch?v=7qsV_wKsCtk)
 - [http://pastorcharleslawson.org/](http://pastorcharleslawson.org/)
 
+**Note:** Watch the more on youtube [The Mind of God (Pastor Charles Lawson)](https://www.youtube.com/watch?v=RoF9iBRyLAI&list=PLHjf9oqszTVaOR3XenoMOBHKY1SrBFYFu) [playlist]
+
 # Why? Because God speaks through people!
 
 # It has a psychological affect on your brain and how you live your life if you think it's Flat or a Globe!
@@ -324,7 +326,7 @@
 - 70: [CELEBRITIES SEEN IN HELL (TUPAC, ROBIN WILLIAMS, ELVIS, HEATH LEDGER, AND MORE)](https://www.youtube.com/watch?v=_gNw4SGGwDU)
 - 71: [INDIA IMPLEMENTING THE BEAST SYSTEM. CAN'T BUY OR SELL UNLESS YOU TAKE A 12 DIGIT NUMBER](https://www.youtube.com/watch?v=ppEDMsnMfJw)
 - 72: [HITLER: Negroes are The True Jews](https://www.youtube.com/watch?v=NE-X985_prM)
-- 73: [Blacks are in fact the true jews of the bible](https://www.youtube.com/watch?v=FaqCyBlwCxQ&list=PLA3OCbJL135SGuahCKhuQ20eKMiSdXm2t)
+- 73: [Blacks are in fact the true jews of the bible](https://www.youtube.com/watch?v=FaqCyBlwCxQ&list=PLA3OCbJL135SGuahCKhuQ20eKMiSdXm2t) [playlist]
 - 74: [THE TRUTH ON THE REAL HEBREW ISRAELITES IS OUT AND THE NATIONS ARE TERRIFIED !!!!!!](https://www.youtube.com/watch?v=mP2ivfkfHVM)
 - 75: [Video 10- Testimonies of Edomites/Gentiles Telling Blacks They Are the True Hebrew Israelites](https://www.youtube.com/watch?v=qhjajMbTX1Y)
 - 76: [Pt 1 Even the Syrian Refugees Know the Real Hebrew Israelites are Black](https://www.youtube.com/watch?v=YWjd36NOGBg)
@@ -363,7 +365,7 @@
 - 109: [Berlin Christmas Market Truck Massacre Hoax](https://www.youtube.com/watch?v=A3aoIenOgdM)
 - 110: [Nice France Terror Attack Staged 100% FAKE](https://www.youtube.com/watch?v=SrbNtFfMQ4A)
 - 111: [7 CONFIRMED False Flag Attacks](https://www.youtube.com/watch?v=Gst2pwtzz1w)
-- 112: [Steve Hughes on war on terror, global warming and X-factor.](https://www.youtube.com/watch?v=Nea-MpVgRL0&list=RDhMcS82DpjSU)
+- 112: [Steve Hughes on war on terror, global warming and X-factor.](https://www.youtube.com/watch?v=Nea-MpVgRL0&list=RDhMcS82DpjSU) [playlist]
 - 113: [Jim Jeffries on America's "freedom"](https://www.youtube.com/watch?v=bjeq3NYUw2M)
 - 114: [Donald Trump False Flag Assassination](https://www.youtube.com/watch?v=f9zUeCztKCA)
 - 115: [The Untold Story of Adolf Hitler - RFG Chosen 1 & Bro. Sanchez](https://www.youtube.com/watch?v=Q7HhLS7584g)
@@ -377,7 +379,7 @@
 - 123: [This is why Scalia was Murdered](https://www.youtube.com/watch?v=wyPFbDP8W6I)
 - 124: [SGTreport: The Paris False Flag of "TRUTH" -- Dr. Paul Craig Roberts](https://www.youtube.com/watch?v=6kSugZtgXsc)
 - 125: [Donald Trump - Illuminati Puppet Exposed - Part 1](https://www.youtube.com/watch?v=SL_uAY63IWo)
-- 126: [Donald Trump - Illuminati Puppet Exposed - Part 2](https://www.youtube.com/watch?v=7vRHwTZCt7Q&list=RD7vRHwTZCt7Q#t=29)
+- 126: [Donald Trump - Illuminati Puppet Exposed - Part 2](https://www.youtube.com/watch?v=7vRHwTZCt7Q&list=RD7vRHwTZCt7Q) [playlist]
 - 127: [Donald Trump - Controlled by the Illuminati? New World Order MUST WATCH](https://www.youtube.com/watch?v=TXpOiB2kdIM)
 - 128: [GISELE TOM BRADY ILLUMINATI TRANNY COUPLE EXPOSED!](https://www.youtube.com/watch?v=FMG4GUgnlMo)
 - 129: [MEGYN KELLY ILLUMINATI TRANNY EXPOSED!](https://www.youtube.com/watch?v=t5j1CPUf9RI)
@@ -406,7 +408,7 @@
 - 152: [NOT Advertiser Friendly- "Glitches or Reptilians Caught On Tape - Shape Shifter Species"](https://www.youtube.com/watch?v=XTx9LmR2RjU)
 - 153: [The 'Forbidden Fruit 'Was NOT An Apple'](https://www.youtube.com/watch?v=-tSCe2RQPmM)
 - 154: [Illuminati, Reptilians & The Manipulation of Reality - David Icke](https://www.youtube.com/watch?v=G2Ta5uAlqgM)
-- 155: [David Icke, Revelations of a Mother Goddess - Full Video](https://www.youtube.com/watch?v=ASJou7DvtQE&list=PL4iMnclOjmBfGgkIraEgBZaN32fX5BYNi)
+- 155: [David Icke, Revelations of a Mother Goddess - Full Video](https://www.youtube.com/watch?v=ASJou7DvtQE&list=PL4iMnclOjmBfGgkIraEgBZaN32fX5BYNi) [playlist]
 - 156: [Rabbi Weiss Rips the Ideology of Zionism, Controlling ZIONIST are REPTILE ILLUMINATI BANKERS](https://www.youtube.com/watch?v=xt6i6drvGTo)
 - 157: [Jews Against Zionism And Rothschilds](https://www.youtube.com/watch?v=awCOSRg-gks)
 - 158: [A Jew speaks truth about Hitler and Nazi Germany - Full Video](https://www.youtube.com/watch?v=jFDvtzwT-TU)
@@ -456,7 +458,7 @@
 - 203: [Tesla 369 Law of Attraction, Energy Frequency Vibration](https://www.youtube.com/watch?v=G1gceUefXBc)
 - 204: [Magnetism & Frequency (Knowledge is literally POWER !!!)](https://www.youtube.com/watch?v=JQ7ekeTPBWk)
 - 205: [The Secrets Of Vibration 528hz) Hidden truths of sound! Law Of Attraction Part 1](https://www.youtube.com/watch?v=cUiSMPHRrhc)
-- 206: [Healing Codes for the Biological Apocalypse - Clip 1 of 3](https://www.youtube.com/watch?v=rtZB9zeKDCM&list=PLD6DAFB7B2FE2C9BF)
+- 206: [Healing Codes for the Biological Apocalypse - Clip 1 of 3](https://www.youtube.com/watch?v=rtZB9zeKDCM&list=PLD6DAFB7B2FE2C9BF) [playlist]
 - 207: [Adolf Hitler vs The Jew World Order](https://www.youtube.com/watch?v=ssCkc8t9sho)
 - 208: [Hitler didn't hate Jews. He hated zionism](https://www.youtube.com/watch?v=bYYTp29xA3o)
 - 209: [Why Did Adolf Hitler Hate Jews?](https://www.youtube.com/watch?v=PtEzozK9_Ww)
@@ -499,7 +501,7 @@
 - 246: [Ex Satan Worshipper John Ramirez Testimony](https://www.youtube.com/watch?v=I11L71PD3Lw)
 - 247: [Divided States of Zombieland | Are You a Zombie?](https://www.youtube.com/watch?v=_urOCJ78Sg4)
 - 248: [Trump Programming | Destroy America from the Inside](https://www.youtube.com/watch?v=4lt001r7xxs)
-- 249: [A Stranger's Guide to Flat Earth | 21 Questions ▶️️ Research Flat Earth](https://www.youtube.com/watch?v=k0xClWgidZU&list=PLm6Vq0bTTCDj8fuDVfqcytiuxbVj_Lyq4)
+- 249: [A Stranger's Guide to Flat Earth | 21 Questions ▶️️ Research Flat Earth](https://www.youtube.com/watch?v=k0xClWgidZU&list=PLm6Vq0bTTCDj8fuDVfqcytiuxbVj_Lyq4) [playlist]
 - 250: [ODD Reality talks Flat Earth on AMTV ✅](https://www.youtube.com/watch?v=v5nsewcK42s)
 - 251: [Hiding the Truth of God Creating This Enclosed Flat Earth](https://www.youtube.com/watch?v=mYuVI-GoucI)
 - 252: [Satan's Global Lie - The Truth of God's Enclosed Flat Earth](https://www.youtube.com/watch?v=CGZcBdarJ8E)
@@ -587,7 +589,7 @@
 - [Mark of the beast will be demanded, not forced upon us.](https://www.youtube.com/watch?v=Q1a5zSOWw6k)
 - [Talmud, Baphomet and The Days of Noah](https://www.youtube.com/watch?v=sP2EcsR92EU)
 - [Katy Perry sells her soul, and buys a church instead.](https://www.youtube.com/watch?v=NXyqfJfT97s)
-- [PURELY SATANIC AMERICA](https://www.youtube.com/watch?v=hLo2D15PHNM&list=PLGM8cMxIO1ggKg510POVV5wqAWJ9jL-TN)
+- [PURELY SATANIC AMERICA](https://www.youtube.com/watch?v=hLo2D15PHNM&list=PLGM8cMxIO1ggKg510POVV5wqAWJ9jL-TN) [playlist]
 - [Black magik Alter Discovered KNIGHTS TEMPLAR](https://www.youtube.com/watch?v=7heVwpVM5mw)
 - [SHOCKING 2017 CERN TUNNEL OPENING RITUAL DELETED SCENES OPENING THE PORTAL](https://www.youtube.com/watch?v=OIazxDwj-m8)
 - [CERN discovers 5 new STATES](https://www.youtube.com/watch?v=DsjoiuwRLkU)
@@ -681,7 +683,7 @@
 
 ## [http://answering-christianity.com/earth_flat.htm](http://answering-christianity.com/earth_flat.htm)
 
-### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6)
+### [Lesson in Psychology](https://www.youtube.com/watch?v=vo4pMVb0R6M&list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6) [playlist]
 
 ## God is so kind that it is impossible to imagine His unbounded kindness
 
