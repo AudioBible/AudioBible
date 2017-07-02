@@ -33,7 +33,7 @@
 - [What To Do When You Mess Up (Pastor Charles Lawson)](https://www.youtube.com/watch?v=7qsV_wKsCtk)
 - [http://pastorcharleslawson.org/](http://pastorcharleslawson.org/)
 
-**Note:** Watch the more on youtube [The Mind of God (Pastor Charles Lawson)](https://www.youtube.com/watch?v=RoF9iBRyLAI&list=PLHjf9oqszTVaOR3XenoMOBHKY1SrBFYFu) [playlist]
+**Note:** Watch more on youtube [The Mind of God (Pastor Charles Lawson)](https://www.youtube.com/watch?v=RoF9iBRyLAI&list=PLHjf9oqszTVaOR3XenoMOBHKY1SrBFYFu) [playlist]
 
 # Why? Because God speaks through people!
 
