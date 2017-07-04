@@ -18,6 +18,7 @@
 - [CHURCH GONE WILD ILLUMINATI SATANIST PASTORS EXPOSED!!](https://www.youtube.com/watch?v=uRHahaoPk34) [youtube]
 - [Enoch's Bible says the Lucifer lives in Antarctica !!!](https://www.youtube.com/watch?v=YA1hYIpQcys) [youtube]
 - [Jesuits Erasing our Flat Earth - Documentary](https://www.youtube.com/watch?v=olbyJDou4qQ)
+- [The Jesuit Conspiracy - Flat Earth](https://www.youtube.com/watch?v=6lSgsOU9OiI)
 
 ### [Space may be the final frontier, but it's made in a hollywood basement](audiobible/space.m4a) [download song/remix]
 
