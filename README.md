@@ -904,7 +904,7 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 
 ### 2. Print the "youtube search flat earth" flier and give it out to people or put it on their cars in parking lots
 
-- [Life.Church Review - Flat Earth Project](https://www.youtube.com/watch?v=LZOU6QOctLc)
+- [Life.Church Review - Flat Earth Project](https://youtu.be/LZOU6QOctLc)
 
 I got kicked out of a church yesterday, First time in my life! I told them I was exercising my freedom of speech, trying to tell them about how in the bible it says the earth is flat and the pastor didn't want to hear it, told me I’m soliciting and then the police rushed me like I’m a criminal told me I'm trespassing, told me if I go to there again I will be arrested! I left yelling satanic church at the top of my lungs, how can I be trespassing it's a church, but this proves this is a satanic church because they don't want to know truth! They support the mafia government! It's not about how it makes you feel its about the truth! The devil knows the Bible better than you do! Satan is father of lies, don't be deceived people!!! They are a bunch of clowns, are you a clown too? github.com/youtube-search/flat-earth CHECK IT OUT! also StopLookThink.com
 
