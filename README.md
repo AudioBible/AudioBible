@@ -932,6 +932,12 @@ Our life is like that of a fetus inside the womb, the womb determines the sex ma
     
     git clone git@github.com:{USERNAME}/AudioBible.git
     
+### install python package from git cloned project directory
+
+    cd AudioBible
+    pip install .
+    audiobible
+
 ### change into the project directory and run the program during development
     
     cd AudioBible
