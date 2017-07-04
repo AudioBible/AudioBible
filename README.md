@@ -947,3 +947,6 @@ Our life is like that of a fetus inside the womb, the womb determines the sex ma
 
 
 # Praised be Jesus name! Amen.
+
+
+I got kicked out of a church yesterday, First time in my life! I told them I was exercising my freedom of speech, trying to tell them about how in the bible it says the earth is flat and the pastor didn't want to hear it, told me I’m soliciting and then the police rushed me like I’m a criminal told me I'm trespassing, told me if I go to there again I will be arrested! I left yelling satanic church at the top of my lungs, how can I be trespassing it's a church, but this proves this is a satanic church because they don't want to know truth! They support the mafia government! It's not about how it makes you feel its about the truth! The devil knows the Bible better than you do! Satan is father of lies, don't be deceived people!!! They are a bunch of clowns, are you a clown too? github.com/youtube-search/flat-earth CHECK IT OUT! also StopLookThink.com
