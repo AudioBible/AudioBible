@@ -904,6 +904,10 @@ If you work for the Govern(control)-Ment(mind), hospitals, schools or corporatio
 
 ### 2. Print the "youtube search flat earth" flier and give it out to people or put it on their cars in parking lots
 
+- [Life.Church Review - Flat Earth Project](https://www.youtube.com/watch?v=LZOU6QOctLc)
+
+I got kicked out of a church yesterday, First time in my life! I told them I was exercising my freedom of speech, trying to tell them about how in the bible it says the earth is flat and the pastor didn't want to hear it, told me I’m soliciting and then the police rushed me like I’m a criminal told me I'm trespassing, told me if I go to there again I will be arrested! I left yelling satanic church at the top of my lungs, how can I be trespassing it's a church, but this proves this is a satanic church because they don't want to know truth! They support the mafia government! It's not about how it makes you feel its about the truth! The devil knows the Bible better than you do! Satan is father of lies, don't be deceived people!!! They are a bunch of clowns, are you a clown too? github.com/youtube-search/flat-earth CHECK IT OUT! also StopLookThink.com
+
 **Note:** When you see a person, ask them. "Do you watch videos on youtube?", doesn't matter what they say to the question, just say to them "Check it out! search on youtube, you will find some info about how they been lying to us all these years" and give them the flier. If they ask questions, just tell them that you don't want to pull things out of thin air, that you don't have pictures to show them, but if they go to youtube, and do a search for Flat Earth they will see pictures and videos of people talking about it. Pray for the people who accept this flier to understand the word of God better! Tell them to just watch the videos, so they know the truth and about how the government been lying to us all these years!
 
 ![youtube-search-flat-earth-letter](youtube-search-flat-earth-letter.jpg)
@@ -947,6 +951,3 @@ Our life is like that of a fetus inside the womb, the womb determines the sex ma
 
 
 # Praised be Jesus name! Amen.
-
-
-I got kicked out of a church yesterday, First time in my life! I told them I was exercising my freedom of speech, trying to tell them about how in the bible it says the earth is flat and the pastor didn't want to hear it, told me I’m soliciting and then the police rushed me like I’m a criminal told me I'm trespassing, told me if I go to there again I will be arrested! I left yelling satanic church at the top of my lungs, how can I be trespassing it's a church, but this proves this is a satanic church because they don't want to know truth! They support the mafia government! It's not about how it makes you feel its about the truth! The devil knows the Bible better than you do! Satan is father of lies, don't be deceived people!!! They are a bunch of clowns, are you a clown too? github.com/youtube-search/flat-earth CHECK IT OUT! also StopLookThink.com
