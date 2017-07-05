@@ -252,3 +252,53 @@ class TopicPipeline(FileExporter):
                 chapter_file = self.files.pop(spider)
                 chapter_file.close()
         return item
+
+
+class DictionaryPipeline(FileExporter):
+    def __init__(self):
+        self.files = {}
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        pipeline = cls()
+        crawler.signals.connect(pipeline.spider_opened, signals.spider_opened)
+        crawler.signals.connect(pipeline.spider_closed, signals.spider_closed)
+        return pipeline
+
+    def spider_opened(self, spider):
+        pass
+
+    def spider_closed(self, spider):
+        pass
+
+    def process_item(self, item, spider):
+        DATA_STORE = spider.settings.get('DATA_STORE')
+        if item and \
+                'letter' in item.keys() and \
+                'word' in item.keys() and \
+                'link' in item.keys() and \
+                'description' in item.keys() and \
+                'definition' in item.keys() and \
+                'scriptures' in item.keys():
+            found_in_words_file = False
+            WORDS_FILE = os.path.join(DATA_STORE, spider.settings.get('DICTIONARY_FILE') % item['letter'])
+            if os.path.exists(WORDS_FILE):
+                with open(WORDS_FILE, 'r') as words:
+                    for word in words:
+                        if item['word'] in word:
+                            found_in_words_file = True
+
+                            break
+            else:
+                ensure_dir('%s' % DATA_STORE)
+
+            if not found_in_words_file:
+                words_file = open(WORDS_FILE, 'a+')
+                self.files[spider] = words_file
+                self.exporter = JsonLinesItemExporter(words_file)
+                self.exporter.start_exporting()
+                self.exporter.export_item(item)
+                self.exporter.finish_exporting()
+                word_file = self.files.pop(spider)
+                word_file.close()
+        return item

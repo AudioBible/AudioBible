@@ -11,7 +11,7 @@
 
 BOT_NAME = 'kjv'
 
-SPIDER_MODULES = ['kjv.bible', 'kjv.speakers', 'kjv.topics']
+SPIDER_MODULES = ['kjv.bible', 'kjv.speakers', 'kjv.topics', 'kjv.dictionary']
 NEWSPIDER_MODULE = 'kjv.bible'
 
 
@@ -96,3 +96,4 @@ DATA_STORE = 'KJV'
 CONTENT_FILE = 'content.json'
 SPEAKERS_FILE = 'speakers-%s.json'
 TOPICS_FILE = 'topics-%s.json'
+DICTIONARY_FILE = 'words-%s.json'
