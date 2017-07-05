@@ -7,5 +7,7 @@ git push bb && git push bb --tags
 git push sf && git push sf --tags
 
 cp README.md ~/KJV/README.md
+cp *.jpg ~/KJV/
+cp *.png ~/KJV/
 d=`pwd`
-cd ~/KJV && git commit -am 'update' && git push; cd "$d"
+cd ~/KJV && git add *.jpg *.png && git commit -am 'update' && git push; cd "$d"
