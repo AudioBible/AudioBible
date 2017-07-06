@@ -6,7 +6,7 @@
 
 ## One thing if for sure, this has taught me how to put my ego to the side
 
-## Flat Earth Matter If Truth Matters
+## Flat Earth Matters If Truth Matters
 
 
     JN 14:6 Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.
