@@ -41,6 +41,9 @@ audiobible init speaker                                     # download all the n
 audiobible init topics                                      # download all the topics from sermonaudio.com
 audiobible init words                                       # download all the words from biblestudytools.com
 
+audiobible dict                                             # open browser to http://www.kingjamesbibledictionary.com
+audiobible dict Amen                                        # open browser to "Amen" in the online dictionary
+
 audiobible load                                             # download all books' and chapters' text and audio mp3 files
 
 audiobible list                                             # to list all books and the number of chapters each book has
