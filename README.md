@@ -8,12 +8,22 @@
 
 - [This Is What Satan Would Preach In A "Church"!](https://www.youtube.com/watch?v=EpZ7chF4TT0)
 
+# audiobible find "false apostles" -A2
+
 
     2COR 11:13 For such are false apostles, deceitful workers, transforming themselves into the apostles of Christ.
     
     2COR 11:14 And no marvel; for Satan himself is transformed into an angel of light.
     
     2COR 11:15 Therefore it is no great thing if his ministers also be transformed as the ministers of righteousness; whose end shall be according to their works.
+
+
+# audiobible find dwelleth not in temples made with hands
+    
+    
+    ACTS 7:48 Howbeit the most High dwelleth not in temples made with hands; as saith the prophet,
+    
+    ACTS 17:24 God that made the world and all things therein, seeing that he is Lord of heaven and earth, dwelleth not in temples made with hands;
 
 
 - [Flat Earth Anonymous Message for all Citizens of the World](https://www.youtube.com/watch?v=b6czH8EsOP0) [youtube]
