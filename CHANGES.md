@@ -215,4 +215,9 @@
 =====
 
 - added words and dict operations
-- fixed find operation wasn't finding all verses, _files function replace 1_, 2_, 3_
+- fixed find operation it wasn't finding all verses, _files function replace 1_, 2_, 3_
+
+0.7.4
+=====
+
+- fixed dict operation

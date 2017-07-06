@@ -19,7 +19,7 @@ try:
 
     from kjv import settings
 
-    __version__ = '0.7.3'
+    __version__ = '0.7.4'
 
 
     def extended_help():
@@ -112,6 +112,7 @@ audiobible sermons -b mark -s "Charles Lawson"              # open browser to se
     parser.add_argument("-s", "--speaker", type=str, help="speaker to hear a sermon from", default=None)
     parser.add_argument("-t", "--topic", type=str, help="topic to hear a sermon on", default=None)
     parser.add_argument("-w", "--word", type=str, help="word to show a definition for or all words if a letter is given", default=None)
+    parser.add_argument("-v", "--verse", type=str, help="verse to show", default=None)
     if len(sys.argv) == 1:
         parser.print_help()
         sys.exit(1)
@@ -311,7 +312,7 @@ class AudioBible(object):
             self.word = operation[1] if len(operation) > 1 else None
 
         proceed = True
-        if function not in ['init', 'load', 'help', 'praise', 'word']:
+        if function not in ['init', 'load', 'help', 'praise', 'dict']:
             self._load_books()
             if function in ['sermons', 'list']:
                 self._load_speakers()
@@ -536,7 +537,7 @@ class AudioBible(object):
 
     def dict(self):
         if self.word:
-            self._open("http://www.kingjamesbibledictionary.com/Dictionary/%s") % self.word
+            self._open("http://www.kingjamesbibledictionary.com/Dictionary/%s" % self.word)
         else:
             self._open("http://www.kingjamesbibledictionary.com/Dictionary/")
 
