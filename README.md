@@ -6,6 +6,8 @@
 
 ## One thing if for sure, this has taught me how to put my ego to the side
 
+- [This Is What Satan Would Preach In A "Church"!](https://www.youtube.com/watch?v=EpZ7chF4TT0)
+
 
     2COR 11:13 For such are false apostles, deceitful workers, transforming themselves into the apostles of Christ.
     
