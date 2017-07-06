@@ -6,6 +6,14 @@
 
 ## One thing if for sure, this has taught me how to put my ego to the side
 
+
+    2COR 11:13 For such are false apostles, deceitful workers, transforming themselves into the apostles of Christ.
+    
+    2COR 11:14 And no marvel; for Satan himself is transformed into an angel of light.
+    
+    2COR 11:15 Therefore it is no great thing if his ministers also be transformed as the ministers of righteousness; whose end shall be according to their works.
+
+
 - [Flat Earth Anonymous Message for all Citizens of the World](https://www.youtube.com/watch?v=b6czH8EsOP0) [youtube]
 - [WORDS OF WISDOM FLAT EARTH](https://www.youtube.com/watch?v=IfdCPCsrxS4) [youtube]
 - [So Why Does Flat Earth Matter ? "A▶️️MUST WATCH"](https://www.youtube.com/watch?v=CDISd94Uhps) [youtube]
