@@ -116,7 +116,7 @@
     pip install --upgrade audiobible                            # update AudioBible to the latest version
 
     audiobible update                                           # update AudioBible using pip command internally
-
+    
     audiobible -h | --help                                      # show help
     audiobible help                                             # show help
     
@@ -125,6 +125,7 @@
     audiobible init                                             # download data about all books and chapters in the KJV
     audiobible init speaker                                     # download all the names of speakers from sermonaudio.com
     audiobible init topics                                      # download all the topics from sermonaudio.com
+    audiobible init words                                       # download all the words from biblestudytools.com
     
     audiobible load                                             # download all books' and chapters' text and audio mp3 files
     
@@ -132,6 +133,7 @@
     audiobible list speakers                                    # to list all speakers found on sermonaudio.com
     audiobible list speakers this                               # to list all speakers which have this in there name
     audiobible list topics                                      # to list all topics found on sermonaudio.com
+    audiobible list words                                       # to list all words found on biblestudytools.com
     
     audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
     
@@ -170,6 +172,14 @@
     audiobible sermons                                          # opens the default browser to http://sermonaudio.com
                                                                 #  usage is same as with hear operation
     audiobible sermons -b mark -s "Charles Lawson"              # open browser to sermon "Charles Lawson" preaching the book of "Mark"
+    
+    # THE EARTH IS FLAT! [RESEARCH IT ON YOUTUBE](https://www.youtube.com/results?search_query=flat+earth&page=&utm_source=opensearch)!
+    
+    # THIS IS POSITIVE INFO! IT'S A MATTER OF PERSPECTIVE!
+    
+    # THE WAR ON TERROR IS A WAR ON YOU!
+    
+    ## God is so kind that it is impossible to imagine His unbounded kindness
 
 
 **Note:** Tested and created on a Mac, should work on Windows and Unix/Linux and other OSes.

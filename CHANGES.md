@@ -210,3 +210,9 @@
 =====
 
 - fix sermons operation 
+
+0.7.3
+=====
+
+- added words and dict operations
+- fixed find operation wasn't finding all verses, _files function replace 1_, 2_, 3_

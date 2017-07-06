@@ -610,13 +610,13 @@ class AudioBible(object):
             if path in book_path and os.path.isdir(book_path):
                 for dirname, dirnames, filenames in os.walk(book_path):
                     try:
-                        numbers = [int(filter(str.isdigit, str(f))) for f in filenames if '.txt' in f]
+                        numbers = [int(filter(str.isdigit, str(f).replace('1_', '').replace('2_', '').replace('3_', ''))) for f in filenames if '.txt' in f]
                     except:
-                        numbers = [int("".join(list(filter(str.isdigit, str(f))))) for f in filenames if '.txt' in f]
+                        numbers = [int("".join(list(filter(str.isdigit, str(f).replace('1_', '').replace('2_', '').replace('3_', ''))))) for f in filenames if '.txt' in f]
 
                     numbers.sort()
                     if numbers:
-                        digit = int("".join(list(filter(str.isdigit, str(filenames[0].replace('.mp3', '.txt'))))))
+                        digit = int("".join(list(filter(str.isdigit, str(filenames[0].replace('.mp3', '.txt')).replace('1_', '').replace('2_', '').replace('3_', '')))))
                         for num in numbers:
                             filename = filenames[0].replace('.mp3', '.txt').replace(str(digit), str(num))
                             out.append(os.path.join(dirname, filename))
