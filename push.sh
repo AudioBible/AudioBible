@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cp README.md ~/KJV/README.md
+cp *.md ~/KJV/
 cp images/*.jpg ~/KJV/images/
 cp images/*.png ~/KJV/images/
 cp images/*.gif ~/KJV/images/
