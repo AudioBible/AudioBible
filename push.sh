@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cp *.md ~/KJV/
+cp *.md ~/KJV/ && git add *.md
 cp images/*.jpg ~/KJV/images/
 cp images/*.png ~/KJV/images/
 cp images/*.gif ~/KJV/images/
