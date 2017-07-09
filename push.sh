@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -d "~/KJV" ]; then
+if [ -d ~/KJV ]; then
     cp *.md ~/KJV/
     cp images/*.jpg ~/KJV/images/
     cp images/*.png ~/KJV/images/
