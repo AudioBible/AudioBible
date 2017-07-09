@@ -5,7 +5,7 @@ cp images/*.jpg ~/KJV/images/
 cp images/*.png ~/KJV/images/
 cp images/*.gif ~/KJV/images/
 d=`pwd`
-cd ~/KJV && git add images/* && git add *.md && git commit -am 'update' && git push; cd "$d"
+cd ~/KJV && git add images/* && git add *.md && git add *.json && git commit -am 'update' && git push; cd "$d"
 
 git push && git push --tags
 git push ysfe && git push ysfe --tags
