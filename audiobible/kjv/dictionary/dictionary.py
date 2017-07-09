@@ -97,8 +97,11 @@ class DictionarySpider(scrapy.Spider):
                         itm['thayers_definition'] = u"".join(l.get_xpath('%s/tr[17]/td[2]/text()|%s/tr[17]/td[2]/*/text()' % (
                             table_xpath, table_xpath
                         )))
+                        names = [n.strip('/').split('/')[2] for n in l.get_xpath(
+                            '%s/tr[21]/td[2]/*/a/@href|%s/tr[22]/td[2]/*/a/@href' % (table_xpath, table_xpath))
+                        ]
                         itm['translation_occurrences'] = dict(zip(
-                            l.get_xpath('%s/tr[21]/td[2]/*/a/@href|%s/tr[22]/td[2]/*/a/@href' % (table_xpath, table_xpath)),
+                            names,
                             l.get_xpath('%s/tr[21]/td[2]/*/strong/text()|%s/tr[22]/td[2]/*/strong/text()' % (table_xpath, table_xpath))
                         ))
 
