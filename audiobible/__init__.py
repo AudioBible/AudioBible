@@ -562,11 +562,13 @@ class AudioBible(object):
     def _open(self, filepath):
         import subprocess
         if sys.platform.startswith('darwin'):
-            subprocess.call(('open', filepath))
+            if 'rm ' not in filepath and ';' not in filepath and '|' not in filepath:
+                subprocess.call(('open', filepath))
         elif os.name == 'nt':
             os.startfile(filepath)
         elif os.name == 'posix':
-            subprocess.call(('xdg-open', filepath))
+            if 'rm ' not in filepath and ';' not in filepath and '|' not in filepath:
+                subprocess.call(('xdg-open', filepath))
         return self
 
     def get_book(self):
@@ -664,7 +666,13 @@ class AudioBible(object):
             if os.path.exists(a):
                 self._open(a)
             else:
-                return 'File Not Found: %s\r\nPlease run this command to download it:\r\naudiobible load\r\n' % a
+                output = 'File Not Found: %s\r\n' % a
+                output += "Please run this command to download it:\r\n"
+                output += "audiobible init\r\n"
+                output += "audiobible init bible\r\n"
+                output += "or\r\n"
+                output += "audiobible init git -F\r\n"
+                return output
 
     def read(self):
         text = self.get_filenames('txt')
@@ -672,7 +680,13 @@ class AudioBible(object):
             if os.path.exists(t):
                 self._open(t)
             else:
-                return 'File Not Found: %s\r\nPlease run this command to download it:\r\naudiobible load\r\n' % t
+                output = 'File Not Found: %s\r\n' % t
+                output += "Please run this command to download it:\r\n"
+                output += "audiobible init\r\n"
+                output += "audiobible init bible\r\n"
+                output += "or\r\n"
+                output += "audiobible init git -F\r\n"
+                return output
 
     def show(self):
         text = self.get_filenames('txt')
@@ -682,7 +696,13 @@ class AudioBible(object):
                 for l in open(t).readlines():
                     texts.append('%s\r\n' % l.strip())
             else:
-                return 'File Not Found: %s\r\nPlease run this command to download it:\r\naudiobible load\r\n' % t
+                output = 'File Not Found: %s\r\n' % t
+                output += "Please run this command to download it:\r\n"
+                output += "audiobible init\r\n"
+                output += "audiobible init bible\r\n"
+                output += "or\r\n"
+                output += "audiobible init git -F\r\n"
+                return output
         return "\r\n".join(texts).strip()
 
     def _get_books(self, path):
@@ -735,7 +755,12 @@ class AudioBible(object):
 
     def _get_text(self, type, context, before, after):
         if not self.books:
-            return 'No books found. Please run these commands to download them:\r\naudiobible init\r\naudiobible load\r\n'
+            output = "No books found. Please run these commands to download them:\r\n"
+            output += "audiobible init\r\n"
+            output += "audiobible init bible\r\n"
+            output += "or\r\n"
+            output += "audiobible init git -F\r\n"
+            return output
         the_path = data_path
         if self.get_book():
             the_path = os.path.join(the_path, self.get_book())
@@ -841,7 +866,12 @@ class AudioBible(object):
             try:
                 self.get_lines(the_path, _process)
             except DataNotFoundError as e:
-                return "No Data Found. Please run these commands to download:\r\naudiobible init\r\naudiobible load\r\n"
+                output = "No Data Found. Please run these commands to download:\r\n"
+                output += "audiobible init\r\n"
+                output += "audiobible init bible\r\n"
+                output += "or\r\n"
+                output += "audiobible init git -F\r\n"
+                return output
 
         return str("\r\n".join([o for o in output if o])).strip()
 
@@ -898,6 +928,9 @@ class AudioBible(object):
             else:
                 output = "No books found. Please run this command to download them:\r\n"
                 output += "audiobible init\r\n"
+                output += "audiobible init bible\r\n"
+                output += "or\r\n"
+                output += "audiobible init git -F\r\n"
                 # output += "audiobible load\r\n"
         elif self.scope in 'speakers':
             if len(self.speakers['A']) > 0:
@@ -916,6 +949,8 @@ class AudioBible(object):
             else:
                 output = 'No speakers found. Please run this command to download them:\r\n'
                 output += 'audiobible init speakers\r\n'
+                output += 'or\r\n'
+                output += 'audiobible init git -F\r\n'
         elif self.scope in 'topics':
             found = False
             if len(self.topics['A']) > 0:
@@ -937,6 +972,8 @@ class AudioBible(object):
             else:
                 output = 'No topics found. Please run this command to download them:\r\n'
                 output += 'audiobible init topics\r\n'
+                output += 'or\r\n'
+                output += 'audiobible init git -F\r\n'
         elif self.scope in 'words':
             if len(self.words['A']) > 0:
                 for k in self.words.keys():
@@ -956,6 +993,8 @@ class AudioBible(object):
             else:
                 output = 'No words found. Please run this command to download them:\r\n'
                 output += 'audiobible init words\r\n'
+                output += 'or\r\n'
+                output += 'audiobible init git -F\r\n'
         return output
 
     def quote(self, context=None, before=None, after=None):
