@@ -3,6 +3,7 @@
 if [ -d ~/KJV ]; then
     cp *.md ~/KJV/
     cp images/*.jpg ~/KJV/images/
+    cp images/*.jpeg ~/KJV/images/
     cp images/*.png ~/KJV/images/
     cp images/*.gif ~/KJV/images/
     d=`pwd`
