@@ -296,11 +296,11 @@ class AudioBible(object):
     word = None
     speakers = {}
     topics = {}
-    words = {}
+    words_data = {}
 
     def __init__(self, operation, algorithm, book, chapter, speaker, topic, word, context, before_context, after_context):
         function = operation[0] if operation[0].lower() in [
-            'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote',
+            'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote', 'words',
             'path', 'praise', 'sermon', 'sermons', 'dict', 'version', 'help', 'update', 'upgrade',
         ] else 'help'
 
@@ -315,19 +315,23 @@ class AudioBible(object):
         if 'init' in function or 'list' in function:
             self.scope = operation[1] if len(operation) > 1 else None
 
-        if 'dict' in function:
-            self.word = operation[1] if len(operation) > 1 else None
+        if 'dict' in function or 'words' in function:
+            self.word = operation[1] if len(operation) > 1 else word
 
         proceed = True
-        if function not in ['init', 'load', 'help', 'praise', 'dict']:
+
+        if function in 'words':
+            self._load_words()
+            self.result = self.words()
+            proceed = False
+
+        if proceed and function not in ['init', 'load', 'help', 'praise', 'dict']:
             self._load_books()
             if function in ['sermons', 'list']:
                 self._load_speakers()
                 self._load_topics()
-            if function in ['list']:
-                self._load_words()
-            self._set(operation, book, chapter, speaker, topic, word)
-            if not self.book and function not in 'sermons':
+            self._set(operation, book, chapter, speaker, topic)
+            if not self.book and function not in ['sermons']:
                 self.result = self.list()
                 proceed = False
 
@@ -377,27 +381,33 @@ class AudioBible(object):
         return self.topics
 
     def _load_words(self):
-        self.words = dict(zip(list(string.ascii_uppercase), [
-            [], [], [], [], [], [], [], [], [], [], [], [], [],
-            [], [], [], [], [], [], [], [], [], [], [], [], [],
-        ]))
+        self.words_data = {
+            'all': dict(zip(list(string.ascii_uppercase), [
+                [], [], [], [], [], [], [], [], [], [], [], [], [],
+                [], [], [], [], [], [], [], [], [], [], [], [], [],
+            ])),
+            'hebrew': dict(zip(list(string.ascii_uppercase), [
+                [], [], [], [], [], [], [], [], [], [], [], [], [],
+                [], [], [], [], [], [], [], [], [], [], [], [], [],
+            ])),
+            'greek': dict(zip(list(string.ascii_uppercase), [
+                [], [], [], [], [], [], [], [], [], [], [], [], [],
+                [], [], [], [], [], [], [], [], [], [], [], [], [],
+            ]))
+        }
         letters = string.ascii_uppercase
-        for l in range(len(letters)):
-            path = words_path % letters[l]
-            if os.path.exists(path):
-                with open(path, 'r') as lines:
-                    for line in lines:
-                        data = json.loads(line)
-                        if data['letter'] == letters[l]:
-                            self.words[letters[l]].append([
-                                data['word'],
-                                data['description'],
-                                data['definition'],
-                                data['scriptures']
-                            ])
-        return self.words
+        for language in ['all', 'hebrew', 'greek']:
+            for l in range(len(letters)):
+                path = words_path % (language, letters[l])
+                if os.path.exists(path):
+                    with open(path, 'r') as lines:
+                        for line in lines:
+                            data = json.loads(line)
+                            if data['letter'] == letters[l]:
+                                self.words_data[language][letters[l]].append(data)
+        return self.words_data
 
-    def _set(self, operation, book, chapter, speaker, topic, word):
+    def _set(self, operation, book, chapter, speaker, topic):
         if operation[0] not in ['find', 'sermons', 'list']:
             try:
                 self.book = self._valid('book', operation[1])
@@ -423,10 +433,6 @@ class AudioBible(object):
                 self._valid_book(operation, book)
             if chapter:
                 self._valid_chapter(operation, chapter)
-            if word:
-                self.word = word
-            elif len(operation) > 2:
-                self.word = operation[2]
             if speaker:
                 self.speaker = speaker
             elif len(operation) > 2:
@@ -555,6 +561,22 @@ class AudioBible(object):
         else:
             self._open("http://www.kingjamesbibledictionary.com/Dictionary/")
 
+    def words(self):
+        data = ''
+        for language in ['all', 'hebrew', 'greek']:
+            for letter in string.ascii_uppercase:
+                for word in self.words_data[language][letter]:
+                    if self.word.upper() == word['word_translated'].upper():
+                        data += '\r\nWord: %s\r\n' % word['word_translated']
+                        data += 'Strong\'s No: %s\r\n' % word['strongs_number']
+                    for val in word['data'].values():
+                        if self.word.upper() == val['Word'].upper():
+                            print val
+                            data += '\r\nWord: %s\r\n' % val['Word']
+                            data += 'Strong\'s No: %s\r\n' % word['strongs_number']
+                            data += 'Definition: %s\r\n' % val['Definition']
+        return data
+
     def sermons(self):
         if self.speaker:
             speaker = "&subsetCat=speaker&subsetItem=%s" % self.speaker
@@ -618,7 +640,7 @@ class AudioBible(object):
                 return 'File Not Found: %s\r\nPlease run this command to download it:\r\naudiobible load\r\n' % t
         return "\r\n".join(texts).strip()
 
-    def _files(self, path):
+    def _get_books(self, path):
         out = []
         for book in self.books:
             book_path = os.path.join(data_path, book['name'].replace(' ', '_'))
@@ -643,7 +665,7 @@ class AudioBible(object):
         def _get_lines(path):
             if os.path.exists(path):
                 if os.path.isdir(path):
-                    for filename in self._files(path):
+                    for filename in self._get_books(path):
                         if '.txt' in filename and os.path.exists(filename):
                             book_name = os.path.split(os.path.dirname(filename))[1].replace('_', ' ')
                             for l in open(filename).readlines():

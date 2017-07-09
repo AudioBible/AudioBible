@@ -41,6 +41,7 @@ class DictionarySpider(scrapy.Spider):
                 'part_of_speech',
                 'strongs_definition',
                 'thayers_definition',
+                'brown_driver_definition',
                 'translation_occurrences',
                 'bible_references',
                 'data'
@@ -63,10 +64,15 @@ class DictionarySpider(scrapy.Spider):
                     item['data'][wdx] = {
                         "Dictionary": _names[wdx - 1],
                         "Word": _words[wdx - 1],
-                        "Definition": "".join(l.get_xpath(
-                            '%s[%s]/p/text()|%s[%s]/p/*/text()' % (text_path, wdx, text_path, wdx)
-                        )),
+                        "Definitions": []
                     }
+                    _texts = l.get_xpath('%s/p' % text_path)
+                    for tdx in range(1, len(_texts) + 1):
+                        data = "".join(l.get_xpath(
+                            '%s[%s]/p[%s]/text()|%s[%s]/p[%s]/*/text()' % (text_path, wdx, tdx, text_path, wdx, tdx)
+                        ))
+                        if len(data) > 0:
+                            item['data'][wdx]['Definitions'].append(data)
                 yield item
             else:
                 table_xpath = '//table[contains(@class, "stgtable")]/'
@@ -76,36 +82,69 @@ class DictionarySpider(scrapy.Spider):
                 if len(loc) > 2:
                     if 'item' in response.meta:
                         itm = response.meta['item']
-                        bible_refs = l.get_xpath('%s/tr[19]/td[2]/div/a/text()' % table_xpath)
+                        bible_refs = l.get_xpath(
+                            '//td[contains(text(), "Bible References")]/following-sibling::td/*/a/text()'
+                        )
                         itm['bible_references'] = list(itm['bible_references']) + bible_refs
                     else:
-                        itm['strongs_number'] = u"".join(l.get_xpath('%s/tr[1]/td[2]/text()' % table_xpath))
-                        itm['word_original'] = u"".join(l.get_xpath('%s/tr[3]/td[2]/text()' % table_xpath))
+                        itm['strongs_number'] = u"".join(l.get_xpath(
+                            '//td[contains(text(), "Strong\'s No.:")]/following-sibling::td/text()'
+                        ))
+                        if 'No/H' in response.url:
+                            itm['word_original'] = u"".join(l.get_xpath(
+                                '//td[contains(text(), "Hebrew:")]/following-sibling::td/text()'
+                            ))
+                        elif 'No/G' in response.url:
+                            itm['word_original'] = u"".join(l.get_xpath(
+                                '//td[contains(text(), "Greek:")]/following-sibling::td/text()'
+                            ))
                         itm['word_translated'] = urlparse(response.url).path.strip('/').split('/')[2]
                         itm['letter'] = itm['word_translated'][0].upper()
-                        itm['transliteration'] = u"".join(l.get_xpath('%s/tr[5]/td[2]/text()' % table_xpath))
-                        itm['phonetic'] = u"".join(l.get_xpath('%s/tr[7]/td[2]/text()' % table_xpath))
-                        itm['word_origin'] = u"".join(l.get_xpath('%s/tr[9]/td[2]/text()|%s/tr[9]/td[2]/a/text()' % (
-                            table_xpath, table_xpath
-                        )))
-                        itm['origin_links'] = l.get_xpath('%s/tr[9]/td[2]/a/@target' % table_xpath)
-                        itm['bible_usage'] = u"".join(l.get_xpath('%s/tr[11]/td[2]/text()' % table_xpath))
-                        itm['part_of_speech'] = u"".join(l.get_xpath('%s/tr[13]/td[2]/text()' % table_xpath))
-                        itm['strongs_definition'] = u"".join(l.get_xpath('%s/tr[15]/td[2]/text()|%s/tr[15]/td[2]/*/text()' % (
-                            table_xpath, table_xpath
-                        )))
-                        itm['thayers_definition'] = u"".join(l.get_xpath('%s/tr[17]/td[2]/text()|%s/tr[17]/td[2]/*/text()' % (
-                            table_xpath, table_xpath
-                        )))
+
+                        itm['transliteration'] = itm['word_original'] = u"".join(l.get_xpath(
+                                '//td[contains(text(), "Transliteration:")]/following-sibling::td/text()'
+                            ))
+                        itm['phonetic'] = itm['word_original'] = u"".join(l.get_xpath(
+                            '//td[contains(text(), "Phonetic:")]/following-sibling::td/text()'
+                        ))
+                        path = '//td[contains(text(), "Word Origin:")]/following-sibling::td'
+                        itm['word_origin'] = u"".join(l.get_xpath(
+                            '%s/text()|%s/a/text()' % (path, path)
+                        ))
+                        itm['origin_links'] = l.get_xpath(
+                            '//*[contains(text(), "Word Origin:")]/following-sibling::td/a/@target'
+                        )
+                        itm['bible_usage'] = u"".join(l.get_xpath(
+                            '//*[contains(text(), "Bible Usage:")]/following-sibling::td/text()'
+                        ))
+                        itm['part_of_speech'] = u"".join(l.get_xpath(
+                            '//*[contains(text(), "Part of Speech:")]/following-sibling::td/text()'
+                        ))
+                        path = '//td[contains(@class, "stgfcol")]/*[contains(text(), "Strong")]/parent::*/following-sibling::td'
+                        itm['strongs_definition'] = u"".join(l.get_xpath(
+                            '%s/text()|%s/*/text()' % (path, path)
+                        ))
+                        path ='//td/*[contains(text(), "Brown Driver")]/parent::*/following-sibling::td'
+                        itm['brown_driver_definition'] = l.get_xpath(
+                            '%s/*/text()|%s/*/*/text()' % (path, path)
+                        )
+                        path = '//td/*[contains(text(), "Thayers")]/parent::*/following-sibling::td'
+                        itm['thayers_definition'] = l.get_xpath(
+                            '%s/*/text()|%s/*/*/text()' % (path, path)
+                        )
                         names = [n.strip('/').split('/')[2] for n in l.get_xpath(
-                            '%s/tr[21]/td[2]/*/a/@href|%s/tr[22]/td[2]/*/a/@href' % (table_xpath, table_xpath))
-                        ]
+                            '//td[contains(text(), "Translation")]/following-sibling::td/div/a/@href'
+                        )]
                         itm['translation_occurrences'] = dict(zip(
                             names,
-                            l.get_xpath('%s/tr[21]/td[2]/*/strong/text()|%s/tr[22]/td[2]/*/strong/text()' % (table_xpath, table_xpath))
+                            l.get_xpath(
+                                '//td[contains(text(), "Translation")]/following-sibling::td/*/strong/text()'
+                            )
                         ))
 
-                        itm['bible_references'] = l.get_xpath('%s/tr[19]/td[2]/div/a/text()' % table_xpath)
+                        itm['bible_references'] = l.get_xpath(
+                            '//td[contains(text(), "Bible References")]/following-sibling::td/*/a/text()'
+                        )
 
                     li = loader(item=itm)
 
