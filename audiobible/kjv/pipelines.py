@@ -280,7 +280,14 @@ class DictionaryPipeline(FileExporter):
                 'word_original' in item.keys() and \
                 'word_translated' in item.keys():
             found_in_words_file = False
-            WORDS_FILE = os.path.join(DATA_STORE, spider.settings.get('DICTIONARY_FILE') % item['letter'])
+
+            language = 'all'
+            if item['strongs_number'][0] == 'H':
+                language = 'hebrew'
+            elif item['strongs_number'][0] == 'G':
+                language = 'greek'
+
+            WORDS_FILE = os.path.join(DATA_STORE, spider.settings.get('DICTIONARY_FILE') % (language, item['letter']))
             if os.path.exists(WORDS_FILE):
                 with open(WORDS_FILE, 'r') as words:
                     for word in words:
