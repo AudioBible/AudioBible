@@ -241,4 +241,4 @@
 - added exit operation
 - enabled httpcache in spider settings to cache data for one week, 604800 seconds
 - added force param to init operation to remove existing data before crawling
-- added init git operation to clone all data from github.com instead of using spiders to download it
+- added init git operation to clone all data from git repo instead of using spiders to download it

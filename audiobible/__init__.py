@@ -420,39 +420,24 @@ class AudioBible(object):
         return self.words_data
 
     def _set(self, operation, book, chapter, speaker, topic):
-        if operation[0] not in ['find', 'sermons', 'list']:
-            try:
-                self.book = self._valid('book', operation[1])
-            except (IndexError, BookNotFoundError):
-                self._valid_book(operation, book)
-
-            try:
-                self.chapter = self._valid('chapter', operation[2])
-            except (IndexError, ValueError, TypeError, ChapterNotFoundError):
-                self._valid_chapter(operation, chapter)
-        # elif operation[0] in ['list', 'sermon', 'sermons']:
-        #     try:
-        #         self.speaker = self._valid('speaker', operation[2])
-        #     except (IndexError, SpeakerNotFoundError):
-        #         self._valid_speaker(operation, speaker)
-        #
-        #     try:
-        #         self.topic = self._valid('topic', operation[3])
-        #     except (IndexError, SpeakerNotFoundError):
-        #         self._valid_topic(operation, topic)
-        else:
+        try:
+            self.book = self._valid('book', operation[1])
+        except (IndexError, BookNotFoundError):
             if book:
                 self._valid_book(operation, book)
+        try:
+            self.chapter = self._valid('chapter', operation[2])
+        except (IndexError, ValueError, TypeError, ChapterNotFoundError):
             if chapter:
                 self._valid_chapter(operation, chapter)
-            if speaker:
-                self.speaker = speaker
-            elif len(operation) > 2:
-                self.speaker = operation[2]
-            if topic:
-                self.topic = topic
-            elif len(operation) > 3:
-                self.topic = operation[3]
+        if speaker:
+            self.speaker = speaker
+        elif len(operation) > 2:
+            self.speaker = operation[2]
+        if topic:
+            self.topic = topic
+        elif len(operation) > 3:
+            self.topic = operation[3]
             # if speaker:
             #     self._valid_speaker(operation, speaker)
 
@@ -553,11 +538,23 @@ class AudioBible(object):
                     os.remove(name)
             return Download.words()
         elif self.scope in 'git':
+            def clone(repo, path):
+                subprocess.check_output("git clone %s %s" % (repo, path), shell=True)
+
             import subprocess
-            if self.force and os.path.exists(data_path):
-                import shutil
-                shutil.rmtree(data_path)
-            subprocess.check_output("git clone %s %s" % (git_repo, data_path), shell=True)
+            if os.path.exists(data_path):
+                if self.force:
+                    import shutil
+                    shutil.rmtree(data_path)
+                    clone(git_repo, data_path)
+                else:
+                    sys.stdout.write(
+                        "Data path exists: %s\r\n"
+                        "If you want to remove the directory and start over type:\r\n"
+                        "audiobible init git -F\r\n" % data_path
+                    )
+            else:
+                clone(git_repo, data_path)
 
     def load(self):
         return Download.load()
@@ -654,7 +651,8 @@ class AudioBible(object):
         pids = pids.split()
         for pid in pids:
             if pid.strip() != str(os.getpid()):
-                subprocess.check_output("kill -9 %s" % pid.strip(), shell=True)
+                os.kill(int(pid.strip()), 9)
+
         return self
 
     def path(self):
