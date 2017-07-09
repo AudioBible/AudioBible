@@ -194,7 +194,7 @@ class SpeakerPipeline(FileExporter):
 
                             break
             else:
-                ensure_dir('%s' % DATA_STORE)
+                ensure_dir('%s' % os.path.dirname(SPEAKERS_FILE))
 
             if not found_in_speaker_file:
                 speakers_file = open(SPEAKERS_FILE, 'a+')
@@ -241,7 +241,7 @@ class TopicPipeline(FileExporter):
 
                             break
             else:
-                ensure_dir('%s' % DATA_STORE)
+                ensure_dir('%s' % os.path.dirname(TOPICS_FILE))
 
             if not found_in_topic_file:
                 topics_file = open(TOPICS_FILE, 'a+')
@@ -297,7 +297,7 @@ class DictionaryPipeline(FileExporter):
                             found_in_words_file = True
                             break
             else:
-                ensure_dir('%s' % DATA_STORE)
+                ensure_dir('%s' % os.path.dirname(WORDS_FILE))
 
             if not found_in_words_file:
                 words_file = open(WORDS_FILE, 'a+')

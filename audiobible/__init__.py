@@ -516,26 +516,26 @@ class AudioBible(object):
                 import shutil
                 for dirname, dirnames, filenames in os.walk(data_path):
                     for name in dirnames:
-                        if name != '.git':
+                        if name not in ['.git', 'speakers', 'topics', 'words']:
                             shutil.rmtree(os.path.join(dirname, name))
             return Download.load()
         elif self.scope in 'speakers' or self.scope in 'preachers':
             if self.force and os.path.exists(data_path):
-                import glob
-                for name in glob.glob(speakers_path % '*'):
-                    os.remove(name)
+                if os.path.exists(os.path.dirname(speakers_path)):
+                    import shutil
+                    shutil.rmtree(os.path.dirname(speakers_path))
             return Download.speakers()
         elif self.scope in 'topics':
             if self.force and os.path.exists(data_path):
-                import glob
-                for name in glob.glob(topics_path % '*'):
-                    os.remove(name)
+                if os.path.exists(os.path.dirname(topics_path)):
+                    import shutil
+                    shutil.rmtree(os.path.dirname(topics_path))
             return Download.topics()
         elif self.scope in 'words':
             if self.force and os.path.exists(data_path):
-                import glob
-                for name in glob.glob(words_path % ('*', '*')):
-                    os.remove(name)
+                if os.path.exists(os.path.dirname(words_path)):
+                    import shutil
+                    shutil.rmtree(os.path.dirname(words_path))
             return Download.words()
         elif self.scope in 'git':
             def clone(repo, path):
