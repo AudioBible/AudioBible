@@ -1,26 +1,14 @@
 #! /usr/bin/env python2
 
+__version__ = '0.7.6'
+
 try:
     import re
     import os
     import sys
     import json
-    import random
     import string
     import argparse
-    from scrapy.crawler import CrawlerProcess
-
-    sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
-
-    from kjv.bible.bible import BibleSpider
-    from kjv.speakers.speakers import SpeakersSpider
-    from kjv.topics.topics import TopicsSpider
-    from kjv.dictionary.dictionary import DictionarySpider
-
-    from kjv import settings
-
-    __version__ = '0.7.6'
-
 
     def extended_help():
         return """
@@ -107,9 +95,11 @@ audiobible sermons -b mark -s "Charles Lawson"              # open browser to se
     parser = argparse.ArgumentParser(
         prog='audiobible' or sys.argv[0],
         usage=extended_help() + """audiobible [-h] [-b BOOK] [-c CHAPTER] [-C CONTEXT] [-B BEFORE_CONTEXT] [-A AFTER_CONTEXT] operation [words ...]""",
-        description='%(prog)s '+__version__+' - King James Version Audio Bible')
+        description='%(prog)s '+__version__+' - King James Version Audio Bible'
+    )
 
     parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, show, list, quote, praise, sermons, path, version, help, update")
+    parser.add_argument("-F", "--force", action='store_true', help="during init operation to remove existing data before new crawl operation")
     parser.add_argument("-a", "--algorithm", choices=['regex', 'ratio', 'partial', 'sort', 'set'])
     parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
     parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
@@ -123,6 +113,10 @@ audiobible sermons -b mark -s "Charles Lawson"              # open browser to se
     if len(sys.argv) == 1:
         parser.print_help()
         sys.exit(1)
+
+    sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+    from kjv import settings
 
     bot_name = settings.BOT_NAME
 
@@ -186,11 +180,13 @@ class DataNotFoundError(ValueError):
 class Download(object):
     @staticmethod
     def _bible():
+        from scrapy.crawler import CrawlerProcess
         pipelines = {
             bot_name + '.pipelines.KjvPipeline': 1,
             bot_name + '.pipelines.Mp3Pipeline': 2,
         }
         spider_module = 'kjv.bible'
+
         process = CrawlerProcess({
             'BOT_NAME': bot_name,
             'SPIDER_MODULES': settings.SPIDER_MODULES,
@@ -201,6 +197,7 @@ class Download(object):
             'DATA_STORE': data_path,
             'CONTENT_FILE': settings.CONTENT_FILE
         })
+        from kjv.bible.bible import BibleSpider
         process.crawl(
             crawler_or_spidercls=BibleSpider,
             data_store=process.settings.get('DATA_STORE'),
@@ -218,6 +215,7 @@ class Download(object):
 
     @staticmethod
     def speakers():
+        from scrapy.crawler import CrawlerProcess
         pipelines = {
             bot_name + '.pipelines.SpeakerPipeline': 1,
         }
@@ -232,6 +230,7 @@ class Download(object):
             'DATA_STORE': data_path,
             'SPEAKERS_FILE': settings.SPEAKERS_FILE
         })
+        from kjv.speakers.speakers import SpeakersSpider
         process.crawl(
             crawler_or_spidercls=SpeakersSpider,
         )
@@ -239,6 +238,7 @@ class Download(object):
 
     @staticmethod
     def topics():
+        from scrapy.crawler import CrawlerProcess
         pipelines = {
             bot_name + '.pipelines.TopicPipeline': 1,
         }
@@ -253,6 +253,7 @@ class Download(object):
             'DATA_STORE': data_path,
             'TOPICS_FILE': settings.TOPICS_FILE
         })
+        from kjv.topics.topics import TopicsSpider
         process.crawl(
             crawler_or_spidercls=TopicsSpider,
         )
@@ -260,6 +261,7 @@ class Download(object):
 
     @staticmethod
     def words():
+        from scrapy.crawler import CrawlerProcess
         pipelines = {
             bot_name + '.pipelines.DictionaryPipeline': 1,
         }
@@ -274,6 +276,7 @@ class Download(object):
             'DATA_STORE': data_path,
             'DICTIONARY_FILE': settings.DICTIONARY_FILE
         })
+        from kjv.dictionary.dictionary import DictionarySpider
         process.crawl(
             crawler_or_spidercls=DictionarySpider,
         )
@@ -298,7 +301,7 @@ class AudioBible(object):
     topics = {}
     words_data = {}
 
-    def __init__(self, operation, algorithm, book, chapter, speaker, topic, word, context, before_context, after_context):
+    def __init__(self, operation, force, algorithm, book, chapter, speaker, topic, word, context, before_context, after_context):
         function = operation[0] if operation[0].lower() in [
             'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote', 'words',
             'path', 'praise', 'sermon', 'sermons', 'dict', 'version', 'help', 'update', 'upgrade', 'exit'
@@ -318,6 +321,7 @@ class AudioBible(object):
 
         if 'init' in function or 'list' in function:
             self.scope = operation[1] if len(operation) > 1 else None
+            self.force = force
 
         if 'dict' in function or 'words' in function:
             self.word = operation[1] if len(operation) > 1 else word
@@ -515,21 +519,41 @@ class AudioBible(object):
 
     def init(self):
         if not self.scope:
+            if self.force:
+                os.remove(content_path)
             return Download.init()
         elif self.scope in 'bible':
+            if self.force:
+                import shutil
+                for dirname, dirnames, filenames in os.walk(data_path):
+                    for name in dirnames:
+                        if name != '.git':
+                            shutil.rmtree(os.path.join(dirname, name))
             return Download.load()
         elif self.scope in 'speakers' or self.scope in 'preachers':
+            if self.force:
+                import glob
+                for name in glob.glob(speakers_path % '*'):
+                    os.remove(name)
             return Download.speakers()
         elif self.scope in 'topics':
+            if self.force:
+                import glob
+                for name in glob.glob(topics_path % '*'):
+                    os.remove(name)
             return Download.topics()
         elif self.scope in 'words':
+            if self.force:
+                import glob
+                for name in glob.glob(words_path % ('*', '*')):
+                    os.remove(name)
             return Download.words()
 
     def load(self):
         return Download.load()
 
     def _open(self, filepath):
-        import subprocess, os
+        import subprocess
         if sys.platform.startswith('darwin'):
             subprocess.call(('open', filepath))
         elif os.name == 'nt':
@@ -786,6 +810,7 @@ class AudioBible(object):
         elif type == 'quote':
             def _process(lines):
                 if lines:
+                    import random
                     idx = random.choice(range(len(lines)))
                     if before:
                         for num in range(int(before), 0, -1):
@@ -942,6 +967,7 @@ def parse_args():
 def main(*args, **kwargs):
     def use_params(
         operation=None,
+        force=None,
         algorithm=None,
         book=None,
         chapter=None,
@@ -955,6 +981,7 @@ def main(*args, **kwargs):
         try:
             return AudioBible(
                 operation=operation,
+                force=force,
                 algorithm=algorithm,
                 book=book,
                 chapter=chapter,
@@ -975,6 +1002,7 @@ def main(*args, **kwargs):
 
         return use_params(
             operation=args.operation,
+            force=args.force,
             algorithm=args.algorithm,
             book=args.book,
             chapter=args.chapter,
@@ -989,6 +1017,7 @@ def main(*args, **kwargs):
     if isinstance(kwargs, dict):
         return use_params(
             operation=kwargs.get('operation'),
+            force=kwargs.get('force'),
             algorithm=kwargs.get('algorithm'),
             book=kwargs.get('book'),
             chapter=kwargs.get('chapter'),

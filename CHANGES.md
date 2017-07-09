@@ -239,3 +239,5 @@
 
 - fix dictionary spider
 - added exit operation
+- enabled httpcache in spider settings to cache data for one week, 604800 seconds
+- added force param to init operation to remove existing data before crawling
