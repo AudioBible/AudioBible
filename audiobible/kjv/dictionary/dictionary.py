@@ -162,9 +162,6 @@ class DictionarySpider(scrapy.Spider):
                         request.meta['item'] = li.load_item()
                         yield request
                 else:
-                    urls = dict(zip(
-                        l.get_xpath('%s/tr[19]/td[2]/*/a/@href' % table_xpath),
-                        l.get_xpath('%s/tr[19]/td[2]/*/strong/text()' % table_xpath)
-                    ))
-                    for url in [urljoin(response.url, x) for x in urls.keys()]:
+                    urls = l.get_xpath('//td[contains(text(), "Bible References")]/following-sibling::td/*/a/@href')
+                    for url in [urljoin(response.url, x) for x in urls]:
                         yield Request(url, callback=self.parse)
