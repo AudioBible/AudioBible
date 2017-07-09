@@ -76,6 +76,7 @@ audiobible read mark 4                                      # to read Mark 4, (u
 audiobible show mark 4                                      # to show the book of "Mark" chapter 4 text in the terminal, specify params like with hear operation
 
 audiobible find                                             # to output the whole Bible
+audiobible find REV 22:17                                   # to output a specific verse
 audiobible find -b 2_john                                   # to output the whole book of "2 John"
 audiobible find -b james -c 5                               # to output chapter 5 for the book of "James"
 audiobible find water of life                               # to find water of life, say words to search for as params
@@ -644,12 +645,18 @@ class AudioBible(object):
                 if os.path.isdir(path):
                     for filename in self._files(path):
                         if '.txt' in filename and os.path.exists(filename):
+                            book_name = os.path.split(os.path.dirname(filename))[1].replace('_', ' ')
                             for l in open(filename).readlines():
-                                lines.append('%s\r\n' % l.strip())
+                                if l.strip():
+                                    line = "%s %s" % (book_name, " ".join(l.strip().split(' ')[1:]))
+                                    lines.append('%s\r\n' % line)
                 else:
                     if '.txt' in path and os.path.exists(path):
+                        book_name = os.path.split(os.path.dirname(path))[1].replace('_', ' ')
                         for l in open(path).readlines():
-                            lines.append('%s\r\n' % l.strip())
+                            if l.strip():
+                                line = "%s %s" % (book_name, " ".join(l.strip().split(' ')[1:]))
+                                lines.append('%s\r\n' % line)
 
         if isinstance(the_path, list):
             for p in the_path:
@@ -679,8 +686,7 @@ class AudioBible(object):
         if type == 'find':
             def _process(lines):
                 for line in range(len(lines)):
-                    match = re.search(self.query, lines[line], re.IGNORECASE)
-                    if match:
+                    def matched(found):
                         if before:
                             for num in range(int(before), 0, -1):
                                 try:
@@ -690,7 +696,7 @@ class AudioBible(object):
                                 except IndexError:
                                     pass
 
-                        verse = match.string
+                        verse = found
                         if verse not in output:
                             output.append(verse)
 
@@ -702,6 +708,20 @@ class AudioBible(object):
                                         output.append(verse)
                                 except IndexError:
                                     pass
+
+                    if ':' in self.query:
+                        query_list = self.query.split()
+                        book_name = query_list[0]
+                        try:
+                            scripture = query_list[1]
+                        except IndexError:
+                            scripture = ''
+                        if scripture in [lines[line].split()[1]] and book_name.upper() in lines[line]:
+                            matched(lines[line])
+                    else:
+                        match = re.search(self.query, lines[line], re.IGNORECASE)
+                        if match:
+                            matched(match.string)
 
             def _fuzz(lines):
                 scorer = fuzz.ratio
