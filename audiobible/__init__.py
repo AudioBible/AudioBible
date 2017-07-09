@@ -19,7 +19,7 @@ try:
 
     from kjv import settings
 
-    __version__ = '0.7.5'
+    __version__ = '0.7.6'
 
 
     def extended_help():
@@ -648,14 +648,14 @@ class AudioBible(object):
                             book_name = os.path.split(os.path.dirname(filename))[1].replace('_', ' ')
                             for l in open(filename).readlines():
                                 if l.strip():
-                                    line = "%s %s" % (book_name, " ".join(l.strip().split(' ')[1:]))
+                                    line = "%s %s" % ("_".join(book_name.split()), " ".join(l.strip().split(' ')[1:]))
                                     lines.append('%s\r\n' % line)
                 else:
                     if '.txt' in path and os.path.exists(path):
                         book_name = os.path.split(os.path.dirname(path))[1].replace('_', ' ')
                         for l in open(path).readlines():
                             if l.strip():
-                                line = "%s %s" % (book_name, " ".join(l.strip().split(' ')[1:]))
+                                line = "%s %s" % ("_".join(book_name.split()), " ".join(l.strip().split(' ')[1:]))
                                 lines.append('%s\r\n' % line)
 
         if isinstance(the_path, list):
