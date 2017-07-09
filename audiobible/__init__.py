@@ -120,7 +120,7 @@ audiobible sermons -b mark -s "Charles Lawson"              # open browser to se
 
     from kjv import settings
 
-    git_repo = 'https://github.com/AudioBible/KJV.git'
+    git_repo = 'git@github.com:AudioBible/KJV.git'
 
     bot_name = settings.BOT_NAME
 
