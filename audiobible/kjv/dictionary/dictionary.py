@@ -76,6 +76,7 @@ class DictionarySpider(scrapy.Spider):
                 yield item
             else:
                 loc = urlparse(response.url).path.strip('/').split('/')
+                print(loc)
                 if len(loc) > 2:
                     if 'item' in response.meta:
                         itm = response.meta['item']
@@ -159,6 +160,6 @@ class DictionarySpider(scrapy.Spider):
                         request.meta['item'] = li.load_item()
                         yield request
                 else:
-                    urls = l.get_xpath('//td[contains(text(), "Bible References")]/following-sibling::td/*/a/@href')
+                    urls = l.get_xpath('//td[contains(text(), "Translation")]/following-sibling::td/*/a/@href')
                     for url in [urljoin(response.url, x) for x in urls]:
                         yield Request(url, callback=self.parse)
