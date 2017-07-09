@@ -1,6 +1,6 @@
 #! /usr/bin/env python2
 
-__version__ = '0.7.6'
+__version__ = '0.7.7'
 
 try:
     import re
@@ -24,10 +24,12 @@ audiobible help                                             # show help
 
 audiobible version                                          # show version number and exit
 
-audiobible init                                             # download data about all books and chapters in the KJV
-audiobible init speaker                                     # download all the names of speakers from sermonaudio.com
-audiobible init topics                                      # download all the topics from sermonaudio.com
-audiobible init words                                       # download all the words from kingjamesbibledictionary.com
+audiobible init git                                         # git clone all books and data from git repo instead of using spiders in steps
+audiobible init                                             # download data about all books and chapters in the KJV, step 1
+audiobible init bible                                       # download all books and mp3 audiofiles, step 2
+audiobible init speaker                                     # download all the names of speakers from sermonaudio.com, step 3
+audiobible init topics                                      # download all the topics from sermonaudio.com, step 4
+audiobible init words                                       # download all the words from kingjamesbibledictionary.com, step 5
 
 audiobible dict                                             # open browser to http://www.kingjamesbibledictionary.com
 audiobible dict Amen                                        # open browser to "Amen" in the online dictionary
@@ -117,6 +119,8 @@ audiobible sermons -b mark -s "Charles Lawson"              # open browser to se
     sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
     from kjv import settings
+
+    git_repo = 'https://github.com/AudioBible/KJV.git'
 
     bot_name = settings.BOT_NAME
 
@@ -519,11 +523,11 @@ class AudioBible(object):
 
     def init(self):
         if not self.scope:
-            if self.force:
+            if self.force and os.path.exists(content_path):
                 os.remove(content_path)
             return Download.init()
         elif self.scope in 'bible':
-            if self.force:
+            if self.force and os.path.exists(data_path):
                 import shutil
                 for dirname, dirnames, filenames in os.walk(data_path):
                     for name in dirnames:
@@ -531,23 +535,29 @@ class AudioBible(object):
                             shutil.rmtree(os.path.join(dirname, name))
             return Download.load()
         elif self.scope in 'speakers' or self.scope in 'preachers':
-            if self.force:
+            if self.force and os.path.exists(data_path):
                 import glob
                 for name in glob.glob(speakers_path % '*'):
                     os.remove(name)
             return Download.speakers()
         elif self.scope in 'topics':
-            if self.force:
+            if self.force and os.path.exists(data_path):
                 import glob
                 for name in glob.glob(topics_path % '*'):
                     os.remove(name)
             return Download.topics()
         elif self.scope in 'words':
-            if self.force:
+            if self.force and os.path.exists(data_path):
                 import glob
                 for name in glob.glob(words_path % ('*', '*')):
                     os.remove(name)
             return Download.words()
+        elif self.scope in 'git':
+            import subprocess
+            if self.force and os.path.exists(data_path):
+                import shutil
+                shutil.rmtree(data_path)
+            subprocess.check_output("git clone %s %s" % (git_repo, data_path), shell=True)
 
     def load(self):
         return Download.load()
