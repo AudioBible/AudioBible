@@ -7,6 +7,7 @@
 
 
 import os
+import json
 from scrapy import signals
 from scrapy.exporters import BaseItemExporter, JsonLinesItemExporter
 
@@ -275,19 +276,18 @@ class DictionaryPipeline(FileExporter):
         DATA_STORE = spider.settings.get('DATA_STORE')
         if item and \
                 'letter' in item.keys() and \
-                'word' in item.keys() and \
-                'link' in item.keys() and \
-                'description' in item.keys() and \
-                'definition' in item.keys() and \
-                'scriptures' in item.keys():
+                'strongs_number' in item.keys() and \
+                'word_original' in item.keys() and \
+                'word_translated' in item.keys():
             found_in_words_file = False
             WORDS_FILE = os.path.join(DATA_STORE, spider.settings.get('DICTIONARY_FILE') % item['letter'])
             if os.path.exists(WORDS_FILE):
                 with open(WORDS_FILE, 'r') as words:
                     for word in words:
-                        if item['word'] in word:
+                        data = json.loads(word)
+                        if item['word_translated'] == data['word_translated'] and \
+                                item['strongs_number'] == data['strongs_number']:
                             found_in_words_file = True
-
                             break
             else:
                 ensure_dir('%s' % DATA_STORE)

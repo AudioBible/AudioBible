@@ -39,7 +39,7 @@ audiobible version                                          # show version numbe
 audiobible init                                             # download data about all books and chapters in the KJV
 audiobible init speaker                                     # download all the names of speakers from sermonaudio.com
 audiobible init topics                                      # download all the topics from sermonaudio.com
-audiobible init words                                       # download all the words from biblestudytools.com
+audiobible init words                                       # download all the words from kingjamesbibledictionary.com
 
 audiobible dict                                             # open browser to http://www.kingjamesbibledictionary.com
 audiobible dict Amen                                        # open browser to "Amen" in the online dictionary
@@ -50,7 +50,10 @@ audiobible list                                             # to list all books 
 audiobible list speakers                                    # to list all speakers found on sermonaudio.com
 audiobible list speakers this                               # to list all speakers which have this in there name
 audiobible list topics                                      # to list all topics found on sermonaudio.com
-audiobible list words                                       # to list all words found on biblestudytools.com
+audiobible list words                                       # to list all words found on kingjamesbibledictionary.com
+audiobible list words this                                  # to list all words which have this in the word
+
+audiobible word this                                        # show definition and other data for the word "this"
 
 audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
 
@@ -458,7 +461,12 @@ class AudioBible(object):
                     raise ChapterNotFoundError('Chapter Not Found')
                 except ChapterNotFoundError as e:
                     the_chapter = chapter if chapter else operation[2]
-                    sys.stdout.write('Book: %s\r\n' % self.get_book())
+                    sys.stdout.write('Book: %s\r\nChapters: %s\r\n' % (
+                        self.get_book(), [
+                            self.books[x]['chapters_count']
+                            for x in range(len(self.books)) if self.books[x]['name'] == self.get_book()
+                        ][0]
+                    ))
                     sys.exit('%s: %s' % (e.message, the_chapter))
         except IndexError:
             self.chapter = DEFAULT_CHAPTER
@@ -468,10 +476,12 @@ class AudioBible(object):
             found = None
             for bdx in range(len(self.books)):
                 book = str(value).upper().replace(' ', '_')
-                match = re.search(book, self.books[bdx]['name'].replace(' ', '_'), re.IGNORECASE)
-                if match:
-                    found = match.string
-                    break
+                if book == self.books[bdx]['name'][0:len(book)]:
+                    found = self.books[bdx]['name']
+                else:
+                    match = re.search(book, self.books[bdx]['name'].replace(' ', '_'), re.IGNORECASE)
+                    if match:
+                        found = match.string
 
             if found:
                 return found
