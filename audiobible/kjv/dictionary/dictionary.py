@@ -71,14 +71,11 @@ class DictionarySpider(scrapy.Spider):
                         data = "".join(l.get_xpath(
                             '%s[%s]/p[%s]/text()|%s[%s]/p[%s]/*/text()' % (text_path, wdx, tdx, text_path, wdx, tdx)
                         ))
-                        if len(data) > 0:
-                            item['data'][wdx]['Definitions'].append(data)
+                        if len(data.strip()) > 0:
+                            item['data'][wdx]['Definitions'].append(data.strip())
                 yield item
             else:
-                table_xpath = '//table[contains(@class, "stgtable")]/'
-
                 loc = urlparse(response.url).path.strip('/').split('/')
-
                 if len(loc) > 2:
                     if 'item' in response.meta:
                         itm = response.meta['item']
