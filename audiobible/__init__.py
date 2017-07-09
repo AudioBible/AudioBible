@@ -301,7 +301,7 @@ class AudioBible(object):
     def __init__(self, operation, algorithm, book, chapter, speaker, topic, word, context, before_context, after_context):
         function = operation[0] if operation[0].lower() in [
             'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote', 'words',
-            'path', 'praise', 'sermon', 'sermons', 'dict', 'version', 'help', 'update', 'upgrade',
+            'path', 'praise', 'sermon', 'sermons', 'dict', 'version', 'help', 'update', 'upgrade', 'exit'
         ] else 'help'
 
         if 'version' in function:
@@ -310,6 +310,10 @@ class AudioBible(object):
 
         if 'update' in function:
             self.update()
+            sys.exit(0)
+
+        if 'exit' in function:
+            self.exit()
             sys.exit(0)
 
         if 'init' in function or 'list' in function:
@@ -608,6 +612,15 @@ class AudioBible(object):
     def update(self):
         import subprocess
         subprocess.call(('pip', 'install', '--upgrade', 'audiobible'))
+        return self
+
+    def exit(self):
+        import subprocess
+        pids = subprocess.check_output("ps aux | grep audiobible|grep -v grep|awk '{print $2}'", shell=True)
+        pids = pids.split()
+        for pid in pids:
+            if pid.strip() != str(os.getpid()):
+                subprocess.check_output("kill -9 %s" % pid.strip(), shell=True)
         return self
 
     def path(self):

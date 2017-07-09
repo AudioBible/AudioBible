@@ -76,7 +76,6 @@ class DictionarySpider(scrapy.Spider):
                 yield item
             else:
                 loc = urlparse(response.url).path.strip('/').split('/')
-                print(loc)
                 if len(loc) > 2:
                     if 'item' in response.meta:
                         itm = response.meta['item']
