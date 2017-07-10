@@ -23,8 +23,8 @@ class DictionarySpider(scrapy.Spider):
     hebrew_count = 8674
 
     def __init__(self):
-        [self.start_urls.append("%sH%s" % (self.strongs_url, i)) for i in range(1, self.hebrew_count + 1)]
-        [self.start_urls.append("%sG%s" % (self.strongs_url, i)) for i in range(1, self.greek_count + 1)]
+        [self.start_urls.append("%sH%s" % (self.strongs_url, i)) for i in range(1, self.hebrew_count + 2)]
+        [self.start_urls.append("%sG%s" % (self.strongs_url, i)) for i in range(1, self.greek_count + 2)]
 
     def parse(self, response):
         if response.status in (200, ):
