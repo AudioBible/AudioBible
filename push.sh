@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+version=`audiobible/__init__.py version`
 if [ -d ~/KJV ]; then
     cp *.md ~/KJV/
     cp images/*.jpg ~/KJV/images/
@@ -7,7 +8,7 @@ if [ -d ~/KJV ]; then
     cp images/*.png ~/KJV/images/
     cp images/*.gif ~/KJV/images/
     d=`pwd`
-    cd ~/KJV && git add images/* && git add *.md && git add *.json && git commit -am 'update' && git push; cd "$d"
+    cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am 'update' && git push; cd "$d"
 fi
 
 git push && git push --tags
