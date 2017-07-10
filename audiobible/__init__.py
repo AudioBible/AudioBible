@@ -33,23 +33,28 @@ audiobible init words                                       # download all the w
 
 audiobible dict                                             # open browser to http://www.kingjamesbibledictionary.com
 audiobible dict Amen                                        # open browser to "Amen" in the online dictionary
-
-audiobible load                                             # download all books' and chapters' text and audio mp3 files
+audiobible dict H2                                          # open browser to Strong's number definition online
 
 audiobible list                                             # to list all books and the number of chapters each book has
 audiobible list speakers                                    # to list all speakers found on sermonaudio.com
 audiobible list speakers this                               # to list all speakers which have this in there name
 audiobible list topics                                      # to list all topics found on sermonaudio.com
 audiobible list words                                       # to list all words found on kingjamesbibledictionary.com
-audiobible list words this                                  # to list all words which have this in the word
+audiobible list words this                                  # to list all words and strong's numbers, which have "this" in the word
+audiobible list words H2                                    # to list all words which are associated with the strong's number "H2"
 
-audiobible word this                                        # show definition and other data for the word "this"
+audiobible words this                                       # show definition/s and other data for the word "this"
+audiobible words H2                                         # show definition/s and other data for the strong's number "H2"
 
 audiobible praise                                           # open a browser to a youtube playlist with hymns for praising God
 
 audiobible path daniel                                      # show the path on the hard drive to the book of "Daniel"
 
+audiobible sermons                                          # opens the default browser to http://sermonaudio.com
+audiobible sermons -b mark -s "Charles Lawson"              # open browser to sermon "Charles Lawson" preaching the book of "Mark"
+
 audiobible quote                                            # to output a quote
+audiobible quote -A2 -B1                                    # to output a quote having four verses, two after and one before the random selected quote
 
 audiobible hear mark                                        # to hear the book of "Mark" chapter 1
 audiobible hear mark all                                    # to hear all chapters from the book of "Mark"
@@ -58,8 +63,7 @@ audiobible hear mark 4                                      # to hear the book o
 audiobible hear -b mark -c 4                                # to hear the book of "Mark" chapter 4
 audiobible hear 1_john 3                                    # to hear the book of "1 John" chapter 3
 audiobible hear -b 1_john -c 3                              # to hear the book of "1 John" chapter 3
-audiobible hear -b mark -c all                              # same as hear mark all, there is a bug i can't fix where it starts to play from the last file,
-                                                            #   just double click on the first one and it will start from the beginning playing the rest
+audiobible hear -b mark -c all                              # same as hear mark all
 
 audiobible read mark 4                                      # to read Mark 4, (use params like with hear operation)
 
@@ -78,11 +82,6 @@ audiobible find circle of the earth -a partial              # to find query usin
 audiobible find jesus -b luke -c 3 -C 2                     # to find jesus in the book of "Luke" chapter 3, showing 2 verses before and after the matched verse context
 audiobible find circle -A 5 -B 2                            # to show 2 verse before and 5 verses after the matched verse context
 
-audiobible quote                                            # usage is same as with find operation
-
-audiobible sermons                                          # opens the default browser to http://sermonaudio.com
-                                                            #  usage is same as with hear operation
-audiobible sermons -b mark -s "Charles Lawson"              # open browser to sermon "Charles Lawson" preaching the book of "Mark"
 
 # THE EARTH IS FLAT! [RESEARCH IT ON YOUTUBE](https://www.youtube.com/results?search_query=flat+earth&page=&utm_source=opensearch)!
 
@@ -298,8 +297,8 @@ class AudioBible(object):
     query = ''
     ratio = 'regex'
     scope = None
-    speaker = None
-    topic = None
+    param1 = None
+    param2 = None
     word = None
     speakers = {}
     topics = {}
@@ -307,7 +306,7 @@ class AudioBible(object):
 
     def __init__(self, operation, force, algorithm, book, chapter, speaker, topic, word, context, before_context, after_context):
         function = operation[0] if operation[0].lower() in [
-            'init', 'load', 'hear', 'read', 'list', 'show', 'find', 'quote', 'words',
+            'init', 'hear', 'read', 'list', 'show', 'find', 'quote', 'words',
             'path', 'praise', 'sermon', 'sermons', 'dict', 'version', 'help', 'update', 'upgrade', 'exit'
         ] else 'help'
 
@@ -436,13 +435,13 @@ class AudioBible(object):
             if chapter:
                 self._valid_chapter(operation, chapter)
         if speaker:
-            self.speaker = speaker
+            self.param1 = speaker
         elif len(operation) > 2:
-            self.speaker = operation[2]
+            self.param1 = operation[2]
         if topic:
-            self.topic = topic
+            self.param2 = topic
         elif len(operation) > 3:
-            self.topic = operation[3]
+            self.param2 = operation[3]
             # if speaker:
             #     self._valid_speaker(operation, speaker)
 
@@ -561,9 +560,6 @@ class AudioBible(object):
             else:
                 clone(git_repo, data_path)
 
-    def load(self):
-        return Download.load()
-
     def _open(self, filepath):
         import subprocess
         if sys.platform.startswith('darwin'):
@@ -599,7 +595,11 @@ class AudioBible(object):
 
     def dict(self):
         if self.word:
-            self._open("http://www.kingjamesbibledictionary.com/Dictionary/%s" % self.word)
+            match = re.search('([H,G])([0-9]).*', self.word, re.IGNORECASE)
+            if match:
+                self._open("http://www.kingjamesbibledictionary.com/StrongsNo/%s" % self.word.upper())
+            else:
+                self._open("http://www.kingjamesbibledictionary.com/Dictionary/%s" % self.word)
         else:
             self._open("http://www.kingjamesbibledictionary.com/Dictionary/")
 
@@ -684,12 +684,12 @@ class AudioBible(object):
         return result
 
     def sermons(self):
-        if self.speaker:
-            speaker = "&subsetCat=speaker&subsetItem=%s" % self.speaker
+        if self.param1:
+            speaker = "&subsetCat=speaker&subsetItem=%s" % self.param1
         else:
             speaker = ''
 
-        if speaker and not self.topic:
+        if speaker and not self.param2:
             if self.get_book():
                 if not isinstance(self.get_chapter(), list):
                     chapter = self.get_chapter()
@@ -700,10 +700,10 @@ class AudioBible(object):
                     (self.get_book(), chapter, speaker))
             else:
                 self._open(
-                    "http://www.sermonaudio.com/search.asp?speakeronly=true&currsection=sermonsspeaker&keyword=%s" % self.speaker.replace(' ', '_')
+                    "http://www.sermonaudio.com/search.asp?speakeronly=true&currsection=sermonsspeaker&keyword=%s" % self.param1.replace(' ', '_')
                 )
-        elif self.topic:
-            topic = self.topic
+        elif self.param2:
+            topic = self.param2
             self._open(
                 "http://www.sermonaudio.com/search.asp?keywordDesc=%s&keyword=%s%s" %
                 (topic, topic, speaker)
@@ -1005,9 +1005,9 @@ class AudioBible(object):
             if len(self.speakers['A']) > 0:
                 for k in self.speakers.keys():
                     for s in self.speakers[k]:
-                        if self.speaker:
+                        if self.param1:
                             match = re.search(
-                                self.speaker,
+                                self.param1,
                                 s[1].replace('speaker/', '').replace('_', ' '),
                                 re.IGNORECASE
                             )
@@ -1023,18 +1023,25 @@ class AudioBible(object):
         elif self.scope in 'topics':
             found = False
             if len(self.topics['A']) > 0:
+                def matcher(param, data):
+                    match = re.search(
+                        param,
+                        data,
+                        re.IGNORECASE
+                    )
+                    if match:
+                        return "%s\r\n" % match.string
+                    else:
+                        return False
+
                 for k in self.topics.keys():
                     if not found:
                         for t in self.topics[k]:
-                            if self.topic:
-                                match = re.search(
-                                    self.topic,
-                                    t['name'],
-                                    re.IGNORECASE
-                                )
-                                if match:
+                            if self.param1:
+                                data = matcher(self.param1, t['name'])
+                                if data:
                                     found = True
-                                    output += "%s\r\n" % match.string
+                                    output += data
                             else:
                                 found = True
                                 output += "%s\r\n" % t["name"]
@@ -1053,10 +1060,10 @@ class AudioBible(object):
             words = all_words.keys()
             words.sort()
             for wdx in range(len(words)):
-                if self.speaker:
-                    if self.speaker.upper() in words[wdx].upper():
+                if self.param1:
+                    if self.param1.upper() in words[wdx].upper():
                         output += '{:<10}{}\r\n'.format(all_words[words[wdx]], words[wdx])
-                    elif self.speaker.upper() == all_words[words[wdx]]:
+                    elif self.param1.upper() == all_words[words[wdx]]:
                         output += '{:<10}{}\r\n'.format(all_words[words[wdx]], words[wdx])
                 else:
                     output += '{:<10}{}\r\n'.format(all_words[words[wdx]], words[wdx])
