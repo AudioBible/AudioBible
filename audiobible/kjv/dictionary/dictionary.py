@@ -98,10 +98,10 @@ class DictionarySpider(scrapy.Spider):
                         itm['word_translated'] = urlparse(response.url).path.strip('/').split('/')[2]
                         itm['letter'] = itm['word_translated'][0].upper()
 
-                        itm['transliteration'] = itm['word_original'] = u"".join(l.get_xpath(
-                                '//td[contains(text(), "Transliteration:")]/following-sibling::td/text()'
-                            ))
-                        itm['phonetic'] = itm['word_original'] = u"".join(l.get_xpath(
+                        itm['transliteration'] = u"".join(l.get_xpath(
+                            '//td[contains(text(), "Transliteration:")]/following-sibling::td/text()'
+                        )).encode('utf-8')
+                        itm['phonetic'] = u"".join(l.get_xpath(
                             '//td[contains(text(), "Phonetic:")]/following-sibling::td/text()'
                         ))
                         path = '//td[contains(text(), "Word Origin:")]/following-sibling::td'
