@@ -68,7 +68,7 @@ class DictionarySpider(scrapy.Spider):
                     }
                     _texts = l.get_xpath('%s/p' % text_path)
                     for tdx in range(1, len(_texts) + 1):
-                        data = "".join(l.get_xpath(
+                        data = " ".join(l.get_xpath(
                             '%s[%s]/p[%s]/text()|%s[%s]/p[%s]/*/text()' % (text_path, wdx, tdx, text_path, wdx, tdx)
                         ))
                         if len(data.strip()) > 0:

@@ -332,6 +332,11 @@ class AudioBible(object):
 
         proceed = True
 
+        if algorithm in ['regex', 'ratio', 'partial', 'sort', 'set']:
+            self.algorithm = algorithm
+        else:
+            self.algorithm = DEFAULT_ALGORITHM
+
         if function in 'words':
             self._load_words()
             self.result = self.words()
@@ -340,18 +345,18 @@ class AudioBible(object):
         if proceed and function not in ['init', 'load', 'help', 'praise', 'dict']:
             self._load_books()
             if function in ['sermons', 'list']:
-                self._load_speakers()
-                self._load_topics()
+                if 'speakers' in self.scope:
+                    self._load_speakers()
+                if 'topics' in self.scope:
+                    self._load_topics()
+                if 'words' in self.scope:
+                    self._load_words()
             self._set(operation, book, chapter, speaker, topic)
             if not self.book and function not in ['sermons']:
                 self.result = self.list()
                 proceed = False
 
         if function in ['find', 'quote']:
-            if algorithm in ['regex', 'ratio', 'partial', 'sort', 'set']:
-                self.algorithm = algorithm
-            else:
-                self.algorithm = DEFAULT_ALGORITHM
             self.query = " ".join(operation[1:]).strip(" ")
             self.result = getattr(self, function)(context, before_context, after_context)
         else:
@@ -599,20 +604,84 @@ class AudioBible(object):
             self._open("http://www.kingjamesbibledictionary.com/Dictionary/")
 
     def words(self):
-        data = ''
-        for language in ['all', 'hebrew', 'greek']:
-            for letter in string.ascii_uppercase:
-                for word in self.words_data[language][letter]:
-                    if self.word.upper() == word['word_translated'].upper():
-                        data += '\r\nWord: %s\r\n' % word['word_translated']
-                        data += 'Strong\'s No: %s\r\n' % word['strongs_number']
-                    for val in word['data'].values():
-                        if self.word.upper() == val['Word'].upper():
-                            print val
-                            data += '\r\nWord: %s\r\n' % val['Word']
-                            data += 'Strong\'s No: %s\r\n' % word['strongs_number']
-                            data += 'Definition: %s\r\n' % val['Definition']
-        return data
+
+        def get_data(word):
+            data = ''
+            lang = None
+            if 'strongs_number' in word:
+                if 'H' in word['strongs_number']:
+                    lang = 'Hebrew'
+                elif 'G' in word['strongs_number']:
+                    lang = 'Greek'
+                else:
+                    pass
+
+                if word['strongs_number']:
+                    data += 'Strong\'s No: %s\r\n' % word['strongs_number']
+
+            if 'word_original' in word and word['word_original']:
+                data += '%s: %s\r\n' % (lang, word['word_original'])
+            if 'word_translated' in word and word['word_translated']:
+                data += 'English: %s\r\n' % word['word_translated']
+            if 'transliteration' in word and word['transliteration']:
+                data += 'Transliteration: %s\r\n' % word['transliteration']
+            if 'phonetic' in word and word['phonetic']:
+                data += 'Phonetic: %s\r\n' % word['phonetic']
+            if 'word_origin' in word and word['word_origin']:
+                data += 'Word Origin: %s\r\n\r\n' % word['word_origin']
+            if 'bible_usage' in word and word['bible_usage']:
+                data += 'Bible Usage:\r\n    %s\r\n\r\n' % word['bible_usage']
+            if 'part_of_speech' in word and word['part_of_speech']:
+                data += 'Part of Speech:\r\n    %s\r\n\r\n' % word['part_of_speech']
+            if 'strongs_definition' in word and word['strongs_definition']:
+                data += 'Strong\'s Definition:\r\n    %s\r\n\r\n' % word['strongs_definition']
+            if 'thayers_definition' in word and word['thayers_definition']:
+                data += 'Thayer\'s Definition:\r\n    %s\r\n\r\n' % word['thayers_definition']
+            if 'brown_driver_definition' in word and word['brown_driver_definition']:
+                data += 'Brown Driver Definition:\r\n    %s\r\n\r\n' % "\r\n    ".join(
+                    [w.strip() for w in word['brown_driver_definition']]
+                )
+            if 'translation_occurrences' in word and word['translation_occurrences']:
+                data += 'Translation Occurrences:\r\n    %s\r\n\r\n' % ", ".join([
+                    "%s: %s" % (w, word['translation_occurrences'][w])
+                        for w in word['translation_occurrences'].keys()
+                ])
+            if 'bible_references' in word and word['bible_references']:
+                data += 'Bible References:\r\n    %s\r\n' % ", ".join(word['bible_references'])
+
+            nums = word['data'].keys()
+            nums.sort()
+            for wdx in range(len(nums)):
+                if 'Word' in word['data'][nums[wdx]] and \
+                        'Definitions' in word['data'][nums[wdx]] and \
+                        'Dictionary' in word['data'][nums[wdx]]:
+                    data += "\r\n%s:\r\n" % word['data'][nums[wdx]]['Dictionary']
+                    data += "    %s\r\n\r\n" % word['data'][nums[wdx]]['Word']
+                    data += 'Definition:\r\n    %s\r\n' % "\r\n    ".join(word['data'][nums[wdx]]['Definitions'])
+            data += '\r\n===\r\n\r\n'
+            return data
+
+        result = ''
+
+        if self.word:
+            for language in ['all', 'hebrew', 'greek']:
+                for letter in string.ascii_uppercase:
+                    for word in self.words_data[language][letter]:
+                        match_numr = re.search('([H,G])([0-9]).*', self.word, re.IGNORECASE)
+                        # match_word = re.search(self.word, word['word_translated'], re.IGNORECASE)
+                        if match_numr:
+                            if match_numr.string.upper() == word['strongs_number'].upper():
+                                result += get_data(word)
+                        elif self.word.upper() == word['word_translated'].upper():
+                            result += get_data(word)
+        else:
+            for language in ['all', 'hebrew', 'greek']:
+                for letter in string.ascii_uppercase:
+                    for word in self.words_data[language][letter]:
+                        result += get_data(word)
+
+        result = result.strip().strip('===')
+        return result
 
     def sermons(self):
         if self.speaker:
@@ -975,26 +1044,20 @@ class AudioBible(object):
                 output += 'or\r\n'
                 output += 'audiobible init git -F\r\n'
         elif self.scope in 'words':
-            if len(self.words['A']) > 0:
-                for k in self.words.keys():
-                    for s in self.words[k]:
-                        if self.word:
-                            match = re.search(
-                                self.word,
-                                s[0],
-                                re.IGNORECASE
-                            )
-                            if match:
-                                output += "\r\n%s - %s\r\n" % (match.string, s[1])
-                                output += "%s\r\n" % s[2]
-                        else:
-                            output += "\r\n%s - %s\r\n" % (s[0], s[1])
-                            output += "%s\r\n" % s[2]
-            else:
-                output = 'No words found. Please run this command to download them:\r\n'
-                output += 'audiobible init words\r\n'
-                output += 'or\r\n'
-                output += 'audiobible init git -F\r\n'
+            all_words = {}
+            for lang in ['all', 'hebrew', 'greek']:
+                if len(self.words_data[lang]) > 0:
+                    for letter in self.words_data[lang].keys():
+                        for s in self.words_data[lang][letter]:
+                            all_words[s['word_translated']] = s['strongs_number']
+            words = all_words.keys()
+            words.sort()
+            for wdx in range(len(words)):
+                if self.speaker:
+                    if words[wdx].upper() == self.speaker.upper():
+                        output += '{:<10}{}\r\n'.format(all_words[words[wdx]], words[wdx])
+                else:
+                    output += '{:<10}{}\r\n'.format(all_words[words[wdx]], words[wdx])
         return output
 
     def quote(self, context=None, before=None, after=None):
@@ -1088,6 +1151,9 @@ def use_keyword_args(**kwargs):
 
 
 if __name__ == '__main__':
-    result = use_parse_args()
-    if result:
-        sys.stdout.write("%s\r\n" % str(result.encode('utf-8')).strip())
+    try:
+        result = use_parse_args()
+        if result:
+            sys.stdout.write("%s\r\n" % str(result.encode('utf-8')).strip())
+    except (KeyboardInterrupt, SystemExit):
+        sys.exit(0)
