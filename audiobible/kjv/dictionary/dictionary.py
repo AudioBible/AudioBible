@@ -90,11 +90,11 @@ class DictionarySpider(scrapy.Spider):
                         if 'No/H' in response.url:
                             itm['word_original'] = u"".join(l.get_xpath(
                                 '//td[contains(text(), "Hebrew:")]/following-sibling::td/text()'
-                            ))
+                            )).encode('utf-8')
                         elif 'No/G' in response.url:
                             itm['word_original'] = u"".join(l.get_xpath(
                                 '//td[contains(text(), "Greek:")]/following-sibling::td/text()'
-                            ))
+                            )).encode('utf-8')
                         itm['word_translated'] = urlparse(response.url).path.strip('/').split('/')[2]
                         itm['letter'] = itm['word_translated'][0].upper()
 
