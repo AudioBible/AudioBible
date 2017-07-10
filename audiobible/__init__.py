@@ -1,6 +1,6 @@
 #! /usr/bin/env python2
 
-__version__ = '0.7.7'
+__version__ = '0.7.8'
 
 try:
     import re
@@ -34,6 +34,8 @@ audiobible init words                                       # download all the w
 audiobible dict                                             # open browser to http://www.kingjamesbibledictionary.com
 audiobible dict Amen                                        # open browser to "Amen" in the online dictionary
 audiobible dict H2                                          # open browser to Strong's number definition online
+
+audiobible hub mark 4                                       # open browser to interlinear biblehub.com book of "Mark" 
 
 audiobible list                                             # to list all books and the number of chapters each book has
 audiobible list speakers                                    # to list all speakers found on sermonaudio.com
@@ -99,17 +101,33 @@ audiobible find circle -A 5 -B 2                            # to show 2 verse be
         description='%(prog)s '+__version__+' - King James Version Audio Bible'
     )
 
-    parser.add_argument('operation', nargs='+', type=str, help="init, load, hear, read, find, show, list, quote, praise, sermons, path, version, help, update")
-    parser.add_argument("-F", "--force", action='store_true', help="during init operation to remove existing data before new crawl operation")
+    parser.add_argument(
+        'operation', nargs='+', type=str,
+        help="init, hear, read, find, show, words, dict, list, hub, quote, praise, sermons, path, version, help, update"
+    )
+    parser.add_argument(
+        "-F", "--force", action='store_true',
+        help="during init operation to remove existing data before new crawl operation"
+    )
     parser.add_argument("-a", "--algorithm", choices=['regex', 'ratio', 'partial', 'sort', 'set'])
     parser.add_argument("-b", "--book", type=str, help="book to hear, read, find or quote", default=None)
     parser.add_argument("-c", "--chapter", type=str, help="chapter to hear, read, find or quote", default=None)
-    parser.add_argument("-C", "--context", type=int, help="print num lines of leading and trailing context surrounding each match.", default=None)
-    parser.add_argument("-B", "--before-context", type=int, help="print num lines of trailing context before each match.", default=None)
-    parser.add_argument("-A", "--after-context", type=int, help="print num lines of trailing context after each match.", default=None)
+    parser.add_argument(
+        "-C", "--context", type=int,
+        help="print num lines of leading and trailing context surrounding each match.", default=None
+    )
+    parser.add_argument(
+        "-B", "--before-context", type=int, help="print num lines of trailing context before each match.", default=None
+    )
+    parser.add_argument(
+        "-A", "--after-context", type=int,
+        help="print num lines of trailing context after each match.", default=None
+    )
     parser.add_argument("-s", "--speaker", type=str, help="speaker to hear a sermon from", default=None)
     parser.add_argument("-t", "--topic", type=str, help="topic to hear a sermon on", default=None)
-    parser.add_argument("-w", "--word", type=str, help="word to show a definition for or all words if a letter is given", default=None)
+    parser.add_argument(
+        "-w", "--word", type=str, help="word to show a definition for or all words if a letter is given", default=None
+    )
     parser.add_argument("-v", "--verse", type=str, help="verse to show", default=None)
     if len(sys.argv) == 1:
         parser.print_help()
@@ -306,7 +324,7 @@ class AudioBible(object):
 
     def __init__(self, operation, force, algorithm, book, chapter, speaker, topic, word, context, before_context, after_context):
         function = operation[0] if operation[0].lower() in [
-            'init', 'hear', 'read', 'list', 'show', 'find', 'quote', 'words',
+            'init', 'hear', 'read', 'list', 'show', 'find', 'quote', 'words', 'hub',
             'path', 'praise', 'sermon', 'sermons', 'dict', 'version', 'help', 'update', 'upgrade', 'exit'
         ] else 'help'
 
@@ -592,6 +610,14 @@ class AudioBible(object):
 
     def praise(self):
         self._open("https://www.youtube.com/results?search_query=praise+worship+hymns")
+
+    def hub(self):
+        if self.get_book() and self.get_chapter():
+            self._open("http://biblehub.com/interlinear/%s/%s.htm" % (self.get_book().lower(), self.get_chapter()))
+        elif self.get_book():
+            self._open("http://biblehub.com/interlinear/%s/1.htm" % self.get_book().lower())
+        else:
+            self._open("http://biblehub.com")
 
     def dict(self):
         if self.word:
