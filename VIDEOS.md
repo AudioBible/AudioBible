@@ -14,6 +14,7 @@ VIDEOS ON YOUTUBE
 - [Sherry Peel Jackson speaks on Being put in Federal Prison for Misdemeanor by IRS](https://www.youtube.com/watch?v=HEatg71BQtk)
 - [IRS Director Admits Taxes Are Voluntary 2013](https://www.youtube.com/watch?v=XNICz9CZOgw)
 - [Dead Broke Ex IRS Agent Discovers Secret To Everlasting Wealth](https://www.youtube.com/watch?v=Qkgn4f9FXRM)
+- [NEVER EVER PAY COLLECTIONS!](https://www.youtube.com/watch?v=ryTn81fJUko)
 
 ## Movies from The Books
 
