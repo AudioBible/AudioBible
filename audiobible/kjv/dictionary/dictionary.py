@@ -20,7 +20,7 @@ class DictionarySpider(scrapy.Spider):
     allowed_domains = ["www.kingjamesbibledictionary.com"]
     strongs_url = "http://www.kingjamesbibledictionary.com/StrongsNo/"
     greek_count = 5624
-    hebrew_count = 8673
+    hebrew_count = 8674
 
     def __init__(self):
         [self.start_urls.append("%sH%s" % (self.strongs_url, i)) for i in range(1, self.hebrew_count + 1)]

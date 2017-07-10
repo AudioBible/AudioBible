@@ -1054,7 +1054,9 @@ class AudioBible(object):
             words.sort()
             for wdx in range(len(words)):
                 if self.speaker:
-                    if words[wdx].upper() == self.speaker.upper():
+                    if self.speaker.upper() in words[wdx].upper():
+                        output += '{:<10}{}\r\n'.format(all_words[words[wdx]], words[wdx])
+                    elif self.speaker.upper() == all_words[words[wdx]]:
                         output += '{:<10}{}\r\n'.format(all_words[words[wdx]], words[wdx])
                 else:
                     output += '{:<10}{}\r\n'.format(all_words[words[wdx]], words[wdx])
