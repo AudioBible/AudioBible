@@ -11,7 +11,8 @@ if [ -d ~/KJV ]; then
     cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am 'update' && git push -f; cd "$d"
 fi
 
-git push && git push --tags
+
+git fetch && git rebase origin/master master && git git push && git push --tags
 git push ysfe -f && git push ysfe --tags -f
 git push up -f && git push up --tags -f
 git push bb -f && git push bb --tags -f
