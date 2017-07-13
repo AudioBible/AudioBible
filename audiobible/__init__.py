@@ -305,9 +305,11 @@ class Download(object):
 
 
 class AudioBible(object):
+    languages = ['hebrew', 'greek']
+    book_names = {}
     books = []
     book = None
-    chapter = None
+    chapter = 'all'
     context = None
     before_context = None
     after_context = None
@@ -416,10 +418,6 @@ class AudioBible(object):
 
     def _load_words(self):
         self.words_data = {
-            'all': dict(zip(list(string.ascii_uppercase), [
-                [], [], [], [], [], [], [], [], [], [], [], [], [],
-                [], [], [], [], [], [], [], [], [], [], [], [], [],
-            ])),
             'hebrew': dict(zip(list(string.ascii_uppercase), [
                 [], [], [], [], [], [], [], [], [], [], [], [], [],
                 [], [], [], [], [], [], [], [], [], [], [], [], [],
@@ -430,7 +428,7 @@ class AudioBible(object):
             ]))
         }
         letters = string.ascii_uppercase
-        for language in ['all', 'hebrew', 'greek']:
+        for language in self.languages:
             for l in range(len(letters)):
                 path = words_path % (language, letters[l])
                 if os.path.exists(path):
@@ -630,7 +628,6 @@ class AudioBible(object):
             self._open("http://www.kingjamesbibledictionary.com/Dictionary/")
 
     def words(self):
-
         def get_data(word):
             data = ''
             lang = None
@@ -690,7 +687,7 @@ class AudioBible(object):
         result = ''
 
         if self.word:
-            for language in ['all', 'hebrew', 'greek']:
+            for language in self.languages:
                 for letter in string.ascii_uppercase:
                     for word in self.words_data[language][letter]:
                         match_numr = re.search('([H,G])([0-9]).*', self.word, re.IGNORECASE)
@@ -701,13 +698,12 @@ class AudioBible(object):
                         elif self.word.upper() == word['word_translated'].upper():
                             result += get_data(word)
         else:
-            for language in ['all', 'hebrew', 'greek']:
+            for language in self.languages:
                 for letter in string.ascii_uppercase:
                     for word in self.words_data[language][letter]:
                         result += get_data(word)
 
-        result = result.strip().strip('===')
-        return result
+        return result.strip().strip('===')
 
     def sermons(self):
         if self.param1:
@@ -827,18 +823,18 @@ class AudioBible(object):
                 if os.path.isdir(path):
                     for filename in self._get_books(path):
                         if '.txt' in filename and os.path.exists(filename):
-                            book_name = os.path.split(os.path.dirname(filename))[1].replace('_', ' ')
+                            # book_name = os.path.split(os.path.dirname(filename))[1].replace('_', ' ')
                             for l in open(filename).readlines():
                                 if l.strip():
-                                    line = "%s %s" % ("_".join(book_name.split()), " ".join(l.strip().split(' ')[1:]))
-                                    lines.append('%s\r\n' % line)
+                                    # line = "%s %s" % ("_".join(book_name.split()), " ".join(l.strip().split(' ')[1:]))
+                                    lines.append('%s\r\n' % l.strip())
                 else:
                     if '.txt' in path and os.path.exists(path):
-                        book_name = os.path.split(os.path.dirname(path))[1].replace('_', ' ')
+                        # book_name = os.path.split(os.path.dirname(path))[1].replace('_', ' ')
                         for l in open(path).readlines():
                             if l.strip():
-                                line = "%s %s" % ("_".join(book_name.split()), " ".join(l.strip().split(' ')[1:]))
-                                lines.append('%s\r\n' % line)
+                                # line = "%s %s" % ("_".join(book_name.split()), " ".join(l.strip().split(' ')[1:]))
+                                lines.append('%s\r\n' % l.strip())
 
         if isinstance(the_path, list):
             for p in the_path:
@@ -896,19 +892,19 @@ class AudioBible(object):
                                 except IndexError:
                                     pass
 
-                    if ':' in self.query:
-                        query_list = self.query.split()
-                        book_name = query_list[0]
-                        try:
-                            scripture = query_list[1]
-                        except IndexError:
-                            scripture = ''
-                        if scripture in [lines[line].split()[1]] and book_name.upper() in lines[line]:
-                            matched(lines[line])
-                    else:
-                        match = re.search(self.query, lines[line], re.IGNORECASE)
-                        if match:
-                            matched(match.string)
+                    # if ':' in self.query:
+                    #     query_list = self.query.split()
+                    #     book_name = query_list[0]
+                    #     try:
+                    #         scripture = query_list[1]
+                    #     except IndexError:
+                    #         scripture = ''
+                    #     if scripture in [lines[line].split()[1]] and book_name.upper() in lines[line]:
+                    #         matched(lines[line])
+                    # else:
+                    match = re.search(self.query, lines[line], re.IGNORECASE)
+                    if match:
+                        matched(match.string)
 
             def _fuzz(lines):
                 scorer = fuzz.ratio
@@ -1078,7 +1074,7 @@ class AudioBible(object):
                 output += 'audiobible init git -F\r\n'
         elif self.scope in 'words':
             all_words = {}
-            for lang in ['all', 'hebrew', 'greek']:
+            for lang in self.languages:
                 if len(self.words_data[lang]) > 0:
                     for letter in self.words_data[lang].keys():
                         for s in self.words_data[lang][letter]:
