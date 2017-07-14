@@ -11,10 +11,6 @@ echo "[README](README.md) | [USAGE](USAGE.md) | [HELP](HELP.md) | [DEVELOPMENT](
 echo "" >> IMAGES.md;
 echo "[VIDEOS](VIDEOS.md) | [MUSIC](MUSIC.md) | [CHANNELS](MUSIC.md) | [DOCUMENTS](DOCUMENTS.md) | [IMAGES](IMAGES.md) | [BOOKS](BOOKS.md) | [LINKS](LINKS.md) | [INFO](INFO.md) | **Join The Revolution**" >> IMAGES.md;
 echo "" >> IMAGES.md;
-echo "[![thomas-jefferson-educate-and-inform-the-masses-quote](images/thomas-jefferson-educate-and-inform-the-masses-quote.png)](https://www.youtube.com/watch?v=72Lrz0khXP0)" >> IMAGES.md;
-echo "" >> IMAGES.md;
-echo "## DO YOURSELF, EARTH & HUMANITY A FAVOR, CHECK IT OUT!!! WAKE UP! BUST BACK!" >> IMAGES.md;
-echo "" >> IMAGES.md;
 echo "IMAGES" >> IMAGES.md;
 echo "======" >> IMAGES.md;
 echo "" >> IMAGES.md;
