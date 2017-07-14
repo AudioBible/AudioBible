@@ -1,6 +1,16 @@
 #!/usr/bin/env bash
 
 version=`audiobible/__init__.py version`
+
+echo "## Welcome to [http://audiobible.life](http://audiobible.life) - [KJV](https://github.com/AudioBible/KJV) - [AudioBible](https://github.com/AudioBible/AudioBible)" > IMAGES.md;
+echo "" >> IMAGES.md;
+echo "[![thomas-jefferson-educate-and-inform-the-masses-quote](images/thomas-jefferson-educate-and-inform-the-masses-quote.png)](https://www.youtube.com/watch?v=72Lrz0khXP0)" >> IMAGES.md;
+echo "" >> IMAGES.md;
+echo "IMAGES" >> IMAGES.md;
+echo "======" >> IMAGES.md;
+echo "" >> IMAGES.md;
+for i in `ls -1 images/|xargs`; do echo "- [$i](images/$i)" >> IMAGES.md; done
+
 if [ -d ~/KJV ]; then
     cp *.md ~/KJV/
     cp images/*.jpg ~/KJV/images/
