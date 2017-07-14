@@ -31,7 +31,9 @@ fi
 
 
 git fetch && git rebase origin/master master && git push && git push --tags
+echo "thereforechoose.life" > _config.yml
 git push abl -f && git push abl --tags -f
+echo "audiobible.life" > _config.yml
 git push tfcl -f && git push tfcl --tags -f
 git push ysfe -f && git push ysfe --tags -f
 git push up -f && git push up --tags -f
