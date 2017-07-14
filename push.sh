@@ -5,7 +5,7 @@ version=`audiobible/__init__.py version`
 git add images/;
 
 echo "" >> IMAGES.md;
-echo "## Welcome to [http://audiobible.life](http://audiobible.life) - [KJV](https://github.com/AudioBible/KJV) - [AudioBible](https://github.com/AudioBible/AudioBible) - Therefore Choose Life" > IMAGES.md;
+echo "## Welcome to [http://audiobible.life](http://audiobible.life) - [KJV](https://github.com/AudioBible/KJV) - [AudioBible](https://github.com/AudioBible/AudioBible) - Therefore Choose Life - ![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/)" > IMAGES.md;
 echo "" >> IMAGES.md;
 echo "[README](README.md) | [USAGE](USAGE.md) | [HELP](HELP.md) | [DEVELOPMENT](DEVELOPMENT.md) | [CHANGES](CHANGES.md) | **We The People** | **Have The Power** | **Don't Be A Clown**" >> IMAGES.md;
 echo "" >> IMAGES.md;
@@ -21,7 +21,6 @@ echo "" >> IMAGES.md;
 
 for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; do echo "- [$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md && echo "![$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md; done
 
-echo "![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/)" >> IMAGES.md;
 echo "" >> IMAGES.md;
 
 git commit -am 'update';
