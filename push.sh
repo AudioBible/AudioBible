@@ -12,7 +12,7 @@ echo "IMAGES" >> IMAGES.md;
 echo "======" >> IMAGES.md;
 echo "" >> IMAGES.md;
 
-for i in `ls -1 images/|xargs`; do echo "- [$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md && echo "![$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md; done
+for i in `ls -1 images/|grep -v youtube-channel|xargs`; do echo "- [$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md && echo "![$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md; done
 
 echo "![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/)" >> IMAGES.md;
 echo "" >> IMAGES.md;
