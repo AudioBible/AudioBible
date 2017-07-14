@@ -9,7 +9,10 @@ echo "" >> IMAGES.md;
 echo "IMAGES" >> IMAGES.md;
 echo "======" >> IMAGES.md;
 echo "" >> IMAGES.md;
+
 for i in `ls -1 images/|xargs`; do echo "- [$i](images/$i)" >> IMAGES.md && echo "![$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md; done
+
+git commit -am 'update';
 
 if [ -d ~/KJV ]; then
     cp *.md ~/KJV/
