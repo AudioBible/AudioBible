@@ -2,6 +2,8 @@
 
 version=`audiobible/__init__.py version`
 
+git add images/;
+
 echo "## Welcome to [http://audiobible.life](http://audiobible.life) - [KJV](https://github.com/AudioBible/KJV) - [AudioBible](https://github.com/AudioBible/AudioBible)" > IMAGES.md;
 echo "" >> IMAGES.md;
 echo "[![thomas-jefferson-educate-and-inform-the-masses-quote](images/thomas-jefferson-educate-and-inform-the-masses-quote.png)](https://www.youtube.com/watch?v=72Lrz0khXP0)" >> IMAGES.md;
