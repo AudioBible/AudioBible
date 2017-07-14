@@ -31,7 +31,7 @@ fi
 
 
 git fetch && git rebase origin/master master && git push && git push --tags
-git push abl -f && git push --tags -f
+git fetch && git rebase abl/master master && git push && git push --tags
 git push ysfe -f && git push ysfe --tags -f
 git push up -f && git push up --tags -f
 git push ab -f && git push up --tags -f
