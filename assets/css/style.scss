@@ -7,6 +7,9 @@
   width: 950px;
   a {
     color: royalblue;
+    &:hover {
+      color: darkblue;
+    }
   }
 }
 
