@@ -3,3 +3,10 @@
 
 @import "{{ site.theme }}";
 
+.inner {
+  width: 950px;
+  a {
+    color: royalblue;
+  }
+}
+
