@@ -2,8 +2,6 @@
 
 version=`audiobible/__init__.py version`
 
-git fetch && git rebase origin/master master
-
 git add images/;
 
 echo "" >> IMAGES.md;
@@ -22,6 +20,8 @@ for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; d
 echo "" >> IMAGES.md;
 
 git commit -am 'update';
+
+git fetch && git rebase origin/master master;
 
 if [ -d ~/KJV ]; then
     cp *.md ~/KJV/
