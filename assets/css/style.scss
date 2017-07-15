@@ -7,8 +7,21 @@
   .container {
     width: 100%;
     ul:nth-child(1) {
-      display: inline;
+      margin: 0;
+      padding: 0;
       list-style-type: none;
+      text-align: center;
+      & li { display: inline; }
+      & li a {
+        text-decoration: none;
+        padding: .2em 1em;
+        color: #fff;
+        background-color: #036;
+        :hover {
+          color: #fff;
+          background-color: #369;
+        }
+      }
     }
   }
 }
@@ -17,8 +30,21 @@
   .container {
     width: 100%;
     ul:nth-child(1) {
-      display: inline;
+      margin: 0;
+      padding: 0;
       list-style-type: none;
+      text-align: center;
+      & li { display: inline; }
+      & li a {
+        text-decoration: none;
+        padding: .2em 1em;
+        color: #fff;
+        background-color: #036;
+        :hover {
+          color: #fff;
+          background-color: #369;
+        }
+      }
     }
   }
 }
