@@ -2,6 +2,8 @@
 
 version=`audiobible/__init__.py version`
 
+git fetch && git rebase origin/master master
+
 git add images/;
 
 echo "" >> IMAGES.md;
@@ -32,7 +34,7 @@ if [ -d ~/KJV ]; then
 fi
 
 
-git fetch && git rebase origin/master master && git push && git push --tags
+git push && git push --tags
 git push abl -f && git push abl --tags -f
 git push tfcl -f && git push tfcl --tags -f
 git push ysfe -f && git push ysfe --tags -f
