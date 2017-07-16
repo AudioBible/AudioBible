@@ -36,7 +36,6 @@ fi
 
 git push && git push --tags
 git push abl -f && git push abl --tags -f
-git push tfcl -f && git push tfcl --tags -f
 git push ysfe -f && git push ysfe --tags -f
 git push up -f && git push up --tags -f
 git push ab -f && git push ab --tags -f
