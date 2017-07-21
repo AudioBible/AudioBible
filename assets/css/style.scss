@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+h1#audiobible {
+  display: none;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 479px){
   .container {
     width: 100%;
