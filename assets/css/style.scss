@@ -1,9 +1,14 @@
 ---
 ---
+h1#audiobible {
+  visibility: hidden;
+  display: none;
+}
 
 @import "{{ site.theme }}";
 
 h1#audiobible {
+  visibility: hidden;
   display: none;
 }
 
