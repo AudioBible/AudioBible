@@ -40,4 +40,5 @@ git push ysfe -f && git push ysfe --tags -f
 git push up -f && git push up --tags -f
 git push ab -f && git push ab --tags -f
 git push bb -f && git push bb --tags -f
+git push gl -f && git push gl --tags -f
 git push sf -f && git push sf --tags -f
