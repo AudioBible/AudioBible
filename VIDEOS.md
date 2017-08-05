@@ -27,6 +27,7 @@ You can trust a regular person more than you can trust a corporation or a govern
 - [ODD TV's 33 Movies for a Conspiracist ▶️️](https://www.youtube.com/watch?v=L_ApQ4prG7Q)
 - [ODD TV's 33 Movies Dystopian Edition ▶️️](https://www.youtube.com/watch?v=W51wAhgn-8E)
 - [Battle in Seattle - Full Movie (Channing Tatum, Charlize Theron)](https://www.youtube.com/watch?v=YwnVYzyAQoI) [0.75x]
+- [The Principle Movie](https://www.amazon.com/dp/B01K90NVNI)
 
 ## Movies from The Books
 

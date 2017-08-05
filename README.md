@@ -12,6 +12,8 @@
 
 [https://www.youtube.com/results?search_query=flat+earth+live](https://www.youtube.com/results?search_query=flat+earth+live)
 
+It's all connected to the biggest lie in the world, about the shape of the world, once you understand you will see how to tell through their lies of deception.
+
 > Pride aside. The earth is flat and that's not even the important bit..the reasons they're lying will lead you to the origins of earth, who and what we are, where we live and what we are doing here, free energy, frequencies and magnesium. good luck.﻿
 - JJN
 
