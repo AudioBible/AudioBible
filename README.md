@@ -69,6 +69,10 @@ It's all connected to the biggest lie in the world, about the shape of the world
 
 [Dr. Robert Sungenis presentation on Geocentrism in Dallas, Texas](https://www.youtube.com/watch?v=Rwx7bYEUIF4)
 
+[![drink-the-kool-aid-means-blindly-follow](images/drink-the-kool-aid-means-blindly-follow.png)](https://www.youtube.com/watch?v=E4sdGMx0gcg)
+
+[The Kool-Aid Man Cometh](https://www.youtube.com/watch?v=E4sdGMx0gcg)
+
 ## NO OFFENSE BUT WE ARE IN TROUBLE AND THE TRUTH MUST BE SEEN AND HEARD!
 
 ## SILENCE IS BETRAYAL! TRUTH IS HERE NOW! YOU CAN'T ESCAPE IT! LEARN IT!

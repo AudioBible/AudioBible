@@ -1395,6 +1395,10 @@ IMAGES
 
 ![disney-has-subliminal-messages-and-disney-is-evil.png](images/disney-has-subliminal-messages-and-disney-is-evil.png)
 
+- [dr.robert-sungenis-presentation-on-geocentrism-in-dalas-tx.png](images/dr.robert-sungenis-presentation-on-geocentrism-in-dalas-tx.png)
+
+![dr.robert-sungenis-presentation-on-geocentrism-in-dalas-tx.png](images/dr.robert-sungenis-presentation-on-geocentrism-in-dalas-tx.png)
+
 - [dubai-flat-earth-ruler-comparison.png](images/dubai-flat-earth-ruler-comparison.png)
 
 ![dubai-flat-earth-ruler-comparison.png](images/dubai-flat-earth-ruler-comparison.png)
