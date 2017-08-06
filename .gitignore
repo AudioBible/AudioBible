@@ -5,3 +5,5 @@ Python2/
 .idea/
 AudioBible.egg-info/
 dist/
+client_secrets.json
+comments.py-oauth2.json

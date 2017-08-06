@@ -73,6 +73,10 @@ It's all connected to the biggest lie in the world, about the shape of the world
 
 [The Kool-Aid Man Cometh](https://www.youtube.com/watch?v=E4sdGMx0gcg)
 
+[![666-chip](images/666-chip.png)](https://www.youtube.com/watch?v=t4jUWgHhDvU)
+
+[THE MOST DISTURBING VIDEO OF 2017 by Captain Obvious](https://www.youtube.com/watch?v=t4jUWgHhDvU)
+
 ## NO OFFENSE BUT WE ARE IN TROUBLE AND THE TRUTH MUST BE SEEN AND HEARD!
 
 ## SILENCE IS BETRAYAL! TRUTH IS HERE NOW! YOU CAN'T ESCAPE IT! LEARN IT!
