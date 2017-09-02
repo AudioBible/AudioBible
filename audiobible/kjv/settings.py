@@ -18,6 +18,8 @@ NEWSPIDER_MODULE = 'kjv.bible'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'AudioBible-KJV (+https://github.com/AudioBible/AudioBible)'
 
+AJAXCRAWL_ENABLED = True
+
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
