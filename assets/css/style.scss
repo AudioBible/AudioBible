@@ -1,13 +1,13 @@
 ---
 ---
-h1#audiobible {
+h1 {
   visibility: hidden;
   display: none;
 }
 
 @import "{{ site.theme }}";
 
-h1#audiobible {
+h1 {
   visibility: hidden;
   display: none;
 }
