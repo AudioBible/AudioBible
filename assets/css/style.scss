@@ -1,13 +1,13 @@
 ---
 ---
-h1 {
+h1:first-child {
   visibility: hidden;
   display: none;
 }
 
 @import "{{ site.theme }}";
 
-h1 {
+h1:first-child {
   visibility: hidden;
   display: none;
 }
