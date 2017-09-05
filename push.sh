@@ -4,7 +4,7 @@ version=`audiobible/__init__.py version`
 
 ./optimize_images.sh;
 
-git add images/;
+git add original_images/ images/;
 
 echo "" >> IMAGES.md;
 echo "## ![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/) Welcome to [http://audiobible.life](http://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)" > IMAGES.md;
