@@ -68,6 +68,10 @@ Why I like to listen to sermons on YouTube is because I can't rewind what the pr
 
 [They are Preparing the earth for the FALLEN](https://www.youtube.com/watch?v=d_KQjyfrRFk)
 
+[![NASA-SUN-Simulator-Caught-on-VIDEO](images/NASA-SUN-Simulator-Caught-on-VIDEO.png)](https://www.youtube.com/watch?v=jZJcSzO9viU)
+
+[NASA's SUN SIMULATOR CAUGHT ON VIDEO.](https://www.youtube.com/watch?v=jZJcSzO9viU)
+
 [![Angel-Heart-Studios-ANTARCTICA-Fallen-Angels](images/Angel-Heart-Studios-ANTARCTICA-Fallen-Angels.png)](https://www.youtube.com/watch?v=1YruLtlTzXQ)
 
 [What Is Happening In ANTARCTICA? Ancient Technology, LIVING Fallen Angels, And Cities Under Ice!](https://www.youtube.com/watch?v=1YruLtlTzXQ)

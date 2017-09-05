@@ -2,6 +2,8 @@
 
 version=`audiobible/__init__.py version`
 
+./optimize_images.sh;
+
 git add images/;
 
 echo "" >> IMAGES.md;
