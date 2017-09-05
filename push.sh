@@ -33,12 +33,50 @@ if [ -d ~/KJV ]; then
     cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am 'update' && git push -f; cd "$d"
 fi
 
+if [ "$?" == "0" ]; then
+    git push && git push --tags;
+    if [ "$?" == "0" ]; then
+        git push abl -f && git push abl --tags -f;
+        if [ "$?" == "0" ]; then
+            git push ysfe -f && git push ysfe --tags -f;
+            if [ "$?" == "0" ]; then
+                git push up -f && git push up --tags -f;
+                if [ "$?" == "0" ]; then
+                    git push ab -f && git push ab --tags -f;
+                    if [ "$?" == "0" ]; then
+                        git push bb -f && git push bb --tags -f;
+                        if [ "$?" == "0" ]; then
+                            git push gl -f && git push gl --tags -f;
+                            if [ "$?" == "0" ]; then
+                                echo "Finish PUSH to main";
+                            else
+                                echo "Failed PUSH to gl";
+                            fi
+                        else
+                            echo "Failed PUSH to bb";
+                        fi
+                    else
+                        echo "Failed PUSH to ab";
+                    fi
+                else
+                    echo "Failed PUSH to up";
+                fi
+            else
+                echo "Failed PUSH to ysfe";
+            fi
+        else
+            echo "Failed PUSH to abl";
+        fi
+    else
+        echo "Failed PUSH to origin";
+    fi
 
-git push && git push --tags
-git push abl -f && git push abl --tags -f
-git push ysfe -f && git push ysfe --tags -f
-git push up -f && git push up --tags -f
-git push ab -f && git push ab --tags -f
-git push bb -f && git push bb --tags -f
-git push gl -f && git push gl --tags -f
-git push sf -f && git push sf --tags -f
+    git push sf -f && git push sf --tags -f;
+    if [ "$?" == "0" ]; then
+        echo "Finish PUSH to sf";
+    else
+        echo "Failed PUSH to sf";
+    fi
+else
+    echo "Failed PUSH to origin";
+fi
