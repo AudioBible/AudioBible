@@ -72,6 +72,10 @@ Why I like to listen to sermons on YouTube is because I can't rewind what the pr
 
 [NASA's SUN SIMULATOR CAUGHT ON VIDEO.](https://www.youtube.com/watch?v=jZJcSzO9viU)
 
+[![Artificial-SUN-Finally-goes-PUBLIC-in-Germany](images/Artificial-SUN-Finally-goes-PUBLIC-in-Germany.png)](https://www.youtube.com/watch?v=vsQpG-qGhc4)
+
+[Artificial SUN Finally goes PUBLIC in Germany](https://www.youtube.com/watch?v=vsQpG-qGhc4)
+
 [![Angel-Heart-Studios-ANTARCTICA-Fallen-Angels](images/Angel-Heart-Studios-ANTARCTICA-Fallen-Angels.png)](https://www.youtube.com/watch?v=1YruLtlTzXQ)
 
 [What Is Happening In ANTARCTICA? Ancient Technology, LIVING Fallen Angels, And Cities Under Ice!](https://www.youtube.com/watch?v=1YruLtlTzXQ)
