@@ -6,6 +6,8 @@ skip_images="`echo ${1:-"false"} | tr [a-z] [A-Z]`";
 
 if [[ $skip_images == *"F"* ]]; then
     ./optimize_images.sh;
+else
+    echo "Skipping optimize_images"
 fi
 
 git add original_images/ images/;
