@@ -4,7 +4,9 @@
 
 [VIDEOS](VIDEOS.md) | [MUSIC](MUSIC.md) | [CHANNELS](CHANNELS.md) | [DOCUMENTS](DOCUMENTS.md) | [IMAGES](IMAGES.md) | [BOOKS](BOOKS.md) | [LINKS](LINKS.md) | [INFO](INFO.md) | **Join The Revolution**
 
-![flat-earth-truth](images/flat-earth-truth.jpg)
+[![flat-earth-truth](images/flat-earth-truth.jpg)](https://www.youtube.com/watch?v=pNe1wWeaHOU&list=PLYI8318YYdkCsZ7dsYV01n6TZhXA6Wf9i&index=1)
+
+[Proof That Our World is Not a Moving Globe : Edward Hendrie](https://www.youtube.com/watch?v=pNe1wWeaHOU&list=PLYI8318YYdkCsZ7dsYV01n6TZhXA6Wf9i&index=1)
 
 # audiobible find let god be true
 
@@ -385,7 +387,7 @@ Do what thou wilt? or do God's will? Which is it? Everyone has there own Truth? 
 
 ### IT'S IMPOSSIBLE TO BE TRULY FREE WHEN YOUR MIND IS IN A MENTAL PRISON!
 
-# TRUTH HURTS WHEN YOU BELIEVE LIES!
+### TRUTH HURTS WHEN YOU BELIEVE LIES! ARE YOU BIG BANG BELIEVING CHRISTIAN? ENJOY HELL!
 
 **Note:** Some songs may have explicit language. Please don't judge people for the language they use or their personality. Lest you be judged according to your measure! Listen to the message they are saying. Most of all please share the love with others! It's a lot worse to be out there killing people over oil, dropping a real bomb, than saying a four letter word, dropping the F-bomb. Who's side are you on? If it's not blaspheming the name of Jesus Christ then whats the problem, are you conditioned? What are filthy words? Are the words "drone strikes", which means many people die, worse than the S-word, which means poop?
 
