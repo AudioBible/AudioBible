@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 version=`audiobible/__init__.py version`
+message="BIG BANG IS THEORY! FLAT EARTH IS TRUTH!"
 
 ./optimize_images.sh;
 
@@ -21,7 +22,7 @@ for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; d
 
 echo "" >> IMAGES.md;
 
-git commit -am 'update';
+git commit -am "$message";
 
 git fetch && git rebase origin/master master;
 
@@ -32,7 +33,7 @@ if [ -d ~/KJV ]; then
     cp images/*.png ~/KJV/images/
     cp images/*.gif ~/KJV/images/
     d=`pwd`
-    cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am 'update' && git push -f; cd "$d"
+    cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am "$message" && git push -f; cd "$d"
     if [ "$?" == "0" ]; then
         echo "Finish PUSH to KJV origin";
     else
