@@ -35,48 +35,66 @@ if [ -d ~/KJV ]; then
     cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am 'update' && git push -f; cd "$d"
 fi
 
+git push && git push --tags;
 if [ "$?" == "0" ]; then
-    git push && git push --tags;
-    if [ "$?" == "0" ]; then
-        git push ab -f && git push ab --tags -f;
-        if [ "$?" == "0" ]; then
-            git push abl -f && git push abl --tags -f;
-            if [ "$?" == "0" ]; then
-                git push up -f && git push up --tags -f;
-                if [ "$?" == "0" ]; then
-                    git push ysfe -f && git push ysfe --tags -f;
-                    if [ "$?" == "0" ]; then
-                        git push bb -f && git push bb --tags -f;
-                        if [ "$?" == "0" ]; then
-                            git push gl -f && git push gl --tags -f;
-                            if [ "$?" == "0" ]; then
-                                git push sf -f && git push sf --tags -f;
-                                if [ "$?" == "0" ]; then
-                                    echo "Finish PUSH to sf";
-                                else
-                                    echo "Failed PUSH to sf";
-                                fi
-                            else
-                                echo "Failed PUSH to gl";
-                            fi
-                        else
-                            echo "Failed PUSH to bb";
-                        fi
-                    else
-                        echo "Failed PUSH to ysfe";
-                    fi
-                else
-                    echo "Failed PUSH to up";
-                fi
-            else
-                echo "Failed PUSH to abl";
-            fi
-        else
-            echo "Failed PUSH to ab";
-        fi
-    else
-        echo "Failed PUSH to origin";
-    fi
+    echo "Finish PUSH to origin";
 else
     echo "Failed PUSH to origin";
+    exit 1;
+fi
+
+git push ab -f && git push ab --tags -f;
+if [ "$?" == "0" ]; then
+    echo "Finish PUSH to ab";
+else
+    echo "Failed PUSH to ab";
+    exit 1;
+fi
+
+git push abl -f && git push abl --tags -f;
+if [ "$?" == "0" ]; then
+    echo "Finish PUSH to abl";
+else
+    echo "Failed PUSH to abl";
+    exit 1;
+fi
+
+git push up -f && git push up --tags -f;
+if [ "$?" == "0" ]; then
+    echo "Finish PUSH to up";
+else
+    echo "Failed PUSH to up";
+    exit 1;
+fi
+
+git push ysfe -f && git push ysfe --tags -f;
+if [ "$?" == "0" ]; then
+    echo "Finish PUSH to ysfe";
+else
+    echo "Failed PUSH to ysfe";
+    exit 1;
+fi
+
+git push bb -f && git push bb --tags -f;
+if [ "$?" == "0" ]; then
+    echo "Finish PUSH to bb";
+else
+    echo "Failed PUSH to bb";
+    exit 1;
+fi
+
+git push gl -f && git push gl --tags -f;
+if [ "$?" == "0" ]; then
+    echo "Finish PUSH to gl";
+else
+    echo "Failed PUSH to gl";
+    exit 1;
+fi
+
+git push sf -f && git push sf --tags -f;
+if [ "$?" == "0" ]; then
+    echo "Finish PUSH to sf";
+else
+    echo "Failed PUSH to sf";
+    exit 1;
 fi
