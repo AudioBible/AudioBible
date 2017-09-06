@@ -24,25 +24,7 @@ echo "" >> IMAGES.md;
 
 git commit -am "$message";
 
-git fetch && git rebase origin/master master;
-
-if [ -d ~/KJV ]; then
-    cp *.md ~/KJV/
-    cp images/*.jpg ~/KJV/images/
-    cp images/*.jpeg ~/KJV/images/
-    cp images/*.png ~/KJV/images/
-    cp images/*.gif ~/KJV/images/
-    d=`pwd`
-    cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am "$message" && git push -f; cd "$d"
-    if [ "$?" == "0" ]; then
-        echo "Finish PUSH to KJV origin";
-    else
-        echo "Failed PUSH to KJV origin";
-        exit 1;
-    fi
-fi
-
-git push && git push --tags;
+git fetch && git rebase origin/master master && git push && git push --tags;
 if [ "$?" == "0" ]; then
     echo "Finish PUSH to origin";
 else
@@ -96,6 +78,22 @@ if [ "$?" == "0" ]; then
 else
     echo "Failed PUSH to gl";
     exit 1;
+fi
+
+if [ -d ~/KJV ]; then
+    cp *.md ~/KJV/
+    cp images/*.jpg ~/KJV/images/
+    cp images/*.jpeg ~/KJV/images/
+    cp images/*.png ~/KJV/images/
+    cp images/*.gif ~/KJV/images/
+    d=`pwd`
+    cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am "$message" && git push -f; cd "$d"
+    if [ "$?" == "0" ]; then
+        echo "Finish PUSH to KJV origin";
+    else
+        echo "Failed PUSH to KJV origin";
+        exit 1;
+    fi
 fi
 
 git push sf -f && git push sf --tags -f;
