@@ -387,7 +387,7 @@ Do what thou wilt? or do God's will? Which is it? Everyone has there own Truth? 
 
 ### IT'S IMPOSSIBLE TO BE TRULY FREE WHEN YOUR MIND IS IN A MENTAL PRISON!
 
-### TRUTH HURTS WHEN YOU BELIEVE LIES! ARE YOU BIG BANG BELIEVING CHRISTIAN? ENJOY HELL!
+### TRUTH HURTS WHEN YOU BELIEVE LIES! ARE YOU BIG BANG BELIEVING CHRISTIAN?! ENJOY HELL!
 
 **Note:** Some songs may have explicit language. Please don't judge people for the language they use or their personality. Lest you be judged according to your measure! Listen to the message they are saying. Most of all please share the love with others! It's a lot worse to be out there killing people over oil, dropping a real bomb, than saying a four letter word, dropping the F-bomb. Who's side are you on? If it's not blaspheming the name of Jesus Christ then whats the problem, are you conditioned? What are filthy words? Are the words "drone strikes", which means many people die, worse than the S-word, which means poop?
 
