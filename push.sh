@@ -4,7 +4,9 @@ version=`audiobible/__init__.py version`
 message="BIG BANG IS THEORY! FLAT EARTH IS TRUTH!"
 skip_images="`echo ${1:-"false"} | tr [a-z] [A-Z]`";
 
-./optimize_images.sh;
+if [[ $verbose == *"F"* ]]; then
+    ./optimize_images.sh;
+fi
 
 git add original_images/ images/;
 
