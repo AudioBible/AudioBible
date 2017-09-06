@@ -33,6 +33,12 @@ if [ -d ~/KJV ]; then
     cp images/*.gif ~/KJV/images/
     d=`pwd`
     cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am 'update' && git push -f; cd "$d"
+    if [ "$?" == "0" ]; then
+        echo "Finish PUSH to KJV origin";
+    else
+        echo "Failed PUSH to KJV origin";
+        exit 1;
+    fi
 fi
 
 git push && git push --tags;
