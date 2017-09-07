@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-version=`audiobible/__init__.py version`
-message="BIG BANG IS THEORY! FLAT EARTH IS TRUTH!"
-skip_images="`echo ${1:-"false"} | tr [a-z] [A-Z]`";
-
 trap sigint_handler SIGINT
 
 function sigint_handler(){
     exit 1;
 }
+
+version=`audiobible/__init__.py version`
+message="BIG BANG IS THEORY! FLAT EARTH IS TRUTH!"
+skip_images="`echo ${1:-"false"} | tr [a-z] [A-Z]`";
 
 if [[ $skip_images == *"F"* ]]; then
     ./optimize_images.sh;

@@ -7,6 +7,12 @@ if [ "$quality" == "0" ]; then
     quality=77;
 fi
 
+trap sigint_handler SIGINT
+
+function sigint_handler(){
+    exit 1;
+}
+
 echo "optimizing image quality to be $quality%";
 
 if [ -d "./original_images/" ]; then
