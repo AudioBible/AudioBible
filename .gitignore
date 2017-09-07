@@ -7,3 +7,4 @@ AudioBible.egg-info/
 dist/
 client_secrets.json
 comments.py-oauth2.json
+original_images/optimized/
