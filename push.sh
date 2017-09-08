@@ -7,7 +7,7 @@ function sigint_handler(){
 }
 
 version=`audiobible/__init__.py version`
-message="BIG BANG IS THEORY! FLAT EARTH IS TRUTH!"
+message="BIG BANG IS THEORY! FLAT EARTH IS TRUTH! 9/11 WAS AN INSIDE JOB!"
 skip_images="`echo ${1:-"false"} | tr [a-z] [A-Z]`";
 
 if [[ $skip_images == *"F"* ]]; then
