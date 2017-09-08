@@ -10,6 +10,7 @@ fi
 trap sigint_handler SIGINT
 
 function sigint_handler(){
+    rm -Rf ./original_images/optimized/;
     exit 1;
 }
 
