@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# ./push.sh
+# ./push.sh t
+# ./push.sh f README,IMAGES
+# ./push.sh f README.md,IMAGES.md
+
 trap sigint_handler SIGINT
 
 function sigint_handler(){
@@ -9,8 +14,9 @@ function sigint_handler(){
 version=`audiobible/__init__.py version`
 message="BIG BANG IS THEORY! FLAT EARTH IS TRUTH! 9/11 WAS AN INSIDE JOB!"
 skip_images="`echo ${1:-"false"} | tr [a-z] [A-Z]`";
+skip_files="`echo ${2:-"none"} | tr "," "|"|sed "s/ //g"`";
 
-if [[ $skip_images == *"F"* ]]; then
+if [[ $skip_images != *"F"* ]]; then
     ./optimize_images.sh;
 else
     echo "Skipping optimize_images"
@@ -18,20 +24,49 @@ fi
 
 git add original_images/ images/ books/;
 
-echo "" >> IMAGES.md;
-echo "## ![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/) Welcome to [http://audiobible.life](http://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)" > IMAGES.md;
-echo "" >> IMAGES.md;
-echo "[README](README.md) | [USAGE](USAGE.md) | [HELP](HELP.md) | [DEVELOPMENT](DEVELOPMENT.md) | [CHANGES](CHANGES.md) | **We The People** | **Have The Power** | **Don't Be A Clown**" >> IMAGES.md;
-echo "" >> IMAGES.md;
-echo "[VIDEOS](VIDEOS.md) | [MUSIC](MUSIC.md) | [CHANNELS](CHANNELS.md) | [DOCUMENTS](DOCUMENTS.md) | [IMAGES](IMAGES.md) | [BOOKS](BOOKS.md) | [LINKS](LINKS.md) | [INFO](INFO.md) | **Join The Revolution**" >> IMAGES.md;
-echo "" >> IMAGES.md;
-echo "IMAGES" >> IMAGES.md;
-echo "======" >> IMAGES.md;
-echo "" >> IMAGES.md;
+function WRITE_IMAGES_FILE() {
+    echo "## ![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/) Welcome to [http://audiobible.life](http://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)" > IMAGES.md;
+    echo "" >> IMAGES.md;
+    echo "[README](README.md) | [USAGE](USAGE.md) | [HELP](HELP.md) | [DEVELOPMENT](DEVELOPMENT.md) | [CHANGES](CHANGES.md) | **We The People** | **Have The Power** | **Don't Be A Clown**" >> IMAGES.md;
+    echo "" >> IMAGES.md;
+    echo "[VIDEOS](VIDEOS.md) | [MUSIC](MUSIC.md) | [CHANNELS](CHANNELS.md) | [DOCUMENTS](DOCUMENTS.md) | [IMAGES](IMAGES.md) | [BOOKS](BOOKS.md) | [LINKS](LINKS.md) | [INFO](INFO.md) | **Join The Revolution**" >> IMAGES.md;
+    echo "" >> IMAGES.md;
+    echo "IMAGES" >> IMAGES.md;
+    echo "======" >> IMAGES.md;
+    echo "" >> IMAGES.md;
 
-for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; do echo "- [$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md && echo "![$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md; done
+    for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; do echo "- [$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md && echo "![$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md; done
 
-echo "" >> IMAGES.md;
+    echo "" >> IMAGES.md;
+}
+
+function UPDATE_MODIFIED_DATETIME() {
+    if [ "$1" != "" ] && [ "$1" != "none" ];then
+        local file_name="$1";
+        local file_data="`cat "$file_name"|grep -v "Updated: "`";
+        local modified_date="`date -r "$file_name" -u`";
+
+        echo "Updated: $modified_date" > "$file_name";
+        echo "" >> "$file_name";
+        echo "$file_data" >> "$file_name";
+    fi
+}
+
+if [ "`echo "$skip_files" | grep -v IMAGES`" != "" ]; then
+    WRITE_IMAGES_FILE;
+fi
+
+for f in `echo "$skip_files" | tr "|" " "`; do
+    #cat "$f" | sed '/./,$!d' | awk 'NR > 1 { print prev } { prev=$0 } END { ORS=""; print }'
+    if [ -f "$f" ]; then
+        UPDATE_MODIFIED_DATETIME "$f";
+    fi
+
+    if [ -f "$f.md" ]; then
+        UPDATE_MODIFIED_DATETIME "$f.md";
+    fi
+
+done
 
 git commit -am "$message";
 
