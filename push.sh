@@ -43,10 +43,10 @@ function WRITE_IMAGES_FILE() {
 function UPDATE_MODIFIED_DATETIME() {
     if [ "$1" != "" ] && [ "$1" != "none" ];then
         local file_name="$1";
-        local file_data="`cat "$file_name"|grep -v "Updated: "`";
+        local file_data="`cat "$file_name"|grep -v "Last Modified: "`";
         local modified_date="`date -r "$file_name" -u`";
 
-        echo "Updated: $modified_date" > "$file_name";
+        echo "Last Modified: $modified_date" > "$file_name";
         echo "" >> "$file_name";
         echo "$file_data" >> "$file_name";
     fi
