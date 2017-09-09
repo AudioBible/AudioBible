@@ -14,39 +14,39 @@ function sigint_handler(){
     exit 1;
 }
 
-echo "optimizing image quality to be $quality%";
+echo "+ Optimizing image quality to be $quality%";
 
 if [ -d "./original_images/" ]; then
     cd ./original_images/;
 
     if [ ! -d "./optimized" ]; then
-        echo "creating ./original_images/optimized/ directory";
+        echo "+ Creating ./original_images/optimized/ directory";
         mkdir optimized;
     fi
 
     if [ -d "./optimized" ]; then
-        echo "optimizing *.jpg files";
+        echo "+ Optimizing *.jpg files";
         for i in *.jpg; do convert "$i" -strip -quality "$quality" "optimized/$i"; done
         if [ "$?" == "0" ]; then
-            echo "Finished with *.jpg files";
+            echo "+ Finished with *.jpg files";
         else
-            echo "Failed optimizing *.jpg files";
+            echo "! Failed optimizing *.jpg files";
             exit 1;
         fi
-        echo "optimizing *.jpeg files";
+        echo "+ Optimizing *.jpeg files";
         for i in *.jpeg; do convert "$i" -strip -quality "$quality" "optimized/$i"; done
         if [ "$?" == "0" ]; then
-            echo "Finished with *.jpeg files";
+            echo "+ Finished with *.jpeg files";
         else
-            echo "Failed optimizing *.jpeg files";
+            echo "! Failed optimizing *.jpeg files";
             exit 1;
         fi
-        echo "optimizing *.png files";
+        echo "+ Optimizing *.png files";
         for i in *.png; do convert "$i" -strip -quality "$quality" "optimized/$i"; done
         if [ "$?" == "0" ]; then
-            echo "Finished with *.png files";
+            echo "+ Finished with *.png files";
         else
-            echo "Failed optimizing *.png files";
+            echo "! Failed optimizing *.png files";
             exit 1;
         fi
     fi
@@ -54,12 +54,12 @@ if [ -d "./original_images/" ]; then
     cd ..;
 
     if [ -d "./original_images/optimized" ]; then
-        echo "moving images from ./original_images/optimized/ to ./images/";
+        echo "+ Moving images from ./original_images/optimized/ to ./images/";
         mv ./original_images/optimized/* ./images;
         cp ./original_images/*.gif ./images;
-        echo "removing ./original_images/optimized/ directory";
+        echo "+ Removing ./original_images/optimized/ directory";
         rm -Rf ./original_images/optimized/;
     fi
 else
-    echo "ERROR: ./original_images/ directory does not exist!";
+    echo "! ERROR: ./original_images/ directory does not exist!";
 fi

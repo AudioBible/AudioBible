@@ -27,7 +27,7 @@ function WRITE_IMAGES_FILE() {
             echo "+ No images found to optimize!"
         fi
     else
-        echo "Skipping optimize_images"
+        echo "+ Skipping optimize_images"
     fi
 
     for i in $images; do
@@ -37,6 +37,7 @@ function WRITE_IMAGES_FILE() {
     done
 
     if [ "$proceed" == "yes" ]; then
+        echo "+ Writing IMAGES.md"
         echo "" > IMAGES.md;
         echo "## ![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/) Welcome to [http://audiobible.life](http://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)" >> IMAGES.md;
         echo "" >> IMAGES.md;
@@ -64,7 +65,7 @@ function UPDATE_MODIFIED_DATETIME() {
         local modified_date="`date -r "$file_name" -u`";
 
         if [ "`head -n 1 "$file_name" | grep -v "$modified_date"`" == "" ]; then
-            echo "Updating Last Modified DateTime in $file_name to $modified_date";
+            echo "+ Updating Last Modified DateTime in $file_name to $modified_date";
             echo "Last Modified: $modified_date" > "$file_name";
             echo "$file_data" >> "$file_name";
         fi
@@ -92,9 +93,9 @@ git commit -am "$message";
 
 git fetch && git rebase origin/master master && git push && git push --tags;
 if [ "$?" == "0" ]; then
-    echo "Finish PUSH to origin";
+    echo "+ Finish PUSH to origin";
 else
-    echo "Failed PUSH to origin";
+    echo "! Failed PUSH to origin";
     exit 1;
 fi
 
@@ -107,65 +108,65 @@ if [ -d ~/KJV ]; then
     d=`pwd`
     cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am "$message" && git push -f; cd "$d"
     if [ "$?" == "0" ]; then
-        echo "Finish PUSH to KJV origin";
+        echo "+ Finish PUSH to KJV origin";
     else
-        echo "Failed PUSH to KJV origin";
+        echo "! Failed PUSH to KJV origin";
         exit 1;
     fi
 fi
 
 git push ab -f && git push ab --tags -f;
 if [ "$?" == "0" ]; then
-    echo "Finish PUSH to ab";
+    echo "+ Finish PUSH to ab";
 else
-    echo "Failed PUSH to ab";
+    echo "! Failed PUSH to ab";
     exit 1;
 fi
 
 git push abl -f && git push abl --tags -f;
 if [ "$?" == "0" ]; then
-    echo "Finish PUSH to abl";
+    echo "+ Finish PUSH to abl";
 else
-    echo "Failed PUSH to abl";
+    echo "! Failed PUSH to abl";
     exit 1;
 fi
 
 git push up -f && git push up --tags -f;
 if [ "$?" == "0" ]; then
-    echo "Finish PUSH to up";
+    echo "+ Finish PUSH to up";
 else
-    echo "Failed PUSH to up";
+    echo "! Failed PUSH to up";
     exit 1;
 fi
 
 git push ysfe -f && git push ysfe --tags -f;
 if [ "$?" == "0" ]; then
-    echo "Finish PUSH to ysfe";
+    echo "+ Finish PUSH to ysfe";
 else
-    echo "Failed PUSH to ysfe";
+    echo "! Failed PUSH to ysfe";
     exit 1;
 fi
 
 git push bb -f && git push bb --tags -f;
 if [ "$?" == "0" ]; then
-    echo "Finish PUSH to bb";
+    echo "+ Finish PUSH to bb";
 else
-    echo "Failed PUSH to bb";
+    echo "! Failed PUSH to bb";
     exit 1;
 fi
 
 git push gl -f && git push gl --tags -f;
 if [ "$?" == "0" ]; then
-    echo "Finish PUSH to gl";
+    echo "+ Finish PUSH to gl";
 else
-    echo "Failed PUSH to gl";
+    echo "! Failed PUSH to gl";
     exit 1;
 fi
 
 git push sf -f && git push sf --tags -f;
 if [ "$?" == "0" ]; then
-    echo "Finish PUSH to sf";
+    echo "+ Finish PUSH to sf";
 else
-    echo "Failed PUSH to sf";
+    echo "! Failed PUSH to sf";
     exit 1;
 fi
