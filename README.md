@@ -35,6 +35,30 @@ How can God tell you the things of Heaven if you refuse to believe the things of
 
 # EARTH IS FLAT! EARTH IS NOT A GLOBE! JESUS CHRIST IS LORD!
 
+# audiobible find conspiracy
+
+
+    2_SAMUEL 15:12 And Absalom sent for Ahithophel the Gilonite, David's counselor, from his city, even from Giloh, while he offered sacrifices. And the conspiracy was strong; for the people increased continually with Absalom.
+
+    2_KINGS 12:20 And his servants arose, and made a conspiracy, and slew Joash in the house of Millo, which goeth down to Silla.
+
+    2_KINGS 14:19 Now they made a conspiracy against him in Jerusalem: and he fled to Lachish; but they sent after him to Lachish, and slew him there.
+
+    2_KINGS 15:15 And the rest of the acts of Shallum, and his conspiracy which he made, behold, they are written in the book of the chronicles of the kings of Israel.
+
+    2_KINGS 15:30 And Hoshea the son of Elah made a conspiracy against Pekah the son of Remaliah, and smote him, and slew him, and reigned in his stead, in the twentieth year of Jotham the son of Uzziah.
+
+    2_KINGS 17:4 And the king of Assyria found conspiracy in Hoshea: for he had sent messengers to So king of Egypt, and brought no present to the king of Assyria, as he had done year by year: therefore the king of Assyria shut him up, and bound him in prison.
+
+    2_CHRONICLES 25:27 Now after the time that Amaziah did turn away from following the LORD they made a conspiracy against him in Jerusalem; and he fled to Lachish: but they sent to Lachish after him, and slew him there.
+
+    JEREMIAH 11:9 And the LORD said unto me, A conspiracy is found among the men of Judah, and among the inhabitants of Jerusalem.
+
+    EZEKIEL 22:25 There is a conspiracy of her prophets in the midst thereof, like a roaring lion ravening the prey; they have devoured souls; they have taken the treasure and precious things; they have made her many widows in the midst thereof.
+
+    ACTS 23:13 And they were more than forty which had made this conspiracy.
+
+
 SPACE TRAVEL NASA TALKS ABOUT IS THE SPACE INSIDE THE DOME & YOUR BODY, HENCE THE RFID CHIP NASA CREATED! The space NASA talks about is the space inside the dome, technically were all in outer space as we speak! Earth is [Motionless](https://www.youtube.com/watch?v=kfE4vHQGB0w&list=PLYI8318YYdkCsZ7dsYV01n6TZhXA6Wf9i&&index=11)! Earth is Flat!
 
 It's all connected to the biggest lie in the world, about the shape of the world, once you understand you will see how to tell through their lies of deception. Check out the collection of youtube videos and do some research on these topics. Arm yourself with knowledge! Don't be a clown!
