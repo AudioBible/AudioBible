@@ -16,17 +16,16 @@ message="BIG BANG IS THEORY! FLAT EARTH IS TRUTH! 9/11 WAS AN INSIDE JOB!"
 skip_images="`echo ${1:-"false"} | tr [a-z] [A-Z]`";
 skip_files="`echo ${2:-"none"} | tr "," "|"|sed "s/ //g"`";
 
-if [[ $skip_images != *"F"* ]]; then
-    ./optimize_images.sh;
-else
-    echo "Skipping optimize_images"
-fi
-
-git add original_images/ images/ books/;
-
 function WRITE_IMAGES_FILE() {
     local proceed="no";
+    local original_images="`ls -1 original_images/|grep -v youtube-channel|grep -v youtube-search|xargs`";
     local images="`ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`";
+    if [[ $skip_images != *"F"* ]] || [ "$original_images" != "$images" ]; then
+        ./optimize_images.sh;
+    else
+        echo "Skipping optimize_images"
+    fi
+
     for i in $images; do
         if [ "`grep -i "$i" IMAGES.md`" == "" ]; then
             local proceed="yes";
@@ -84,6 +83,7 @@ for f in `ls -1 *.md| grep -Ev "$skip_files"|xargs`; do
 
 done
 
+git add original_images/ images/ books/ *.md;
 git commit -am "$message";
 
 git fetch && git rebase origin/master master && git push && git push --tags;
