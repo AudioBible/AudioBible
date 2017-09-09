@@ -25,10 +25,11 @@ fi
 git add original_images/ images/ books/;
 
 function WRITE_IMAGES_FILE() {
-    local proceed="no"
-    for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; do
+    local proceed="no";
+    local images="`ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`";
+    for i in $images; do
         if [ "`grep -i "$i" IMAGES.md`" == "" ]; then
-            local proceed="yes"
+            local proceed="yes";
         fi
     done
 
@@ -44,7 +45,7 @@ function WRITE_IMAGES_FILE() {
         echo "======" >> IMAGES.md;
         echo "" >> IMAGES.md;
 
-        for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; do
+        for i in $images; do
             echo "- [$i](images/$i)" >> IMAGES.md;
             echo "" >> IMAGES.md;
             echo "![$i](images/$i)" >> IMAGES.md;
