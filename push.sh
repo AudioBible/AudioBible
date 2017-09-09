@@ -25,7 +25,8 @@ fi
 git add original_images/ images/ books/;
 
 function WRITE_IMAGES_FILE() {
-    echo "## ![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/) Welcome to [http://audiobible.life](http://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)" > IMAGES.md;
+    echo "" > IMAGES.md;
+    echo "## ![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/) Welcome to [http://audiobible.life](http://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)" >> IMAGES.md;
     echo "" >> IMAGES.md;
     echo "[README](README.md) | [USAGE](USAGE.md) | [HELP](HELP.md) | [DEVELOPMENT](DEVELOPMENT.md) | [CHANGES](CHANGES.md) | **We The People** | **Have The Power** | **Don't Be A Clown**" >> IMAGES.md;
     echo "" >> IMAGES.md;
@@ -47,7 +48,6 @@ function UPDATE_MODIFIED_DATETIME() {
         local modified_date="`date -r "$file_name" -u`";
 
         echo "Last Modified: $modified_date" > "$file_name";
-        echo "" >> "$file_name";
         echo "$file_data" >> "$file_name";
     fi
 }
