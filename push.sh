@@ -56,7 +56,7 @@ if [ "`echo "$skip_files" | grep -v IMAGES`" != "" ]; then
     WRITE_IMAGES_FILE;
 fi
 
-for f in `echo "$skip_files" | tr "|" " "`; do
+for f in `ls -1 *.md| grep -Ev "$skip_files"|xargs`; do
     #cat "$f" | sed '/./,$!d' | awk 'NR > 1 { print prev } { prev=$0 } END { ORS=""; print }'
     if [ -f "$f" ]; then
         UPDATE_MODIFIED_DATETIME "$f";
