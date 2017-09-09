@@ -20,8 +20,12 @@ function WRITE_IMAGES_FILE() {
     local proceed="no";
     local original_images="`ls -1 original_images/|grep -v youtube-channel|grep -v youtube-search|xargs`";
     local images="`ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`";
-    if [[ $skip_images != *"F"* ]] || [ "$original_images" != "$images" ]; then
-        ./optimize_images.sh;
+    if [[ $skip_images != *"F"* ]]; then
+        if [ "$original_images" != "$images" ]; then
+            ./optimize_images.sh;
+        else
+            echo "+ No images found to optimize!"
+        fi
     else
         echo "Skipping optimize_images"
     fi
