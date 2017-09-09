@@ -25,20 +25,32 @@ fi
 git add original_images/ images/ books/;
 
 function WRITE_IMAGES_FILE() {
-    echo "" > IMAGES.md;
-    echo "## ![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/) Welcome to [http://audiobible.life](http://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)" >> IMAGES.md;
-    echo "" >> IMAGES.md;
-    echo "[README](README.md) | [USAGE](USAGE.md) | [HELP](HELP.md) | [DEVELOPMENT](DEVELOPMENT.md) | [CHANGES](CHANGES.md) | **We The People** | **Have The Power** | **Don't Be A Clown**" >> IMAGES.md;
-    echo "" >> IMAGES.md;
-    echo "[VIDEOS](VIDEOS.md) | [MUSIC](MUSIC.md) | [CHANNELS](CHANNELS.md) | [DOCUMENTS](DOCUMENTS.md) | [IMAGES](IMAGES.md) | [BOOKS](BOOKS.md) | [LINKS](LINKS.md) | [INFO](INFO.md) | **Join The Revolution**" >> IMAGES.md;
-    echo "" >> IMAGES.md;
-    echo "IMAGES" >> IMAGES.md;
-    echo "======" >> IMAGES.md;
-    echo "" >> IMAGES.md;
+    local proceed="no"
+    for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; do
+        if [ "`grep -i "$i" IMAGES.md`" == "" ]; then
+            local proceed="yes"
+        fi
+    done
 
-    for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; do echo "- [$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md && echo "![$i](images/$i)" >> IMAGES.md && echo "" >> IMAGES.md; done
+    if [ "$proceed" == "yes" ]; then
+        echo "" > IMAGES.md;
+        echo "## ![stats](https://c.statcounter.com/11395037/0/cbecb5be/0/) Welcome to [http://audiobible.life](http://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)" >> IMAGES.md;
+        echo "" >> IMAGES.md;
+        echo "[README](README.md) | [USAGE](USAGE.md) | [HELP](HELP.md) | [DEVELOPMENT](DEVELOPMENT.md) | [CHANGES](CHANGES.md) | **We The People** | **Have The Power** | **Don't Be A Clown**" >> IMAGES.md;
+        echo "" >> IMAGES.md;
+        echo "[VIDEOS](VIDEOS.md) | [MUSIC](MUSIC.md) | [CHANNELS](CHANNELS.md) | [DOCUMENTS](DOCUMENTS.md) | [IMAGES](IMAGES.md) | [BOOKS](BOOKS.md) | [LINKS](LINKS.md) | [INFO](INFO.md) | **Join The Revolution**" >> IMAGES.md;
+        echo "" >> IMAGES.md;
+        echo "IMAGES" >> IMAGES.md;
+        echo "======" >> IMAGES.md;
+        echo "" >> IMAGES.md;
 
-    echo "" >> IMAGES.md;
+        for i in `ls -1 images/|grep -v youtube-channel|grep -v youtube-search|xargs`; do
+            echo "- [$i](images/$i)" >> IMAGES.md;
+            echo "" >> IMAGES.md;
+            echo "![$i](images/$i)" >> IMAGES.md;
+            echo "" >> IMAGES.md;
+        done
+    fi
 }
 
 function UPDATE_MODIFIED_DATETIME() {
