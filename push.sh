@@ -48,7 +48,7 @@ function UPDATE_MODIFIED_DATETIME() {
         local modified_date="`date -r "$file_name" -u`";
 
         if [ "`head -n 1 "$file_name" | grep -v "$modified_date"`" != "" ]; then
-            echo "Updating Last Modified DateTime in $file_name";
+            echo "Updating Last Modified DateTime in $file_name to $modified_date";
             echo "Last Modified: $modified_date" > "$file_name";
             echo "$file_data" >> "$file_name";
         fi
