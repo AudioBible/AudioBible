@@ -28,9 +28,11 @@ Globe earth is mass mind control, if they can control your mind about the real s
 
 [The Greatest Lie on Earth: Proof That Our World Is Not a Moving Globe Paperback – January 17, 2016 by Edward Hendrie (Author)](https://www.amazon.com/gp/product/1943056013)
 
-# What is the curvature from New York to California?
-
 # [What else can “Fifteen cubits from above” in Gen 7:20 mean?](https://hermeneutics.stackexchange.com/questions/1416/what-else-can-fifteen-cubits-from-above-in-gen-720-mean)
+
+# [Does the Bible say the Earth is flat?](https://hermeneutics.stackexchange.com/questions/8142/does-the-bible-say-the-earth-is-flat)
+
+# What is the curvature from New York to California?
 
 # [Ask Google anything but curvature earth is flat 100%](https://www.youtube.com/watch?v=VQ3xNll9FeQ)
 
