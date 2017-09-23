@@ -274,6 +274,8 @@ SPACE TRAVEL NASA TALKS ABOUT IS THE SPACE INSIDE THE DOME & YOUR BODY, HENCE TH
 
 [How to Refuse the RFID Chip Like a BOSS...](https://www.youtube.com/watch?v=V8w7VG_powU)
 
+[Prophet Ken Peters - I Saw the Great Tribulation (High Quality)](https://www.youtube.com/watch?v=gx8VHOmhmQI)
+
 It's all connected to the biggest lie in the world, about the shape of the world, once you understand you will see how to tell through their lies of deception. Check out the collection of youtube videos and do some research on these topics. Arm yourself with knowledge! Don't be a clown!
 
 I didn’t want to believe all this stuff before either! I was a big clown! I always did lots of research before but nothing like this! I did lots of [research](https://www.youtube.com/results?search_query=flat+earth+live), then found the truth music from people like [Payday Monsanto](https://www.youtube.com/watch?v=DiSvqH3Q5Dk), [K-Rino](https://www.youtube.com/watch?v=R_DtZFL_ar0) and [ODD TV](https://www.youtube.com/watch?v=TlTR7QQZQ8I), did more [research](https://www.youtube.com/watch?v=pNe1wWeaHOU&list=PLYI8318YYdkCsZ7dsYV01n6TZhXA6Wf9i&index=1) and that was it my eyes opened to the depth of the deception! The rabbit hole goes deep, real deep!
@@ -408,6 +410,117 @@ Do you believe in Holy Shit or Holy Truth? You can't be constantly stuck in the 
 [NFL Star Benjamin Watson gets cut off on CNN proclaiming JESUS CHRIST !!!](https://www.youtube.com/watch?v=NEnWg5Vg0T8)
 
 [NFL's Benjamin Watson on CNN: 'Jesus Christ Died for Our Sins'](https://www.youtube.com/watch?v=d4YQ6n9_y8E)
+
+## audiobible words defile
+
+
+       Strong's No: H2490
+       Hebrew: חָלַל
+       English: defile
+       Transliteration: châlal
+       Phonetic: khaw-lal'
+       Word Origin: A primitive root (compare H2470)
+
+       Bible Usage:
+           begin (X men {began}) {defile} X-(idiom) {break} {defile} X-(idiom) eat (as common {things}) X-(idiom) {first} X-(idiom) gather the grape {thereof} X-(idiom) take {inheritance} {pipe} player on {instruments} {pollute} (cast as) profane ({self}) {prostitute} slay ({slain}) {sorrow} {stain} wound.
+
+       Part of Speech:
+           Verb
+
+       Strong's Definition:
+           properly to {bore} that {is} (by implication) to {wound} to dissolve; figuratively to profane (a {person} place or {thing}) to break (one´ s {word}) to begin (as if by an opening-wedge); denominatively (from ) to play (the flute)
+
+       Brown Driver Definition:
+           1. to profane, defile, pollute, desecrate, begin
+           a. (Niphal)
+           1. to profane oneself, defile oneself, pollute oneself 1a
+           b. ritually 1a
+           c. sexually
+           1. to be polluted, be defiled
+           d. (Piel)
+           1. to profane, make common, defile, pollute
+           2. to violate the honour of, dishonour
+           3. to violate (a covenant)
+           4. to treat as common
+           e. (Pual) to profane (name of God)
+           f. (Hiphil)
+           1. to let be profaned
+           2. to begin
+           g. (Hophal) to be begun
+           2. to wound (fatally), bore through, pierce, bore
+           a. (Qal) to pierce
+           b. (Pual) to be slain
+           c. (Poel) to wound, pierce
+           d. (Poal) to be wounded
+           3. (Piel) to play the flute or pipe
+
+       Translation Occurrences:
+           defile: 2, grapes: 1, pollute: 8, instruments: 1, profaned: 15, slain: 1, defileth: 1, profaning: 2, begun: 6, defiledst: 1, inheritance: 1, things: 1, began: 33, polluted: 13, defiled: 5, stain: 1, piped: 1, slayeth: 1, begin: 12, himself: 1, sorrow: 1, formed: 1, break: 3, broken: 1, eaten: 1, herself: 1, eat: 1, prostitute: 1, profaneth: 1, profane: 16, wounded: 3, first: 1
+
+       Bible References:
+           Ezek 7:22, Ezek 28:7
+
+       Webster's 1828 Dictionary:
+           Defile
+
+       Definition:
+           DEFILE ,  verb transitive
+           1.  To make unclean; to render foul or dirty; in a general sense.
+           2.  To make impure; to render turbid; as, the water or liquor is defiled.
+           3.  To soil or sully; to tarnish; as reputation, etc.
+           He is among the greatest prelates of the age, however his character may be defiled by dirty hands.
+           They shall  defile  thy brightness.  Ezekiel 28:7 .
+           4.  To pollute; to make ceremonially unclean.
+           That which dieth of itself, he shall not eat, to  defile  himself therewith.  Leviticus 22:8 .
+           5.  To corrupt chastity; to debauch; to violate; to tarnish the purity of character by lewdness.
+           Schechem defiled Dinah.  Genesis 34:2 .
+           6.  To taint, in a moral sense; to corrupt; to vitiate; to render impure with sin.
+           DEFILE  not yourselves with the idols of Egypt.  Ezekiel 20:7 .
+           He hath defiled the sanctuary of the Lord.  Numbers 19:20 .
+           DEFILE ,  verb intransitive   [Latin  A thread.] To march off in a line, or file by file; to file off.
+           DEFILE ,  noun   A narrow passage or way, in which troops may march only in a file, or with a narrow front; a long narrow pass, as between hills, etc.
+
+       Webster's 1828 Dictionary:
+           Defiled
+
+       Definition:
+           DEFILED ,  participle passive   Made dirty, or foul; polluted; soiled; corrupted; violated; vitiated.
+
+       Naves Topical Index:
+           Defilement
+
+       Definition:
+           Laws relating to Leviticus 7:18-21 ;  Leviticus 11:43 ;  Leviticus 22:2-7
+           Caused by:
+           Leprosy Leviticus 13:3 ;  Leviticus 13:44-46 ;  Leviticus 3:14 ;  Leviticus 22:4-7
+           Gonorrhea Leviticus 15:1-15 ;  Leviticus 22:4
+           Copulation Leviticus 15:17
+           Spermatorrhea Leviticus 15:16-17
+           Childbirth Leviticus 12:2-8 ;  Luke 2:22
+           Menses Leviticus 15:19-33 ;  2 Samuel 11:4
+           Touching the dead Numbers 19:11-22 ;  Numbers 31:19-20
+           Touching carcass of any unclean animal Leviticus 11:39-40 ;  Leviticus 17:15-16 ;  Leviticus 22:8
+           Touching carcass of an unclean thing Leviticus 5:2-13 ;  Leviticus 11:8 ;  Leviticus 11:24-28 ;  Leviticus 11:31-38 ;  Leviticus 14:46-57 ;  Leviticus 15:5-11 ;  Deuteronomy 23:10-11
+           Slaying in battle Numbers 31:19-20
+           Contact with sinners falsely supposed to cause John 18:28
+           Of priest Leviticus 16:26 ;  Leviticus 16:28 ;  Numbers 19:7-10 ;  Ezekiel 44:25-26
+           Egyptian usage, concerning Genesis 43:32 Ablution ;  Purification ;  Uncleanness
+
+       Webster's 1828 Dictionary:
+           Defilement
+
+       Definition:
+           DEFILEMENT ,  noun
+           1.  The act of defiling, or state of being defiled; foulness; dirtiness; uncleanness.
+           2.  Corruption of morals, principles or character; impurity; pollution by sin.
+           The chaste cannot rake into such filth without danger of  defilement
+
+       Webster's 1828 Dictionary:
+           Defiler
+
+       Definition:
+           DEFILER ,  noun   One who defiles; one who corrupts or violates; that which pollutes.
+
 
 [![ODD-TV-Living-In-Hell-Playlist](images/ODD-TV-Living-In-Hell-Playlist.png)](https://www.youtube.com/watch?v=TlTR7QQZQ8I&list=PL7X63Sm3kODPV43FyewOSadSnZwZGZQHU&index=1)
 
