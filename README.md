@@ -30,6 +30,8 @@ Globe earth is mass mind control, if they can control your mind about the real s
 
 # What is the curvature from New York to California?
 
+# [What else can “Fifteen cubits from above” in Gen 7:20 mean?](https://hermeneutics.stackexchange.com/questions/1416/what-else-can-fifteen-cubits-from-above-in-gen-720-mean)
+
 # [Ask Google anything but curvature earth is flat 100%](https://www.youtube.com/watch?v=VQ3xNll9FeQ)
 
 ## [Students Find The Curvature of Earth in a Go Pro Fish Eye Lens.](https://www.youtube.com/watch?v=nwlHduNoPO8)
