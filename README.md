@@ -1156,6 +1156,8 @@ http://audiobible.life плоская земля! Плоска Земя! Płaski
 
 ### JESUS CHRIST TOLD US HOW TO PRAY! IF I MAY I WOULD LIKE TO ELABORATE ON WHAT WORKS FOR ME!
 
+[Baptize by Blazing Fire #1](http://www.divinerevelations.info/documents/babtize_by_blazing_fire/)
+
 [How satan stops our prayers - Combat in the Heavenly Realms](https://www.youtube.com/watch?v=cS2g3t7tKN4)
 
 [Prayer Language, Speaking in Tongues, how satan stops Christians from receiving the gift of Tongues](https://www.youtube.com/watch?v=Su3UPfeXleM)
