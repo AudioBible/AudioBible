@@ -248,6 +248,8 @@ The peace that is spoken of in this world is a lie! You can only have peace in t
 
 Will you be celebrating the Anti-Christ this Christmas? Worshipping "another spirit"? I know I won't be! If you are, then have fun!
 
+[The Israelites: Christianity And It's CULT Origins EXPOSED!!!!](https://www.youtube.com/watch?v=YlG7xJbtyS8)
+
 What television and media does is envoke emotions and portray views about the world, subliminally iterating on how we could behave and percieve what is around us!
 
 # audiobible find conspiracy
