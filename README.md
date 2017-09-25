@@ -250,6 +250,8 @@ Will you be celebrating the Anti-Christ this Christmas? Worshipping "another spi
 
 [The Israelites: Christianity And It's CULT Origins EXPOSED!!!!](https://www.youtube.com/watch?v=YlG7xJbtyS8)
 
+[Christian Cult vs Christian Church-How to Tell the Difference](https://www.youtube.com/watch?v=1rJdB3bIroQ)
+
 What television and media does is envoke emotions and portray views about the world, subliminally iterating on how we could behave and percieve what is around us!
 
 # audiobible find conspiracy
