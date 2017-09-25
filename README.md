@@ -252,6 +252,8 @@ Will you be celebrating the Anti-Christ this Christmas? Worshipping "another spi
 
 [Christian Cult vs Christian Church-How to Tell the Difference](https://www.youtube.com/watch?v=1rJdB3bIroQ)
 
+[Top Ten ways to Tell if the Church you attend is a CULT!](https://www.youtube.com/watch?v=bLOL6yWrQdA)
+
 What television and media does is envoke emotions and portray views about the world, subliminally iterating on how we could behave and percieve what is around us!
 
 # audiobible find conspiracy
