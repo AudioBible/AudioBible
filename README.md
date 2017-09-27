@@ -1219,6 +1219,12 @@ http://audiobible.life плоская земля! Плоска Земя! Płaski
     MT 6:13 And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen.
 
 
+# audiobible find "be careful for nothing"
+
+
+    PHILIPPIANS 4:6 Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.
+
+
 I heard about Flat Earth in mid/late 2016 and only recently found out the real truth in May/June of 2017 and had to make this website to help spread awareness!
 
 ### CAR AND MOTORCYCLE ENGINES RUNNING ON HYDROGEN EXTRACTED FROM WATER - HHO!
