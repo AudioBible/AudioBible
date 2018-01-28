@@ -115,13 +115,13 @@ if [ -d ~/KJV ]; then
     fi
 fi
 
-git push ab -f && git push ab --tags -f;
-if [ "$?" == "0" ]; then
-    echo "+ Finish PUSH to ab";
-else
-    echo "! Failed PUSH to ab";
-    exit 1;
-fi
+#git push ab -f && git push ab --tags -f;
+#if [ "$?" == "0" ]; then
+#    echo "+ Finish PUSH to ab";
+#else
+#    echo "! Failed PUSH to ab";
+#    exit 1;
+#fi
 
 git push abl -f && git push abl --tags -f;
 if [ "$?" == "0" ]; then
