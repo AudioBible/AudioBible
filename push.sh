@@ -91,6 +91,7 @@ done
 git add original_images/ images/ books/ *.md;
 git commit -am "$message";
 
+echo "+ Start PUSH to origin";
 git fetch && git rebase origin/master master && git push && git push --tags;
 if [ "$?" == "0" ]; then
     echo "+ Finish PUSH to origin";
@@ -106,6 +107,7 @@ if [ -d ~/KJV ]; then
     cp images/*.png ~/KJV/images/
     cp images/*.gif ~/KJV/images/
     d=`pwd`
+    echo "+ Start PUSH to KJV origin";
     cd ~/KJV && echo "$version" > version && git add version images/* *.md *.json && git commit -am "$message" && git push -f; cd "$d"
     if [ "$?" == "0" ]; then
         echo "+ Finish PUSH to KJV origin";
@@ -123,6 +125,7 @@ fi
 #    exit 1;
 #fi
 
+echo "+ Start PUSH to abl";
 git push abl -f && git push abl --tags -f;
 if [ "$?" == "0" ]; then
     echo "+ Finish PUSH to abl";
@@ -131,6 +134,7 @@ else
     exit 1;
 fi
 
+echo "+ Start PUSH to up";
 git push up -f && git push up --tags -f;
 if [ "$?" == "0" ]; then
     echo "+ Finish PUSH to up";
@@ -139,6 +143,7 @@ else
     exit 1;
 fi
 
+echo "+ Start PUSH to ysfe";
 git push ysfe -f && git push ysfe --tags -f;
 if [ "$?" == "0" ]; then
     echo "+ Finish PUSH to ysfe";
@@ -147,6 +152,7 @@ else
     exit 1;
 fi
 
+echo "+ Start PUSH to bb";
 git push bb -f && git push bb --tags -f;
 if [ "$?" == "0" ]; then
     echo "+ Finish PUSH to bb";
@@ -155,6 +161,7 @@ else
     exit 1;
 fi
 
+echo "+ Start PUSH to gl";
 git push gl -f && git push gl --tags -f;
 if [ "$?" == "0" ]; then
     echo "+ Finish PUSH to gl";
@@ -163,6 +170,7 @@ else
     exit 1;
 fi
 
+echo "+ Start PUSH to sf";
 git push sf -f && git push sf --tags -f;
 if [ "$?" == "0" ]; then
     echo "+ Finish PUSH to sf";
