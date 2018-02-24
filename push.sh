@@ -143,6 +143,15 @@ else
     exit 1;
 fi
 
+echo "+ Start PUSH to ux";
+git push ux -f && git push ux --tags -f;
+if [ "$?" == "0" ]; then
+    echo "+ Finish PUSH to ux";
+else
+    echo "! Failed PUSH to ux";
+    exit 1;
+fi
+
 echo "+ Start PUSH to ysfe";
 git push ysfe -f && git push ysfe --tags -f;
 if [ "$?" == "0" ]; then
