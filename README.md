@@ -1322,6 +1322,10 @@ I heard about Flat Earth in mid/late 2016 and only recently found out the real t
 
 🤦🌎﻿
 
+🌎﻿🐂💩
+
+🐂💨🌎﻿
+
 🌎🎓💩﻿
 
 🌎🎓🤡﻿
