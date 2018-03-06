@@ -1342,6 +1342,8 @@ I heard about Flat Earth in mid/late 2016 and only recently found out the real t
 
 🌏❌_____🗺✔﻿
 
+Penguins﻿ be like "I don't see no friggin ice wall!" 🐧
+
 # [Are You Dedicated To God?](https://www.youtube.com/watch?v=0d1z8dmMo00)
 
 # [Common Scripture Misconceptions](https://www.youtube.com/watch?v=Hb_SWre4u44)
