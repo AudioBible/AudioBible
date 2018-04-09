@@ -1,6 +1,6 @@
 Last Modified: Tue Mar 9 03:47:16 UTC 2018
 
-## ![stats](https://c.statcounter.com/11394980/0/688bc3dd/0/) Welcome to [http://audiobible.life](http://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)
+## ![stats](https://c.statcounter.com/11394980/0/688bc3dd/0/) Welcome to [http://audiobible.life](https://audiobible.life) - Therefore Choose Life - [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)
 
 [README](README.md) | [USAGE](USAGE.md) | [HELP](HELP.md) | [DEVELOPMENT](DEVELOPMENT.md) | [CHANGES](CHANGES.md) | **We The People** | **Have The Power** | **Don't Be A Clown**
 
@@ -1168,7 +1168,7 @@ VIEW [CODE ON GITHUB](https://github.com/AudioBible/AudioBible)
     - create bots for different sites to post comments and replies with message to digest
     - find truth seekers to join the project operation
 
-http://audiobible.life плоская земля! Плоска Земя! Płaskie Ziemie! Yassı Toprak! 평지! 平地球! フラットアース! زمین تخت !شقة الأرض! terra flat! Flache Erde! Platte Aarde! Pământ plat! Tierra Plana! Terre Plate! Flat Earth! Do the research! Don't be a clown!
+https://audiobible.life плоская земля! Плоска Земя! Płaskie Ziemie! Yassı Toprak! 평지! 平地球! フラットアース! زمین تخت !شقة الأرض! terra flat! Flache Erde! Platte Aarde! Pământ plat! Tierra Plana! Terre Plate! Flat Earth! Do the research! Don't be a clown!
 
 [![flat-earth-truth-store-t-shirts](images/flat-earth-truth-store-t-shirts.png)](https://teespring.com/stores/flatearthtruth)
 
